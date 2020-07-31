@@ -6,7 +6,7 @@ body {
 }
 .App {
   text-align: center;
-  display: flex;
+  position: relative;
 }
 
 .App-logo {
@@ -162,3 +162,4 @@ section {
 .card .features li span {
   display: none;
 }
+

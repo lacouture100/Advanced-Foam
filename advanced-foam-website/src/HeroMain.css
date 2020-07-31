@@ -1,0 +1,46 @@
+*{
+
+
+}
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 40vh;
+    border: 2px solid red;
+}
+
+.main-slogan {
+    margin-top: 5%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.main-slogan-phrase {
+    font-size: 20px;
+}
+.main-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    max-width: 50%;
+    
+    
+}
+.main-logo img{
+    max-width: 100%;
+    min-height: 150px;
+
+}
+.main-logo-dynamic {
+    background-color: blue;
+    min-height: 30px;
+    width: 100%;
+}
+
+

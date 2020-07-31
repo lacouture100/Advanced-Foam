@@ -39,15 +39,9 @@ class App extends Component {
     const {appearHome, property} = this.state;
     return (
       <div className="App">
-
-        <CSSTransition
-          in={appearHome}
-          appear={true}
-          timeout={1000}
-          classNames="fade"
-        >
-          <Home property={property} />
-        </CSSTransition>
+        <button onClick={() => this.toggleAppear()}>Appear: {`${appearHome}`}</button>
+        <button onClick={() => this.nextProperty()} disabled={property.index === data.properties.length-1}>Next</button>
+        <button onClick={() => this.prevProperty()} disabled={property.index === 0}>Prev</button>
 
         <CSSTransition
           in={appearHome}
