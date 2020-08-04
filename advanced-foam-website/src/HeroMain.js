@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import './HeroMain.css'
 
-class SloganLogo extends Component{
+class HeroMain extends Component{
 
     render(){
 
@@ -13,7 +13,7 @@ class SloganLogo extends Component{
                      <h3 className="main-slogan-phrase"> We bring precision, innovation, creativity and economy.</h3>
                 </div>
                 <div className="main-logo">
-                    <img  src="./img/logoStill.JPG"></img>
+                    <img  src="./img/logoStill.JPG" alt =" Advanced Foam main logo"></img>
                     <div className="main-logo-dynamic"></div>
                 </div>
             </div>
@@ -21,6 +21,6 @@ class SloganLogo extends Component{
     }
 }
 
-export default SloganLogo;
+export default HeroMain;
 
 

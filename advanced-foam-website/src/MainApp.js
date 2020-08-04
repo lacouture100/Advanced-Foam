@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './MainApp.css';
 import App from './App';
 import HeroMain from './HeroMain'
 import Navbar from './NavBar'
@@ -15,7 +15,7 @@ class MainApp extends Component {
         <Navbar />
         <HeroMain />
         <App />
-        
+
       </div>
     );
   }

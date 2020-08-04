@@ -3,7 +3,7 @@ const data ={
         {
             "_id" : "theMummy",
             "index" : 0,
-            "imgSrc" : "./img/logo_1_1.png",
+            "imgSrc" : "./img/mummy-1.jpg",
             "title" : "The Mummy",
             "production" : "Universal Studios",
             "link" : ""

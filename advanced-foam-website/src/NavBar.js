@@ -17,7 +17,7 @@ class NavBar extends Component{
         const {mainTitle, studio, construction,packaging, about, contactUs} = this.props;
         return (
             <nav className="navbar">
-                <img src={`./img/mainLogo.png`}></img>
+                <img src={`./img/mainLogo.png`} alt={mainTitle}></img>
                 <ul className="navbar-titles">
                     <li className="navbar-title">{studio}</li>
                     <li className="navbar-title" >{construction}</li>
