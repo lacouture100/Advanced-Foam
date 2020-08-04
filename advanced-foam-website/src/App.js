@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Home from './Home';
-import data from './data/data'
+import data from './data/advanced_data'
 import { CSSTransition } from "react-transition-group";
 
 // class component
@@ -11,7 +11,11 @@ class App extends Component {
     super(props);
     this.state = {
       appearHome: true,
-      property: data.properties[0]
+      //property: data.properties[0],
+      studio: data.Studio[0],
+      construction: data.Construction[0],
+      packaging: data.Packaging[0],
+
     }
   }
 
@@ -42,10 +46,10 @@ class App extends Component {
         //console.log((data.Studio.length - 1));
 
 
-        let newIndex = this.state.property.index;
-        let studioLength = data.properties.length-1;
+        let newIndex = this.state.studio.index;
+        let studioLength = data.Studio.length-1;
 
-        if( this.state.property.index !== (studioLength) ){
+        if( this.state.studio.index !== (studioLength) ){
             newIndex += 1;
             console.log("Changing image");
         }else {
@@ -54,8 +58,9 @@ class App extends Component {
         }
 
         this.setState({
-            property: data.properties[newIndex]
-
+            studio: data.Studio[newIndex],
+            construction: data.Construction[newIndex],
+            packaging: data.Packaging[newIndex]
         })
 
         
@@ -66,7 +71,7 @@ class App extends Component {
 }
 
 
-
+/*
 
 
   toggleAppear = () => {
@@ -88,14 +93,13 @@ class App extends Component {
       property: data.properties[newIndex]
     })
   }
+  */
 
   render() {
-    const {appearHome, property} = this.state;
+    const {appearHome, studio, packaging, construction} = this.state;
     return (
       <div className="App">
-        <button onClick={() => this.toggleAppear()}>Appear: {`${appearHome}`}</button>
-        <button onClick={() => this.nextProperty()} disabled={property.index === data.properties.length-1}>Next</button>
-        <button onClick={() => this.prevProperty()} disabled={property.index === 0}>Prev</button>
+
 
         <CSSTransition
           in={appearHome}
@@ -103,7 +107,8 @@ class App extends Component {
           timeout={1000}
           classNames="fade"
         >
-          <Home property={property} />
+          <Home property={studio}
+                title={'Studio'} />
         </CSSTransition>
 
         <CSSTransition
@@ -112,7 +117,8 @@ class App extends Component {
           timeout={1000}
           classNames="fade"
         >
-          <Home property={property} />
+          <Home property={construction} 
+                title={'Construction'} />
         </CSSTransition>
 
         <CSSTransition
@@ -121,7 +127,8 @@ class App extends Component {
           timeout={1000}
           classNames="fade"
         >
-          <Home property={property} />
+          <Home property={packaging} 
+                title={'Packaging'} />
         </CSSTransition>
       </div>
     );

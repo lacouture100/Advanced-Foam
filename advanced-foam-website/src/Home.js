@@ -3,13 +3,12 @@ import logo from './assets/logo.svg';
 import Card from './Card';
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 
-const Home = ({property}) => {
+const Home = ({property, title}) => {
 
     return(
         <div className="page">
             <section>
-                <img src={logo} className="App-logo" alt="logo" />
-                <h1>React Transition Group classes breakdown.</h1>
+                <h1 className="card-title">{title}</h1>
             </section>
             
             <TransitionGroup className="card-container">
