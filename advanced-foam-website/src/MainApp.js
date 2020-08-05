@@ -4,6 +4,7 @@ import CategoryBanner from './CategoryBanner';
 import HeroMain from './HeroMain'
 import Navbar from './NavBar'
 import Clients from './Clients'
+import ContactUs from './ContactUs'
 import Footer from './Footer'
 
 // class component
@@ -18,6 +19,7 @@ class MainApp extends Component {
         <HeroMain />
         <CategoryBanner />
         <Clients />
+        <ContactUs />
         <Footer />
 
       </div>

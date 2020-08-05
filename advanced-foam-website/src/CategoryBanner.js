@@ -83,7 +83,7 @@ prevProperty = () => {
           classNames="fade"
         >
           <Category property={studio}
-                    title={'Studio'} 
+                    title={'STUDIO'} 
                     subtitle={'Television & Movie Set Studios'}/>
         </CSSTransition>
 
@@ -94,7 +94,7 @@ prevProperty = () => {
           classNames="fade"
         >
           <Category property={construction} 
-                    title={'Construction'} 
+                    title={'CONSTRUCTION'} 
                     subtitle={'Architectural Decorations'}/>
         </CSSTransition>
 
@@ -105,7 +105,7 @@ prevProperty = () => {
           classNames="fade"
         >
           <Category property={packaging} 
-                    title={'Packaging'} 
+                    title={'PACKAGING'} 
                     subtitle={'Design & Fabrication'}/>
         </CSSTransition>
     

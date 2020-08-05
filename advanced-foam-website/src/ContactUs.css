@@ -1,0 +1,12 @@
+.contact-main{
+  border: red solid 2px;
+  min-height: 10vh;
+  display: flex;
+}
+
+.contact-img {
+  max-width: 200px;
+  height: auto;
+  align-self: center;
+}
+
