@@ -29,15 +29,18 @@ class Footer extends Component{
                 <div className="footer-main">
                     <ul className="footer-titles">
                         <li className="footer-title">{footer_1A}</li>
+                        <br></br>
                         <li className="footer-subtitle" >{footer_1B}</li>
                         <li className="footer-subtitle" >{footer_1C}</li>
                     </ul>
                     <ul className="footer-titles">
                         <li className="footer-title">{footer_2A}</li>
+                        <br></br>
                         <li className="footer-subtitle" >{footer_2B}</li>
                     </ul>
                     <ul className="footer-titles">
                         <li className="footer-title">{footer_3A}</li>
+                        <br></br>
                         <li className="footer-subtitle" >{footer_3B}</li>
                     </ul>
                 </div>

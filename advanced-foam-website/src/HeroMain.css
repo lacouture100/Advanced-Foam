@@ -4,7 +4,6 @@
     flex-direction: row;
     justify-content: space-between;
     min-height: 50vh;
-    border: 2px solid red;
     min-width: 720px;
 
 }
@@ -38,7 +37,7 @@
 
 }
 .main-logo-dynamic {
-    background-color: blue;
+    background-color: black;
     min-height: 30px;
     width: 100%;
 }

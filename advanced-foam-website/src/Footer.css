@@ -5,7 +5,8 @@
     flex-wrap: wrap;
     background-color: rgb(32, 32, 32);
     color: white;
-    
+    list-style: none;
+    font-weight: 300;
 }
 
 .footer-main{
@@ -15,9 +16,17 @@
 .footer-titles {
     display: flex;
     flex-direction: column;
+    letter-spacing: 1px;;
     margin: 30px ;
-    min-width: 200px;
+    min-width: 240px;
+   
 }
+
+.footer-title{
+ text-decoration: underline;
+ font-size: 18px;
+}
+
 .footer-rights{
     align-self: center;
 }

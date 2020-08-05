@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import './App.css';
+import './CategoryBanner.css';
 import Category from './Category';
 import data from './data/advanced_data'
 import { CSSTransition } from "react-transition-group";
 
 // class component
-class App extends Component {
+class CategoryBanner extends Component {
 
   constructor(props){
     super(props);
@@ -73,7 +73,7 @@ prevProperty = () => {
   render() {
     const {appearCategory, studio, packaging, construction} = this.state;
     return (
-      <div className="App">
+      <div className="CategoryBanner">
 
 
         <CSSTransition
@@ -114,4 +114,4 @@ prevProperty = () => {
   }
 }
 
-export default App;
+export default CategoryBanner;

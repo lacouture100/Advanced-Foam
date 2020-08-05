@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './MainApp.css';
-import App from './App';
+import CategoryBanner from './CategoryBanner';
 import HeroMain from './HeroMain'
 import Navbar from './NavBar'
 import Clients from './Clients'
@@ -16,7 +16,7 @@ class MainApp extends Component {
       <div className="MainApp">
         <Navbar />
         <HeroMain />
-        <App />
+        <CategoryBanner />
         <Clients />
         <Footer />
 

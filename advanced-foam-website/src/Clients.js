@@ -25,7 +25,11 @@ class Clients extends Component {
       ))
     return(
       <div className="clients-main">
-        <h3 className="clients-main-title"> OUR CLIENTS</h3>
+        <h3 className="clients-main-title"> 
+          OUR CLIENTS
+          <div className="clients-title-line"></div>
+        </h3>
+        
         <div className="clients-main-container">
           {clients}
         </div>

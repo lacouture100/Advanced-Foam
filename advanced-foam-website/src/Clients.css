@@ -18,15 +18,24 @@
   min-width: 200px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   margin: 10px;
-  flex-basis: 25.333333%
+  flex-basis: 25.333333%;
+
+  
 }
 
 .clients-main-title{
   font-size: 22px;
   font-weight: 500 !important;
 }
+
+.clients-title-line{
+  border: 1px solid black;
+  width: 100%;
+}
+
 
 .client-img {
   max-width: 200px;
