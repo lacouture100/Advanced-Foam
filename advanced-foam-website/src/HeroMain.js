@@ -4,15 +4,15 @@ import './HeroMain.css'
 
 const words = [
     {
-        "word": "Movies",
+        "word": "MOVIES",
         "index": 0
     },
     {
-        "word": "TV Sets",
+        "word": "TV SETS",
         "index": 1
     },
     {
-        "word": "Construction",
+        "word": "ARCHITECTURE",
         "index": 2
     },
     
@@ -53,7 +53,9 @@ class HeroMain extends Component{
                      <h3 className="main-slogan-phrase"> We bring precision, innovation, creativity and economy to your projects.</h3>
                 </div>
                 <div className="main-logo">
-                    <img  src="./img/logoStill.JPG" alt =" Advanced Foam main logo"></img>
+                    <img  src="./img/logoStill.JPG" 
+                          alt =" Advanced Foam main logo"
+                          className="main-logo-img"></img>
         <div className="main-logo-dynamic">{this.state.keywords.word}</div>
                 </div>
             </div>

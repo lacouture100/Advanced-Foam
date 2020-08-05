@@ -14,17 +14,17 @@ const Category = ({property, title, subtitle}) => {
                 <div className="category-title-line"></div>
                 <h3 className="category-subtitle">{subtitle}</h3>
             </section>
-            <div>
-            <TransitionGroup className="card-container">
+            
+            <TransitionGroup className="transition">
                 <CSSTransition
                     key={property._id}
-                    timeout={300}
-                    classNames="slide"
+                    timeout={100}
+                    classNames="fade"
                 >
                     <Card property={property} />
                 </CSSTransition>
             </TransitionGroup>
-            </div>
+            
         </div>   
     )
 }

@@ -17,9 +17,7 @@ const Card = ({property}) => {
                 <h4 className="card-subtitle">
                     {production}
                 </h4>
-                <span className="index">
-                    {index+1}
-                </span>
+                
             </div>
         </div>
     )

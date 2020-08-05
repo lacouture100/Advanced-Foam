@@ -15,7 +15,6 @@ class CategoryBanner extends Component {
       studio: data.Studio[0],
       construction: data.Construction[0],
       packaging: data.Packaging[0],
-
     }
   }
 
@@ -39,7 +38,7 @@ class CategoryBanner extends Component {
         })
 
         
-      }, 20000);
+      }, 5000);
 
       
        

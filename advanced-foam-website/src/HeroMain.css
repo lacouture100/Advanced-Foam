@@ -22,27 +22,29 @@
     font-size: 22px;
     font-weight: 500 !important;
 }
+
 .main-logo{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: auto;
-    max-width: 50%;
-    
-    
+    min-width: 300px;
+    border: solid blue 1px;
 }
-.main-logo img{
+.main-logo-img{
     max-width: 100%;
     min-height: 250px;
+    border: solid blue 1px;
 
 }
 .main-logo-dynamic {
     background-color: black;
     min-height: 30px;
-    width: 100%;
+    width: 80%;
     color: ivory;
     text-align: center;
     font-size: 22px;
+    border: solid blue 1px;
 }
 
 
