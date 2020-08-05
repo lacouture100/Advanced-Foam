@@ -3,8 +3,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    min-height: 40vh;
+    min-height: 50vh;
     border: 2px solid red;
+    min-width: 720px;
+
 }
 
 .main-slogan {
@@ -12,13 +14,14 @@
     margin-left: 5%;
     display: flex;
     flex-direction: column;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     justify-content: space-evenly;
     margin: auto;
+
 }
 
 .main-slogan-phrase {
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: 500 !important;
 }
 .main-logo{
     display: flex;
@@ -31,7 +34,7 @@
 }
 .main-logo img{
     max-width: 100%;
-    min-height: 150px;
+    min-height: 250px;
 
 }
 .main-logo-dynamic {

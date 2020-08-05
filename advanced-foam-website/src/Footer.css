@@ -1,0 +1,29 @@
+.footer{
+    display: flex ;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+    background-color: rgb(32, 32, 32);
+    color: white;
+    
+}
+
+.footer-main{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-titles {
+    display: flex;
+    flex-direction: column;
+    margin: 30px ;
+    min-width: 200px;
+}
+.footer-rights{
+    align-self: center;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}

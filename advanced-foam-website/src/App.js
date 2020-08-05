@@ -21,8 +21,6 @@ class App extends Component {
 
 
   componentDidMount(){
-
-
     setInterval(() => {
 
         let newIndex = this.state.studio.index;
@@ -41,11 +39,36 @@ class App extends Component {
         })
 
         
-      }, 3000);
+      }, 20000);
 
       
-        
+       
 }
+
+toggleAppear = () => {
+  this.setState({
+    appearCategory: !this.state.appearCategory
+  })
+}
+
+nextProperty = () => {
+  const newIndex = this.state.studio.index+1;
+  this.setState({
+    studio: data.Studio[newIndex],
+            construction: data.Construction[newIndex],
+            packaging: data.Packaging[newIndex]
+  })
+}
+
+prevProperty = () => {
+  const newIndex = this.state.studio.index-1;
+  this.setState({
+    studio: data.Studio[newIndex],
+            construction: data.Construction[newIndex],
+            packaging: data.Packaging[newIndex]
+  })
+}
+
 
   render() {
     const {appearCategory, studio, packaging, construction} = this.state;
@@ -60,7 +83,8 @@ class App extends Component {
           classNames="fade"
         >
           <Category property={studio}
-                title={'Studio'} />
+                    title={'Studio'} 
+                    subtitle={'Television & Movie Set Studios'}/>
         </CSSTransition>
 
         <CSSTransition
@@ -70,7 +94,8 @@ class App extends Component {
           classNames="fade"
         >
           <Category property={construction} 
-                title={'Construction'} />
+                    title={'Construction'} 
+                    subtitle={'Architectural Decorations'}/>
         </CSSTransition>
 
         <CSSTransition
@@ -80,8 +105,10 @@ class App extends Component {
           classNames="fade"
         >
           <Category property={packaging} 
-                title={'Packaging'} />
+                    title={'Packaging'} 
+                    subtitle={'Design & Fabrication'}/>
         </CSSTransition>
+    
       </div>
     );
   }

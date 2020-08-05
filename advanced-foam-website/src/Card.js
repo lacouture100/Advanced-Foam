@@ -13,9 +13,10 @@ const Card = ({property}) => {
                 <h3 className="card-title">
                     {title}
                 </h3>
-                <h3 className="card-subtitle">
+                <div className="card-title-line"></div>
+                <h4 className="card-subtitle">
                     {production}
-                </h3>
+                </h4>
                 <span className="index">
                     {index+1}
                 </span>

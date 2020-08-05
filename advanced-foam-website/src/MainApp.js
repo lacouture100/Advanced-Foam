@@ -3,6 +3,8 @@ import './MainApp.css';
 import App from './App';
 import HeroMain from './HeroMain'
 import Navbar from './NavBar'
+import Clients from './Clients'
+import Footer from './Footer'
 
 // class component
 class MainApp extends Component {
@@ -15,6 +17,8 @@ class MainApp extends Component {
         <Navbar />
         <HeroMain />
         <App />
+        <Clients />
+        <Footer />
 
       </div>
     );
