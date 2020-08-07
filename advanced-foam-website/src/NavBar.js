@@ -2,6 +2,8 @@
 import React, { Component } from 'react';
 import './NavBar.css'
 
+const LOGO = `./img/logos/advancedFoam_logo.png`;
+
 class NavBar extends Component{
     static defaultProps = {
         mainTitle: 'Advanced Foam',
@@ -17,14 +19,13 @@ class NavBar extends Component{
         const {mainTitle, studio, construction,packaging, about, contactUs} = this.props;
         return (
             <nav className="navbar">
-                <img src={`./img/mainLogo.png`} alt={mainTitle}></img>
+                <img src={LOGO} alt={mainTitle} className="navbar-img"></img>
                 <ul className="navbar-titles">
-                    <li className="navbar-title">{studio}</li>
-                    <li className="navbar-title" >{construction}</li>
-
-                    <li className="navbar-title" >{packaging}</li>
-                    <li className="navbar-title">{contactUs}</li>
-                    <li className="navbar-title">{about}</li>
+                    <div className="navbar-title-container"><li className="navbar-title">{studio}</li></div>
+                    <div className="navbar-title-container"><li className="navbar-title" >{construction}</li></div>
+                    <div className="navbar-title-container"><li className="navbar-title" >{packaging}</li></div>
+                    <div className="navbar-title-container"><li className="navbar-title">{contactUs}</li></div>
+                    <div className="navbar-title-container"><li className="navbar-title">{about}</li></div>
                 </ul>
 
             </nav>

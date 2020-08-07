@@ -4,22 +4,37 @@
     width: 100%;
     min-width: 720px;
     align-items: center;
+    
 }
 
 .navbar-titles {
     display: flex;
     flex-direction: row;
+    cursor: pointer;
 }
 
 .navbar-title{
+    
     margin:30px
 }
+.navbar-title-container {
+
+
+  }
+
+.navbar-title-container:hover {
+    background: linear-gradient(to bottom, #8d8d8d 5%, rgb(255, 255, 255) 100%);
+    border-color: black solid 2px;
+    color: black;
+  }
 
 nav ul{
     list-style: none;
 }
-img {
+.navbar-img {
     max-width: 30%;
     height: 80px;
     margin-left: 70px;
+    cursor: pointer;
+   
 }

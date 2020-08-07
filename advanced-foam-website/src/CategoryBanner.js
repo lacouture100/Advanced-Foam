@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './CategoryBanner.css';
 import Category from './Category';
-import data from './data/advanced_data'
+import data from './data/CategoryBanner_data'
 import { CSSTransition } from "react-transition-group";
 
 // class component
@@ -38,7 +38,7 @@ class CategoryBanner extends Component {
         })
 
         
-      }, 5000);
+      }, 20000);
 
       
        

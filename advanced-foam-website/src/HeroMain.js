@@ -53,7 +53,7 @@ class HeroMain extends Component{
                      <h3 className="main-slogan-phrase"> We bring precision, innovation, creativity and economy to your projects.</h3>
                 </div>
                 <div className="main-logo">
-                    <img  src="./img/logoStill.JPG" 
+                    <img  src="./img/ui/onlyLogo.gif" 
                           alt =" Advanced Foam main logo"
                           className="main-logo-img"></img>
         <div className="main-logo-dynamic">{this.state.keywords.word}</div>
