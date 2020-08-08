@@ -38,7 +38,7 @@ class CategoryBanner extends Component {
         })
 
         
-      }, 20000);
+      }, 5000);
 
       
        

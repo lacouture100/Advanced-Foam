@@ -47,7 +47,7 @@ class HeroMain extends Component{
     render(){
 
         return (
-            <div className="main">
+            <div className="main-hero">
                 <div className="main-slogan">
                      <h3 className="main-slogan-phrase"> We have over 35 years of experience in foam fabrication.</h3>
                      <h3 className="main-slogan-phrase"> We bring precision, innovation, creativity and economy to your projects.</h3>

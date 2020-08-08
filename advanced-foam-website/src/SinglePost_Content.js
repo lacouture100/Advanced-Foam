@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import './Studio_CategoryBanner.css';
-
+import './SinglePost_Content.css';
+import * as apiCalls from './API_wordpress'
 
 // class component
-class Studio_CategoryBanner extends Component {
+class SinglePost_Content extends Component {
 
   constructor(props){
     super(props);
@@ -25,11 +25,15 @@ class Studio_CategoryBanner extends Component {
     
     return (
       <div >
-        
+        <p>Hello</p>
 
       </div>
     );
   }
 }
 
-export default Studio_CategoryBanner;
+export default SinglePost_Content;
+
+
+
+

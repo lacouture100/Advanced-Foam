@@ -4,10 +4,12 @@ import './MainApp.css';
 import MainApp from './MainApp';
 import StudioApp from './StudioApp';
 import registerServiceWorker from './registerServiceWorker';
+import SinglePost from './SinglePost'
 
 ReactDOM.render(
-    /*<MainApp />,*/
-    <StudioApp />, 
+    /*<MainApp />,
+    /*<StudioApp />, */
+    <SinglePost />,
     document.getElementById('root')
 );
 registerServiceWorker();
