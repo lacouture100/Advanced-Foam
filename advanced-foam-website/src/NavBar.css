@@ -22,10 +22,9 @@
 
   }
 
-.navbar-title-container:hover {
-    background: linear-gradient(to bottom, #8d8d8d 5%, rgb(255, 255, 255) 100%);
-    border-color: black solid 2px;
-    color: black;
+.navbar-title:hover {
+    text-decoration: underline;
+    margin-bottom: 10px;
   }
 
 nav ul{

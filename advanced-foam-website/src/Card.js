@@ -17,7 +17,7 @@ const Card = ({property}) => {
                 <h4 className="card-subtitle">
                     {production}
                 </h4>
-                
+            
             </div>
         </div>
     )
