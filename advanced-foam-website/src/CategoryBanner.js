@@ -23,7 +23,7 @@ class CategoryBanner extends Component {
     setInterval(() => {
 
         let newIndex = this.state.studio.index;
-        let studioLength = data.Studio.length-1;
+        let studioLength = 2;
 
         if( this.state.studio.index !== (studioLength) ){
             newIndex += 1;

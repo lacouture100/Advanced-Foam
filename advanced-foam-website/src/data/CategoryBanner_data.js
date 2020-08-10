@@ -6,7 +6,8 @@ const data ={
             "imgSrc" : "./img/studio/mummy-1.jpg",
             "title" : "The Mummy",
             "production" : "Universal Studios",
-            "link" : ""
+            "link" : "http://www.advancedfoam.com/mummy"
+            "slug": "mummy"
         },
         {
             "_id" : "starTrek",
@@ -14,7 +15,8 @@ const data ={
             "imgSrc" : "./img/studio/starTrek.png",
             "title" : "Star Trek",
             "production" : "Paramount Pictures",
-            "link" : ""
+            "link" : "http://www.advancedfoam.com/star-trek",
+            "slug": "mummy"
         },
         {
             "_id" : "americanHorrorStory",
@@ -22,7 +24,8 @@ const data ={
             "imgSrc" : "./img/logo_1_3.png",
             "title" : "American Horror Story",
             "production" : "20th Century Fox",
-            "link" : ""
+            "link" : "",
+            "slug": "mummy"
         }
     ],
     "Construction":[
