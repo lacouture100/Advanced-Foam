@@ -6,7 +6,7 @@ const data ={
             "imgSrc" : "./img/studio/mummy-1.jpg",
             "title" : "The Mummy",
             "production" : "Universal Studios",
-            "link" : "http://www.advancedfoam.com/mummy"
+            "link" : "http://www.advancedfoam.com/mummy",
             "slug": "mummy"
         },
         {

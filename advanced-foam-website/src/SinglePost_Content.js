@@ -11,9 +11,9 @@ class SinglePost_Content extends Component{
     title : this.props.property.title,
     link : this.props.property.link,
     _id : this.props.property._id,
-    //slug : this.props.property.slug,
-    slug : 'mummy',
-    text : 'aaaaaaaaaaaaaa',
+    slug : this.props.property.slug,
+    //post : 'mummy',
+    text : '',
     postTitle : 'a'
   }
    
@@ -30,11 +30,14 @@ class SinglePost_Content extends Component{
    componentDidMount(){
     //let postData = apiCall.getPost('www.advancedfoam.com/wp-json/wp/v2/posts')
     const data = this.loadPost(`www.advancedfoam.com/wp-json/wp/v2/posts?slug=${this.state.slug}`).then(response =>{
-      //const post = response[0];
-      const content = response[0].content.rendered;
-      console.log(content);
-
-      //this.setState({text:content})
+      const post = response[0];
+      console.log(post)
+      const content = response[0].title.rendered;
+      //console.log(content);
+      //var StrippedString = content.replace(/(<([^>]+)>)/ig,"");
+      this.setState({
+        text:response[0].content.rendered
+      })
           })
     
     //this.setState({id:data[0].id})
@@ -49,9 +52,8 @@ class SinglePost_Content extends Component{
 
     return (
       <div>
-        {text}
         
-
+        <p dangerouslySetInnerHTML={{__html: text}}></p>
       </div>
     );
   }
