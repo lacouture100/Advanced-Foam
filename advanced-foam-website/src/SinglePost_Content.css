@@ -1,3 +1,24 @@
 * {
     
 }
+
+.post-content-main {
+    border: red 2px solid;
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+}
+
+.post-content-main p {
+    font-size:16px;
+    /*text-align: center;*/
+}
+
+.post-content-main img {
+    max-width: 300px;
+    height: auto;
+}
+
+.wp-caption {
+    border: red 2px solid;
+}

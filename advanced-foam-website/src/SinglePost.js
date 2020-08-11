@@ -14,7 +14,7 @@ class SinglePost extends Component {
   constructor(props){
     super(props);
     this.state={
-      data: data.Studio[0],
+      data: data.Studio[1],
     }
   }
  

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './SinglePost_Content.css';
 import * as apiCall from './API_wordpress'
 import { render } from '@testing-library/react';
+import DOMPurify from 'dompurify';
 
 // class component
 class SinglePost_Content extends Component{
@@ -25,14 +26,19 @@ class SinglePost_Content extends Component{
   return postData;
   
  }
+
+  cleanPost(html){
+    let cleanHTML = DOMPurify.sanitize(html);
+    return cleanHTML;
+  }
  
   
    componentDidMount(){
     //let postData = apiCall.getPost('www.advancedfoam.com/wp-json/wp/v2/posts')
     const data = this.loadPost(`www.advancedfoam.com/wp-json/wp/v2/posts?slug=${this.state.slug}`).then(response =>{
       const post = response[0];
-      console.log(post)
       const content = response[0].title.rendered;
+      //const cleanPost = cleanPost(content);
       //console.log(content);
       //var StrippedString = content.replace(/(<([^>]+)>)/ig,"");
       this.setState({
@@ -51,7 +57,7 @@ class SinglePost_Content extends Component{
     
 
     return (
-      <div>
+      <div className="post-content-main">
         
         <p dangerouslySetInnerHTML={{__html: text}}></p>
       </div>

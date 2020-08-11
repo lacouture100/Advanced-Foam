@@ -6,9 +6,7 @@ export async function getPost(url) {
   method: 'get',
   headers: new Headers({
 
-    'Content-Type': 'application/x-www-form-urlencoded',
-    'Cookie': 'visid_incap_632298=Kft5BckXThmfg9AhY3JTPFGZMV8AAAAAQUIPAAAAAADTalEljyr23MV8DNyM/amv; incap_ses_490_632298=0QueJS16OVCgzIOtjNTMBhOyMV8AAAAAjIsPFrzafLJhFgA8cyeRjw=='
-    
+    'Content-Type': 'application/x-www-form-urlencoded'    
   }),
 })
  // .then(console.log('Hello'))

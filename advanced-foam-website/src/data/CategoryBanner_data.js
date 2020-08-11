@@ -16,7 +16,7 @@ const data ={
             "title" : "Star Trek",
             "production" : "Paramount Pictures",
             "link" : "http://www.advancedfoam.com/star-trek",
-            "slug": "mummy"
+            "slug": "star-trek"
         },
         {
             "_id" : "americanHorrorStory",
