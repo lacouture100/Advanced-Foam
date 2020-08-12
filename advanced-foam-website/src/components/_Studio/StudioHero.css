@@ -1,0 +1,38 @@
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 15vh;
+    min-width: 720px;
+   
+    
+}
+
+.main-slogan {
+
+
+}
+
+.main-slogan-phrase {
+    font-size: 22px;
+    font-weight: 500 !important;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    
+}
+
+.main-logo-dynamic {
+    background-color: black;
+    font-family: 'Fjalla One', sans-serif;
+    min-height: 30px;
+    width: 100%;
+    color: ivory;
+    text-align: center;
+    font-size: 22px;
+    margin: 1vh;
+}
+
+

@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import './Studio_HeroMain.css'
+import './ConstructionHero.css'
 
 const words = [
     {
@@ -18,7 +18,7 @@ const words = [
     
 ]
 
-class Studio_HeroMain extends Component{
+class StudioHero extends Component{
     constructor(props){
         super(props);
         this.state = {
@@ -57,6 +57,6 @@ class Studio_HeroMain extends Component{
     }
 }
 
-export default Studio_HeroMain;
+export default StudioHero;
 
 

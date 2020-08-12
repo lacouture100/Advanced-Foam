@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Clients.css';
 
-import data from './data/clients_data'
+import data from '../../data/clients_data'
 
 // class component
 

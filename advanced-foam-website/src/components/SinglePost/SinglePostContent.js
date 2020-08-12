@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import './SinglePost_Content.css';
-import * as apiCall from './API_wordpress'
-import { render } from '@testing-library/react';
+import './SinglePostContent.css';
+import * as apiCall from '../API_wordpress'
 import DOMPurify from 'dompurify';
 import PropTypes from 'prop-types';
 
@@ -10,7 +9,7 @@ const APIURL = 'www.advancedfoam.com/wp-json/wp/v2/';
 const QUERY = 'posts?slug=';
 
 // class component
-class SinglePost_Content extends Component{
+class SinglePostContent extends Component{
  constructor(props){
    super(props);
 
@@ -20,8 +19,8 @@ class SinglePost_Content extends Component{
     link : this.props.property.link,
     _id : this.props.property._id,
     slug : this.props.property.slug,
-    excerpt : '',
-    text : 'Loading...',
+    postExcerpt : '',
+    postContent : 'Loading...',
     postTitle : '',
     //imgUrl : ''
   }
@@ -40,57 +39,51 @@ class SinglePost_Content extends Component{
     return cleanHTML;
   }
  
-  
    componentDidMount(){
     //let postData = apiCall.getPost('www.advancedfoam.com/wp-json/wp/v2/posts')
-    const data = this.loadPost(`${APIURL}${QUERY}${this.state.slug}`).then(response =>{
+    this.loadPost(`${APIURL}${QUERY}${this.state.slug}`).then(response =>{
       const post = response[0];
       const content = post.content.rendered;
       const postTitle = post.title.rendered;
-      const featuredMedia = post.featured_media;
+      //const featuredMedia = post.featured_media;
       
-      const excerpt = post.excerpt;
+      let excerpt = post.excerpt.rendered.toString();
+      const substring = excerpt.replace(/(<([^>]+)>)/ig,"").substring(0, excerpt.indexOf('.')-1);
+      
       //const cleanPost = cleanPost(content);
       console.log(post);
       this.setState({
         isLoaded: true,
-        text: content,
+        postContent: content,
         postTitle : postTitle,
-        excerpt : excerpt,
+        postExcerpt : substring,
         //imgUrl : imgUrl
       })
-/*
-      this.loadPost(`${APIURL}media/${post.featured_media}`).then(response =>{
-        const imgUrl = response.source_url;
-        
-        
-      })*/
-
       
       })
     
-    //this.setState({id:data[0].id})
    }
     
   
     
   
   render(){
-    const {postTitle,  text} = this.state;
+    const {postTitle,  postContent, postExcerpt} = this.state;
     return (
       <div className="post-main">
         <h1 className="post-main-title">{postTitle}</h1>
+        <h4 className="post-main-excerpt">{postExcerpt}</h4>
         
  
-        <div className="post-main-content" dangerouslySetInnerHTML={{__html: text}}></div>
+        <div className="post-main-content" dangerouslySetInnerHTML={{__html: postContent}}></div>
       </div>
     );
   }
 }
 
-SinglePost_Content.propTypes = { property : PropTypes.object.isRequired}
+SinglePostContent.propTypes = { property : PropTypes.object.isRequired}
 
-export default SinglePost_Content;
+export default SinglePostContent;
 
 
 

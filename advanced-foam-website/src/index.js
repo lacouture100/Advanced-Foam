@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './MainApp.css';
-import MainApp from './MainApp';
-import StudioApp from './StudioApp';
+import MainApp from './components/_Main/MainApp';
+import StudioApp from './components/_Studio/StudioApp';
+import ConstructionApp from './components/_Construction/ConstructionApp';
 import registerServiceWorker from './registerServiceWorker';
-import SinglePost from './SinglePost'
+import SinglePost from './components/SinglePost/SinglePost'
 
 ReactDOM.render(
-    /*<MainApp />,
-    /*<StudioApp />, */
-    <SinglePost />,
+    //<MainApp />,
+    <ConstructionApp />, 
+    //<SinglePost />,
     document.getElementById('root')
 );
 registerServiceWorker();

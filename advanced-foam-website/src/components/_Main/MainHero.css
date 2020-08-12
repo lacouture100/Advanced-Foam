@@ -1,5 +1,6 @@
 
 .main-hero {
+    margin-top:200px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -10,12 +11,11 @@
 }
 
 .main-slogan {
-    margin-top: 5vw;
-    margin-left: 5vw;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    margin: auto;
+    justify-content: space-evenly ;
+    padding:1rem;
+    margin:auto;
 
 }
 
@@ -23,6 +23,7 @@
     font-size: 22px;
     font-weight: 500 !important;
     margin-left: 5vw;
+    padding:1rem;
 }
 
 .main-logo{

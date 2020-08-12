@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import './MainApp.css';
-import Navbar from './NavBar'
-import Clients from './Clients'
-import ContactUs from './ContactUs'
-import Footer from './Footer'
-import SinglePost_Content from './SinglePost_Content'
-import data from './data/CategoryBanner_data'
+import './SinglePost.css';
+import Navbar from '../NavBar/NavBar'
+import ContactUs from '../ContactUs/ContactUs'
+import Footer from '../Footer/Footer'
+import SinglePostContent from './SinglePostContent'
+import data from '../../data/CategoryBanner_data'
 
 
 
@@ -14,7 +13,7 @@ class SinglePost extends Component {
   constructor(props){
     super(props);
     this.state={
-      data: data.Studio[2],
+      data: data.Studio.productions[0],
     }
   }
  
@@ -23,7 +22,7 @@ class SinglePost extends Component {
     return (
       <div className="StudioApp">
         <Navbar />
-        <SinglePost_Content property={data}/>
+        <SinglePostContent property={data}/>
         <ContactUs />
         <Footer />
 

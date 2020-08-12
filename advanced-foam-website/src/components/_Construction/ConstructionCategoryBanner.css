@@ -31,15 +31,19 @@ h4 {
 .card {
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s linear;
   cursor: pointer;
   background-color: rgb(36, 36, 36);
   text-align: center;
-  max-width: 20vw;
-  color: #c9c9c9;
+  position: absolute center;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   margin: 10px;
+  min-height: 55vh;
+  min-width: 30vw;
+  
 }
 
 .card-title {
@@ -59,8 +63,8 @@ h4 {
 }
 
 .card-image {
-  width: 25vw;
-  height: auto;
+  max-width: 85%;
+  max-height: 40vh;
   margin: 10px;
 }
 

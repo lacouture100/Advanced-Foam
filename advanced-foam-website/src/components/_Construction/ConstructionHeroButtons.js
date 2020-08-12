@@ -1,10 +1,10 @@
 
 import React, { Component } from 'react';
-import './Studio_HeroButtons.css'
+import './ConstructionHeroButtons.css'
 
 const buttons = [
     {
-        "name": "OUR PROJECTS",
+        "name": "IN STOCK",
         "index": 0
     },
     {
@@ -27,7 +27,7 @@ const buttons = [
     
 ]
 
-class Studio_HeroButtons extends Component{
+class StudioHeroButtons extends Component{
     constructor(props){
         super(props);
         this.state = {
@@ -40,9 +40,7 @@ class Studio_HeroButtons extends Component{
     }
     render(){
         const buttonsDOM = buttons.map((value)=>(
-            
-              <button className="option-button" key={value._id}>{value.name}</button>
-            
+              <button className="option-button" key={value.index}>{value.name}</button>
           ))
         return (
             <div className="main-buttons">
@@ -52,6 +50,6 @@ class Studio_HeroButtons extends Component{
     }
 }
 
-export default Studio_HeroButtons;
+export default StudioHeroButtons;
 
 

@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
-import './Studio_CategoryBanner.css';
-import Card from './Card';
-import data from './data/StudioBanner_data'
+import './ConstructionCategoryBanner.css';
+import Card from '../Card';
+import data from '../../data/CategoryBanner_data'
 
 // class component
-class Studio_CategoryBanner extends Component {
+class StudioCategoryBanner extends Component {
 
   constructor(props){
     super(props);
     this.state = {
-      property: data.Productions
+      property: data.Studio.productions
     }
   }
 
@@ -26,10 +26,9 @@ class Studio_CategoryBanner extends Component {
       <div className="studio-banner">
         {productions}
 
-
       </div>
     );
   }
 }
 
-export default Studio_CategoryBanner;
+export default StudioCategoryBanner;

@@ -1,0 +1,60 @@
+
+.post-main {
+    border: red 2px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+}
+
+.post-main-title {
+
+    text-align: center;
+}
+.post-main-excerpt{
+    text-align: justify;
+    max-width: 70%;
+}
+.post-main-content {
+    display: flex;
+    flex-direction: Column;
+    align-items: center;
+    text-align: justify;
+}
+
+.post-main-content iframe{
+    font-size:16px;
+    text-align: center;
+    align-self: center;
+}
+
+.post-main-content img {
+    max-width: 400px;
+    height: auto;
+}
+
+.wp-caption {
+    display:flex;
+    flex-direction: column;
+    border: red 2px solid;
+    align-items: center;
+    max-width: 50%;
+}
+
+.wp-caption-text {
+    font-size: 16px;
+    border: red 2px solid;
+    text-align: center;
+}
+
+.wp-caption img{
+    max-width: 50%;
+}
+
+.wp-caption:hover img{
+    max-width:600px;
+}
+
+.html5-video-player {
+    align-self: center;
+}

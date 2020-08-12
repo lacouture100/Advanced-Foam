@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './CategoryBanner.css';
-import Category from './Category';
-import data from './data/CategoryBanner_data'
+import Category from '../../Category';
+import data from '../../../data/CategoryBanner_data'
 import { CSSTransition } from "react-transition-group";
 
 // class component
@@ -12,9 +12,9 @@ class CategoryBanner extends Component {
     this.state = {
       appearCategory: true,
       //property: data.properties[0],
-      studio: data.Studio[0],
-      construction: data.Construction[0],
-      packaging: data.Packaging[0],
+      studio: data.Studio.productions[0],
+      construction: data.Construction.projects[0],
+      packaging: data.Packaging.products[0],
     }
   }
 
@@ -32,9 +32,9 @@ class CategoryBanner extends Component {
         }
 
         this.setState({
-            studio: data.Studio[newIndex],
-            construction: data.Construction[newIndex],
-            packaging: data.Packaging[newIndex]
+            studio: data.Studio.productions[newIndex],
+            construction: data.Construction.projects[newIndex],
+            packaging: data.Packaging.products[newIndex]
         })
 
         
@@ -44,29 +44,6 @@ class CategoryBanner extends Component {
        
 }
 
-toggleAppear = () => {
-  this.setState({
-    appearCategory: !this.state.appearCategory
-  })
-}
-
-nextProperty = () => {
-  const newIndex = this.state.studio.index+1;
-  this.setState({
-    studio: data.Studio[newIndex],
-            construction: data.Construction[newIndex],
-            packaging: data.Packaging[newIndex]
-  })
-}
-
-prevProperty = () => {
-  const newIndex = this.state.studio.index-1;
-  this.setState({
-    studio: data.Studio[newIndex],
-            construction: data.Construction[newIndex],
-            packaging: data.Packaging[newIndex]
-  })
-}
 
 
   render() {
