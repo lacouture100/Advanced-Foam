@@ -4,7 +4,7 @@ import Navbar from '../NavBar/NavBar'
 import ContactUs from '../ContactUs/ContactUs'
 import Footer from '../Footer/Footer'
 import SinglePostContent from './SinglePostContent'
-import data from '../../data/CategoryBanner_data'
+import data from '../../data/main_data'
 
 
 

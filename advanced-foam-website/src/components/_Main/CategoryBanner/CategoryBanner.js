@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './CategoryBanner.css';
 import Category from '../../Category';
-import data from '../../../data/CategoryBanner_data'
+import data from '../../../data/main_data'
 import { CSSTransition } from "react-transition-group";
 
 // class component

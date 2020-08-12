@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './ConstructionCategoryBanner.css';
 import Card from '../Card';
-import data from '../../data/CategoryBanner_data'
+import data from '../../data/main_data'
 
 // class component
 class StudioCategoryBanner extends Component {

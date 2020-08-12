@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './NavBar.css'
-import data from '../../data/CategoryBanner_data'
+import data from '../../data/main_data'
 
 const LOGO = `./img/logos/advancedFoam_studio.png`;
 
