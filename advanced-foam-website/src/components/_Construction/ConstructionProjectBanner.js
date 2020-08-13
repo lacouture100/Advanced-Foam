@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import './ConstructionCategoryBanner.css';
+import './ConstructionProjectBanner.css';
 import Card from '../Card';
 import data from '../../data/main_data'
 
 // class component
-class ConstructionCategoryBanner extends Component {
+class ConstructionProjectBanner extends Component {
 
   constructor(props){
     super(props);
@@ -13,12 +13,10 @@ class ConstructionCategoryBanner extends Component {
     }
   }
 
-
-
   render() {
     const productions = this.state.property.map((value)=>(
       <div >
-        <Card key={value._id} property= {value}  />
+        <Card key={value.index} property= {value}  />
       </div>
     ))
     
@@ -31,4 +29,4 @@ class ConstructionCategoryBanner extends Component {
   }
 }
 
-export default ConstructionCategoryBanner;
+export default ConstructionProjectBanner;

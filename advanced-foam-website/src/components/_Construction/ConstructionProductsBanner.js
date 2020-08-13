@@ -14,9 +14,9 @@ class ConstructionProductsBanner extends Component {
   }
 
   render() {
-    const productions = this.state.property.map((value)=>(
+    const productions = this.state.property.map((value,idx)=>(
       <div >
-        <Card key={value._id} property= {value} className="card"  />
+        <Card key={value.index} property= {value} className="card"  />
       </div>
     ))
     

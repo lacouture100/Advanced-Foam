@@ -17,12 +17,12 @@ const data ={
         },
         {
             "name" : "Honda",
-            "imgSrc" : "./img/logos/honda_logo.jpg",
+            "imgSrc" : "./img/logos/honda_logo.png",
             "imgAlt" : "Honda logo"
         },
         {
             "name" : "Nissan",
-            "imgSrc" : "./img/logos/nissan_logo.jpg",
+            "imgSrc" : "./img/logos/nissan_logo.png",
             "imgAlt" : "Nissan logo"
         },
         {

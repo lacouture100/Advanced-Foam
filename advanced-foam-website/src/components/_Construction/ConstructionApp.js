@@ -1,34 +1,28 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './ConstructionApp.css';
 import ConstructionProductsBanner from './ConstructionProductsBanner';
-import ConstructionCategoryBanner from './ConstructionCategoryBanner';
+import ConstructionProjectBanner from './ConstructionProjectBanner';
 import ConstructionHero from './ConstructionHero'
 import ConstructionHeroButtons from './ConstructionHeroButtons'
-import Navbar from '../NavBar/NavBar'
 import Clients from '../Clients/Clients'
 import ContactUs from '../ContactUs/ContactUs'
 import Footer from '../Footer/Footer'
 
+import {withRouter} from 'react-router';
+
 // class component
-class ConstructionApp extends Component {
-
- 
-  render() {
-
+function ConstructionApp() {
     return (
-      <div className="StudioApp">
-        <Navbar property={{"name":"Construction"}}/>
+      <div className="ConstructionApp">
         <ConstructionHero />
         <ConstructionHeroButtons />
         <ConstructionProductsBanner />
-        <ConstructionCategoryBanner />
+        <ConstructionProjectBanner />
         <Clients />
         <ContactUs />
         <Footer />
-
       </div>
     );
-  }
 }
 
 export default ConstructionApp;

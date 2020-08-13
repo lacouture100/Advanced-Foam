@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import MainApp from './components/_Main/MainApp';
-import StudioApp from './components/_Studio/StudioApp';
-import ConstructionApp from './components/_Construction/ConstructionApp';
+import App from './components/App';
 import registerServiceWorker from './registerServiceWorker';
-import SinglePost from './components/SinglePost/SinglePost'
+import {
+    BrowserRouter as Router
+  } from 'react-router-dom';
 
 ReactDOM.render(
-    //<MainApp />,
-    <StudioApp />, 
-    //<SinglePost />,
+    <Router>
+    <App />
+    </Router>, 
     document.getElementById('root')
 );
 registerServiceWorker();

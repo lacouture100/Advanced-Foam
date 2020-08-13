@@ -16,13 +16,15 @@
     margin-right: 5%;
 }
 
-.navbar-title{
-    
-    margin:30px
+.navbar-title{   
+    margin:30px;
+    list-style: none;
 }
 .navbar-title-container {
-
-
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    
   }
 
 .navbar-title:hover {
@@ -35,7 +37,7 @@ nav ul{
 .navbar-img {
     max-width: 30%;
     height: auto;
-    margin-left: 5%;
+    margin: 1%;
     margin-bottom: 1rem;
     cursor: pointer;
    
