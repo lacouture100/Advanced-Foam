@@ -1,28 +1,14 @@
 
 import React, { Component } from 'react';
 import './ConstructionHero.css'
+import data from '../../data/main_data'
 
-const words = [
-    {
-        "word": "MOVIE SETS",
-        "index": 0
-    },
-    {
-        "word": "TV SETS",
-        "index": 1
-    },
-    {
-        "word": "ARCHITECTURAL DECORATIONS",
-        "index": 2
-    },
-    
-]
 
 class StudioHero extends Component{
     constructor(props){
         super(props);
         this.state = {
-            keywords : words[0]
+            keywords :  data.Construction.words[0]
         }
     }
     componentDidMount(){
@@ -30,7 +16,7 @@ class StudioHero extends Component{
         
         
         let newIndex = this.state.keywords.index;
-        let wordsLength = words.length-1;
+        let wordsLength = data.Construction.words.length-1;
 
         if( this.state.keywords.index !== (wordsLength) ){
             newIndex += 1;
@@ -38,7 +24,7 @@ class StudioHero extends Component{
             newIndex=0;
         }
         this.setState({
-            keywords: words[newIndex]
+            keywords: data.Construction.words[newIndex]
         })
 
     }, 2000);
@@ -49,7 +35,7 @@ class StudioHero extends Component{
         return (
             <div className="main">
                 <div className="main-slogan">
-                     <h3 className="main-slogan-phrase"> We have over 35 years of experience making <div className="main-logo-dynamic">{this.state.keywords.word}</div> for movie and TV productions.</h3>
+                     <h3 className="main-slogan-phrase"> We have over 35 years of experience making <div className="main-logo-dynamic">{this.state.keywords.word}</div> for architecture and construction projects.</h3>
                 </div>
                 
             </div>

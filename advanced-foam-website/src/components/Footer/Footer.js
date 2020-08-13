@@ -34,9 +34,9 @@ class Footer extends Component{
                         <li className="footer-subtitle" >{footer_1C}</li>
                     </ul>
                     <ul className="footer-titles">
-                        <li className="footer-title">{footer_2A}</li>
+                        <li className="footer-title" ><a href="mailto:info@advancedfoam.com">{footer_2A}</a></li>
                         <br></br>
-                        <li className="footer-subtitle" >{footer_2B}</li>
+                        <li className="footer-subtitle"><a href="mailto:info@advancedfoam.com">{footer_2B}</a></li>
                     </ul>
                     <ul className="footer-titles">
                         <li className="footer-title">{footer_3A}</li>

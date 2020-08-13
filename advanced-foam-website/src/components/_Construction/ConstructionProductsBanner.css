@@ -15,7 +15,20 @@ h4 {
 
 /*-----------------------------CATEGORY---------------------------- */
 
-.studio-banner {
+.products-banner {
+  text-align: center;
+  display: flex;
+  background-color:  rgb(36, 36, 36);
+  flex-direction: column;
+  
+}
+
+.products-banner-title {
+  color: #fff;
+}
+
+
+.products-banner-content {
   text-align: center;
   display: flex;
   flex-wrap: wrap;

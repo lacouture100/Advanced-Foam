@@ -3,7 +3,7 @@ import './NavBar.css'
 import data from '../../data/main_data'
 
 const LOGO = `./img/logos/advancedFoam_studio.png`;
-
+const links = ['Main','Studio','Construction','Packaging','Contact Us','About']
 
 class NavBar extends Component {
 
@@ -14,6 +14,7 @@ class NavBar extends Component {
         }
     }
     static defaultProps = {
+        main : 'Main',
         studio: 'Studio',
         construction: 'Construction',
         packaging: 'Packaging',
@@ -22,7 +23,14 @@ class NavBar extends Component {
     }
 
     render() {
-        
+        const navLinks= links.filter(element => element !== this.props.property.name);
+        const navList = navLinks.map((value,index)=>( 
+            <div key={index}className="navbar-title-container">
+                <li className="navbar-title">{value}</li>
+            </div>
+          ))
+
+
         const {
             mainTitle,
             studio,
@@ -37,21 +45,7 @@ class NavBar extends Component {
             <nav className="navbar">
                 <img src={imgSrc} alt={mainTitle} className="navbar-img"></img>
                 <ul className="navbar-titles">
-                    <div className="navbar-title-container">
-                        <li className="navbar-title">{studio}</li>
-                    </div>
-                    <div className="navbar-title-container">
-                        <li className="navbar-title">{construction}</li>
-                    </div>
-                    <div className="navbar-title-container">
-                        <li className="navbar-title">{packaging}</li>
-                    </div>
-                    <div className="navbar-title-container">
-                        <li className="navbar-title">{contactUs}</li>
-                    </div>
-                    <div className="navbar-title-container">
-                        <li className="navbar-title">{about}</li>
-                    </div>
+                    {navList}
                 </ul>
 
             </nav>

@@ -8,7 +8,7 @@ import SinglePost from './components/SinglePost/SinglePost'
 
 ReactDOM.render(
     //<MainApp />,
-    <ConstructionApp />, 
+    <StudioApp />, 
     //<SinglePost />,
     document.getElementById('root')
 );

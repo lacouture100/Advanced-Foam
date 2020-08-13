@@ -4,12 +4,12 @@ import Card from '../Card';
 import data from '../../data/main_data'
 
 // class component
-class StudioCategoryBanner extends Component {
+class ConstructionCategoryBanner extends Component {
 
   constructor(props){
     super(props);
     this.state = {
-      property: data.Studio.productions
+      property: data.Construction.projects
     }
   }
 
@@ -31,4 +31,4 @@ class StudioCategoryBanner extends Component {
   }
 }
 
-export default StudioCategoryBanner;
+export default ConstructionCategoryBanner;

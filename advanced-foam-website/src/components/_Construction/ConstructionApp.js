@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './ConstructionApp.css';
+import ConstructionProductsBanner from './ConstructionProductsBanner';
 import ConstructionCategoryBanner from './ConstructionCategoryBanner';
 import ConstructionHero from './ConstructionHero'
 import ConstructionHeroButtons from './ConstructionHeroButtons'
@@ -19,6 +20,7 @@ class ConstructionApp extends Component {
         <Navbar property={{"name":"Construction"}}/>
         <ConstructionHero />
         <ConstructionHeroButtons />
+        <ConstructionProductsBanner />
         <ConstructionCategoryBanner />
         <Clients />
         <ContactUs />
