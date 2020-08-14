@@ -9,6 +9,8 @@ import NavBar from './NavBar/NavBar2'
 // class component
 class App extends Component {
   render() {
+
+    // The <Router> tag is created in index.js, the Switch is a parent to the <Routes> and inside the Navbar we can see the <NavLinks>
     return (
           <div className="App">
             <NavBar />
