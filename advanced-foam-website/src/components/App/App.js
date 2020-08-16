@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router,Switch,Route,withRouter } from 'react-router-dom';
-import ConstructionApp from './_Construction/ConstructionApp'
-import MainApp from './_Main/MainApp'
-import StudioApp from './_Studio/StudioApp'
-import NavBar from './NavBar/NavBar'
-import SinglePost from './SinglePost/SinglePost'
-import * as apiCall from './API_wordpress';
+import ConstructionApp from '../Construction/ConstructionApp'
+import MainApp from '../Main/MainApp'
+import StudioApp from '../Studio/StudioApp'
+import NavBar from '../NavBar/NavBar'
+import SinglePost from '../SinglePost/SinglePost'
+import * as apiCall from '../API_wordpress';
 
 
 
