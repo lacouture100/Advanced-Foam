@@ -5,7 +5,7 @@ import MainApp from '../Main/MainApp'
 import StudioApp from '../Studio/StudioApp'
 import NavBar from '../NavBar/NavBar'
 import SinglePost from '../SinglePost/SinglePost'
-import * as apiCall from '../API_wordpress';
+import * as apiCall from '../WordpressAPI/API_wordpress';
 
 
 

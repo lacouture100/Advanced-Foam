@@ -2,20 +2,20 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { BrowserRouter as Router,Link,Route,withRouter } from 'react-router-dom';
 
-const Card = ({ property }) => (
+const Card = ({ property, link }) => (
 
         <div id={`card-${property.index}`} className="card">
-            <img src={property.jetpack_featured_media_url} 
+            <img src={property.imgSrc} 
                  alt=" " 
                  className="card-image" />
                  
             <div className="details">
                 <h3 className="card-title">
-                    {property.title.rendered}
+                    {property.title}
                 </h3>
                 <div className="card-title-line"></div>
                 <h4 className="card-subtitle">
-                    {property.status}
+                    {property.production}
                 </h4>
             
             </div>

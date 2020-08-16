@@ -1,6 +1,6 @@
 import  React, {Component } from 'react';
 import PropTypes from 'prop-types';
-import Card from './Card';
+import Card from './MainCard';
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { BrowserRouter as Router,Link,NavLink,withRouter } from 'react-router-dom';
 

@@ -9,15 +9,20 @@ import Footer from '../Footer/Footer'
 
 // class component
 class StudioApp extends Component {
-
+  constructor(props){
+    super(props);
+    this.state = {
+      postData: this.props.data
+    }
+  }
  
   render() {
-
+    const {  postData } = this.state;
     return (
       <div className="StudioApp">
         <StudioHero />
         <StudioHeroButtons />
-        <StudioCategoryBanner />
+        <StudioCategoryBanner data={postData}/>
         <Clients />
         <ContactUs />
         <Footer />

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './SinglePostContent.css';
-import * as apiCall from '../API_wordpress'
+import * as apiCall from '../WordpressAPI/API_wordpress'
 import DOMPurify from 'dompurify';
 import PropTypes from 'prop-types';
 
