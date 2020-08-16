@@ -5,7 +5,10 @@ import MainApp from './_Main/MainApp'
 import StudioApp from './_Studio/StudioApp'
 import NavBar from './NavBar/NavBar'
 import SinglePost from './SinglePost/SinglePost'
-import { BrowserRouter as Router,Link,Route,withRouter } from 'react-router-dom';
+import * as apiCall from './API_wordpress';
+
+
+
 
 // class component
 class App extends Component {
@@ -18,6 +21,7 @@ class App extends Component {
                 <Route  path="/" exact strict  component={MainApp}/>
                 <Route  path="/Construction" exact component={ConstructionApp}/>    
                 <Route  path="/Studio" exact component={StudioApp}/>      
+                
           </div>
             
     );
@@ -26,6 +30,8 @@ class App extends Component {
 
 export default App;
 
+
+/*
 <Switch>
 
 {pageList.map( (page, i) => {
@@ -44,3 +50,30 @@ export default App;
  <Route component={NotFound} />
 </Switch>
 </div>
+
+*/
+
+/*
+<Switch>
+
+{
+  let postList = apiCalls.getPosts('studio.advancedfoam.com/wp-json/wp/v2/posts')
+  
+  postList.map( (post, i) => {
+  let Template = identifyComponent(page)
+  let postID = post.id;
+  
+  return(
+    <Route
+      key={postID}
+      path={`/Studio/${page.slug}`}
+      render={(props) => <SinglePost postID={pageID} siteURL={siteURL} {...props} />}
+      exact
+    />
+   )
+  })}
+ 
+</Switch>
+</div>
+
+*/

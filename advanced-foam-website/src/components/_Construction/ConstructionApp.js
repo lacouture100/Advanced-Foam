@@ -23,9 +23,7 @@ function ConstructionApp() {
         <ContactUs />
         <Footer />
 
-        <Route path={`/Construction/:postId`} 
-               component={SinglePost} 
-               />
+
       </div>
     );
 }

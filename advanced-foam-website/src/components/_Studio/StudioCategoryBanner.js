@@ -31,9 +31,7 @@ class StudioCategoryBanner extends Component {
     return (
       <div className="studio-banner">
         {productions}
-        <Route path={`/Studio/:postId`} 
-               component={SinglePost} 
-               />
+        
       </div>
     );
   }
