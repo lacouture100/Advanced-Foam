@@ -42,14 +42,14 @@ h4 {
   box-shadow: inset 0px 1px 0px 0px #cf866c;
   background: linear-gradient(to bottom, #8417a5 5%, #6200EE 100%);
   background-color: #6200EE;
-  border-radius: 5px;
+  border-radius: 1px;
   border: 1px solid #6200EE;
   display: inline-block;
   cursor: pointer;
   color: #f3f3f3;
   font-family: Arial;
   font-size: 22px;
-  padding: 16px 24px;
+  padding: 10px 24px;
   text-decoration: none;
   text-shadow: 0px 1px 0px #854629;
   margin: 15px;
@@ -124,7 +124,7 @@ h4 {
 
 /*-----------------------------CSS TRANSITION GROUP ANIMATIONS---------------------------- */
 
-/* appear - on page load */
+/* appear - on page load 
 .fade-appear {
   opacity: 0;
   z-index: 1;
@@ -135,7 +135,7 @@ h4 {
   transition: opacity 1000ms ease-in;
 }
 
-/* enter */
+/* enter 
 .fade-enter {
   opacity: 0;
   z-index: 1;
@@ -148,7 +148,7 @@ h4 {
 }
 
 
-/* exit */
+/* exit 
 .fade-exit {
   opacity: 1;
   position: absolute;

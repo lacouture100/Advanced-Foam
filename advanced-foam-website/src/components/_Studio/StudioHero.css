@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 15vh;
+    min-height: 45vh;
     min-width: 720px;
    
     
@@ -16,7 +16,6 @@
 
 .main-slogan-phrase {
     font-size: 22px;
-    font-weight: 500 !important;
     display: flex;
     flex-direction: column;
     margin: auto;

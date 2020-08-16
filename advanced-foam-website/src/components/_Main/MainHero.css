@@ -3,7 +3,7 @@
     margin-top:200px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     min-height: 50vh;
     min-width: 720px;
     margin: 5vh 0 10vh;
@@ -13,7 +13,7 @@
 .main-slogan {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly ;
+    justify-content: space-around ;
     padding:1rem;
     margin:auto;
 
@@ -21,7 +21,6 @@
 
 .main-slogan-phrase {
     font-size: 22px;
-    font-weight: 500 !important;
     margin-left: 5vw;
     padding:1rem;
 }
@@ -34,15 +33,15 @@
     min-width: 300px;
 }
 .main-logo-img{
-    max-width: 80%;
-    min-height: 250px;
+    max-width: 60%;
+    min-height: 200px;
   
 }
 .main-logo-dynamic {
     background-color: black;
     font-family: 'Fjalla One', sans-serif;
     min-height: 30px;
-    width: 60%;
+    max-width:70%;
     color: ivory;
     text-align: center;
     font-size: 22px;

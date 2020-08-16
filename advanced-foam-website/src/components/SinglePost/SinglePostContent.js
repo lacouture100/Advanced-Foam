@@ -22,6 +22,7 @@ class SinglePostContent extends Component{
     postExcerpt : '',
     postContent : 'Loading...',
     postTitle : '',
+    postId : this.props.link
     //imgUrl : ''
   }
    
@@ -41,6 +42,7 @@ class SinglePostContent extends Component{
  
    componentDidMount(){
     //let postData = apiCall.getPost('www.advancedfoam.com/wp-json/wp/v2/posts')
+    console.log(this.state.link , this.state.postId)
     this.loadPost(`${APIURL}${QUERY}${this.state.slug}`).then(response =>{
       const post = response[0];
       const content = post.content.rendered;

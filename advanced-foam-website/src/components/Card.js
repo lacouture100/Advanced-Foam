@@ -1,30 +1,33 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import SinglePost from './SinglePost/SinglePost'
+import { BrowserRouter as Router,Link,Route,withRouter } from 'react-router-dom';
 
-const Card = ({property}) => {
-    const {index, imgSrc, title, production } = property;
-    return (
-        <div id={`card-${index}`} className="card">
-            <img src={imgSrc} 
+const Card = ({ property, link }) => (
+
+        <div id={`card-${property.index}`} className="card">
+            <img src={property.imgSrc} 
                  alt=" " 
                  className="card-image" />
                  
             <div className="details">
                 <h3 className="card-title">
-                    {title}
+                    {property.title}
                 </h3>
                 <div className="card-title-line"></div>
                 <h4 className="card-subtitle">
-                    {production}
+                    {property.production}
                 </h4>
             
             </div>
         </div>
-    )
-}
+
+        
+    
+)
 
 Card.propTypes = {
     property: PropTypes.object.isRequired
 }
 
-export default Card;
+export default withRouter(Card);

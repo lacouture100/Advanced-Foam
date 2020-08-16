@@ -7,8 +7,9 @@ import ConstructionHeroButtons from './ConstructionHeroButtons'
 import Clients from '../Clients/Clients'
 import ContactUs from '../ContactUs/ContactUs'
 import Footer from '../Footer/Footer'
+import SinglePost from '../SinglePost/SinglePost'
+import { BrowserRouter as Router,Link,Route,withRouter } from 'react-router-dom';
 
-import {withRouter} from 'react-router';
 
 // class component
 function ConstructionApp() {
@@ -21,6 +22,10 @@ function ConstructionApp() {
         <Clients />
         <ContactUs />
         <Footer />
+
+        <Route path={`/Construction/:postId`} 
+               component={SinglePost} 
+               />
       </div>
     );
 }

@@ -4,31 +4,20 @@ import Navbar from '../NavBar/NavBar'
 import ContactUs from '../ContactUs/ContactUs'
 import Footer from '../Footer/Footer'
 import SinglePostContent from './SinglePostContent'
-import data from '../../data/main_data'
+import Data from '../../data/main_data'
 
-
+let data = Data.Studio.productions[0];
 
 // class component
-class SinglePost extends Component {
-  constructor(props){
-    super(props);
-    this.state={
-      data: data.Studio.productions[0],
-    }
-  }
- 
-  render() {
-    const {data} = this.state;
-    return (
-      <div className="StudioApp">
+const SinglePost = ({ match }) =>( 
+        <div className="StudioApp">
         <Navbar />
-        <SinglePostContent property={data}/>
+        <SinglePostContent property={data} link={match.params.postId}/>
         <ContactUs />
         <Footer />
 
       </div>
-    );
-  }
-}
+
+)
 
 export default SinglePost;

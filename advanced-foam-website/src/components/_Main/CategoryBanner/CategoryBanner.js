@@ -36,15 +36,8 @@ class CategoryBanner extends Component {
             construction: data.Construction.projects[newIndex],
             packaging: data.Packaging.products[newIndex]
         })
-
-        
       }, 5000);
-
-      
-       
 }
-
-
 
   render() {
     const {appearCategory, studio, packaging, construction} = this.state;
@@ -52,39 +45,25 @@ class CategoryBanner extends Component {
       <div className="CategoryBanner">
 
 
-        <CSSTransition
-          in={appearCategory}
-          appear={true}
-          timeout={1000}
-          classNames="fade"
-        >
           <Category property={studio}
                     title={'STUDIO'} 
-                    subtitle={'Television & Movie Set Studios'}/>
-        </CSSTransition>
+                    subtitle={'Television & Movie Set Studios'}
+                    link={"/Studio"}/>
 
-        <CSSTransition
-          in={appearCategory}
-          appear={true}
-          timeout={1000}
-          classNames="fade"
-        >
+
           <Category property={construction} 
                     title={'CONSTRUCTION'} 
-                    subtitle={'Architectural Decorations'}/>
-        </CSSTransition>
+                    subtitle={'Architectural Decorations'}
+                    link={"/Construction"}/>
 
-        <CSSTransition
-          in={appearCategory}
-          appear={true}
-          timeout={1000}
-          classNames="fade"
-        >
+
+
           <Category property={packaging} 
                     title={'PACKAGING'} 
-                    subtitle={'Design & Fabrication'}/>
-        </CSSTransition>
-    
+                    subtitle={'Design & Fabrication'}
+                    link={"/Packaging"}/>
+
+
       </div>
     );
   }
