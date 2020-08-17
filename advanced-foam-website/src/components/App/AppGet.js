@@ -5,6 +5,8 @@ import MainApp from '../Main/MainApp'
 import StudioApp from '../Studio/StudioApp'
 import NavBar from '../NavBar/NavBar'
 import ExamplePage from './ExamplePage'
+import SinglePost from '../SinglePost/SinglePost'
+
 
 import axios from 'axios'
 
@@ -50,21 +52,16 @@ class App extends Component {
   render() {
 
     const { constructionPosts, studioPosts,packaging } = this.state;
-
+    const parent='Studio'
     return (
           <div className="App">
           <NavBar />
  
             <Fragment>
-                    {/* Links */}
-                    <div className="topnav">
-                        {constructionPosts.map((post, index) => {
-                            return <Link to={post.slug}>{post.slug}</Link>;
-                        })}
-                    </div>
+                    
 
                     {/* Routing */}
-                     
+
                     {constructionPosts.map((post, index) => {
                         return (
                             <Route
@@ -77,9 +74,23 @@ class App extends Component {
                             />
                         );
                     })}
+
+                     
+                    {studioPosts.map((post, index) => {
+                        return (
+                            <Route
+                                exact
+                                key={index}
+                                path={`/${post.slug}`}
+                                render={props => (
+                                    <SinglePost {...props} post={post} />
+                                )}
+                            />
+                        );
+                    })}
                 </Fragment>
                 <Route  path="/" exact  render={(props) => <MainApp {...props} />}/>  
-                <Route  path="/Construction" exact component={ConstructionApp}/>    
+                <Route  path="/Construction" exact render={(props) => <ConstructionApp {...props}  data={constructionPosts}/>}/>    
                 <Route  path="/Studio" exact  render={(props) => <StudioApp {...props} data={studioPosts} />}/>  
          
       

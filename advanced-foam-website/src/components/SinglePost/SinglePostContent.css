@@ -48,11 +48,13 @@
 }
 
 .wp-caption img{
-    max-width: 50%;
+    max-width:60%;
+    height:auto;
 }
 
 .wp-caption:hover img{
-    max-width:600px;
+    max-width:80%;
+    height:auto;
 }
 
 .html5-video-player {
