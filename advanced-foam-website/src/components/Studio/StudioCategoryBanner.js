@@ -33,7 +33,7 @@ class StudioCategoryBanner extends Component {
                   
                         {posts.map((post, index) => {
                             return <Link to={`${post.slug}`}>
-                            <Card key={post._id} property={post}  />
+                            <Card key={post.id} property={post}  />
                             </Link>;
                         })}
                     
