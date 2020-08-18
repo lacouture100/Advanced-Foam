@@ -6,7 +6,7 @@ const Card = ({ property }) => (
 
         <div id={`card-${property.index}`} className="card">
             
-            {console.log(property.better_featured_image.media_details.sizes.thumbnail.source_url)}
+       
             <img src={`${property.better_featured_image.media_details.sizes.thumbnail.source_url}`} 
                  alt=" " 
                  className="card-image" />

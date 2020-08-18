@@ -29,9 +29,9 @@ class ConstructionProductsBanner extends Component {
       <div className="products-banner">
         <Fragment>
                     {/* Links */}
-
+                    <h2 className="products-banner-title"> IN STOCK NOW</h2>
                     <div className="products-banner-content">
-                        <h2 className="products-banner-title"> IN STOCK NOW</h2>
+                        
                         {posts.map((post, index) => {
                             return <Link to={`/Construction/${post.slug}`}>
                             <Card key={post.id} property={post}  />
