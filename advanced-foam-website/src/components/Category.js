@@ -15,19 +15,33 @@ class Category extends Component {
             property : this.props.property,
             title: this.props.title,
             subtitle: this.props.subtitle,
-            link: this.props.link
+            link: this.props.link,
+            data:this.props.data
         }
         this.goToPost = this.goToPost.bind(this);
 
     }
 
+    componentDidUpdate(previousProps, previousState){
+        if(previousProps.data !== this.props.data){
+        this.setState({ 
+          data : this.props.data
+        }, () => {
+          console.log(this.state.data, 'data in Category');
+        }); 
+        }else {
+          return ;
+        }
+    
+        
+      }
     goToPost(){
         this.props.history.push(this.state.link);
     }
 
     render(){
-
-        const { property,title,subtitle,link } = this.props;
+        
+        const { property,title,subtitle,link,data } = this.props;
         return(
             <div className="category-container">
                 <section>

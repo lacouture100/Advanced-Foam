@@ -4,6 +4,8 @@ import { BrowserRouter as Router,Link,Route,withRouter } from 'react-router-dom'
 
 const Card = ({ property }) => (
 
+    
+        
         <div id={`card-${property.index}`} className="card">
             
        
@@ -17,7 +19,7 @@ const Card = ({ property }) => (
                 </h3>
                 <div className="card-title-line"></div>
                 <h4 className="card-subtitle">
-                    {property.status}
+                    {/*property.status*/}
                 </h4>
             
             </div>

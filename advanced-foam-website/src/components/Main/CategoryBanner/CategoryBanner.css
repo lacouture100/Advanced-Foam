@@ -14,8 +14,10 @@ h4 {
 .CategoryBanner {
   text-align: center;
   display: flex;
-  
+  background-color: rgb(36, 36, 36);
+
   flex-direction: row;
+  justify-content: space-evenly;
 }
 
 
@@ -25,6 +27,7 @@ h4 {
   background-color: rgb(36, 36, 36);
   min-width: 33vw;
   min-height: 50vh;
+ 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -79,12 +82,13 @@ h4 {
   position: absolute center;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  margin: 10px;
-  min-height: 55vh;
-  min-width: 30vw;
+  
+  min-height: 30vh;
+  min-width: 15vw;
+  
 }
-
 
 
 .card-title {
@@ -104,8 +108,8 @@ h4 {
 }
 
 .card-image {
+  min-width: 300px;
   max-width: 85%;
-  max-height: 40vh;
   margin: 10px;
 }
 

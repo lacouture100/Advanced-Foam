@@ -5,7 +5,7 @@ import { BrowserRouter as Router,Link,NavLink,withRouter } from 'react-router-do
 
 
 const links = ['Main','Studio','Construction','Packaging','Contact Us','About']
-const inStockLink = '/Construction'
+const inStockLink = '/Construction/redicoat'
 
 
 class NavBar extends Component {

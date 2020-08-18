@@ -27,6 +27,7 @@ class StudioCategoryBanner extends Component {
     
     return (
       <div className="studio-banner">
+        <div className="studio-banner-content">
         <Fragment>
                     {/* Links */}
 
@@ -42,6 +43,7 @@ class StudioCategoryBanner extends Component {
                      
                     
                 </Fragment>
+                </div>
       </div>
     );
   }

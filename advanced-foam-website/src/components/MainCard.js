@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { BrowserRouter as Router,Link,Route,withRouter } from 'react-router-dom';
 
-const Card = ({ property, link }) => (
+const Card = ({ property }) => (
 
         <div id={`card-${property.index}`} className="card">
             <img src={property.imgSrc} 

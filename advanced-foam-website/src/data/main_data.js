@@ -25,7 +25,7 @@ const data = {
             {
                 "_id": "americanHorrorStory",
                 "index": 1,
-                "imgSrc": "./img/logo_1_3.png",
+                "imgSrc": "./img/studio/americanHorror.jpg",
                 "title": "American Horror Story: Hotel",
                 "production": "20th Century Fox",
                 "link": "",
@@ -121,31 +121,31 @@ const data = {
             {
                 "_id": "theMummy",
                 "index": 0,
-                "imgSrc": "./img/logo_2_1.png",
-                "title": "The Mummy",
-                "production": "Universal Studios",
+                "imgSrc": "./img/construction/orsini.png",
+                "title": "The Orsini",
+                "production": "Los Angeles",
                 "link": ""
             },
             {
                 "_id": "starWars",
                 "index": 1,
-                "imgSrc": "./img/logo_2_2.png",
-                "title": "Star Wars",
-                "production": "Universal Studios",
+                "imgSrc": "./img/construction/appfels.jpg",
+                "title": "Apffels Coffee Building",
+                "production": "-",
                 "link": ""
             },
             {
                 "_id": "transformers",
                 "index": 2,
-                "imgSrc": "./img/logo_2_3.png",
-                "title": "Transformers",
-                "production": "Universal Studios",
+                "imgSrc": "./img/construction/HamnerAve.jpg",
+                "title": "6987-6993 Hamner Ave",
+                "production": "-",
                 "link": ""
             },
             {
                 "_id": "starWars",
                 "index": 1,
-                "imgSrc": "./img/logo_2_2.png",
+                "imgSrc": "./img/construction/HamnerAve.jpg",
                 "title": "Star Wars",
                 "production": "Universal Studios",
                 "link": ""
@@ -263,25 +263,25 @@ const data = {
             {
                 "_id": "theMummy",
                 "index": 0,
-                "imgSrc": "./img/logo_3_1.png",
-                "title": "The Mummy",
-                "production": "Universal Studios",
+                "imgSrc": "./img/packaging/foam_1.png",
+                "title": "Anti-Impact Foam",
+                "production": "Custom Fabrication",
                 "link": ""
             },
             {
                 "_id": "starTrek",
                 "index": 1,
-                "imgSrc": "./img/logo_3_2.png",
-                "title": "Star Wars",
-                "production": "Universal Studios",
+                "imgSrc": "./img/packaging/polystyrene_1.jpg",
+                "title": "Polystyrene",
+                "production": "Custom Fabrication",
                 "link": ""
             },
             {
                 "_id": "transformers",
                 "index": 2,
-                "imgSrc": "./img/logo_3_3.png",
-                "title": "Transformers",
-                "production": "Universal Studios",
+                "imgSrc": "./img/packaging/polyurethane_1.jpg",
+                "title": "Polyurethane",
+                "production": "Custom Fabrication",
                 "link": ""
             }
         ]

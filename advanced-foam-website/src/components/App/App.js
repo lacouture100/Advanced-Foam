@@ -11,9 +11,9 @@ import SinglePost from '../SinglePost/SinglePost'
 import axios from 'axios'
 
 const proxyUrl = "https://cors-anywhere.herokuapp.com/";
-const studioUrl = "http://studio.advancedfoam.com/wp-json/wp/v2/posts";
-const constructionUrl = "http://construction.advancedfoam.com/wp-json/wp/v2/posts";
-const packagingUrl = "http://packaging.advancedfoam.com/wp-json/wp/v2/posts";
+const studioUrl = "http://studio.advancedfoam.com/wp-json/wp/v2/posts?per_page=100";
+const constructionUrl = "http://construction.advancedfoam.com/wp-json/wp/v2/posts?per_page=9";
+const packagingUrl = "http://packaging.advancedfoam.com/wp-json/wp/v2/posts?per_page=100";
 
 // class component
 class App extends Component {
@@ -51,17 +51,32 @@ class App extends Component {
 
   render() {
 
-    const { constructionPosts, studioPosts, packagingPosts } = this.state;
-    const parent='Studio'
+    const {  studioPosts, constructionPosts, packagingPosts } = this.state;
+    console.log(studioPosts)
+
     return (
           <div className="App">
           <NavBar />
           <Switch>
             
                 
-                <Route  path="/" exact  render={(props) => <MainApp {...props} />}/>  
-                <Route  path="/Construction" exact render={(props) => <ConstructionApp {...props}  data={constructionPosts}/>}/>    
-                <Route  path="/Studio" exact  render={(props) => <StudioApp {...props} data={studioPosts} />}/> 
+                <Route  path="/" exact  
+                        render={(props) => 
+                          <MainApp {...props} 
+                          studioData={studioPosts}
+                          constructionData={constructionPosts}
+                          packagingData={packagingPosts}/>}
+                        />  
+                <Route  path="/Construction" exact 
+                        render={(props) => 
+                          <ConstructionApp {...props}  
+                          data={constructionPosts}/>}
+                        />    
+                <Route  path="/Studio" exact  
+                        render={(props) => 
+                          <StudioApp {...props} 
+                          data={studioPosts} />}
+                        /> 
 
                 <Fragment>
                     

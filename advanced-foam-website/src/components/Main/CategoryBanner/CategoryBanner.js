@@ -15,32 +15,52 @@ class CategoryBanner extends Component {
       studio: data.Studio.productions[0],
       construction: data.Construction.projects[0],
       packaging: data.Packaging.products[0],
+      studioData: [],
+      constructionData: this.props.constructionData[0],
+      packagingData: this.props.packagingData[0]
     }
   }
 
-
-  componentDidMount(){
+  componentDidUpdate(previousProps, previousState){
+    if(previousProps.studioData !== this.props.studioData){
+    this.setState({ 
+      studioData : this.props.studioData
+    }, () => {
+      console.log(this.state.studioData, 'data in Category Banner');
+    }); 
+    }else {
+      return ;
+    }
     setInterval(() => {
 
-        let newIndex = this.state.studio.index;
-        let studioLength = 2;
+      let newIndex = this.state.studio.index;
+      let studioLength = 2;
 
-        if( this.state.studio.index !== (studioLength) ){
-            newIndex += 1;
-        }else {
-            newIndex=0;
-        }
+      if( this.state.studio.index !== (studioLength) ){
+          newIndex += 1;
+      }else {
+          newIndex=0;
+      }
 
-        this.setState({
-            studio: data.Studio.productions[newIndex],
-            construction: data.Construction.projects[newIndex],
-            packaging: data.Packaging.products[newIndex]
-        })
-      }, 5000);
+      this.setState({
+          studio: data.Studio.productions[newIndex],
+          construction: data.Construction.projects[newIndex],
+          packaging: data.Packaging.products[newIndex],
+          studioData: this.props.studioData[newIndex],
+          constructionData: this.props.constructionData[newIndex],
+          packagingData: this.props.packagingData[newIndex]
+      })
+    }, 5000);
+
+    
+  }
+  componentDidMount(){
+    
 }
 
   render() {
-    const {appearCategory, studio, packaging, construction} = this.state;
+    const {appearCategory, studio, packaging, construction, studioData, constructionData, packagingData} = this.state;
+    
     return (
       <div className="CategoryBanner">
 
@@ -48,20 +68,23 @@ class CategoryBanner extends Component {
           <Category property={studio}
                     title={'STUDIO'} 
                     subtitle={'Television & Movie Set Studios'}
-                    link={"/Studio"}/>
+                    link={"/Studio"}
+                    data={studioData}/>
 
 
           <Category property={construction} 
                     title={'CONSTRUCTION'} 
                     subtitle={'Architectural Decorations'}
-                    link={"/Construction"}/>
+                    link={"/Construction"}
+                    data={constructionData}/>
 
 
 
           <Category property={packaging} 
                     title={'PACKAGING'} 
                     subtitle={'Design & Fabrication'}
-                    link={"/Packaging"}/>
+                    link={"/Packaging"}
+                    data={packagingData}/>
 
 
       </div>

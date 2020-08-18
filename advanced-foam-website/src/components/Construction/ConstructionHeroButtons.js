@@ -5,10 +5,15 @@ import './ConstructionHeroButtons.css'
 const buttons = [
     {
         "name": "IN STOCK",
-        "index": 0
+        "index": 0,
+        "route" : '/'
     },
     {
-        "name": "IN THE WORKSHOP",
+        "name": "REDICOAT PRODUCTS",
+        "index": 1
+    },
+    {
+        "name": "CONSTRUCTION MATERIALS",
         "index": 1
     },
     {
