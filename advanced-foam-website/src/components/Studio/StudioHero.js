@@ -25,23 +25,24 @@ class StudioHero extends Component{
             keywords : words[0]
         }
     }
+    
     componentDidMount(){
-    setInterval(() => {
-        
-        
-        let newIndex = this.state.keywords.index;
-        let wordsLength = words.length-1;
+        setInterval(() => {
+            
+            
+            let newIndex = this.state.keywords.index;
+            let wordsLength = words.length-1;
 
-        if( this.state.keywords.index !== (wordsLength) ){
-            newIndex += 1;
-        }else {
-            newIndex=0;
-        }
-        this.setState({
-            keywords: words[newIndex]
-        })
+            if( this.state.keywords.index !== (wordsLength) ){
+                newIndex += 1;
+            }else {
+                newIndex=0;
+            }
+            this.setState({
+                keywords: words[newIndex]
+            })
 
-    }, 2000);
+        }, 2000);
 
     }
     render(){

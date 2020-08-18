@@ -56,8 +56,14 @@ class App extends Component {
     return (
           <div className="App">
           <NavBar />
- 
-            <Fragment>
+          <Switch>
+            
+                
+                <Route  path="/" exact  render={(props) => <MainApp {...props} />}/>  
+                <Route  path="/Construction" exact render={(props) => <ConstructionApp {...props}  data={constructionPosts}/>}/>    
+                <Route  path="/Studio" exact  render={(props) => <StudioApp {...props} data={studioPosts} />}/> 
+
+                <Fragment>
                     
 
                     {/* Routing */}
@@ -67,7 +73,7 @@ class App extends Component {
                             <Route
                                 exact
                                 key={index}
-                                path={`/${post.slug}`}
+                                path={`/Construction/${post.slug}`}
                                 render={props => (
                                     <SinglePost {...props} post={post} />
                                 )}
@@ -81,18 +87,15 @@ class App extends Component {
                             <Route
                                 exact
                                 key={index}
-                                path={`/${post.slug}`}
+                                path={`/Studio/${post.slug}`}
                                 render={props => (
                                     <SinglePost {...props} post={post} />
                                 )}
                             />
                         );
                     })}
-                </Fragment>
-                <Route  path="/" exact  render={(props) => <MainApp {...props} />}/>  
-                <Route  path="/Construction" exact render={(props) => <ConstructionApp {...props}  data={constructionPosts}/>}/>    
-                <Route  path="/Studio" exact  render={(props) => <StudioApp {...props} data={studioPosts} />}/>  
-         
+                </Fragment> 
+                </Switch>
       
     
           </div>

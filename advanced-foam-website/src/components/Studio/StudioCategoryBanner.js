@@ -23,7 +23,7 @@ class StudioCategoryBanner extends Component {
   render() {
     const { posts } = this.state;
     const mainRoute = '/Studio'
-    
+    console.log(posts)
     
     return (
       <div className="studio-banner">
@@ -32,7 +32,7 @@ class StudioCategoryBanner extends Component {
 
                   
                         {posts.map((post, index) => {
-                            return <Link to={`${post.slug}`}>
+                            return <Link to={`/Studio/${post.slug}`}>
                             <Card key={post.id} property={post}  />
                             </Link>;
                         })}

@@ -61,6 +61,7 @@ h4 {
 }
 
 .card-image {
+  min-width: 300px;
   max-width: 85%;
   max-height: 40vh;
   margin: 10px;
