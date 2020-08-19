@@ -66,3 +66,44 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+
+# Advanced Foam specifics
+## Deployment into Siteground
+
+You have to:
+
+
+
+1. Add an `htaccess` file (no extension) to the route folder of the app. Insert the following code :
+
+    ```
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^([^.]+)$ $1.html [NC,L]
+
+    RewriteEngine on
+    RewriteCond %{THE_REQUEST} /([^.]+).html [NC]
+    RewriteRule ^ /%1 [NC,L,R]
+
+    RewriteCond %{REQUEST_FILENAME}.html -f
+    RewriteRule ^ %{REQUEST_URI}.html [NC,L]
+    ```
+
+
+2. Add the `basename` property to `<Router>`. Name it the same as the subdirectory in your FTP directory.
+   
+    ```
+    <Router basename={'/directory-name'}>
+    </Router>
+    ```
+
+3. Add `homepage": "http://www.yourpage.com/subdirectory-name"` to your package.json. I added it after `"name:  ",`.
+
+4. Run the `npm run build`. Then copy the contents of the folder into a new, empty sub-directory(same name as the one used earlier) inside the `home-page` folder in your site's file manager.
+
+5. Open the page in your browser.
+6. 
+
+
