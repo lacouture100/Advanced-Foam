@@ -8,5 +8,12 @@ This demo takes advantage of some additional packages.
 - [axios](https://github.com/axios/axios)
 - [next-routes](https://github.com/fridays/next-routes)
 
-## Also Check Out
-Check out the [WDS React Framework](https://github.com/WebDevStudios/WDS-React-Framework) and the [WP API Yoast Meta](https://github.com/WebDevStudios/wp-api-yoast-meta) plugin.
+
+## Instructions
+
+Run any of the following commands to develop, build, or start.
+```
+  npm run dev
+  npm run build
+  npm run start
+```

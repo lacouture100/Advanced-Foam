@@ -32,7 +32,7 @@ app.prepare()
         throw err;
       }
 
-      // Where we starting, yo!
-      console.log( `> Ready on port ${port}...` );
+      // Where we starting!
+      console.log( `>>> Ready on port ${port} <<<` );
     } );
   } );
