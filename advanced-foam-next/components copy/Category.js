@@ -38,7 +38,7 @@ export default class Category extends Component {
     render(){
         
         const { property,title,subtitle,link,data } = this.props;
-   
+        console.log(link)
         return(
             <div className="category-container">
                 <section>
