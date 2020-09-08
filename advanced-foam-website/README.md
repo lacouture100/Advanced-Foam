@@ -104,6 +104,6 @@ You have to:
 4. Run the `npm run build`. Then copy the contents of the folder into a new, empty sub-directory(same name as the one used earlier) inside the `home-page` folder in your site's file manager.
 
 5. Open the page in your browser.
-6. 
+   
 
 

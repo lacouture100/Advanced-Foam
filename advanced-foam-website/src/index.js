@@ -6,6 +6,7 @@ import {
   } from 'react-router-dom';
 
 ReactDOM.render(
+    //<Router basename={'/reactTest'}>
     <Router basename={'/reactTest'}>
     <App />
     </Router>, 
