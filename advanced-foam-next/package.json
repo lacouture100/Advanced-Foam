@@ -1,7 +1,7 @@
 {
-  "name": "Headless-WordPress-w-React-and-Next.js-Demo",
-  "version": "0.0.0",
-  "description": "A Headless WordPress w/ React and Next.js Demo Application.",
+  "name": "Advanced-Foam-official-website",
+  "version": "0.0.1",
+  "description": "A corporate site made w/ React and Next.js. Made for Advanced Foam in California.",
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
     "axios": "^0.18.1",
@@ -28,8 +28,8 @@
     "ssr"
   ],
   "author": {
-    "name": "jomurgel",
-    "email": "jo@webdevstudios.com"
+    "name": "Alvaro Lacouture",
+    "email": "lacouture100@gmail.com"
   },
   "license": "MIT"
 }
