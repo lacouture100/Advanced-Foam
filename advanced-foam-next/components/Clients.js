@@ -16,7 +16,7 @@ export default class Clients extends Component {
 
   render(){
       const clients = this.state.data.map((client,index) =>(
-        <div key={index}className="client">4
+        <div key={index}className="client">
         <Link href={client.link}>
           <a href={client.link}>
           <img src={client.imgSrc}

@@ -1,7 +1,7 @@
-import Head from 'next/head'
+import Head from './node_modules/next/head'
 import Navigation from '../components/Navigation'
-import React, { Component, Fragment } from 'react'
-import axios from 'axios'
+import React, { Component, Fragment } from './node_modules/react'
+import axios from './node_modules/axios'
 
 export default class extends Component {
 

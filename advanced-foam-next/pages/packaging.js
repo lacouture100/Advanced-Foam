@@ -22,8 +22,8 @@ export default class extends Component {
     return (
       <Fragment>
         <Head>
-          <title>This is our posts page!</title>
-          <meta name="description" content="This is an example of a meta description. This will show up in search results." />
+          <title>Advanced Foam Inc. - Packaging</title>
+          <meta name="Advanced Foam Inc. Packaging site" content="Advanced Foam offers design solutions to protective packaging development for low cost containment. " />
           <meta charSet="utf-8" />
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>

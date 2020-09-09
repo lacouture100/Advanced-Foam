@@ -16,7 +16,7 @@ export default class extends Component{
 
 			<div className="navbar">
 
-				<img src={logo} alt={""} className="navbar-img"></img>
+				<img src='http://www.advancedfoam.com/wp-content/uploads/2020/09/advancedFoam_main.png' alt={""} className="navbar-img"></img>
 		
 				<div className="navbar-title-container">
 				

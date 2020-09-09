@@ -5,24 +5,28 @@
     width: 100%;
     min-width: 720px;
     align-items: center;
-    max-height: 10%;
+    font-family: 'Open Sans', sans-serif;
+    
 }
 
 .navbar-titles {
     display: flex;
     flex-direction: row;
-    cursor: pointer;
+    
     margin-right: 15%;
+    text-decoration: none;
 }
 
 .navbar-title{   
     margin:30px;
     list-style: none;
+    cursor: pointer;
+    
 }
 .navbar-title-container {
     display: flex;
     flex-direction: row;
-    cursor: pointer;
+    
     
   }
 
@@ -36,14 +40,15 @@ nav ul{
 .navbar-img {
     max-width: 30%;
     height: auto;
-    margin: 1%;
+    margin-left: 5%;
     margin-bottom: 1rem;
     cursor: pointer;
    
 }
 
-
-
+.a, .a input {
+    color:inherit;
+}
 
 .stockButton {
 	box-shadow:inset 0px 1px 0px 0px #f29c93;
@@ -51,15 +56,16 @@ nav ul{
 	background-color:#fe1a00;
 	border-radius:1px;
 	border:1px solid #d83526;
-	display:inline-block;
+	
 	cursor:pointer;
 	color:#ffffff;
-	font-family:Arial;
+	
 	font-size:15px;
 	font-weight:bold;
 	padding:6px 20px;
 	text-decoration:none;
-	text-shadow:0px 1px 0px #b23e35;
+    text-shadow:0px 1px 0px #b23e35;
+    
 }
 .stockButton:hover {
 	background:linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);

@@ -15,30 +15,30 @@ const data = {
             {
                 "_id": "theMummy",
                 "index": 0,
-                "imgSrc": "./img/studio/mummy-1.jpg",
+                "imgSrc": "http://www.advancedfoam.com/wp-content/uploads/2020/09/mummy_preview.jpg",
                 "title": "The Mummy",
                 "production": "Universal Studios",
-                "link": "http://www.advancedfoam.com/mummy",
-                "slug": "mummy",
+                "link": "http://www.advancedfoam.com/studio/mummy",
+                "slug": "the-mummy",
                 "year" : "2017"
             },
             {
                 "_id": "americanHorrorStory",
                 "index": 1,
-                "imgSrc": "./img/studio/americanHorror.jpg",
+                "imgSrc": "http://www.advancedfoam.com/wp-content/uploads/2020/09/americanHorror_preview.jpg",
                 "title": "American Horror Story: Hotel",
                 "production": "20th Century Fox",
                 "link": "",
-                "slug": "mummy",
+                "slug": "american-horror-story-hotel",
                 "year" : "2015"
             },
             {
                 "_id": "starTrek",
                 "index": 2,
-                "imgSrc": "./img/studio/starTrek.png",
+                "imgSrc": "http://www.advancedfoam.com/wp-content/uploads/2020/09/starTrek_preview.png",
                 "title": "Star Trek",
                 "production": "Paramount Pictures",
-                "link": "http://www.advancedfoam.com/star-trek",
+                "link": "http://www.advancedfoam.com/studio/star-trek",
                 "slug": "star-trek",
                 "year" : "2009"
             },
