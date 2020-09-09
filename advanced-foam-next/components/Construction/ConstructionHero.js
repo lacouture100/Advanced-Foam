@@ -45,9 +45,9 @@ class StudioHero extends Component{
     render(){
 
         return (
-            <div className="main">
-                <div className="main-slogan">
-                     <h3 className="main-slogan-phrase"> We have over 35 years of experience making <div className="main-logo-dynamic">{this.state.keywords.word}</div> for architecture and construction projects.</h3>
+            <div className="hero">
+                <div className="hero__slogan">
+                     <h3 className="hero__slogan-text"> We have over 35 years of experience making <div className="hero__slogan-dynamic-text">{this.state.keywords.word}</div> for architecture and construction projects.</h3>
                 </div>
                 
             </div>

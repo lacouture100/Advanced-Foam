@@ -1,5 +1,5 @@
 
-.main {
+.hero {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,12 +9,12 @@
     
 }
 
-.main-slogan {
+.hero__slogan {
 
 
 }
 
-.main-slogan-phrase {
+.hero__slogan-text {
     font-size: 22px;
     font-weight: 500 !important;
     display: flex;
@@ -24,7 +24,7 @@
     
 }
 
-.main-logo-dynamic {
+.hero__slogan-dynamic-text {
     background-color: black;
     font-family: 'Fjalla One', sans-serif;
     min-height: 30px;

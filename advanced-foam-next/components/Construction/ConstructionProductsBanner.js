@@ -31,7 +31,7 @@ export default class ConstructionProductsBanner extends Component {
                         data.map((post, index) => {
                             return (
                             
-                            <Link href={ `/construction/${ post.slug }` }>
+                            <Link key={index} href={ `/construction/${ post.slug }` }>
                               <a href={ `/construction/${ post.slug }` }>
                               <div key={index} id={`card-${post.index}`} className="card">
             
@@ -56,14 +56,10 @@ export default class ConstructionProductsBanner extends Component {
                                 </a>
                             </Link>
                             )
-                        })}
-                    
-                        
+                          })}
                     </div>
-                    
-                     
-                    
-                </Fragment>
+
+          </Fragment>
       </div>
     );
   }
