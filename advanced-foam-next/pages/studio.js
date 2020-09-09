@@ -29,7 +29,7 @@ export default class extends Component {
           <meta charSet="utf-8" />
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
-        <Navigation/>
+        <Navigation site="studio"/>
         <h1>Our Posts Page!</h1>
         <ul>
           {

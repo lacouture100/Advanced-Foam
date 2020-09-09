@@ -6,6 +6,7 @@
     min-width: 720px;
     align-items: center;
     font-family: 'Open Sans', sans-serif;
+    white-space: nowrap;
     
 }
 
@@ -39,8 +40,8 @@ nav ul{
 }
 .navbar-img {
     max-width: 30%;
-    height: auto;
-    margin-left: 5%;
+    min-height: auto;
+    margin-left: 2%;
     margin-bottom: 1rem;
     cursor: pointer;
    
@@ -59,7 +60,7 @@ nav ul{
 	
 	cursor:pointer;
 	color:#ffffff;
-	
+	margin: auto;
 	font-size:15px;
 	font-weight:bold;
 	padding:6px 20px;

@@ -9,14 +9,14 @@ const inStockLink = '/Construction/redicoat'
 const logo = '/img/logos/advancedFoam_main.png'
 
 
-export default class extends Component{
+export default function Navigation (props){
 
-	render(){
+	
 		return(
 
 			<div className="navbar">
 
-				<img src='http://www.advancedfoam.com/wp-content/uploads/2020/09/advancedFoam_main.png' alt={""} className="navbar-img"></img>
+				<img src={`http://www.advancedfoam.com/wp-content/uploads/2020/09/advancedFoam_${props.site ? props.site : 'construction' }.png`} alt={""} className="navbar-img"></img>
 		
 				<div className="navbar-title-container">
 				
@@ -36,6 +36,6 @@ export default class extends Component{
 				</div>
 		</div>
 		)
-	}
+	
 
 }

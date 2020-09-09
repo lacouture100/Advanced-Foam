@@ -16,7 +16,7 @@ export default () => (
       <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet" />
     </Head>
 
-    <Navigation/>
+    <Navigation site="main"/>
     
     <MainApp />
 
