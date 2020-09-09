@@ -18,20 +18,20 @@ export default function Navigation (props){
 
 				<img src={`http://www.advancedfoam.com/wp-content/uploads/2020/09/advancedFoam_${props.site ? props.site : 'construction' }.png`} alt={""} className="navbar-img"></img>
 		
-				<div className="navbar-title-container">
+				<div className="navbar__navigation-container">
 				
 						
 					<button className="stockButton">
 					<Link href="/construction/redicoat"><a href="/construction/redicoat">IN STOCK NOW</a></Link>
 							            
 							</button>
-					<ul className="navbar-titles">
-						<li className="navbar-title"><Link href="/"><a href="/">Main</a></Link></li>
-						<li className="navbar-title"><Link href="/studio"><a href="/studio">Studio</a></Link></li>
-						<li className="navbar-title"><Link href="/construction"><a href="/construction">Construction</a></Link></li>
-						<li className="navbar-title"><Link href="/packaging"><a href="/packaging">Packaging</a></Link></li>
-						<li className="navbar-title"><Link href="/contact"><a href="/contact">Contact Us</a></Link></li>
-						<li className="navbar-title"><Link href="/about"><a href="/about">About</a></Link></li>
+					<ul className="navbar__titles">
+						<li className="navbar__title"><Link href="/"><a href="/">Main</a></Link></li>
+						<li className="navbar__title"><Link href="/studio"><a href="/studio">Studio</a></Link></li>
+						<li className="navbar__title"><Link href="/construction"><a href="/construction">Construction</a></Link></li>
+						<li className="navbar__title"><Link href="/packaging"><a href="/packaging">Packaging</a></Link></li>
+						<li className="navbar__title"><Link href="/contact"><a href="/contact">Contact Us</a></Link></li>
+						<li className="navbar__title"><Link href="/about"><a href="/about">About</a></Link></li>
 					</ul>
 				</div>
 		</div>

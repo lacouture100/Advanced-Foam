@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Navigation from '../components/Navigation'
 import React, { Component, Fragment } from 'react'
 import axios from 'axios'
+import ConstructionApp from '../components/Construction/ConstructionApp'
 
 const LINK = 'http://www.construction.advancedfoam.com/wp-json/wp/v2/posts';
 export default class extends Component {
@@ -28,22 +29,7 @@ export default class extends Component {
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
         <Navigation site="construction"/>
-        <h1>Our Posts Page!</h1>
-        <ul>
-          {
-            this.props.posts.map( post => {
-              return (
-                <li key={ post.id }>
-                  <Link href={ `/construction/${ post.slug }` }>
-                    <a href={ `/construction/${ post.slug }` }>
-                      { post.title.rendered }
-                    </a>
-                  </Link>
-                </li>
-              )
-            })
-          }
-        </ul>
+        <ConstructionApp data={this.props.posts}/>
       </Fragment>
     )
   }

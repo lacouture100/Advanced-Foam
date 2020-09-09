@@ -31,9 +31,9 @@ export default class extends Component {
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
         <Navigation/>
-        <h1>{ this.props.post.title.rendered }</h1>
+        <h1 classname="post__title">{ this.props.post.title.rendered }</h1>
         <article
-          className="entry-content"
+          className="post"
           dangerouslySetInnerHTML={ {
             __html: this.props.post.content.rendered
           } } />

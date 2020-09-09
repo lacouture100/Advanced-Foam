@@ -1,35 +1,32 @@
 .navbar{
     display: flex ;
-    background: white;
     justify-content: space-between;
     width: 100%;
-    min-width: 720px;
     align-items: center;
     font-family: 'Open Sans', sans-serif;
     white-space: nowrap;
     
 }
 
-.navbar-titles {
+.navbar__navigation-container {
     display: flex;
     flex-direction: row;
-    
-    margin-right: 15%;
-    text-decoration: none;
 }
 
-.navbar-title{   
-    margin:30px;
+.navbar__titles {
+    display: flex;
+    flex-direction: row;
+    margin-right: 2%;
+    
+}
+
+.navbar__title{   
+    margin:10px;
     list-style: none;
     cursor: pointer;
     
 }
-.navbar-title-container {
-    display: flex;
-    flex-direction: row;
-    
-    
-  }
+
 
 .navbar-title:hover {
     text-decoration: underline;
@@ -38,11 +35,10 @@
 nav ul{
     list-style: none;
 }
-.navbar-img {
+.navbar img {
     max-width: 30%;
     min-height: auto;
-    margin-left: 2%;
-    margin-bottom: 1rem;
+    margin:2%;
     cursor: pointer;
    
 }
