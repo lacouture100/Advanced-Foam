@@ -1,4 +1,4 @@
 
-import Homepage from '../containers/Homepage'
+import Homepage from '../components/Homepage'
 
 export default Homepage;
