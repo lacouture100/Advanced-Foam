@@ -8,7 +8,7 @@ const withImages = require('next-images');
 module.exports = withPlugins([
     [withCSS],
     [withImages],
-    ({target: 'serverless'})
+    ({target: 'serverless' })
   ]
   );
 
