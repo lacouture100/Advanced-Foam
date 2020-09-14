@@ -9,5 +9,6 @@ module.exports = routes()
   .add( 'constructionPost', '/construction/:slug' )
   .add( 'studioPost', '/studio/:slug' )
   .add( 'packagingPost', '/packaging/:slug' )
-  .add( 'contact');
+  .add( 'contact')
+  .add( 'about');
   
