@@ -3,10 +3,7 @@ const withCSS = require('@zeit/next-css');
 const withImages = require('next-images');
 
 
-module.exports = {
-  // Target must be serverless
-  target: "serverless",
-};
+
 
 module.exports = withPlugins([
     [withCSS],
@@ -16,3 +13,7 @@ module.exports = withPlugins([
 
 
 
+  module.exports = {
+    // Target must be serverless
+    target: "serverless",
+  };
