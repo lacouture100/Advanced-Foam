@@ -24,7 +24,7 @@ export default class extends Component {
     return (
       <Fragment>
         <Head>
-          <title>Advanced Foam Inc. - Studio</title>
+          <title>Advanced Foam - Studio</title>
           <meta name="Advanced Foam Inc. Studio work" content="25+ years of experience in foam fabrication for the Southern California studio and movie production industry." />
           <meta charSet="utf-8" />
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />

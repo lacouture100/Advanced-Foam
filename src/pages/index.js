@@ -9,7 +9,7 @@ export default () => (
   <Fragment>
 
     <Head>
-      <title>Advanced Foam Inc.</title>
+      <title>Advanced Foam - Home</title>
       <link rel="icon" href="/favicon.ico" />
       <meta name="Advanced Foam" content="Advanced Foam, Inc. - 25+ years of experience in foam fabrication for the Southern California studio, packaging and construction industry." />
       <meta charSet="utf-8" />

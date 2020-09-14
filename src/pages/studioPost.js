@@ -25,7 +25,7 @@ export default class extends Component {
     return (
       <Fragment>
         <Head>
-          <title>{ this.props.post.title.rendered }</title>
+          <title>{`Advanced Foam - ${this.props.post.title.rendered}`}</title>
           <meta name={`Advanced Foam Inc. - ${this.props.post.title.rendered}`}
                         content={`Advanced Foam Inc. - ${this.props.post.title.rendered}`} />
           <meta charSet="utf-8" />

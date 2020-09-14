@@ -22,7 +22,7 @@ export default class extends Component {
     return (
       <Fragment>
         <Head>
-          <title>Advanced Foam Inc. - Packaging</title>
+          <title>Advanced Foam - Packaging</title>
           <meta name="Advanced Foam Inc. Packaging site" content="Advanced Foam offers design solutions to protective packaging development for low cost containment. " />
           <meta charSet="utf-8" />
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
