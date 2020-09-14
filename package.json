@@ -5,19 +5,21 @@
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
     "axios": "^0.18.1",
-    "express": "^4.16.4",
-    "next": "^7.0.2",
+    "core-js": "^3.6.5",
+    "express": "^4.17.1",
+    "next": "^7.0.3",
     "next-compose-plugins": "^2.2.0",
     "next-images": "^1.4.1",
     "next-routes": "^1.4.2",
     "react": "^16.13.1",
-    "react-dom": "^16.6.0"
+    "react-dom": "^16.13.1"
   },
   "devDependencies": {},
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js"
+    "start": "NODE_ENV=production node server.js",
+    "export": "next export"
   },
   "keywords": [
     "nextjs",
