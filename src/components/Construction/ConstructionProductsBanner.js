@@ -1,6 +1,6 @@
 import React, { Component,Fragment } from 'react';
 import PropTypes from 'prop-types';
-import '../../styles/ConstructionProductsBanner.css';
+import '../../../styles/ConstructionProductsBanner.css';
 import Card from '../Main/MainCard';
 import Link from 'next/link'
 

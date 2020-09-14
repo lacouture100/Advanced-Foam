@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import '../../styles/ConstructionHeroButtons.css'
+import '../../../styles/ConstructionHeroButtons.css'
 
 const buttons = [
     {

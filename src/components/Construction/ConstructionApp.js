@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import '../../styles/ConstructionApp.css';
+import '../../../styles/ConstructionApp.css';
 
 import ConstructionHero from './ConstructionHero'
 import ConstructionHeroButtons from './ConstructionHeroButtons'

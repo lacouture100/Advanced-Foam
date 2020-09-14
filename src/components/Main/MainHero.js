@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import '../../styles/MainHero.css'
+import '../../../styles/MainHero.css'
 
 const words = [
     {

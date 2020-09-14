@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import '../styles/Clients.css';
+import '../../styles/Clients.css';
 import Link from 'next/link'
 
-import data from '../data/clients_data'
+import data from '../../data/clients_data'
 
 // class component
 

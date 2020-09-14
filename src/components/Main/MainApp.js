@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../../styles/MainApp.css';
+import '../../../styles/MainApp.css';
 import CategoryBanner from './CategoryBanner';
 import MainHero from './MainHero'
 

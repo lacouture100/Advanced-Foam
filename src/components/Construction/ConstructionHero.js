@@ -1,7 +1,7 @@
 
 import React, { Component } from 'react';
-import '../../styles/ConstructionHero.css'
-import data from '../../data/main_data'
+import '../../../styles/ConstructionHero.css'
+import data from '../../../data/main_data'
 
 
 class StudioHero extends Component{

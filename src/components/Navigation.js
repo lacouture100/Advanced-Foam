@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import Link from 'next/link'
-import '../styles/Navigation.css'
-import data from '../data/main_data'
+import '../../styles/Navigation.css'
 
-const links = ['Main','Studio','Construction','Packaging','Contact Us','About']
+
+//const links = ['Main','Studio','Construction','Packaging','Contact Us','About']
 const inStockLink = '/Construction/redicoat'
 //const logo = require('/img/logos/advancedFoam_main.png');
 const logo = '/img/logos/advancedFoam_main.png'
