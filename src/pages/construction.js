@@ -5,7 +5,7 @@ import React, { Component, Fragment } from 'react'
 import axios from 'axios'
 import ConstructionApp from '../components/Construction/ConstructionApp'
 
-const LINK = 'http://www.construction.advancedfoam.com/wp-json/wp/v2/posts';
+const LINK = 'https://www.construction.advancedfoam.com/wp-json/wp/v2/posts';
 export default class extends Component {
 
   // Resolve promise and set initial props.
