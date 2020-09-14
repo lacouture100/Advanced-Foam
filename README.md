@@ -16,3 +16,9 @@ Made using the following packages:
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "webpack": "4.20.2"
+
+
+    https://github.com/netlify/next-on-netlify
+
+
+    

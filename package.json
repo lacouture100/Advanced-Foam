@@ -11,6 +11,7 @@
     "next": "^9.5.3",
     "next-compose-plugins": "^2.2.0",
     "next-images": "^1.4.1",
+    "next-on-netlify": "^2.4.0",
     "next-routes": "^1.4.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -21,7 +22,7 @@
     "dev": "node server.js",
     "build": "next build",
     "start": "NODE_ENV=production node server.js",
-    "export": "next export"
+    "postbuild": "next-on-netlify"
   },
   "keywords": [
     "nextjs",
