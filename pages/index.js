@@ -4,8 +4,10 @@ import MainApp from '../components/Main/MainApp'
 import CategoryBanner from '../components/Main/CategoryBanner'
 import { Fragment } from 'react'
 
+
 export default () => (
   <Fragment>
+
     <Head>
       <title>Advanced Foam Inc.</title>
       <link rel="icon" href="/favicon.ico" />
