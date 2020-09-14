@@ -7,13 +7,14 @@ const withImages = require('next-images');
 
 module.exports = withPlugins([
     [withCSS],
-    [withImages({target: 'serverless'})]
+    [withImages],
+    ({target: 'serverless'})
   ]
   );
 
-
+/*
 
   module.exports = {
     // Target must be serverless
     target: "serverless",
-  };
+  };*/
