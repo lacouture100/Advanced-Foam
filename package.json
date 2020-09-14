@@ -12,7 +12,8 @@
     "next-images": "^1.4.1",
     "next-routes": "^1.4.2",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "webpack": "^4.44.1"
   },
   "devDependencies": {},
   "scripts": {
