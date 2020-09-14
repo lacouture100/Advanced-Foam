@@ -1,5 +1,6 @@
 {
   "name": "Advanced-Foam-official-website",
+  "homepage": "https://advanced-foam.vercel.app/",
   "version": "0.0.1",
   "description": "A corporate site made w/ React and Next.js. Made for Advanced Foam in California.",
   "dependencies": {
