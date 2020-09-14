@@ -1,1 +1,0 @@
-historyApiFallback: true
