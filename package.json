@@ -34,5 +34,8 @@
     "name": "Alvaro Lacouture",
     "email": "lacouture100@gmail.com"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "optionalDependencies": {
+    "fsevents": "^2.1.3"
+  }
 }

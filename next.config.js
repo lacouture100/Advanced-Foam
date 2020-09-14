@@ -4,7 +4,7 @@ const withImages = require('next-images');
 
 module.exports = withPlugins([
     [withCSS],
-    [withImages],
+    [withImages]
   ]);
 
 
