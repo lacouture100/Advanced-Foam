@@ -1,36 +1,42 @@
-import Head from 'next/head'
+
 import Link from 'next/link'
-import Navigation from '../components/Navigation'
-import React, { Component, Fragment } from 'react'
-import axios from 'axios'
-import ConstructionApp from '../components/Construction/ConstructionApp'
+import { useEffect, useState } from 'react';
+import axios from 'axios';
 
-const LINK = 'https://www.construction.advancedfoam.com/wp-json/wp/v2/posts';
-export default class extends Component {
 
-  // Resolve promise and set initial props.
-  static async getInitialProps() {
 
-    // Make request for posts.
-    const response = await axios.get( LINK );
-    // Return response to posts object in props.
-    return {
-      posts: response.data
-    }
-  }
 
-  render() {
+export default function Construction({ postList }){
+/*
+    const [posts, setPosts] = useState([]);
+    useEffect(() => {
+        async function loadData() {
+            const response = await axios.get(`https://www.construction.advancedfoam.com/wp-json/wp/v2/posts`);
+            console.log(response)
+            const postList = await response.data;
+            setPosts(postList);
+        }
+
+        loadData();
+        console.log(posts)
+    }, []);
+*/
     return (
-      <Fragment>
-        <Head>
-          <title>Advanced Foam - Construction</title>
-          <meta name="Advanced Foam Inc. Construction site" content="Advanced Foam stocks many different construction materials such as EPS sheets, DOW Styrofoam, foam sheets, adhesives and more." />
-          <meta charSet="utf-8" />
-          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        </Head>
-        <Navigation site="construction"/>
-        <ConstructionApp data={this.props.posts}/>
-      </Fragment>
-    )
-  }
+        <div>
+            {postList.map((e,index) => (
+                <div key={index}>
+                <Link  as={`/${'construction'}/${e.slug}`} href='/[domain]/[post]' >
+                    <a> Navigate to {e.domain} {e.slug}</a>
+                </Link>
+                </div>
+            ))}
+        </div>
+        )
+}
+
+Construction.getInitialProps = async () => {
+    const response = await axios.get(`https://www.construction.advancedfoam.com/wp-json/wp/v2/posts`);
+            //console.log(response)
+            const postList = await response.data;
+    return {postList : postList}
 }
