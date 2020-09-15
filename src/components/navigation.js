@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Link from 'next/link'
+import Head from 'next/head'
 import '../../styles/Navigation.css'
 
 const inStockLink = '/Construction/redicoat'
@@ -9,6 +10,17 @@ const logo = '/img/logos/advancedFoam_main.png'
 
 export default function Navigation (props){
 		return(
+			<div>
+				<Head>
+                    <title>{`Advanced Foam`}</title>
+                    <meta
+                        name={`Advanced Foam Inc. `}
+                        content={`Advanced Foam Inc. - Foam Fabrication and props amde in California.`}/>
+                    <meta charSet="utf-8"/>
+                    <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
+                </Head>
+
+			
 
 			<div className="navbar">
 
@@ -18,7 +30,10 @@ export default function Navigation (props){
 				
 						
 					<button className="stockButton">
-					<Link href="/construction/redicoat"><a href="/construction/redicoat">IN STOCK NOW</a></Link>
+					
+					<Link  as={`${'/construction/redicoat'}`} href='/[domain]/[post]' >
+                    <a> IN STOCK NOW</a>
+                </Link>
 							            
 							</button>
 					<ul className="navbar__titles">
@@ -30,6 +45,7 @@ export default function Navigation (props){
 						<li className="navbar__title"><Link href="/about"><a href="/about">About</a></Link></li>
 					</ul>
 				</div>
+		</div>
 		</div>
 		)
 

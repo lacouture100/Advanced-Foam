@@ -11,7 +11,7 @@ import Layout from '../components/layout'
 export default function Homepage({ postList }){
 
     return (
-        <Layout>
+        <Layout domain={'main'}>
         
         <div> Hello
         </div>
