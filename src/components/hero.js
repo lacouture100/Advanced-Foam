@@ -1,58 +1,85 @@
 
-import React, { Component } from 'react';
+import React, { Component, useState, useEffect } from 'react';
 import '../../styles/Hero.css'
-import data from '../../data/main_data'
 
-
-export default class Hero extends Component{
-    constructor(props){
-        super(props);
-        this.state = {
-            keywords :  data.Construction.words[0]
+const words = {
+    "studio" : 
+    [
+        {
+            "word": "MOVIE SETS",
+            "index": 0
+        },
+        {
+            "word": "TV SETS",
+            "index": 1
+        },
+        {
+            "word": "ARCHITECTURAL DECORATIONS",
+            "index": 2
         }
-        this._isMounted = false;
-    }
+    ],
+    "construction" : 
+    [
+        {
+            "word": "MOVIE SETS",
+            "index": 0
+        },
+        {
+            "word": "TV SETS",
+            "index": 1
+        },
+        {
+            "word": "ARCHITECTURAL DECORATIONS",
+            "index": 2
+        } 
+    ]
+}
 
-    async startImageSlides(){
-        
-        await setInterval(() => {
+
+export default function Hero( props ){
+    const domain = props.site;
+    let index = 0;
+
+    const [word,setWord] = useState(words.studio[index].word);
+    
+    useEffect( async () =>{
+        const interval = await setInterval(() => {
             
-        
-            let newIndex = this.state.keywords.index;
-            let wordsLength = data.Construction.words.length-1;
-    
-            if( this.state.keywords.index !== (wordsLength) ){
-                newIndex += 1;
-            }else {
-                newIndex=0;
+            if(index >= words.studio.length-1){
+                index=0;
             }
-            this.setState({
-                keywords: data.Construction.words[newIndex]
-            })
-    
-        }, 2000);
-    
-    }
-    componentDidMount(){
-        // Wait until we have the data to start the slides
-            this._isMounted = true;
-            this._isMounted && this.startImageSlides();
-    }
+            else {
+                index++;
+            }
+            let wordsLength = words.studio.length-1;
+                setWord(word =>words.studio[index].word)
+          
+            
 
-    componentWillUnmount(){
-        this._isMounted = false;
-    }
-    render(){
+        }, 2000);
+        
+       return () => clearInterval(interval);
+    }, []);
+
+    const [seconds, setSeconds] = useState(0);
+  
+    useEffect(() => {
+      const interval = setInterval(() => {
+        setSeconds(seconds => seconds + 1);
+      }, 1000);
+      return () => clearInterval(interval);
+    }, []);
+  
 
         return (
             <div className="hero">
                 <div className="hero__slogan">
-                     <h3 className="hero__slogan-text"> We have over 35 years of experience making <div className="hero__slogan-dynamic-text">{this.state.keywords.word}</div> for architecture and construction projects.</h3>
+                     <h3 className="hero__slogan-text"> We have over 35 years of experience making <div className="hero__slogan-dynamic-text">{seconds}{word}</div> for architecture and construction projects.</h3>
                 </div>
                 
             </div>
         );
-    }
+    
 }
 
 
