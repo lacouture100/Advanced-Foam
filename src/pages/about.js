@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Layout from '../components/Layout'
+import Layout from '../components/layout'
 import React, { Component, Fragment } from 'react'
 import axios from 'axios'
 import "../../styles/Post.css"
@@ -24,7 +24,7 @@ export default class extends Component {
 
 
         <Layout>
-        <h1 classname="post__title">{ this.props.post.title.rendered }</h1>
+        <h1 className="post__title">{ this.props.post.title.rendered }</h1>
         <article
           className="post"
           dangerouslySetInnerHTML={ {

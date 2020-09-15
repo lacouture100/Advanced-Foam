@@ -5,7 +5,7 @@ import axios from 'axios';
 import Banner from '../components/banner'
 import Layout from '../components/layout'
 import Clients from '../components/clients'
-
+import Contact from '../components/contact'
 
 
 export default function Construction({ postList }){
@@ -24,6 +24,7 @@ export default function Construction({ postList }){
         </div>
                 <Banner data={postList} />
        <Clients />
+       <Contact />
        
         </Layout>
         )
