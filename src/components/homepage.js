@@ -12,7 +12,6 @@ export default function Homepage({ postList }){
 
     return (
         <Layout domain={'main'}>
-        
         <div> Hello
         </div>
             
