@@ -8,6 +8,7 @@
     
 }
 
+
 .navbar__navigation-container {
     display: flex;
     flex-direction: row;
@@ -36,8 +37,8 @@ nav ul{
     list-style: none;
 }
 .navbar img {
-    max-width: 30%;
-    min-height: auto;
+    max-width: 50%;
+    min-height: 10%;
     margin:2%;
     cursor: pointer;
    

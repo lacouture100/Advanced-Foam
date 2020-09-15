@@ -23,11 +23,11 @@ export default class Banner extends Component {
       const { data } = this.state;
   
       return (
-        <div className="products-banner">
+        <div className="banner">
           <Fragment>
                       {/* Links */}
-                      <h2 className="products-banner-title"> IN STOCK NOW</h2>
-                      <div className="products-banner-content">
+                      <h2 className="banner-title"> IN STOCK NOW</h2>
+                      <div className="banner-content">
                       {
                           data.map((post, index) => {
                               return (

@@ -15,15 +15,7 @@ export default function Construction({ postList }){
     return (
         <Layout domain="construction">
         <Hero />
-        <div>
-            {/*postList.map((e,index) => (
-                <div key={index}>
-                <Link  as={`/${'construction'}/${e.slug}`} href='/[domain]/[post]' >
-                    <a> Navigate to {e.domain} {e.slug}</a>
-                </Link>
-                </div>
-            ))*/}
-        </div>
+        
                 <Banner data={postList} />
        <Clients />
        <Contact />

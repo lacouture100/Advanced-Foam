@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Head from 'next/head'
 import '../../styles/Navigation.css'
 
+
 const inStockLink = '/Construction/redicoat'
 //const logo = require('/img/logos/advancedFoam_main.png');
 const logo = '/img/logos/advancedFoam_main.png'
@@ -23,9 +24,11 @@ export default function Navigation (props){
 			
 
 			<div className="navbar">
-
+			<Link  href={ `/${props.site ? props.site : 'main' }` }>
+                                  <a  href={ `/${props.site ? props.site : 'main' }` }>
 				<img src={`http://www.advancedfoam.com/wp-content/uploads/2020/09/advancedFoam_${props.site ? props.site : 'main' }.png`} alt={""} className="navbar-img"></img>
-		
+				</a>
+				</Link>
 				<div className="navbar__navigation-container">
 				
 						

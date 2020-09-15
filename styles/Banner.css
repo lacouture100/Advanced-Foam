@@ -15,7 +15,7 @@ body {
   
   /*-----------------------------CATEGORY---------------------------- */
   
-  .products-banner {
+  .banner {
     text-align: center;
     display: flex;
     
@@ -24,12 +24,12 @@ body {
     
   }
   
-  .products-banner-title {
+  .banner-title {
     color: #fff;
   }
   
   
-  .products-banner-content {
+  .banner-content {
     text-align: center;
     display: flex;
     flex-wrap: wrap;
