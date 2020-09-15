@@ -7,7 +7,6 @@ export default function Post({postData}) {
     return (
         <div>
         <h2> {router.query.domain}'s {router.query.post}</h2>
-        <p>{postData.title.rendered}</p>
 
         <h1 className="post__title">{postData.title.rendered}</h1>
                 <article
@@ -22,7 +21,8 @@ export default function Post({postData}) {
 
 
 
-Post.getInitialProps = async ( context) => {
+Post.getInitialProps = async ( context ) => {
+    //check if the context is making a request server-side. req and res only exist/are defined server-side
     
     const {query} = context;
     const LINK = `https://www.${query.domain}.advancedfoam.com/wp-json/wp/v2/posts?slug=${query.post}`;
