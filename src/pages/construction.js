@@ -14,9 +14,9 @@ export default function Construction({ postList }){
 
     return (
         <Layout domain="construction">
-        <Hero />
+        <Hero domain="construction"/>
         
-                <Banner data={postList} />
+        <Banner data={postList} />
        <Clients />
        <Contact />
        <Footer />

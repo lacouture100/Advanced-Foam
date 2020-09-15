@@ -53,28 +53,15 @@ export default function Hero( props ){
             }
             let wordsLength = words.studio.length-1;
                 setWord(word =>words.studio[index].word)
-          
-            
-
         }, 2000);
-        
+        // Clear the interval to prevent a memory
        return () => clearInterval(interval);
     }, []);
-
-    const [seconds, setSeconds] = useState(0);
-  
-    useEffect(() => {
-      const interval = setInterval(() => {
-        setSeconds(seconds => seconds + 1);
-      }, 1000);
-      return () => clearInterval(interval);
-    }, []);
-  
 
         return (
             <div className="hero">
                 <div className="hero__slogan">
-                     <h3 className="hero__slogan-text"> We have over 35 years of experience making <div className="hero__slogan-dynamic-text">{seconds}{word}</div> for architecture and construction projects.</h3>
+                     <h3 className="hero__slogan-text"> We have over 35 years of experience making <div className="hero__slogan-dynamic-text">{word}</div> for architecture and construction projects.</h3>
                 </div>
                 
             </div>
@@ -84,4 +71,15 @@ export default function Hero( props ){
 
 
 
+/*
+Timer component
+const [seconds, setSeconds] = useState(0);
+  
+useEffect(() => {
+  const interval = setInterval(() => {
+    setSeconds(seconds => seconds + 1);
+  }, 1000);
+  return () => clearInterval(interval);
+}, []);
 
+*/
