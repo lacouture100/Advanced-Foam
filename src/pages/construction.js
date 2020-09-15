@@ -2,18 +2,16 @@
 import Link from 'next/link'
 import { Fragment } from 'react';
 import axios from 'axios';
-import Navigation from '../components/navigation'
 import Banner from '../components/banner'
-
+import Layout from '../components/layout'
+import Clients from '../components/clients'
 
 
 
 export default function Construction({ postList }){
 
     return (
-        <Fragment>
-        
-        <Navigation site="construction"/>
+        <Layout domain="construction">
         
         <div>
             {postList.map((e,index) => (
@@ -25,9 +23,9 @@ export default function Construction({ postList }){
             ))}
         </div>
                 <Banner data={postList} />
+       <Clients />
        
-        </Fragment>
-        
+        </Layout>
         )
 }
 

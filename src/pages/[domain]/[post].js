@@ -1,10 +1,14 @@
 import { useRouter } from 'next/router';
 import axios from 'axios'
+import "../../../styles/Post.css"
+import Layout from '../../components/layout'
+
 
 
 export default function Post({postData}) {
     const router = useRouter();
     return (
+        <Layout domain={router.query.domain}>
         <div>
         <h2> {router.query.domain}'s {router.query.post}</h2>
 
@@ -15,7 +19,7 @@ export default function Post({postData}) {
                     __html: postData.content.rendered
                 }}/>
         </div>
-
+            </Layout>
     )
 }
 
