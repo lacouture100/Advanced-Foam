@@ -43,3 +43,7 @@ Now, in the command line head to the root directory and run `npm run dev`. Open 
 ### Dynamic Routing
 
 Create and `/[objects]/[user]` file inside the pages directory. the `[]` is a way of telling Nextjs we are using dynamic routing. 
+
+
+
+### Component Level CC

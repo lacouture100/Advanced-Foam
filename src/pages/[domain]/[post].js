@@ -9,17 +9,16 @@ export default function Post({postData}) {
     const router = useRouter();
     return (
         <Layout domain={router.query.domain}>
-        <div>
-        <h2> {router.query.domain}'s {router.query.post}</h2>
-
-        <h1 className="post__title">{postData.title.rendered}</h1>
+            <div>
+        {/*<h2> {router.query.domain}'s {router.query.post}</h2>*/}
+                <h1 className="post__title">{postData.title.rendered}</h1>
                 <article
                     className="post"
                     dangerouslySetInnerHTML={{
                     __html: postData.content.rendered
                 }}/>
-        </div>
-            </Layout>
+            </div>
+        </Layout>
     )
 }
 

@@ -1,27 +1,12 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link'
 import '../../styles/Banner.css'
 import { Fragment } from 'react';
-
 import Card from './card'
 
+export default function Banner(props) {
+  const [data,setData] = useState(props.data);
 
-// class component
-export default class Banner extends Component {
-
-    constructor(props){
-      super(props);
-      this.state = {
-        data: this.props.data
-      }
-    }
-  
-  
-  
-    render() {
-      //this data comes all the way from the construction.js page
-      const { data } = this.state;
-  
       return (
         <div className="banner">
           <Fragment>
@@ -43,5 +28,5 @@ export default class Banner extends Component {
             </Fragment>
         </div>
       );
-    }
+    
   }

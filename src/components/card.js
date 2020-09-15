@@ -1,29 +1,14 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link'
 //import '../../styles/Card.css'
 import { Fragment } from 'react';
 
-// class component
-export default class Card extends Component {
 
-    constructor(props){
-      super(props);
-      this.state = {
-        post: this.props.post
-      }
-    }
-  
-  
-  
-    render() {
-      //this data comes all the way from the construction.js page
-      const { post } = this.state;
-  
+  export default function Card(props) {
+    const [post,setPost] = useState(props.post);
+
       return (
 
-        
-        
-       
         <div id={`card-${post.id}`} className="card">
 
         {/* The imgSrc was grabbed using a WP plugin fro better access to media*/}
@@ -42,12 +27,8 @@ export default class Card extends Component {
             
             </div>
             
-        </div>
-
-        
-    
-                           
+        </div>                 
       );
-    }
+    
   }
 
