@@ -6,8 +6,7 @@ import '../../styles/Contact.css';
 
 export default function Contact () {
     return (
-      
-        <Layout>
+
         
       <div className="contact-main">
         <div className="contact-border"></div>
@@ -21,7 +20,7 @@ export default function Contact () {
       </div>
     
 
-      </Layout>
+     
     )
  
 }

@@ -6,21 +6,22 @@ import Banner from '../components/banner'
 import Layout from '../components/layout'
 import Clients from '../components/clients'
 import Contact from '../components/contact'
+import Hero from '../components/hero'
 
 
 export default function Construction({ postList }){
 
     return (
         <Layout domain="construction">
-        
+        <Hero />
         <div>
-            {postList.map((e,index) => (
+            {/*postList.map((e,index) => (
                 <div key={index}>
                 <Link  as={`/${'construction'}/${e.slug}`} href='/[domain]/[post]' >
                     <a> Navigate to {e.domain} {e.slug}</a>
                 </Link>
                 </div>
-            ))}
+            ))*/}
         </div>
                 <Banner data={postList} />
        <Clients />

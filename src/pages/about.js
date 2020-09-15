@@ -22,15 +22,14 @@ export default class extends Component {
   render() {
     return (
 
-
-        <Layout>
+      <div className="post">
         <h1 className="post__title">{ this.props.post.title.rendered }</h1>
         <article
           className="post"
           dangerouslySetInnerHTML={ {
             __html: this.props.post.content.rendered
           } } />
-      </Layout>
+      </div>
     )
   }
 }
