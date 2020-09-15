@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import '../../styles/Footer.css'
 
-class Footer extends Component{
+export default class Footer extends Component{
     static defaultProps = {
         footer_1A: 'Speak to us',
         footer_1B: 'Phone: (310) 515-0728',
@@ -60,6 +60,4 @@ class Footer extends Component{
     }
 }
 
-export default Footer;
-
-
+ 
