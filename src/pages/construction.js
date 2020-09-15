@@ -7,6 +7,7 @@ import Layout from '../components/layout'
 import Clients from '../components/clients'
 import Contact from '../components/contact'
 import Hero from '../components/hero'
+import Footer from '../components/footer'
 
 
 export default function Construction({ postList }){
@@ -26,6 +27,7 @@ export default function Construction({ postList }){
                 <Banner data={postList} />
        <Clients />
        <Contact />
+       <Footer />
        
         </Layout>
         )
