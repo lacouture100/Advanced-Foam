@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Header from './header2';
+import Header from './header';
 
 const SiteLayout = ({ children, domain }) => (
   <div className="layout">

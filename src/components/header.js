@@ -4,10 +4,16 @@ import Link from '@material-ui/core/Link';
 import AppBar from '@material-ui/core/AppBar';
 import Button from '@material-ui/core/Button';
 import Toolbar from '@material-ui/core/Toolbar';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, useTheme } from '@material-ui/core/styles';
+import IconButton from '@material-ui/core/IconButton';
+import MenuIcon from '@material-ui/icons/Menu';
+import Menu from '@material-ui/core/Menu';
+import MenuItem from '@material-ui/core/MenuItem';
+
 import Typography from '@material-ui/core/Typography';
 import Image from 'material-ui-image'
 import Grid from '@material-ui/core/Grid'
+import { useMediaQuery, useMediaQueries } from '@react-hook/media-query';
 
 const inStockLink = '/Construction/redicoat'
 //const logo = require('/img/logos/advancedFoam_main.png');
@@ -36,6 +42,7 @@ const useStyles = makeStyles((theme) => ({
 	toolbar: {
 	  flexWrap: 'no-wrap',
 	},
+	
 	toolbarTitle: {
 	  flexGrow: 1,
 	},
@@ -51,37 +58,84 @@ const useStyles = makeStyles((theme) => ({
 	  flexGrow: 1,
 	},
 	stockButton : {
-		backgroundColor: "red"
-		
-	}
+		backgroundColor: "red",
+	},
+	
+	
+
+	sectionDesktop: {
+		display: 'none',
+		[theme.breakpoints.up('md')]: {
+		  display: 'flex',
+		},
+	  },
+	  sectionMobile: {
+		display: 'flex',
+		[theme.breakpoints.up('md')]: {
+		  display: 'none',
+		},
+	  },
 }));
 
 export default function Header (props){
 	const classes = useStyles();
+	const [anchorEl, setAnchorEl] = React.useState(null);
+	const open = Boolean(anchorEl);
+  
+	const theme = useTheme();
+	const matches = useMediaQuery(theme.breakpoints.up("sm"));
+  
+	//Check if the screen is lower than xs size
+   // const isMobile = useMediaQuery(theme.breakpoints.up("xs"));
+	  //console.log(isMobile);
+  
+	  //Sets the drop-down position to wherever we have the mouse at
+	const handleMenu = (event) => {
+	  setAnchorEl(event.currentTarget);
+	};
+  
+	// Whenever we choose something or click elsewhere it dissapears
+	const handleClose = () => {
+	  setAnchorEl(null);
+	};
+
+	
 		return(
 				<AppBar position ="static" color="default" elevation={0} className={classes.appBar}>
 					<Toolbar className={classes.toolbar}>
-						<Grid container>
-							<Grid item xs={3}>
-							<Link  href={ `/${props.site ? props.site : '' }` }>
-									<img 
-									src={`http://www.advancedfoam.com/wp-content/uploads/2020/09/advancedFoam_${props.site ? props.site : 'main' }.png`}  
-									className={classes.toolbarImage}>
-									</img>
+						<Grid   container
+								direction="row"
+								justify="space-between"
+								alignItems="center">
+							<Grid item xs={6} md={3}>
+							<Link  href={ `/` }>
+
+								
+							<Typography variant="h6" className={classes.title}>
+								Advanced Foam
+							</Typography>
+							{/*
+								<img 
+								src={`http://www.advancedfoam.com/wp-content/uploads/2020/09/advancedFoam_${props.site ? props.site : 'main' }.png`}  
+								className={classes.toolbarImage}>
+								</img>
+							*/}
 							</Link>
-							</Grid>
-
-							<Grid item xs={1} md={2}>
 
 							</Grid>
-							<Grid item xs={8} md={7} container>
+
+					
+
+							
+							<Grid item xs={6} md={9} justify="flex-end" container className={classes.navSection}>
 
 								<Button className={classes.stockButton}>
 									<Link color="inherit" href="/construction/redicoat">
 									IN STOCK NOW
 									</Link>
 								</Button>
-							
+								{/* Here is where I create My sections*/}
+								<div className={classes.sectionDesktop}>
 								{
 									sections.map(section=>(
 										<Link 
@@ -95,8 +149,42 @@ export default function Header (props){
 										</Link>
 									))
 								}
-								
-								
+								</div>
+								{/* Here is where I create My menu button*/}
+								<div>
+								<IconButton
+									className={classes.sectionMobile}
+									aria-label="account of current user"
+									aria-controls="menu-appbar"
+									aria-haspopup="true"
+									onClick={handleMenu}
+									color="inherit"
+									>
+										<MenuIcon />
+									</IconButton>
+
+										
+									<Menu
+										className={classes.sectionMobile}
+										id="menu-appbar"
+										anchorEl={anchorEl}
+										anchorOrigin={{
+										vertical: 'top',
+										horizontal: 'right',
+										}}
+										keepMounted
+										transformOrigin={{
+										vertical: 'top',
+										horizontal: 'right',
+										}}
+										open={open}
+										onClose={handleClose}
+										>
+											<MenuItem onClick={handleClose}>Main</MenuItem>
+											<MenuItem onClick={handleClose}>In Stock Now</MenuItem>
+											
+									</Menu>
+									</div>
 							</Grid>
 						</Grid>
 					</Toolbar>

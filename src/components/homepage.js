@@ -12,7 +12,7 @@ import Media from '../components/mediaQuery'
 export default function Homepage({ postList }){
 
     return (
-        <Layout domain={'main'}>
+        <Layout >
         <div> Hello
         </div>
         <Media></Media>
