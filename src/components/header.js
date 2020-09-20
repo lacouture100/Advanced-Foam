@@ -47,7 +47,8 @@ const useStyles = makeStyles((theme) => ({
 	},
 	link: {
 	  margin: theme.spacing(1, 1.5),
-	  flexShrink: 0
+	  flexShrink: 0,
+	  flexGrow: 1,
 	},
 	stockButton : {
 		backgroundColor: "red"
@@ -70,10 +71,10 @@ export default function Header (props){
 							</Link>
 							</Grid>
 
-							<Grid item xs={0} md={3}>
+							<Grid item xs={1} md={2}>
 
 							</Grid>
-							<Grid item xs={9} md={6} container>
+							<Grid item xs={8} md={7} container>
 
 								<Button className={classes.stockButton}>
 									<Link color="inherit" href="/construction/redicoat">
