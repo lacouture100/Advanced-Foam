@@ -1,9 +1,9 @@
 import Link from "next/link";
-import Navigation from './navigation';
+import Header from './header';
 
 const SiteLayout = ({ children, domain }) => (
   <div className="layout">
-    <Navigation site={domain}/>
+    <Header site={domain}/>
 	<div className="content">{children}</div>
   </div>
 );

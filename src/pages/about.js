@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Layout from '../components/layout'
 import React, { Component, Fragment } from 'react'
 import axios from 'axios'
-import "../../styles/Post.css"
+
 
 
 export default class extends Component {
@@ -21,7 +21,7 @@ export default class extends Component {
 
   render() {
     return (
-
+      <Layout>
       <div className="post">
         <h1 className="post__title">{ this.props.post.title.rendered }</h1>
         <article
@@ -30,6 +30,7 @@ export default class extends Component {
             __html: this.props.post.content.rendered
           } } />
       </div>
+      </Layout>
     )
   }
 }

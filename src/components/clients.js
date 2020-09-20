@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Link from 'next/link'
-import '../../styles/Clients.css'
 
 const data ={
   "Clients":[

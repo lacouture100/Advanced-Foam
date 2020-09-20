@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Layout from '../components/layout'
 import React, { Component, Fragment } from 'react'
 import axios from 'axios'
-import "../../styles/Post.css"
+
 
 
 export default class extends Component {

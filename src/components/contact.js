@@ -3,8 +3,6 @@ import Layout from '../components/layout';
 import React from 'react';
 import Link from 'next/link'
 
-import '../../styles/Contact.css';
-
 export default function Contact () {
     return (
       <div className="contact-main">

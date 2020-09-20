@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Link from 'next/link'
-import '../../styles/Banner.css'
 import { Fragment } from 'react';
 import Card from './card'
 
