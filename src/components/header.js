@@ -81,14 +81,7 @@ export default function Header (props){
 	const classes = useStyles();
 	const [anchorEl, setAnchorEl] = React.useState(null);
 	const open = Boolean(anchorEl);
-  
-	const theme = useTheme();
-	const matches = useMediaQuery(theme.breakpoints.up("sm"));
-  
-	//Check if the screen is lower than xs size
-   // const isMobile = useMediaQuery(theme.breakpoints.up("xs"));
-	  //console.log(isMobile);
-  
+
 	  //Sets the drop-down position to wherever we have the mouse at
 	const handleMenu = (event) => {
 	  setAnchorEl(event.currentTarget);
@@ -99,18 +92,17 @@ export default function Header (props){
 	  setAnchorEl(null);
 	};
 
-	
-		return(
-				<AppBar position ="static" color="default" elevation={0} className={classes.appBar}>
-					<Toolbar className={classes.toolbar}>
-						<Grid   container
-								direction="row"
-								justify="space-between"
-								alignItems="center">
-							<Grid item xs={6} md={3}>
-							<Link  href={ `/` }>
+	return(
+		<AppBar position ="static" color="default" elevation={0} className={classes.appBar}>
+			<Toolbar className={classes.toolbar}>
+				<Grid   container
+						direction="row"
+						justify="space-between"
+						alignItems="center">
 
-								
+					{/* Advanced Foam Logo*/}		
+					<Grid item xs={6} md={3}>
+						<Link  href={ `/` }>	
 							<Typography variant="h6" className={classes.title}>
 								Advanced Foam
 							</Typography>
@@ -120,89 +112,81 @@ export default function Header (props){
 								className={classes.toolbarImage}>
 								</img>
 							*/}
+						</Link>
+					</Grid>
+
+					<Grid item xs={6} md={9} justify="flex-end" container className={classes.navSection}>
+
+						{/* In Stock button*/}
+						<Button className={classes.stockButton}>
+							<Link color="inherit" href="/construction/redicoat">
+							IN STOCK NOW
 							</Link>
+						</Button>
 
-							</Grid>
+						{/* Navigation Sections*/}
+						<div className={classes.sectionDesktop}>
+						{sections.map(section=>(
+								<Link 
+								variant="button"
+								color="inherit" 
+								href={section.url} 
+								key={section.title}
+								noWrap
+								className={classes.link}>
+								{section.title}
+								</Link>
+							))}
+						</div>
 
-					
+						{/* Mobile Menu button*/}
+						<div>
+							<IconButton
+								className={classes.sectionMobile}
+								aria-label="account of current user"
+								aria-controls="menu-appbar"
+								aria-haspopup="true"
+								onClick={handleMenu}
+								color="inherit"
+								>
+								<MenuIcon />
+							</IconButton>
 
-							
-							<Grid item xs={6} md={9} justify="flex-end" container className={classes.navSection}>
-
-								<Button className={classes.stockButton}>
-									<Link color="inherit" href="/construction/redicoat">
-									IN STOCK NOW
+								
+							<Menu
+								className={classes.sectionMobile}
+								id="menu-appbar"
+								anchorEl={anchorEl}
+								anchorOrigin={{
+								vertical: 'top',
+								horizontal: 'right',
+								}}
+								keepMounted
+								transformOrigin={{
+								vertical: 'top',
+								horizontal: 'right',
+								}}
+								open={open}
+								onClose={handleClose}
+								>
+								{sections.map(section=>(
+									<Link 
+									variant="button"
+									color="inherit" 
+									href={section.url} 
+									key={section.title}
+									noWrap
+									className={classes.link}>
+										<MenuItem onClick={handleClose}>
+									{section.title}
+									</MenuItem>
 									</Link>
-								</Button>
-								{/* Here is where I create My sections*/}
-								<div className={classes.sectionDesktop}>
-								{
-									sections.map(section=>(
-										<Link 
-										variant="button"
-										color="inherit" 
-										href={section.url} 
-										key={section.title}
-										noWrap
-										className={classes.link}>
-										{section.title}
-										</Link>
-									))
-								}
-								</div>
-								{/* Here is where I create My menu button*/}
-								<div>
-								<IconButton
-									className={classes.sectionMobile}
-									aria-label="account of current user"
-									aria-controls="menu-appbar"
-									aria-haspopup="true"
-									onClick={handleMenu}
-									color="inherit"
-									>
-										<MenuIcon />
-									</IconButton>
-
-										
-									<Menu
-										className={classes.sectionMobile}
-										id="menu-appbar"
-										anchorEl={anchorEl}
-										anchorOrigin={{
-										vertical: 'top',
-										horizontal: 'right',
-										}}
-										keepMounted
-										transformOrigin={{
-										vertical: 'top',
-										horizontal: 'right',
-										}}
-										open={open}
-										onClose={handleClose}
-										>
-											{
-									sections.map(section=>(
-										<Link 
-										variant="button"
-										color="inherit" 
-										href={section.url} 
-										key={section.title}
-										noWrap
-										className={classes.link}>
-											<MenuItem onClick={handleClose}>
-										{section.title}
-										</MenuItem>
-										</Link>
-									))
-								}
-				
-											
-									</Menu>
-									</div>
-							</Grid>
-						</Grid>
-					</Toolbar>
-				</AppBar>
-		)
-
+								))}		
+								</Menu>
+							</div>
+					</Grid>
+				</Grid>
+			</Toolbar>
+		</AppBar>
+	)
 }
