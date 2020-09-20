@@ -180,8 +180,22 @@ export default function Header (props){
 										open={open}
 										onClose={handleClose}
 										>
-											<MenuItem onClick={handleClose}>Main</MenuItem>
-											<MenuItem onClick={handleClose}>In Stock Now</MenuItem>
+											{
+									sections.map(section=>(
+										<Link 
+										variant="button"
+										color="inherit" 
+										href={section.url} 
+										key={section.title}
+										noWrap
+										className={classes.link}>
+											<MenuItem onClick={handleClose}>
+										{section.title}
+										</MenuItem>
+										</Link>
+									))
+								}
+				
 											
 									</Menu>
 									</div>
