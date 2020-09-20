@@ -1,62 +1,128 @@
+import * as React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import Container from '@material-ui/core/Container';
+import Typography from '@material-ui/core/Typography';
+import Link from '@material-ui/core/Link';
 
-import React, { Component } from 'react';
-
-export default class Footer extends Component{
-    static defaultProps = {
-        footer_1A: 'Speak to us',
-        footer_1B: 'Phone: (310) 515-0728',
-        footer_1C: 'Fax: (310) 515-3548',
-
-        footer_2A: 'Email us',
-        footer_2B: 'info@advancedfoam.com',
-
-        footer_3A: 'Headquarters',
-        footer_3B: 'Gardena, California',
-        footer_3C: '1745 W. 134th St.',
-        footer_3D: 'Gardena, CA 90249',
-
-        footer_RR: '© 2011 - 2020 Advanced Foam, Inc.'
+const footer =[
+    {   
+        'title':'Speak to us',
+        'subtitle1': 'Phone: (310) 515-0728',
+        'subtitle2': 'Fax: (310) 515-3548'
+    },
+    {   
+        'title':'Email us',
+        'subtitle1': 'info@advancedfoam.com',
+    },
+    {   
+        'title':'Headquarters',        
+        'subtitle1': '1745 W. 134th St.',
+        'subtitle2': 'Gardena, CA 90249',
     }
-    render(){
-        //When putting this.props only it assumes the name will be the name of the varaible given.
-        //Its a shorthand
-        const {footer_1A,
-               footer_1B,
-               footer_1C,
-               footer_2A,
-               footer_2B,
-               footer_3A,
-               footer_3B,
-               footer_3C,
-               footer_3D,
-               footer_RR} = this.props;
-        return (
-            <div className="footer">
-                <div className="footer-main">
-                    <ul className="footer-titles">
-                        <li className="footer-title">{footer_1A}</li>
-                        <br></br>
-                        <li className="footer-subtitle" >{footer_1B}</li>
-                        <li className="footer-subtitle" >{footer_1C}</li>
-                    </ul>
-                    <ul className="footer-titles">
-                        <li className="footer-title" ><a href="mailto:info@advancedfoam.com">{footer_2A}</a></li>
-                        <br></br>
-                        <li className="footer-subtitle"><a href="mailto:info@advancedfoam.com">{footer_2B}</a></li>
-                    </ul>
-                    <ul className="footer-titles">
-                        <li className="footer-title">{footer_3A}</li>
-                        <br></br>
-                        <li className="footer-subtitle" >{footer_3B}</li>
-                        <li className="footer-subtitle" >{footer_3C}</li>
-                        <li className="footer-subtitle" >{footer_3D}</li>
-                    </ul>
-                </div>
-
-                <li className="footer-rights" >{footer_RR}</li>
-            </div>
-        );
-    }
+]
+     
+function Copyright() {
+  return (
+    <Typography variant="body2" color="textSecondary" align="center">
+      {'Copyright © '}
+      <Link color="inherit" href="https://www.advancedfoam.com/">
+        Advanced Foam
+      </Link>{' '}
+      {new Date().getFullYear()}
+      {'.'}
+    </Typography>
+  );
 }
 
- 
+const useStyles = makeStyles((theme) => ({
+  footer: {
+    backgroundColor: theme.palette.background.paper,
+    // marginTop: theme.spacing(8),
+    padding: theme.spacing(6, 0),
+
+  },
+  footerSection : {
+    display: 'flex',
+    justifyContent:"space-evenly",
+    [theme.breakpoints.down('sm')]: {
+      flexDirection : 'column',
+		},
+  }
+
+}));
+
+export default function Footer(props) {
+  const classes = useStyles();
+
+  return (
+    <footer className={classes.footer} >
+    <grid container direction='row' className={classes.footerSection}>
+      <grid item>
+      <Container maxWidth="lg">
+        <Typography variant="h6" align="center" gutterBottom>
+          {footer[0].title}
+        </Typography>
+        <Typography
+          variant="subtitle1"
+          align="center"
+          color="textSecondary"
+          component="p"
+        >
+          {footer[0].subtitle1}
+        </Typography>
+        <Typography
+          variant="subtitle1"
+          align="center"
+          color="textSecondary"
+          component="p"
+        >
+          {footer[0].subtitle2}
+        </Typography>
+        <Copyright />
+      </Container>
+      </grid>
+
+      <grid item  >
+      <Container maxWidth="lg">
+        <Typography variant="h6" align="center" gutterBottom>
+          {footer[1].title}
+        </Typography>
+        <Typography
+          variant="subtitle1"
+          align="center"
+          color="textSecondary"
+          component="p"
+        >
+          {footer[1].subtitle1}
+        </Typography>
+        </Container>
+      </grid>
+
+      <grid item >
+      <Container maxWidth="lg">
+        <Typography variant="h6" align="center" gutterBottom>
+          {footer[2].title}
+        </Typography>
+        <Typography
+          variant="subtitle1"
+          align="center"
+          color="textSecondary"
+          component="p"
+        >
+          {footer[2].subtitle1}
+        </Typography>
+        <Typography
+          variant="subtitle1"
+          align="center"
+          color="textSecondary"
+          component="p"
+        >
+          {footer[2].subtitle2}
+        </Typography>
+        <Copyright />
+      </Container>
+      </grid>
+      </grid>
+    </footer>
+  );
+}

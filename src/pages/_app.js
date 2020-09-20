@@ -18,14 +18,14 @@ export default function MyApp(props) {
 
   return (
     <React.Fragment>
-				<Head>
-            <title>{`Advanced Foam`}</title>
-            <meta
-                name={`Advanced Foam Inc.`}
-                content={`Advanced Foam Inc. - Foam Fabrication and props made in California.`}/>
-            <meta charSet="utf-8"/>
-            <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
-        </Head>
+      <Head>
+          <title>{`Advanced Foam`}</title>
+          <meta
+              name={`Advanced Foam Inc.`}
+              content={`Advanced Foam Inc. - Foam Fabrication and props made in California.`}/>
+          <meta charSet="utf-8"/>
+          <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
+      </Head>
 
 			
       <ThemeProvider theme={theme}>
