@@ -127,22 +127,29 @@ const useStyles = makeStyles((theme) => ({
     justifyContent : 'center'
   },
   sectionGrid: {
-    padding: theme.spacing(4),
+    display: 'flex',
+    justifyContent: 'center',
+    padding: theme.spacing(6, 10, 6),
+    
     backgroundColor : '#313131'  
   },
   card: {
-    height: '100%',
+    width: '95%',
     display: 'flex',
     flexDirection: 'column',
   },
   cardMedia: {
-    paddingTop: '100%', // 16:9
+    paddingTop: '90%', // 16:9
   },
   cardContent: {
     display: 'flex',
     flexDirection: 'column',
     flexGrow: 1,
     justifyContent:"center"
+  },
+  cardButtons:{
+    display: 'flex',
+    justifyContent : 'space-evenly'
   }
 }));
 
@@ -180,13 +187,13 @@ export default function Banner() {
   const content =[studio,construction,packaging];
   return (
     <React.Fragment>
-          <Grid  className={classes.sectionGrid} container spacing={8}>
+          <Grid  className={classes.sectionGrid} container >
 
               {/* START Studio Section */}
               {
                 sections.map((section, index) => (
-                  <Grid key={index} item xs={12}md={4}>
-                    <Card className={classes.root}>
+                  <Grid key={index} item xs={12}md={4} container >
+                    <Card className={classes.card} align="center" item xs={12}md={4} >
                     <CardContent className={classes.cardContent}>
                     <Typography variant="h4" align="center" color="textPrimary" paragraph className={classes.sectionTitle}>
                       {sections[index].title}
@@ -215,12 +222,14 @@ export default function Banner() {
                         </CardContent>
                       </CardActionArea>
                       <CardActions>
-                        <Button size="small" color="primary">
-                          Share
-                        </Button>
-                        <Button size="small" color="primary">
-                          Learn More
-                        </Button>
+                        <Container className={classes.cardButtons}>
+                          <Button size="small" color="primary">
+                            Share
+                          </Button>
+                          <Button size="small" color="primary">
+                            Learn More
+                          </Button>
+                        </Container>
                       </CardActions>
                     </Card>
                     </Grid>

@@ -60,12 +60,6 @@ const useStyles = makeStyles((theme) => ({
       alignItems: 'center',
       paddingBottom: theme.spacing(2),
   },
-  heroDynamicText : {
-    variant : 'h4',
-    [theme.breakpoints.down('sm')]: {
-      variant : 'h6',
-    }
-  },
   heroTitles: {
     display: 'flex',
     flexDirection: 'column',
@@ -158,7 +152,7 @@ export default function Hero( props ) {
 
                 </img>
                 <div >
-                <Typography  align="center" color="textSecondary"  className={classes.heroDynamicText}>
+                <Typography variant='h6' align="center" color="textPrimary"  className={classes.heroDynamicText}>
                  {word}
                 </Typography>
                 </div>
