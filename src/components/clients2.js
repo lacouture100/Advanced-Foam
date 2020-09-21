@@ -23,7 +23,7 @@ const sections = [
         imgSrc: "http://www.advancedfoam.com/wp-content/uploads/2020/09/mummy_preview.jpg",
         title: "The Mummy",
         production: "Universal Studios",
-        link: "/studio/mummy",
+        year: "http://www.advancedfoam.com/studio/mummy",
         slug: "the-mummy",
         year : "2017"
       },
@@ -33,7 +33,7 @@ const sections = [
         imgSrc: "http://www.advancedfoam.com/wp-content/uploads/2020/09/americanHorror_preview.jpg",
         title: "American Horror Story: Hotel",
         production: "20th Century Fox",
-        link: "/studio/american-horror-story-hotel",
+        year: "",
         slug: "american-horror-story-hotel",
         year : "2015"
       },
@@ -43,7 +43,7 @@ const sections = [
         imgSrc: "http://www.advancedfoam.com/wp-content/uploads/2020/09/starTrek_preview.png",
         title: "Star Trek",
         production: "Paramount Pictures",
-        link: "/studio/star-trek",
+        year: "http://www.advancedfoam.com/studio/star-trek",
         slug: "star-trek",
         year : "2009"
       }
@@ -61,7 +61,7 @@ const sections = [
         imgSrc: "./img/construction/orsini.png",
         title: "The Orsini",
         production: "Los Angeles",
-        link: "http://www.advancedfoam.com/studio/mummy",
+        year: "",
         slug: "star-trek",
         year : "2009"
     },
@@ -71,7 +71,6 @@ const sections = [
         imgSrc: "./img/construction/appfels.jpg",
         title: "Apffels Coffee Building",
         production: "-",
-        link: "http://www.advancedfoam.com/studio/mummy",
         year: ""
     },
     {
@@ -80,7 +79,6 @@ const sections = [
         imgSrc: "./img/construction/HamnerAve.jpg",
         title: "6987-6993 Hamner Ave",
         production: "-",
-        link: "http://www.advancedfoam.com/studio/mummy",
         year: ""
     }
     ]
@@ -97,7 +95,7 @@ const sections = [
         imgSrc: "./img/packaging/foam_1.png",
         title: "Anti-Impact Foam",
         production: "Custom Fabrication",
-        link: "http://www.advancedfoam.com/studio/mummy",
+        link: ""
     },
     {
         _id: "starTrek",
@@ -105,7 +103,7 @@ const sections = [
         imgSrc: "./img/packaging/polystyrene_1.jpg",
         title: "Polystyrene",
         production: "Custom Fabrication",
-        link: "http://www.advancedfoam.com/studio/mummy",
+        link: ""
     },
     {
         _id: "transformers",
@@ -113,8 +111,7 @@ const sections = [
         imgSrc: "./img/packaging/polyurethane_1.jpg",
         title: "Polyurethane",
         production: "Custom Fabrication",
-        year: "",
-        link: "/studio/mummy",
+        year: ""
     }
     ]
   }
@@ -133,6 +130,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     justifyContent: 'center',
     padding: theme.spacing(6, 10, 6),
+    
     backgroundColor : '#313131'  
   },
   card: {
@@ -187,7 +185,6 @@ export default function Banner() {
   }, []);
 
   const content =[studio,construction,packaging];
-  const domains = ['studio','construction','packaging']
   return (
     <React.Fragment>
           <Grid  className={classes.sectionGrid} container >
@@ -205,13 +202,10 @@ export default function Banner() {
                       <Typography variant="h6" align="center" color="textSecondary" paragraph className={classes.sectionTitle}>
                       {sections[index].subtitle}
                       </Typography>
-                      <Link underline='hover' color="inherit" href={`/${domains[index]}`}>
                       <Button size="large"   variant="contained" color="primary"  className={classes.sectionButton}>
                         Enter Here
                       </Button>
-                      </Link>
                     </CardContent>
-                    <Link underline='none' color="inherit" href={content[index].link}>
                       <CardActionArea>
                         <CardMedia
                           className={classes.cardMedia}
@@ -227,7 +221,6 @@ export default function Banner() {
                           </Typography>
                         </CardContent>
                       </CardActionArea>
-                      </Link>
                       <CardActions>
                         <Container className={classes.cardButtons}>
                           <Button size="small" color="primary">
@@ -247,4 +240,5 @@ export default function Banner() {
     </React.Fragment>
   );
 }
+
 

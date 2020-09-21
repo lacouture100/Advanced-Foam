@@ -118,7 +118,7 @@ export default function Header (props){
 
 						{/* In Stock button*/}
 						<Button className={classes.stockButton}>
-							<Link color="inherit" href="/construction/redicoat">
+							<Link underline='hover' color="inherit" href="/construction/redicoat">
 							IN STOCK NOW
 							</Link>
 						</Button>
