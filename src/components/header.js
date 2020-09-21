@@ -60,9 +60,6 @@ const useStyles = makeStyles((theme) => ({
 	stockButton : {
 		backgroundColor: "red",
 	},
-	
-	
-
 	sectionDesktop: {
 		display: 'none',
 		[theme.breakpoints.up('md')]: {
@@ -91,6 +88,8 @@ export default function Header (props){
 	const handleClose = () => {
 	  setAnchorEl(null);
 	};
+
+
 
 	return(
 		<AppBar position ="static" color="default" elevation={0} className={classes.appBar}>

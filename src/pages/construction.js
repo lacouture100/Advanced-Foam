@@ -6,7 +6,7 @@ import Banner from '../components/banner'
 import Layout from '../components/layout'
 import Clients from '../components/clients'
 import Contact from '../components/contact'
-import Hero from '../components/hero'
+import Hero from '../components/mainHero'
 import Footer from '../components/footer'
 
 

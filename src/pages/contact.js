@@ -23,7 +23,7 @@ export default class extends Component {
     return (
 
         <Layout >
-        <h1 classname="post__title">{ this.props.post.title.rendered }</h1>
+        <h1 className="post__title">{ this.props.post.title.rendered }</h1>
         <article
           className="post"
           dangerouslySetInnerHTML={ {

@@ -2,22 +2,20 @@
 import Link from 'next/link'
 import { Fragment } from 'react';
 import axios from 'axios';
-import Banner from '../components/banner'
 import Layout from '../components/layout'
 import Media from '../components/mediaQuery'
-
-
-
+import Hero from '../components/mainHero'
+import Banner from '../components/mainBanner'
+import Footer from '../components/footer'
 
 export default function Homepage({ postList }){
 
     return (
         <Layout >
-        <div> Hello
-        </div>
-        <Media></Media>
-       
-       
+
+        <Hero></Hero>
+       <Banner></Banner>
+       < Footer></Footer>
         </Layout>
         )
 }
