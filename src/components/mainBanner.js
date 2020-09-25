@@ -197,47 +197,47 @@ export default function Banner() {
                 sections.map((section, index) => (
                   <Grid key={index} item xs={12}md={4} container >
                     <Card className={classes.card} align="center" item xs={12}md={4} >
-                    <CardContent className={classes.cardContent}>
-                    <Typography variant="h4" align="center" color="textPrimary" paragraph className={classes.sectionTitle}>
-                      {sections[index].title}
-                    </Typography>
-                      
-                      <Typography variant="h6" align="center" color="textSecondary" paragraph className={classes.sectionTitle}>
-                      {sections[index].subtitle}
-                      </Typography>
-                      <Link underline='hover' color="inherit" href={`/${domains[index]}`}>
-                      <Button size="large"   variant="contained" color="primary"  className={classes.sectionButton}>
-                        Enter Here
-                      </Button>
-                      </Link>
-                    </CardContent>
-                    <Link underline='none' color="inherit" href={content[index].link}>
-                      <CardActionArea>
-                        <CardMedia
-                          className={classes.cardMedia}
-                          image={content[index].imgSrc}
-                          title="Contemplative Reptile"
-                        />
-                        <CardContent className={classes.cardContent}>
-                          <Typography gutterBottom  align="center" variant="h5" component="h2" className={classes.sectionTitle}>
-                          {content[index].title}
-                          </Typography>
-                          <Typography variant="h6"  align="center" color="textSecondary" component="p" className={classes.sectionTitle}>
-                          {content[index].production}
-                          </Typography>
-                        </CardContent>
-                      </CardActionArea>
-                      </Link>
-                      <CardActions>
-                        <Container className={classes.cardButtons}>
-                          <Button size="small" color="primary">
-                            Share
-                          </Button>
-                          <Button size="small" color="primary">
-                            Learn More
-                          </Button>
-                        </Container>
-                      </CardActions>
+                      <CardContent className={classes.cardContent}>
+                        <Typography variant="h4" align="center" color="textPrimary" paragraph className={classes.sectionTitle}>
+                          {sections[index].title}
+                        </Typography>
+                        
+                        <Typography variant="h6" align="center" color="textSecondary" paragraph className={classes.sectionTitle}>
+                        {sections[index].subtitle}
+                        </Typography>
+                        <Link underline='hover' color="inherit" href={`/${domains[index]}`}>
+                        <Button size="large"   variant="contained" color="primary"  className={classes.sectionButton}>
+                          Enter Here
+                        </Button>
+                        </Link>
+                      </CardContent>
+                      <Link underline='none' color="inherit" href={content[index].link}>
+                        <CardActionArea>
+                          <CardMedia
+                            className={classes.cardMedia}
+                            image={content[index].imgSrc}
+                            title={content[index].title}
+                          />
+                          <CardContent className={classes.cardContent}>
+                            <Typography gutterBottom  align="center" variant="h5" component="h2" className={classes.sectionTitle}>
+                            {content[index].title}
+                            </Typography>
+                            <Typography variant="h6"  align="center" color="textSecondary" component="p" className={classes.sectionTitle}>
+                            {content[index].production}
+                            </Typography>
+                          </CardContent>
+                        </CardActionArea>
+                        </Link>
+                        <CardActions>
+                          <Container className={classes.cardButtons}>
+                            <Button size="small" color="primary">
+                              Share
+                            </Button>
+                            <Button size="small" color="primary">
+                              Learn More
+                            </Button>
+                          </Container>
+                        </CardActions>
                     </Card>
                     </Grid>
                 ))

@@ -32,6 +32,6 @@ Post.getInitialProps = async ( context ) => {
     const response = await axios.get(`https://www.${query.domain}.advancedfoam.com/wp-json/wp/v2/posts?slug=${query.post}`);
             //console.log(response)
             const postData = await response.data[0];
-            console.log(postData.date)
+
     return {postData : postData}
 }

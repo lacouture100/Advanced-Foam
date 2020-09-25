@@ -7,6 +7,7 @@ import Media from '../components/mediaQuery'
 import Hero from '../components/mainHero'
 import Banner from '../components/mainBanner'
 import Footer from '../components/footer'
+import Clients from '../components/clients2'
 
 export default function Homepage({ postList }){
 
@@ -15,6 +16,7 @@ export default function Homepage({ postList }){
 
         <Hero></Hero>
        <Banner></Banner>
+       <Clients></Clients>
        < Footer></Footer>
         </Layout>
         )
