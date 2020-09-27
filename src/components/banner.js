@@ -65,8 +65,7 @@ export default function Banner(props) {
   const [data,setData] = useState(props.data);
   const domain = props.domain;
   const classes = useStyles();
-  // Used to set the link in each of the sections
-  const domains = ['studio','construction','packaging']
+
   return (
     <React.Fragment>
           <Grid  className={classes.sectionGrid} container >
@@ -107,7 +106,7 @@ export default function Banner(props) {
 
                         <CardActions>
                           <Container className={classes.cardButtons}>
-                            <Button size="small" color="primary">
+                            <Button size="small" color="primary" href={`/${domain}/${ post.slug }`}>
                               Learn More
                             </Button>
                           </Container>
