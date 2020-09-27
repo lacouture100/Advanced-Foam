@@ -25,8 +25,8 @@ const sections = [
 	{ title: 'Studio', url: '/studio' },
 	{ title: 'Construction', url: '/construction' },
 	{ title: 'Packaging', url: '/packaging' },
-	{ title: 'About', url: 'about' },
-	{ title: 'Contact us', url: 'contact' }
+	{ title: 'About', url: '/about' },
+	{ title: 'Contact us', url: '/contact' }
 ];
 
 const useStyles = makeStyles((theme) => ({
