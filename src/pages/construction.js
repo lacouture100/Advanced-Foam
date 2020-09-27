@@ -1,28 +1,21 @@
 
-import Link from 'next/link'
-import { Fragment } from 'react';
 import axios from 'axios';
-import Banner from '../components/banner'
-import Layout from '../components/layout'
-import Clients from '../components/clients'
-import Contact from '../components/contact'
-import Hero from '../components/mainHero'
-import Footer from '../components/footer'
+import Banner from '../components/banner';
+import Layout from '../components/layout';
+import Clients from '../components/clients2';
+import Hero from '../components/hero';
 
+const domain = 'construction';
 
 export default function Construction({ postList }){
 
     return (
-        <Layout domain="construction">
-        <Hero domain="construction"/>
-        
-        <Banner data={postList} />
-       <Clients />
-       <Contact />
-       <Footer />
-       
+        <Layout domain={domain}>
+            <Hero domain={domain}/>
+            <Banner data={postList} domain={domain} />
+            <Clients/>
         </Layout>
-        )
+    )
 }
 
 Construction.getInitialProps = async () => {

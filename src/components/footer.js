@@ -41,11 +41,19 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(6, 0),
 
   },
-  footerSection : {
+  section : {
     display: 'flex',
     justifyContent:"space-evenly",
     [theme.breakpoints.down('sm')]: {
       flexDirection : 'column',
+      margin : '3rem'
+		},
+  },
+  item : {
+
+    [theme.breakpoints.down('sm')]: {
+      flexDirection : 'column',
+      margin : theme.spacing(2)
 		},
   }
 
@@ -56,8 +64,8 @@ export default function Footer(props) {
 
   return (
     <footer className={classes.footer} >
-    <grid container direction='row' className={classes.footerSection}>
-      <grid item>
+    <grid  direction='row' className={classes.section}>
+      <grid item className={classes.item}>
       <Container maxWidth="lg">
         <Typography variant="h6" align="center" gutterBottom>
           {footer[0].title}
@@ -82,7 +90,7 @@ export default function Footer(props) {
       </Container>
       </grid>
 
-      <grid item  >
+      <grid item  className={classes.item}>
       <Container maxWidth="lg">
         <Typography variant="h6" align="center" gutterBottom>
           {footer[1].title}
@@ -98,7 +106,7 @@ export default function Footer(props) {
         </Container>
       </grid>
 
-      <grid item >
+      <grid item className={classes.item}>
       <Container maxWidth="lg">
         <Typography variant="h6" align="center" gutterBottom>
           {footer[2].title}

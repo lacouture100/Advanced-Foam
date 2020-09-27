@@ -6,6 +6,7 @@ import Button from '@material-ui/core/Button';
 import Toolbar from '@material-ui/core/Toolbar';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import IconButton from '@material-ui/core/IconButton';
+import Icon from '@material-ui/core/Icon';
 import MenuIcon from '@material-ui/icons/Menu';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
@@ -17,7 +18,7 @@ import { useMediaQuery, useMediaQueries } from '@react-hook/media-query';
 
 const inStockLink = '/Construction/redicoat'
 //const logo = require('/img/logos/advancedFoam_main.png');
-const logo = '/img/logos/advancedFoam_main.png'
+const logo = '/img/logo512.png'
 
 const sections = [
 	{ title: 'Main', url: '/' },
@@ -59,24 +60,40 @@ const useStyles = makeStyles((theme) => ({
 	},
 	stockButton : {
 		backgroundColor: "red",
+		[theme.breakpoints.down('xs')]: {
+			display: 'none',
+		  },
 	},
 	sectionDesktop: {
 		display: 'none',
 		[theme.breakpoints.up('md')]: {
 		  display: 'flex',
 		},
-	  },
-	  sectionMobile: {
+	},
+	sectionMobile: {
 		display: 'flex',
 		[theme.breakpoints.up('md')]: {
-		  display: 'none',
+			display: 'none',
 		},
-	  },
+	},
+	imageIcon: {
+		display: "flex",
+		width : '60%',
+		height: 'auto',
+		[theme.breakpoints.down('xs')]: {
+			width : '80%'
+		},
+	},
+	iconRoot: {
+		justify: 'center',
+		display:'flex',
+		alignItems: 'center'
+	}
 }));
 
 export default function Header (props){
 	const classes = useStyles();
-	const [anchorEl, setAnchorEl] = React.useState(null);
+	const [ anchorEl, setAnchorEl ] = React.useState(null);
 	const open = Boolean(anchorEl);
 
 	  //Sets the drop-down position to wherever we have the mouse at
@@ -102,15 +119,16 @@ export default function Header (props){
 					{/* Advanced Foam Logo*/}		
 					<Grid item xs={6} md={3}>
 						<Link  href={ `/` }>	
-							<Typography variant="h6" className={classes.title}>
-								Advanced Foam
-							</Typography>
-							{/*
-								<img 
+							
+							{
+								/*<img 
 								src={`http://www.advancedfoam.com/wp-content/uploads/2020/09/advancedFoam_${props.site ? props.site : 'main' }.png`}  
 								className={classes.toolbarImage}>
-								</img>
-							*/}
+								</img>*/
+								<Icon classes={classes.iconRoot}>
+									<img className={classes.imageIcon} src="/graphics/mainLogo.svg"/>
+							  	</Icon>
+							}
 						</Link>
 					</Grid>
 

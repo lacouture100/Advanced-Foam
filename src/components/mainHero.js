@@ -60,6 +60,12 @@ const useStyles = makeStyles((theme) => ({
       alignItems: 'center',
       paddingBottom: theme.spacing(2),
   },
+  heroDynamicText: {
+    backgroundColor: 'black',
+    color: '#FFFFFF',
+    align:"center",
+    padding: theme.spacing(1)
+},
   heroTitles: {
     display: 'flex',
     flexDirection: 'column',
@@ -134,8 +140,8 @@ export default function Hero( props ) {
                   </Button>
                 </Grid>
                 <Grid item>
-                  <Button variant="outlined" color="primary">
-                    See More
+                  <Button variant="outlined" color="primary" href="/about">
+                    About
                   </Button>
                 </Grid>
               </Grid>
@@ -152,7 +158,7 @@ export default function Hero( props ) {
 
                 </img>
                 <div >
-                <Typography variant='h6' align="center" color="textPrimary"  className={classes.heroDynamicText}>
+                <Typography variant='h6'  className={classes.heroDynamicText} >
                  {word}
                 </Typography>
                 </div>

@@ -81,9 +81,10 @@ const data ={
 
 const useStyles = makeStyles((theme) => ({
 
-  sectionTitles : {
-    display: 'flex',
-    flexDirection : 'column',
+  sectionTitle : {
+    
+    backgroundColor: theme.palette.background.paper,
+    padding: theme.spacing(1),
     justifyContent : 'center',
     color: 'black'
   },
@@ -91,15 +92,21 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     justifyContent: 'center',
     padding: theme.spacing(6, 10, 6),
+    [theme.breakpoints.down('md')]: {
+			padding: theme.spacing(2),
+		  },
    
   },
   card: {
     width: '95%',
     display: 'flex',
     flexDirection: 'column',
+    margin : theme.spacing(2)
   },
   cardMedia: {
-    paddingTop: '90%', // 16:9
+    height: 0,
+    paddingTop: '56.25%', // 16:9,
+    margin : theme.spacing(2)
      
   },
   cardContent: {
@@ -123,14 +130,16 @@ export default function Banner() {
   return (
     <React.Fragment>
 
-
+          <Typography   align="center" variant="h4" component="h2" className={classes.sectionTitle}>
+                            Our clients
+                            </Typography>
           <Grid  className={classes.sectionGrid} container >
 
               {/* START CARD IMAGE Section */}
               {
                 data.Clients.map((client, index) => (
-                  <Grid key={index} item xs={12}md={4} container >
-                    <Card className={classes.card} align="center" item xs={12}md={4} >
+                  <Grid key={index} item xs={12} sm={6} md={3} container >
+                    <Card className={classes.card} align="center" item xs={12} sm={6} md={3} >
                     <Link underline='none' color="inherit" href={client.link}>
                         <CardActionArea>
 
@@ -147,7 +156,7 @@ export default function Banner() {
 
 
                           <CardContent className={classes.cardContent}>
-                            <Typography gutterBottom  align="center" variant="h5" component="h2" className={classes.sectionTitle}>
+                            <Typography gutterBottom  align="center" variant="h5" component="h2" className={classes.cardTitle}>
                             {client.title}
                             </Typography>
                           </CardContent>

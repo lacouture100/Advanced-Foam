@@ -1,12 +1,8 @@
-import Head from 'next/head'
 import Layout from '../components/layout'
 import React, { Component, Fragment } from 'react'
 import axios from 'axios'
 
-
-
 export default class extends Component {
-
   // Resolve promise and set initial props.
   static async getInitialProps( context ) {
 
@@ -18,7 +14,6 @@ export default class extends Component {
       post: response.data[0]
     }
   }
-
   render() {
     return (
 

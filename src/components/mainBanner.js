@@ -11,6 +11,9 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
 
+
+// Set the data for each of the categories. These include the info presented in each of the cards.
+
 const sections = [
 	{ 
     title: 'Studio', 
@@ -121,9 +124,10 @@ const sections = [
 
 ]; 
 
+// Define the style for each of the components
 
 const useStyles = makeStyles((theme) => ({
-
+  // Styles the main section titles. Cosntruction, Studio, and Packaging.
   sectionTitles : {
     display: 'flex',
     flexDirection : 'column',
@@ -133,39 +137,50 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     justifyContent: 'center',
     padding: theme.spacing(6, 10, 6),
-    backgroundColor : '#313131'  
+    
+    backgroundColor : '#313131' ,
+    [theme.breakpoints.down('md')]: {
+			padding: theme.spacing(2),
+		  },
   },
   card: {
     width: '95%',
     display: 'flex',
     flexDirection: 'column',
+    margin: '10px'
   },
-  cardMedia: {
-    paddingTop: '90%', // 16:9
-  },
+
+  // Styles the main content inside each card, including images and titles
   cardContent: {
     display: 'flex',
     flexDirection: 'column',
     flexGrow: 1,
     justifyContent:"center"
   },
+
+  // Styles the image inside each card
+  cardMedia: {
+    paddingTop: '90%', // 16:9
+  },
+
   cardButtons:{
     display: 'flex',
     justifyContent : 'space-evenly'
   }
 }));
 
-const cards = [1, 2, 3];
 
 export default function Banner() {
   const classes = useStyles();
 
+  // Set the initial index for the image in each section. It will change.
   let index = 0;
   
   // Set the words that will change in the hero dynamic word space
   const [studio,setStudioIdx] = useState(0);
   const [construction,setConstructionIdx] = useState(0);
   const [packaging,setPackagingIdx] = useState(0);
+
   // We set the interval in which we loop through the words
   useEffect(() =>{
      // We need to declare the interval in order to clean up the effect later
@@ -186,7 +201,12 @@ export default function Banner() {
      return () => clearInterval(interval);
   }, []);
 
+  // Construct the content array
+
   const content =[studio,construction,packaging];
+
+  // Used to set the link in each of the sections
+
   const domains = ['studio','construction','packaging']
   return (
     <React.Fragment>
@@ -196,8 +216,14 @@ export default function Banner() {
               {
                 sections.map((section, index) => (
                   <Grid key={index} item xs={12}md={4} container >
+
+                    {/* CARD START */}
+
                     <Card className={classes.card} align="center" item xs={12}md={4} >
                       <CardContent className={classes.cardContent}>
+
+                        {/* CARD UPPER CATEGORY TITLES & BUTTON*/}
+
                         <Typography variant="h4" align="center" color="textPrimary" paragraph className={classes.sectionTitle}>
                           {sections[index].title}
                         </Typography>
@@ -206,11 +232,15 @@ export default function Banner() {
                         {sections[index].subtitle}
                         </Typography>
                         <Link underline='hover' color="inherit" href={`/${domains[index]}`}>
+
                         <Button size="large"   variant="contained" color="primary"  className={classes.sectionButton}>
                           Enter Here
                         </Button>
                         </Link>
                       </CardContent>
+
+                      {/* CARD IMAGE */}
+
                       <Link underline='none' color="inherit" href={content[index].link}>
                         <CardActionArea>
                           <CardMedia
@@ -218,6 +248,10 @@ export default function Banner() {
                             image={content[index].imgSrc}
                             title={content[index].title}
                           />
+
+                          {/* CARD BOTTOM TITLES */}
+
+
                           <CardContent className={classes.cardContent}>
                             <Typography gutterBottom  align="center" variant="h5" component="h2" className={classes.sectionTitle}>
                             {content[index].title}
@@ -228,6 +262,9 @@ export default function Banner() {
                           </CardContent>
                         </CardActionArea>
                         </Link>
+
+                         {/* SHARE & LEARN MORE BUTTONS */}
+
                         <CardActions>
                           <Container className={classes.cardButtons}>
                             <Button size="small" color="primary">
