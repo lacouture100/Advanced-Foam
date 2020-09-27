@@ -2,10 +2,11 @@
 
 import React from 'react';
 import Link from '@material-ui/core/Link';
-import Icon from '@material-ui/core/Icon';
+import Button from '@material-ui/core/Button';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
+import { Grid } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
 	'@global': {
@@ -15,45 +16,31 @@ const useStyles = makeStyles((theme) => ({
 		listStyle: 'none',
 	  },
   },
-  main: {
-		alignItems: 'center',
-    display:'flex',
+  main : {
+    display: 'flex',
     flexDirection: 'column',
-    height: '300px'
-	},
-  imageIcon: {
-		display: "flex",
-		width : '100%',
-    height: '100%',
-    alignItems: 'center',
-		[theme.breakpoints.down('xs')]: {
-			width : '80%'
-		},
-	},
-	iconRoot: {
-		justify: 'center',
-    display:'flex',
-    
+    padding:theme.spacing(10),
+    [theme.breakpoints.up('md')]: {
+      padding:theme.spacing(10,45),
+    }
+  },
+  button: {
+		alignItems: 'center',
+
 	}
 }));
 
 export default function Contact () {
   const classes = useStyles();
     return (
-      <div className="contact-main">
-        <Container  md={4} gutter />
-        <Container  md={4} className={classes.main}>
-						<Link  href={ `/contact` }>	
-              <Icon className={classes.iconRoot}>
-                <img className={classes.imageIcon} src="/graphics/contactUs.svg"/>
-              </Icon>	
-						</Link>
+      <Grid className={classes.main} >
 
-            <Typography variant="h5" align="center" color="textPrimary" paragraph >
-            Contact Us
-            </Typography>
-            </Container>
-            <Container  md={4} gutter />
-      </div>
+            <Button className={classes.button} variant="contained" color="primary">
+							<Link underline='hover' color="inherit" href="/construction/redicoat">
+							Contact us today
+							</Link>
+						</Button>
+
+      </Grid>
     )
 }

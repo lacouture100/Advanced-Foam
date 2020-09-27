@@ -1,22 +1,78 @@
 import { useRouter } from 'next/router';
 import axios from 'axios';
 import Layout from '../../components/layout';
+import { makeStyles } from '@material-ui/core/styles';
+import Grid from '@material-ui/core/Grid';
+
+import { Typography } from '@material-ui/core';
 
 
+
+const useStyles = makeStyles((theme) => ({
+	'@global': {
+	  ul: {
+		margin: 0,
+		padding: 0,
+        listStyle: 'none',
+        
+	  },
+    },
+    postTitle : {
+        margin: theme.spacing(5),
+    },
+    postContent : {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        margin: theme.spacing(5),
+        '& p': {
+            margin: theme.spacing(2, 40,2,40),
+            textAlign: 'justify',
+            textJustify: 'inter-word'
+        },'& img': {
+            width: '500px',
+            height: 'auto'
+        },
+        [theme.breakpoints.down('sm')]: {
+            '& p': {
+                margin: theme.spacing(2, 5,2,5),
+                textAlign: 'justify',
+            },
+            '& img': {
+                width: '500px',
+                height: 'auto'
+            }
+        },
+        [theme.breakpoints.down('xs')]: {
+            '& p': {
+                margin: theme.spacing(2),
+                textAlign: 'center',
+            },
+            '& img': {
+                alignItems: 'center',
+                align: 'center',
+                width: '250px',
+                height: 'auto'
+            }
+          }
+    }
+
+}));
 
 export default function Post({postData}) {
     const router = useRouter();
+    const classes = useStyles();
     return (
         <Layout domain={router.query.domain}>
-            <div>
-        {/*<h2> {router.query.domain}'s {router.query.post}</h2>*/}
-                <h1 className="post__title">{postData.title.rendered}</h1>
-                <article
-                    className="post"
+            <Grid >
+        {/*We can access the domain with {router.query.domain} abd the query, or blog post, with {router.query.post}*/}
+                <Typography variant="h3" align="center" color="textPrimary"className={classes.postTitle} >{postData.title.rendered}</Typography>
+                <Grid
+                    className={classes.postContent}
                     dangerouslySetInnerHTML={{
                     __html: postData.content.rendered
                 }}/>
-            </div>
+            </Grid>
         </Layout>
     )
 }

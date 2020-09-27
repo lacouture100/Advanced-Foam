@@ -65,7 +65,7 @@ export default function Footer(props) {
   return (
     <footer className={classes.footer} >
     <grid  direction='row' className={classes.section}>
-      <grid item className={classes.item}>
+      <grid className={classes.item}>
       <Container maxWidth="lg">
         <Typography variant="h6" align="center" gutterBottom>
           {footer[0].title}
