@@ -90,7 +90,7 @@ export default function Footer(props) {
       </Container>
       </grid>
 
-      <grid item  className={classes.item}>
+      <grid className={classes.item}>
       <Container maxWidth="lg">
         <Typography variant="h6" align="center" gutterBottom>
           {footer[1].title}
