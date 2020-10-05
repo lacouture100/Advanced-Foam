@@ -26,21 +26,3 @@ Construction.getInitialProps = async () => {
     return {postList : postList}
 }
 
-
-
-
-
-/*
-    const [posts, setPosts] = useState([]);
-    useEffect(() => {
-        async function loadData() {
-            const response = await axios.get(`https://www.construction.advancedfoam.com/wp-json/wp/v2/posts`);
-            console.log(response)
-            const postList = await response.data;
-            setPosts(postList);
-        }
-
-        loadData();
-        console.log(posts)
-    }, []);
-*/

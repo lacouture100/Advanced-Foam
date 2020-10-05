@@ -128,7 +128,9 @@ export default function Header (props){
 								<Icon classes={classes.iconRoot}>
 									<img className={classes.imageIcon} src="/graphics/mainLogo.svg"/>
 							  	</Icon>
+								  
 							}
+							
 						</Link>
 					</Grid>
 

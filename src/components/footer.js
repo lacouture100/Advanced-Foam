@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
+import Fade from '@material-ui/core/Fade';
 
 const footer =[
     {   
@@ -65,6 +66,7 @@ export default function Footer(props) {
   return (
     <footer className={classes.footer} >
     <grid  direction='row' className={classes.section}>
+    <Fade in={true} timeout={200}>
       <grid className={classes.item}>
       <Container maxWidth="lg">
         <Typography variant="h6" align="center" gutterBottom>
@@ -89,7 +91,9 @@ export default function Footer(props) {
         <Copyright />
       </Container>
       </grid>
+      </Fade>
 
+      <Fade in={true} timeout={400}>
       <grid className={classes.item}>
       <Container maxWidth="lg">
         <Typography variant="h6" align="center" gutterBottom>
@@ -105,7 +109,9 @@ export default function Footer(props) {
         </Typography>
         </Container>
       </grid>
+      </Fade>
 
+      <Fade in={true} timeout={600}>
       <grid item className={classes.item}>
       <Container maxWidth="lg">
         <Typography variant="h6" align="center" gutterBottom>
@@ -130,6 +136,7 @@ export default function Footer(props) {
         <Copyright />
       </Container>
       </grid>
+      </Fade>
       </grid>
     </footer>
   );

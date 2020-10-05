@@ -18,7 +18,7 @@ const words = {
             "index": 1
         },
         {
-            "word": "ARCHITECTURAL DECORATIONS",
+            "word": "ARCHITECTURAL SHAPES",
             "index": 2
         }
     ],
@@ -33,7 +33,7 @@ const words = {
             "index": 1
         },
         {
-            "word": "ARCHITECTURAL DECORATIONS",
+            "word": "ARCHITECTURAL SHAPES",
             "index": 2
         } 
     ]
@@ -130,31 +130,45 @@ export default function Hero( domain ) {
             </Typography>
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">
+
                 <Grid item>
+                <Fade in={true} timeout={200}>
                   <Button variant="contained" color="primary">
                     Call us Today
                   </Button>
+                  </Fade>
                 </Grid>
+                
                 <Grid item>
+                <Fade in={true} timeout={400}>
                   <Button variant="outlined" color="primary" href="/about">
                     About
                   </Button>
-                </Grid>
-                <Grid item>
-                  <Button variant="outlined" color="primary" href="/about">
-                    About
-                  </Button>
+                  </Fade>
                 </Grid>
 
                 <Grid item>
+                <Fade in={true} timeout={600}>
                   <Button variant="outlined" color="primary" href="/about">
                     About
                   </Button>
+                  </Fade>
                 </Grid>
+
                 <Grid item>
+                <Fade in={true} timeout={800}>
                   <Button variant="outlined" color="primary" href="/about">
                     About
                   </Button>
+                  </Fade>
+                </Grid>
+
+                <Grid item>
+                  <Fade in={true} timeout={1000}>
+                  <Button variant="outlined" color="primary" href="/about">
+                    About
+                  </Button>
+                  </Fade>
                 </Grid>
               </Grid>
             </div>

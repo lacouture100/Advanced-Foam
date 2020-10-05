@@ -12,3 +12,22 @@ I am using the following packages:
     "next-images": "^1.4.1",
     "react": "16.13.1",
     "react-dom": "16.13.1"
+
+
+
+
+Posts - Categories:
+
+- Studio Projects - 3
+- Construction - 16
+- Construction Projects - 13
+- Construction Products - 15
+- Packaging - 14
+
+
+
+
+
+
+
+

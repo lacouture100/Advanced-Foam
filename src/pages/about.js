@@ -34,7 +34,9 @@ const useStyles = makeStyles((theme) => ({
             textJustify: 'inter-word'
         },'& img': {
             width: '700px',
-            height: 'auto'
+            height: 'auto',
+            alignItems: 'center',
+                align: 'center',
         },
         [theme.breakpoints.down('sm')]: {
             '& p': {

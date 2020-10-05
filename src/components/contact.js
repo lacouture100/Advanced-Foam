@@ -7,6 +7,8 @@ import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import { Grid } from '@material-ui/core';
+import Fade from '@material-ui/core/Fade';
+
 
 const useStyles = makeStyles((theme) => ({
 	'@global': {
@@ -34,13 +36,14 @@ export default function Contact () {
   const classes = useStyles();
     return (
       <Grid className={classes.main} >
+          <Fade in={true} timeout={500}>
 
             <Button className={classes.button} variant="contained" color="primary">
 							<Link underline='hover' color="inherit" href="/construction/redicoat">
 							Contact us today
 							</Link>
 						</Button>
-
+        </Fade>
       </Grid>
     )
 }

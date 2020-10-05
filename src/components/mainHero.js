@@ -1,18 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import AppBar from '@material-ui/core/AppBar';
 import Button from '@material-ui/core/Button';
-import CameraIcon from '@material-ui/icons/PhotoCamera';
-import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import CssBaseline from '@material-ui/core/CssBaseline';
 import Grid from '@material-ui/core/Grid';
-import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import Link from '@material-ui/core/Link';
+import Fade from '@material-ui/core/Fade';
+
 
 const words = {
     "studio" : 
@@ -26,7 +19,7 @@ const words = {
             "index": 1
         },
         {
-            "word": "ARCHITECTURAL DECORATIONS",
+            "word": "ARCHITECTURAL SHAPES",
             "index": 2
         }
     ],
@@ -120,30 +113,42 @@ export default function Hero( props ) {
        return () => clearInterval(interval);
     }, []);
 
+    
+
   return (
     <React.Fragment>
       <div className={classes.heroContent}>
         {/* Start Hero Titles (Left Side) */}
         
           <Container  md={7} className={classes.heroTitles}>
-            <Typography variant="h5" align="center" color="textPrimary" paragraph >
-            We have over 35 years of experience in foam fabrication.
-            </Typography>
-            <Typography variant="h5" align="center" color="textSecondary" paragraph>
-            We bring precision, innovation, creativity, and economy to your project.
-            </Typography>
+            <Fade in={true} timeout={500}>
+              <Typography variant="h5" align="center" color="textPrimary" paragraph >
+              We have over 35 years of experience in foam fabrication.
+              </Typography>
+            </Fade>
+
+            <Fade in={true} timeout={1000}>
+              <Typography variant="h5" align="center" color="textSecondary" paragraph>
+              We bring precision, innovation, creativity, and economy to your project.
+              </Typography>
+            </Fade>
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">
-                <Grid item>
-                  <Button variant="contained" color="primary">
-                    Call us Today
-                  </Button>
-                </Grid>
-                <Grid item>
-                  <Button variant="outlined" color="primary" href="/about">
-                    About
-                  </Button>
-                </Grid>
+                <Fade in={true} timeout={200}>
+                  <Grid item>
+                    <Button variant="contained" color="primary">
+                      Call us Today
+                    </Button>
+                  </Grid>
+                </Fade>
+
+                <Fade in={true} timeout={400}>
+                  <Grid item>
+                    <Button variant="outlined" color="primary" href="/about">
+                      About
+                    </Button>
+                  </Grid>
+                </Fade>
               </Grid>
             </div>
           </Container>
@@ -152,16 +157,22 @@ export default function Hero( props ) {
          {/* Start Hero Dynamic Media and Titles (Right Side) */}
           <Container  md={5}>
             <Container className={classes.heroDynamic}>
+              <Fade in={true} timeout={600}>
+
                 <img  src="http://www.advancedfoam.com/wp-content/uploads/2020/09/Logo-min.gif" 
                           alt =" Advanced Foam main logo"
                           className={classes.gif}>
 
                 </img>
+                </Fade>
+
+                <Fade in={true} timeout={1000}>
                 <div >
                 <Typography variant='h6'  className={classes.heroDynamicText} >
                  {word}
                 </Typography>
                 </div>
+                </Fade>
             </Container>
           </Container>
         

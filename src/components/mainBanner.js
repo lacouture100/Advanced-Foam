@@ -10,6 +10,8 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
+import CircularProgress from '@material-ui/core/CircularProgress';
+import Fade from '@material-ui/core/Fade';
 
 
 // Set the data for each of the categories. These include the info presented in each of the cards.
@@ -181,6 +183,9 @@ export default function Banner() {
   const [construction,setConstructionIdx] = useState(0);
   const [packaging,setPackagingIdx] = useState(0);
 
+  
+
+
   // We set the interval in which we loop through the words
   useEffect(() =>{
      // We need to declare the interval in order to clean up the effect later
@@ -215,6 +220,7 @@ export default function Banner() {
               {/* START Studio Section */}
               {
                 sections.map((section, index) => (
+                  <Fade in={true} timeout={300*index}>
                   <Grid key={index} item xs={12}md={4} container >
 
                     {/* CARD START */}
@@ -243,12 +249,14 @@ export default function Banner() {
 
                       <Link underline='none' color="inherit" href={content[index].link}>
                         <CardActionArea>
+                          {
                           <CardMedia
                             className={classes.cardMedia}
                             image={content[index].imgSrc}
                             title={content[index].title}
+                            onLoad={}
                           />
-
+                          }
                           {/* CARD BOTTOM TITLES */}
 
 
@@ -277,6 +285,7 @@ export default function Banner() {
                         </CardActions>
                     </Card>
                     </Grid>
+                    </Fade>
                 ))
               }
            

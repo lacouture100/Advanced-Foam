@@ -12,7 +12,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
-
+import Fade from '@material-ui/core/Fade';
 
 
 // Define the style for each of the components
@@ -64,15 +64,18 @@ export default function Banner(props) {
 
   const [data,setData] = useState(props.data);
   const domain = props.domain;
-  const classes = useStyles();
+  const classes = useStyles();const checked = true;
 
   return (
     <React.Fragment>
+      <Fade in={true} timeout={100}>
           <Grid  className={classes.sectionGrid} container >
-
+          
               {/* START Studio Section */}
 
               {data.map((post, index) => (
+                <Fade in={true} timeout={200*index}>
+
                   <Grid key={index} item xs={12} sm={6} md={3} lg={2} container >
 
                     {/* CARD START */}
@@ -82,7 +85,7 @@ export default function Banner(props) {
 
                         {/* CARD UPPER CATEGORY TITLES & BUTTON*/}
 
-                        <Typography variant="h4" align="center" color="textPrimary" paragraph className={classes.sectionTitle}>
+                        <Typography variant="h5" align="center" color="textPrimary" paragraph className={classes.sectionTitle}>
                         {post.title.rendered}
                         </Typography>
                     
@@ -107,16 +110,19 @@ export default function Banner(props) {
                         <CardActions>
                           <Container className={classes.cardButtons}>
                             <Button size="small" color="primary" href={`/${domain}/${ post.slug }`}>
-                              Learn More
+                              {`Show me more`}
                             </Button>
                           </Container>
                         </CardActions>
                     </Card>
                     </Grid>
+                    </Fade>
                 ))
               }
+              
            
           </Grid>
+          </Fade>
     </React.Fragment>
   );
 }

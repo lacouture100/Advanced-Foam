@@ -3,7 +3,7 @@ import axios from 'axios';
 import Banner from '../components/banner';
 import Layout from '../components/layout';
 import Clients from '../components/clients2';
-import Hero from '../components/hero';
+import Hero from '../components/constructionHero';
 
 const domain = 'construction';
 
@@ -20,6 +20,7 @@ export default function Construction({ postList }){
 
 Construction.getInitialProps = async () => {
     const response = await axios.get(`https://www.construction.advancedfoam.com/wp-json/wp/v2/posts`);
+    //const response = await axios.get(`https://www.advancedfoam.com/wp-json/wp/v2/posts?categories=16`);
             //console.log(response)
             const postList = await response.data;
             //console.log(postList)

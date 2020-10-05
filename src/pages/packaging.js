@@ -3,7 +3,7 @@ import axios from 'axios';
 import Banner from '../components/banner';
 import Layout from '../components/layout';
 import Clients from '../components/clients2';
-import Hero from '../components/hero';
+import Hero from '../components/packagingHero';
 
 const domain = 'packaging';
 
