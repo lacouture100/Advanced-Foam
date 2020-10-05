@@ -73,6 +73,8 @@ export default function Banner(props) {
           
               {/* START Studio Section */}
 
+              //TODO Bring them in from categories and save them in arrays
+
               {data.map((post, index) => (
                 <Fade in={true} timeout={200*index}>
 

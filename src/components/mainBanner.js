@@ -254,7 +254,7 @@ export default function Banner() {
                             className={classes.cardMedia}
                             image={content[index].imgSrc}
                             title={content[index].title}
-                            onLoad={}
+                           
                           />
                           }
                           {/* CARD BOTTOM TITLES */}
