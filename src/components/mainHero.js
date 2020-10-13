@@ -7,6 +7,9 @@ import Container from '@material-ui/core/Container';
 import Fade from '@material-ui/core/Fade';
 
 
+
+let animatedHeroLink = 'http://advancedfoam.com/wp-content/uploads/2020/10/onlyLogo.webm';
+
 const words = {
     "studio" : 
     [
@@ -159,7 +162,7 @@ export default function Hero( props ) {
             <Container className={classes.heroDynamic}>
               <Fade in={true} timeout={600}>
 
-                <img  src="http://www.advancedfoam.com/wp-content/uploads/2020/09/Logo-min.gif" 
+                <img  src={animatedHeroLink}
                           alt =" Advanced Foam main logo"
                           className={classes.gif}>
 

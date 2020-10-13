@@ -8,6 +8,9 @@ import Link from '@material-ui/core/Link';
 import Fade from '@material-ui/core/Fade';
 
 
+let animatedHeroLink = "http://www.advancedfoam.com/wp-content/uploads/2020/09/Logo-min.gif" ;
+//let animatedHeroLink = 'http://advancedfoam.com/wp-content/uploads/2020/10/onlyLogo.webm';
+
 const words = {
     "studio" : 
     [
@@ -144,7 +147,7 @@ export default function Hero( domain ) {
                 <Grid item>
                 <Fade in={true} timeout={400}>
                   <Button variant="outlined" color="primary" href="/about">
-                    About
+                    About Us
                   </Button>
                   </Fade>
                 </Grid>
@@ -152,7 +155,7 @@ export default function Hero( domain ) {
                 <Grid item>
                 <Fade in={true} timeout={600}>
                   <Button variant="outlined" color="primary" href="/about">
-                    About
+                    Our Work
                   </Button>
                   </Fade>
                 </Grid>
@@ -160,7 +163,7 @@ export default function Hero( domain ) {
                 <Grid item>
                 <Fade in={true} timeout={800}>
                   <Button variant="outlined" color="primary" href="/about">
-                    About
+                    FAQ
                   </Button>
                   </Fade>
                 </Grid>
@@ -168,7 +171,7 @@ export default function Hero( domain ) {
                 <Grid item>
                   <Fade in={true} timeout={1000}>
                   <Button variant="outlined" color="primary" href="/about">
-                    About
+                    In Stock Today
                   </Button>
                   </Fade>
                 </Grid>
@@ -180,7 +183,7 @@ export default function Hero( domain ) {
          {/* Start Hero Dynamic Media and Titles (Right Side) */}
           <Container  md={5}>
             <Container className={classes.heroDynamic}>
-                <img  src="http://www.advancedfoam.com/wp-content/uploads/2020/09/Logo-min.gif" 
+                <img  src={animatedHeroLink}
                           alt =" Advanced Foam main logo"
                           className={classes.gif}>
 

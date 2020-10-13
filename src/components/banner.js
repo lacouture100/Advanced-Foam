@@ -76,9 +76,9 @@ export default function Banner(props) {
               {/*TODO Bring them in from categories and save them in arrays */}
 
               {data.map((post, index) => (
-                <Fade in={true} timeout={200*index}>
+                <Fade key={index} in={true} timeout={200*index}>
 
-                  <Grid key={index} item xs={12} sm={6} md={3} lg={2} container >
+                  <Grid  item xs={12} sm={6} md={3} lg={2} container >
 
                     {/* CARD START */}
 

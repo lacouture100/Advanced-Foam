@@ -79,7 +79,7 @@ export default function Clients (props){
       <div className="clients-main-container">
         {data.Clients.map((client,index) =>(
           <div key={index}className="client">
-          <Link href={client.link}>
+          <Link href={client.link} ariaLabel={client.imgAlt}>
             <a href={client.link}>
               <img src={client.imgSrc}
                     alt={client.imgAlt}

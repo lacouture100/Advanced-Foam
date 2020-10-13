@@ -220,8 +220,8 @@ export default function Banner() {
               {/* START Studio Section */}
               {
                 sections.map((section, index) => (
-                  <Fade in={true} timeout={300*index}>
-                  <Grid key={index} item xs={12}md={4} container >
+                  <Fade key={index} in={true} timeout={300*index}>
+                  <Grid  item xs={12}md={4} container >
 
                     {/* CARD START */}
 
