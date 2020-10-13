@@ -175,7 +175,7 @@ export default function Hero( domain ) {
                 <Grid item>
                 <Fade in={true} timeout={1000}>
                   <Button variant="outlined" color="primary" href="/about">
-                    Contact us today
+                    See our Workshop
                   </Button>
                 </Fade>
                 </Grid>
