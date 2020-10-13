@@ -247,7 +247,7 @@ export default function Banner() {
 
                       {/* CARD IMAGE */}
 
-                      <Link underline='none' color="inherit" href={content[index].link}>
+                      <Link underline='none' color="inherit" href={`/${domains[index]}`}>
                         <CardActionArea>
                           {
                           <CardMedia
