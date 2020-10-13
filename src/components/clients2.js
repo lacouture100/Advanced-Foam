@@ -156,7 +156,7 @@ export default function Banner() {
 
 
                           <CardContent className={classes.cardContent}>
-                            <Typography gutterBottom  align="center" variant="h5" component="h2" className={classes.cardTitle}>
+                            <Typography align="center" variant="h5" component="h4" className={classes.cardTitle}>
                             {client.title}
                             </Typography>
                           </CardContent>
