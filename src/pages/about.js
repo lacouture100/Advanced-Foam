@@ -50,7 +50,7 @@ const useStyles = makeStyles((theme) => ({
         },
         [theme.breakpoints.down('xs')]: {
             '& p': {
-                margin: theme.spacing(2, 30,2,30),
+                margin: theme.spacing(2),
                 textAlign: 'justify',
             },
             '& img': {
