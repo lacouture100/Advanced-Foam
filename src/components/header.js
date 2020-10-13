@@ -85,9 +85,8 @@ const useStyles = makeStyles((theme) => ({
 		},
 	},
 	iconRoot: {
-		justify: 'center',
-		display:'flex',
-		alignItems: 'center'
+		width: "100%",
+		height: "auto"
 	}
 }));
 
@@ -118,14 +117,14 @@ export default function Header (props){
 
 					{/* Advanced Foam Logo*/}		
 					<Grid item xs={6} md={3}>
-						<Link  href={ `/` }>	
+						<Link  href={ `/` } aria-label={"Advanced Foam Home"}>	
 							
 							{
 								/*<img 
 								src={`http://www.advancedfoam.com/wp-content/uploads/2020/09/advancedFoam_${props.site ? props.site : 'main' }.png`}  
 								className={classes.toolbarImage}>
 								</img>*/
-								<Icon classes={classes.iconRoot}>
+								<Icon className={classes.iconRoot}>
 									<img className={classes.imageIcon} src="/graphics/mainLogo.svg"/>
 							  	</Icon>
 								  
@@ -196,7 +195,8 @@ export default function Header (props){
 									href={section.url} 
 									key={section.title}
 									noWrap
-									className={classes.link}>
+									className={classes.link}
+									aria-label="Advanced Foam Home">
 										<MenuItem onClick={handleClose}>
 									{section.title}
 									</MenuItem>

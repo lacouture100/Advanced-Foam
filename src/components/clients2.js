@@ -140,7 +140,7 @@ export default function Banner() {
                   <Fade in={true} timeout={200 * index}>
                   <Grid key={index} item xs={12} sm={6} md={3} container >
                     <Card className={classes.card} align="center" item xs={12} sm={6} md={3} >
-                    <Link underline='none' color="inherit" href={client.link}>
+                    <Link underline='none' color="inherit" href={client.link} aria-label={client.imgAlt}>
                         <CardActionArea>
 
                           {/* IMAGE */}

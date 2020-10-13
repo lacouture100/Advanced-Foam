@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
   },
   sectionGrid: {
     display: 'flex',
-    padding: theme.spacing(6, 10, 6),
+    padding: theme.spacing(2),
     justifyContent:'flex-start',
     backgroundColor : '#313131' ,
     [theme.breakpoints.down('md')]: {
@@ -82,7 +82,7 @@ export default function Banner(props) {
 
                     {/* CARD START */}
 
-                    <Card className={classes.card} align="center" item xs={12}  sm={6}  md={3} lg={2} id={`card-${post.id}`}>
+                    <Card className={classes.card} align="center" xs={12}  sm={6}  md={3} lg={2} id={`card-${post.id}`}>
                       <CardContent className={classes.cardContent}>
 
                         {/* CARD UPPER CATEGORY TITLES & BUTTON*/}
