@@ -25,7 +25,7 @@ const sections = [
       {
         _id: "theMummy",
         index: 0,
-        imgSrc: "http://www.advancedfoam.com/wp-content/uploads/2020/09/mummy_preview.jpg",
+        imgSrc: "https://www.advancedfoam.com/wp-content/uploads/2020/09/mummy_preview.jpg",
         title: "The Mummy",
         production: "Universal Studios",
         link: "/studio/mummy",
@@ -35,8 +35,8 @@ const sections = [
       {
         _id: "americanHorrorStory",
         index: 1,
-        imgSrc: "http://www.advancedfoam.com/wp-content/uploads/2020/09/americanHorror_preview.jpg",
-        title: "American Horror Story: Hotel",
+        imgSrc: "https://www.advancedfoam.com/wp-content/uploads/2020/09/americanHorror_preview.jpg",
+        title: "AHS: Hotel",
         production: "20th Century Fox",
         link: "/studio/american-horror-story-hotel",
         slug: "american-horror-story-hotel",
@@ -45,7 +45,7 @@ const sections = [
       {
         _id: "starTrek",
         index: 2,
-        imgSrc: "http://www.advancedfoam.com/wp-content/uploads/2020/09/starTrek_preview.png",
+        imgSrc: "https://www.advancedfoam.com/wp-content/uploads/2020/09/starTrek_preview.png",
         title: "Star Trek",
         production: "Paramount Pictures",
         link: "/studio/star-trek",
@@ -63,29 +63,31 @@ const sections = [
       {
         _id: "orsini",
         index: 0,
-        imgSrc: "./img/construction/orsini.png",
+        imgSrc: "https://advancedfoam.com/wp-content/uploads/2020/10/orsini.png",
         title: "The Orsini",
         production: "Los Angeles",
-        link: "http://www.advancedfoam.com/studio/mummy",
-        slug: "star-trek",
+        link: "/construction",
+        slug: "orsini",
         year : "2009"
     },
     {
         _id: "appfels",
         index: 1,
-        imgSrc: "./img/construction/appfels.jpg",
+        imgSrc: "https://advancedfoam.com/wp-content/uploads/2020/10/appfels.jpg",
         title: "Apffels Coffee Building",
-        production: "-",
-        link: "http://www.advancedfoam.com/studio/mummy",
+        production: "Apffels Coffee",
+        slug: "appfels",
+        link: "/construction",
         year: ""
     },
     {
         _id: "hamner",
         index: 2,
-        imgSrc: "./img/construction/HamnerAve.jpg",
+        imgSrc: "https://advancedfoam.com/wp-content/uploads/2020/10/HamnerAve.jpg",
         title: "6987-6993 Hamner Ave",
-        production: "-",
-        link: "http://www.advancedfoam.com/studio/mummy",
+        slug: "hamner",
+        production: "Strip Center",
+        link: "/construction",
         year: ""
     }
     ]
@@ -97,29 +99,29 @@ const sections = [
     url : '/packaging',
     content : [
       {
-        _id: "theMummy",
+        _id: "polystyrene",
         index: 0,
-        imgSrc: "./img/packaging/foam_1.png",
+        imgSrc: "https://advancedfoam.com/wp-content/uploads/2020/10/polystyrene_72_shopped.jpg",
         title: "Anti-Impact Foam",
         production: "Custom Fabrication",
-        link: "http://www.advancedfoam.com/studio/mummy",
+        link: "/packaging",
     },
     {
-        _id: "starTrek",
+        _id: "polyethylene",
         index: 1,
-        imgSrc: "./img/packaging/polystyrene_1.jpg",
+        imgSrc: "https://advancedfoam.com/wp-content/uploads/2020/10/polyethylene_72_shopped.jpg",
         title: "Polystyrene",
         production: "Custom Fabrication",
-        link: "http://www.advancedfoam.com/studio/mummy",
+        link: "/packaging",
     },
     {
-        _id: "transformers",
+        _id: "polyurethane",
         index: 2,
-        imgSrc: "./img/packaging/polyurethane_1.jpg",
+        imgSrc: "https://advancedfoam.com/wp-content/uploads/2020/10/polyurethane_72_shopped.jpg",
         title: "Polyurethane",
         production: "Custom Fabrication",
         year: "",
-        link: "/studio/mummy",
+        link: "/packaging",
     }
     ]
   }
@@ -272,7 +274,7 @@ export default function Banner() {
                         </Link>
 
                          {/* SHARE & LEARN MORE BUTTONS */}
-
+                        { /*}
                         <CardActions>
                           <Container className={classes.cardButtons}>
                             <Button size="small" color="primary">
@@ -283,6 +285,7 @@ export default function Banner() {
                             </Button>
                           </Container>
                         </CardActions>
+                          */}
                     </Card>
                     </Grid>
                     </Fade>

@@ -7,7 +7,7 @@ import Container from '@material-ui/core/Container';
 import Fade from '@material-ui/core/Fade';
 
 
-let animatedHeroLink = "http://www.advancedfoam.com/wp-content/uploads/2020/09/Logo-min.gif" 
+let animatedHeroLink = "https://www.advancedfoam.com/wp-content/uploads/2020/09/Logo-min.gif" 
 //let animatedHeroLink = 'http://advancedfoam.com/wp-content/uploads/2020/10/onlyLogo.webm';
 
 const words = {
