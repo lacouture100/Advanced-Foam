@@ -136,23 +136,23 @@ export default function Hero( domain ) {
                   </Button>
                 </Grid>
                 <Grid item>
-                  <Button variant="outlined" color="primary" href="/about">
+                  <Button variant="outlined" color="primary" href="/packaging/services">
+                    Our Services
+                  </Button>
+                </Grid>
+                <Grid item>
+                  <Button variant="outlined" color="primary" href="/packaging/applications">
+                  Applications
+                  </Button>
+                </Grid>
+                <Grid item>
+                  <Button variant="outlined" color="primary" href="/packaging/pricing">
+                  Pricing & Ordering
+                  </Button>
+                </Grid>
+                <Grid item>
+                  <Button variant="outlined" color="primary" href="/packaging/faq">
                     FAQ
-                  </Button>
-                </Grid>
-                <Grid item>
-                  <Button variant="outlined" color="primary" href="/about">
-                    Pricing and Ordering
-                  </Button>
-                </Grid>
-                <Grid item>
-                  <Button variant="outlined" color="primary" href="/about">
-                  Technical Info 
-                  </Button>
-                </Grid>
-                <Grid item>
-                  <Button variant="outlined" color="primary" href="/about">
-                    About
                   </Button>
                 </Grid>
               </Grid>

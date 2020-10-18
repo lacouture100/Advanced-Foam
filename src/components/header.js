@@ -59,6 +59,7 @@ const useStyles = makeStyles((theme) => ({
 	  flexGrow: 1,
 	},
 	stockButton : {
+		color:"white",
 		backgroundColor: "red",
 		[theme.breakpoints.down('xs')]: {
 			display: 'none',

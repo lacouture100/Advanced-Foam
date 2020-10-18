@@ -252,12 +252,14 @@ export default function Banner() {
                       <Link underline='none' color="inherit" href={`/${domains[index]}`}>
                         <CardActionArea>
                           {
+                            <Fade key={index} in={true} timeout={500}>
                           <CardMedia
                             className={classes.cardMedia}
                             image={content[index].imgSrc}
                             title={content[index].title}
                            
                           />
+                          </Fade>
                           }
                           {/* CARD BOTTOM TITLES */}
 

@@ -143,23 +143,15 @@ export default function Hero( domain ) {
                 <Grid item>
                 <Fade in={true} timeout={200}>
                   <Button variant="contained" color="primary">
-                    In Stock Today
-                  </Button>
-                  </Fade>
-                </Grid>
-
-                <Grid item>
-                <Fade in={true} timeout={400}>
-                  <Button variant="outlined" color="primary" href="/about">
-                    Redicoat line 
+                    Redicoat In Stock Today
                   </Button>
                   </Fade>
                 </Grid>
 
                 <Grid item>
                 <Fade in={true} timeout={600}>
-                  <Button variant="outlined" color="primary" href="/about">
-                    Pricing and Ordering
+                  <Button variant="outlined" color="primary" href="/construction/pricing">
+                    Pricing & Ordering
                   </Button>
                   </Fade>
                 </Grid>
@@ -174,8 +166,8 @@ export default function Hero( domain ) {
 
                 <Grid item>
                 <Fade in={true} timeout={1000}>
-                  <Button variant="outlined" color="primary" href="/about">
-                    See our Workshop
+                  <Button variant="outlined" color="primary" href="/construction/faq">
+                    FAQ
                   </Button>
                 </Fade>
                 </Grid>
