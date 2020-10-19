@@ -10,33 +10,26 @@ const words = {
     "studio" : 
     [
         {
-            "word": "MOVIE SETS",
+            "word": "ETHAFOAM™",
             "index": 0
         },
         {
-            "word": "TV SETS",
+            "word": "POLYSTYRENE",
             "index": 1
         },
         {
-            "word": "ARCHITECTURAL DECORATIONS",
+            "word": "POLYURETHANE",
+            "index": 2
+        },
+        {
+            "word": "EDGE ARMOR",
+            "index": 2
+        },
+        {
+            "word": "CUSTOM DESIGNS",
             "index": 2
         }
-    ],
-    "construction" : 
-    [
-        {
-            "word": "MOVIE SETS",
-            "index": 0
-        },
-        {
-            "word": "TV SETS",
-            "index": 1
-        },
-        {
-            "word": "ARCHITECTURAL DECORATIONS",
-            "index": 2
-        } 
-    ]
+      ]
 }
 
 let frases = {

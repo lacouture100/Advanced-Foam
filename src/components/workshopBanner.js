@@ -23,6 +23,14 @@ const useStyles = makeStyles((theme) => ({
     flexDirection : 'column',
     justifyContent : 'center'
   },
+  workshopTitle : {
+    display: 'flex',
+    color : 'white',
+    flexWrap:'wrap',
+    justifyContent : 'center',
+    alignSelf:'center',
+    padding:theme.spacing(2)
+  },
   sectionGrid: {
     display: 'flex',
     padding: theme.spacing(2),
@@ -59,7 +67,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-export default function Banner(props) {
+export default function WorkshopBanner(props) {
 
   const [data,setData] = useState(props.data);
   const domain = props.domain;
@@ -68,12 +76,17 @@ export default function Banner(props) {
   return (
     <React.Fragment>
       <Fade in={true} timeout={100}>
+
+                    
           <Grid  className={classes.sectionGrid} container >
           
               {/* START Studio Section */}
-
+              <Typography variant="h3" align="center" color="white" paragraph className={classes.workshopTitle}>
+                        {'Studio Highlights'}
+                        
+                        </Typography>
               {/*TODO Bring them in from categories and save them in arrays */}
-
+              
               {data.map((post, index) => (
                 <Fade key={index} in={true} timeout={200*index}>
 
@@ -120,6 +133,53 @@ export default function Banner(props) {
                     </Fade>
                 ))
               }
+
+              {/* Enter Workshop Link */}
+
+              <Fade  in={true} timeout={800}>
+
+              <Grid  item xs={12} sm={6} md={3} lg={2} container >
+
+                {/* CARD START */}
+
+                <Card className={classes.card} align="center" xs={12}  sm={6}  md={3} lg={2} id={`card-workshop`}>
+                  <CardContent className={classes.cardContent}>
+
+                    {/* CARD UPPER CATEGORY TITLES & BUTTON*/}
+
+                    <Typography variant="h5" align="center" color="textPrimary" paragraph className={classes.sectionTitle}>
+                    Check our Workshop
+                    </Typography>
+                
+                  </CardContent>
+
+                  {/* CARD IMAGE */}
+
+                  <Link underline='hover' color="inherit" href={`/studio/workshop`}>
+                    <CardActionArea>
+                      <CardMedia
+                        className={classes.cardMedia}
+                        image={'https://advancedfoam.com/wp-content/uploads/2017/07/mummy-photos-2017-JLC-2685-e1498974338583.jpg'}
+                        title={'In our workshop'}
+                      />
+
+
+                    </CardActionArea>
+                    </Link>
+
+                    {/* SHARE & LEARN MORE BUTTONS */}
+
+                    <CardActions>
+                      <Container className={classes.cardButtons}>
+                        <Button size="small" color="primary" href={`/studio/workshop`}>
+                          {`Show me more`}
+                        </Button>
+                      </Container>
+                    </CardActions>
+                </Card>
+                </Grid>
+                </Fade>
+              
               
            
           </Grid>

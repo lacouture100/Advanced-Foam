@@ -15,37 +15,23 @@ const words = {
     "studio" : 
     [
         {
-            "word": "MOVIE SETS",
+            "word": "FACADES",
             "index": 0
         },
         {
-            "word": "TV SETS",
+            "word": "COLUMNS",
             "index": 1
         },
         {
             "word": "ARCHITECTURAL DECORATIONS",
             "index": 2
         }
-    ],
-    "construction" : 
-    [
-        {
-            "word": "MOVIE SETS",
-            "index": 0
-        },
-        {
-            "word": "TV SETS",
-            "index": 1
-        },
-        {
-            "word": "ARCHITECTURAL DECORATIONS",
-            "index": 2
-        } 
     ]
+
 }
 
 let frases = {
-    "construction" : "for architecture and construction projects.",
+    "construction" : "Our specialty are architectural shapes that have extremely quick production times.",
     "studio" : "for Movie and Television production companies.",
     "packaging" : "for companies."
 }
