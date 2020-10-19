@@ -94,7 +94,7 @@ export default function Contact({ data }){
 
 
   Contact.getInitialProps = async () => {
-    const LINK = `http://www.advancedfoam.com/wp-json/wp/v2/pages?slug=packaging-services`;
+    const LINK = `http://www.advancedfoam.com/wp-json/wp/v2/pages?slug=phone-consultations`;
     const response = await axios.get(LINK);
             const data = await response.data[0];
     return {data : data}

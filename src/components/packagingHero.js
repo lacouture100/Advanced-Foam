@@ -131,7 +131,7 @@ export default function Hero( domain ) {
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">
                 <Grid item>
-                  <Button variant="contained" color="primary">
+                  <Button variant="contained" color="primary" href="/packaging/products">
                     Our products
                   </Button>
                 </Grid>

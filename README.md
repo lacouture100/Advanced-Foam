@@ -18,14 +18,19 @@ I am using the following packages:
 
 Posts - Categories:
 
+- Studio - 22
 - Studio Projects - 3
+- Studio Workshop - 23
+
+- Packaging - 14
+- Packaging info - 21
+- Packaging products - 19
+- Packaging services - 20
+
 - Construction - 16
 - Construction Projects - 13
-- Construction Products - 15
-- Packaging - 14
-
-
-
+- Construction/Redicoat Products - 15
+- Construction Materials - 18
 
 
 
