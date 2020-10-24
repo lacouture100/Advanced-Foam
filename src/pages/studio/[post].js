@@ -85,23 +85,7 @@ Post.getInitialProps = async ( context ) => {
     const {query} = context;
     const wpCategoryFilter = 22;
 
-    switch (wpCategoryFilter) {
-        case query.domain == "studio":
-        wpCategoryFilter = 22;
-            break;
-        case query.domain == "construction":
-        wpCategoryFilter = 16;
-                break;
-        case query.domain == "packaging":
-        wpCategoryFilter = 14;
-                break;
-        default:
-        
-            break;
-    }
-
     const LINK = `https://www.advancedfoam.com/wp-json/wp/v2/posts?categories=${wpCategoryFilter}&slug=${query.post}`;
-    console.log(LINK);
     const response = await axios.get(`https://www.advancedfoam.com/wp-json/wp/v2/posts?categories=${wpCategoryFilter}&slug=${query.post}`);
     //const response = await axios.get(`https://www.${query.domain}.advancedfoam.com/wp-json/wp/v2/posts?slug=${query.post}`);
             //console.log(response)
