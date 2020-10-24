@@ -134,52 +134,7 @@ export default function WorkshopBanner(props) {
                 ))
               }
 
-              {/* Enter Workshop Link */}
 
-              <Fade  in={true} timeout={800}>
-
-              <Grid  item xs={12} sm={6} md={3} lg={2} container >
-
-                {/* CARD START */}
-
-                <Card className={classes.card} align="center" xs={12}  sm={6}  md={3} lg={2} id={`card-workshop`}>
-                  <CardContent className={classes.cardContent}>
-
-                    {/* CARD UPPER CATEGORY TITLES & BUTTON*/}
-
-                    <Typography variant="h5" align="center" color="textPrimary" paragraph className={classes.sectionTitle}>
-                    Check our Workshop
-                    </Typography>
-                
-                  </CardContent>
-
-                  {/* CARD IMAGE */}
-
-                  <Link underline='hover' color="inherit" href={`/studio/workshop`}>
-                    <CardActionArea>
-                      <CardMedia
-                        className={classes.cardMedia}
-                        image={'https://advancedfoam.com/wp-content/uploads/2017/07/mummy-photos-2017-JLC-2685-e1498974338583.jpg'}
-                        title={'In our workshop'}
-                      />
-
-
-                    </CardActionArea>
-                    </Link>
-
-                    {/* SHARE & LEARN MORE BUTTONS */}
-
-                    <CardActions>
-                      <Container className={classes.cardButtons}>
-                        <Button size="small" color="primary" href={`/studio/workshop`}>
-                          {`Show me more`}
-                        </Button>
-                      </Container>
-                    </CardActions>
-                </Card>
-                </Grid>
-                </Fade>
-              
               
            
           </Grid>

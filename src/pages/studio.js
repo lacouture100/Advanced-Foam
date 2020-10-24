@@ -19,7 +19,8 @@ export default function Construction({ postList }){
 }
 
 Construction.getInitialProps = async () => {
-    const response = await axios.get(`https://www.studio.advancedfoam.com/wp-json/wp/v2/posts`);
+    //Studio projects
+    const response = await axios.get(`https://www.advancedfoam.com/wp-json/wp/v2/posts?categories=3`);
             //console.log(response)
             const postList = await response.data;
             //console.log(postList)
