@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
   },
   workshopTitle : {
     display: 'flex',
-    color : 'white',
+    color : 'textSecondary',
     flexWrap:'wrap',
     justifyContent : 'center',
     alignSelf:'center',
@@ -71,7 +71,8 @@ export default function WorkshopBanner(props) {
 
   const [data,setData] = useState(props.data);
   const domain = props.domain;
-  const classes = useStyles();const checked = true;
+  const classes = useStyles();
+  const checked = true;
 
   return (
     <React.Fragment>
@@ -107,7 +108,7 @@ export default function WorkshopBanner(props) {
 
                       {/* CARD IMAGE */}
 
-                      <Link underline='hover' color="inherit" href={`/${domain}/${ post.slug }`}>
+                      <Link underline='hover' color="inherit" href={`/studio/${ post.slug }`}>
                         <CardActionArea>
                           <CardMedia
                             className={classes.cardMedia}
@@ -123,7 +124,7 @@ export default function WorkshopBanner(props) {
 
                         <CardActions>
                           <Container className={classes.cardButtons}>
-                            <Button size="small" color="primary" href={`/${domain}/${ post.slug }`}>
+                            <Button size="small" color="primary" href={`/studio/${ post.slug }`}>
                               {`Show me more`}
                             </Button>
                           </Container>
