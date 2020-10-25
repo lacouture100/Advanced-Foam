@@ -185,9 +185,6 @@ export default function Banner() {
   const [construction,setConstructionIdx] = useState(0);
   const [packaging,setPackagingIdx] = useState(0);
 
-  
-
-
   // We set the interval in which we loop through the words
   useEffect(() =>{
      // We need to declare the interval in order to clean up the effect later

@@ -28,8 +28,6 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     color : 'white',
     width: '100%'
-
-    
   },
   sectionGrid: {
     display: 'flex',

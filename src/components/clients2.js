@@ -8,13 +8,14 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Link from '@material-ui/core/Link';
 import Fade from '@material-ui/core/Fade';
+import Button from '@material-ui/core/Button';
 
 
 const data ={
   "Clients":[
       {
           "name" : "Universal Studios",
-          "imgSrc" : "https://www.advancedfoam.com/wp-content/uploads/2020/09/universalStudios_logo.png",
+          "imgSrc" : "https://advancedfoam.com/wp-content/uploads/2020/10/universalStudios_logo.png",
           "imgAlt" : "Universal Studios logo",
           "link" : "https://www.universalstudios.com"
       },
@@ -94,7 +95,22 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('md')]: {
 			padding: theme.spacing(2),
 		  },
-   
+  },
+  clientButton : {
+    display: 'flex',
+    padding: theme.spacing(2),
+    margin : theme.spacing(2),
+    width: '98%',
+    alignSelf: 'center',
+    [theme.breakpoints.down('md')]: {
+      width: '97%',
+    },
+    [theme.breakpoints.down('sm')]: {
+      width: '95%',
+    },
+    [theme.breakpoints.down('xs')]: {
+      width: '93%',
+    },
   },
   card: {
     width: '95%',
@@ -129,9 +145,10 @@ export default function Banner() {
   return (
     <React.Fragment>
 
-          <Typography   align="center" variant="h4" component="h3" className={classes.sectionTitle}>
-                            Our clients
-                            </Typography>
+<Button variant="contained" size="large" align="center"  color="primary" className={classes.clientButton}>
+              OUR CLIENTS
+
+</Button>
           <Grid  className={classes.sectionGrid} container >
 
               {/* START CARD IMAGE Section */}

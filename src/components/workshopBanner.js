@@ -34,7 +34,8 @@ const useStyles = makeStyles((theme) => ({
   workshopButton : {
     display: 'flex',
     color : 'white',
-    width: '100%'
+    width: '100%',
+    alignItems: "center"
 
     
   },

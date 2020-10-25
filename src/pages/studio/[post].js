@@ -6,6 +6,7 @@ import Grid from '@material-ui/core/Grid';
 
 import { Typography } from '@material-ui/core';
 import { NextSeo } from 'next-seo';
+import CircularProgress from '@material-ui/core/CircularProgress';
 
 
 
@@ -18,6 +19,17 @@ const useStyles = makeStyles((theme) => ({
         listStyle: 'none',
         
 	  },
+    },
+    loading : {
+        display: 'flex',
+        //margin: theme.spacing(10,90,10,90),
+        margin: theme.spacing(10,100,10),
+        [theme.breakpoints.down('sm')]: {  
+            margin: theme.spacing(10,50,10) 
+        },
+        [theme.breakpoints.down('xs')]: {  
+            margin: theme.spacing(20)
+        },
     },
     postTitle : {
         margin: theme.spacing(5),
@@ -78,7 +90,7 @@ export default function Post({postData}) {
     const router = useRouter();
     const classes = useStyles();
 
-    if (!postData){return <div>Loading…</div>}
+    if (!postData){return <Layout domain={'packaging'}><Grid  className={classes.loading}><CircularProgress/></Grid ></Layout>}
     return (
 
         <Layout domain={'studio'}>

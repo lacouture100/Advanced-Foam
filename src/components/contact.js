@@ -39,7 +39,7 @@ export default function Contact () {
           <Fade in={true} timeout={500}>
 
             <Button className={classes.button} variant="contained" color="primary">
-							<Link underline='hover' color="inherit" href="/construction/redicoat">
+							<Link underline='hover' color="inherit" href="/contact">
 							Contact us today
 							</Link>
 						</Button>
