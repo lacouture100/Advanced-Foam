@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
   },
   workshopTitle : {
     display: 'flex',
-    color : 'textSecondary',
+    color : 'white',
     flexWrap:'wrap',
     justifyContent : 'center',
     alignSelf:'center',
@@ -68,7 +68,6 @@ const useStyles = makeStyles((theme) => ({
 
 
 export default function WorkshopBanner(props) {
-  console.log(props)
   const {data} = props;
   const classes = useStyles();
 
@@ -76,7 +75,7 @@ export default function WorkshopBanner(props) {
   if (!data){return <div>Loading…</div>}
 
   return (
-    <React.Fragment>
+    <Fragment>
       <Fade in={true} timeout={100}>
 
                     
@@ -141,7 +140,7 @@ export default function WorkshopBanner(props) {
            
           </Grid>
           </Fade>
-    </React.Fragment>
+    </Fragment>
   );
 }
 
