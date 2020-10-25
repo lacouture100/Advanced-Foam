@@ -75,7 +75,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Contact({ data }){
   const classes = useStyles();
-
+  if (!data){return <div>Loading…</div>}
     return (
           <Layout >
           <Grid >
@@ -97,7 +97,7 @@ export default function Contact({ data }){
 
     const response = await axios.get(`http://www.advancedfoam.com/wp-json/wp/v2/pages?slug=contact-us`);
     ///console.log("res: " + response)
-    const postList = await response.data[0]
+    const data = await response.data[0]
 
     return {
       props: {data},

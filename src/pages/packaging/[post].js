@@ -79,8 +79,47 @@ export default function Post({postData}) {
     )
 }
 
+  
 
+export async function getStaticPaths() {
 
+    const wpCategoryFilter = 14;
+    const res = await axios.get(`https://www.advancedfoam.com/wp-json/wp/v2/posts?categories=${wpCategoryFilter}`)
+    const allPosts = await res.data;
+    //console.log(allPosts);
+    
+    // Get the paths we want to pre-render based on posts
+    const paths = allPosts.map((post) => `/packaging/${post.slug}`)
+    console.log(paths)
+
+    return {
+      //paths:   allPosts.map(( post ) => `/studio/${post.slug}`) || [],
+        paths,
+      fallback: true,
+    }
+  }
+
+  
+
+export async function getStaticProps( {params} ) {
+    // Call an external API endpoint to get posts.
+    // You can use any data fetching library
+    
+    const wpCategoryFilter = 14;
+    //const { post } = params;
+    //console.log(`https://www.advancedfoam.com/wp-json/wp/v2/posts?slug=${params.post}`)
+    const response = await axios.get(`https://www.advancedfoam.com/wp-json/wp/v2/posts?categories=${wpCategoryFilter}&slug=${params.post}`);
+    ///console.log("res: " + response)
+    const postData = await response.data[0]
+    //console.log("post: " + postData)
+    // By returning { props: posts }, the Blog component
+    // will receive `posts` as a prop at build time
+    return {
+      props: {postData},
+    }
+}
+    
+/*
 Post.getInitialProps = async ( context ) => {
     //check if the context is making a request server-side. req and res only exist/are defined server-side
     
@@ -98,3 +137,5 @@ Post.getInitialProps = async ( context ) => {
 
     return {postData : postData}
 }
+
+*/
