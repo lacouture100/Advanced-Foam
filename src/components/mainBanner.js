@@ -232,11 +232,11 @@ export default function Banner() {
 
                         {/* CARD UPPER CATEGORY TITLES & BUTTON*/}
 
-                        <Typography variant="h4" align="center" color="textPrimary" paragraph className={classes.sectionTitle}>
+                        <Typography variant="h4" component="h3" align="center" color="textPrimary" paragraph className={classes.sectionTitle}>
                           {sections[index].title}
                         </Typography>
                         
-                        <Typography variant="h6" align="center" color="textSecondary" paragraph className={classes.sectionTitle}>
+                        <Typography variant="h6" component="h4" align="center" color="textSecondary" paragraph className={classes.sectionTitle}>
                         {sections[index].subtitle}
                         </Typography>
                         <Link underline='hover' color="inherit" href={`/${domains[index]}`}>
@@ -265,10 +265,10 @@ export default function Banner() {
 
 
                           <CardContent className={classes.cardContent}>
-                            <Typography gutterBottom  align="center" variant="h5" component="h2" className={classes.sectionTitle}>
+                            <Typography gutterBottom  align="center" variant="h5" component="h5" className={classes.sectionTitle}>
                             {content[index].title}
                             </Typography>
-                            <Typography variant="h6"  align="center" color="textSecondary" component="p" className={classes.sectionTitle}>
+                            <Typography variant="h6" component="h6" align="center" color="textSecondary" component="p" className={classes.sectionTitle}>
                             {content[index].production}
                             </Typography>
                           </CardContent>

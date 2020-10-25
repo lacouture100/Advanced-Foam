@@ -69,7 +69,7 @@ export default function Footer(props) {
     <Fade in={true} timeout={200}>
       <grid className={classes.item}>
       <Container maxWidth="lg">
-        <Typography variant="h6" component="h5" align="center" gutterBottom>
+        <Typography variant="h6" component="h6" align="center" gutterBottom>
           {footer[0].title}
         </Typography>
         <Typography
@@ -96,7 +96,7 @@ export default function Footer(props) {
       <Fade in={true} timeout={400}>
       <grid className={classes.item}>
       <Container maxWidth="lg">
-        <Typography variant="h6" component="h5" align="center" gutterBottom>
+        <Typography variant="h6" component="h6" align="center" gutterBottom>
           {footer[1].title}
         </Typography>
         <Typography
@@ -114,7 +114,7 @@ export default function Footer(props) {
       <Fade in={true} timeout={600}>
       <grid item className={classes.item}>
       <Container maxWidth="lg">
-        <Typography variant="h6" component="h5" align="center" gutterBottom>
+        <Typography variant="h6" component="h6" align="center" gutterBottom>
           {footer[2].title}
         </Typography>
         <Typography

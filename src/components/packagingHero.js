@@ -35,7 +35,7 @@ const words = {
 let frases = {
     "construction" : "for architecture and construction projects.",
     "studio" : "for Movie and Television production companies.",
-    "packaging" : "for companies."
+    "packaging" : "for companies that need specialized packaging needs."
 }
 
 
@@ -115,10 +115,10 @@ export default function Hero( domain ) {
         {/* Start Hero Titles (Left Side) */}
         
           <Container  md={7} className={classes.heroTitles}>
-            <Typography variant="h5" align="center" color="textPrimary" paragraph >
+            <Typography variant="h5" component="h3" align="center" color="textPrimary" paragraph >
             We have over 35 years of experience in foam fabrication
             </Typography>
-            <Typography variant="h5" align="center" color="textSecondary" paragraph>
+            <Typography variant="h5" component="h3" align="center" color="textSecondary" paragraph>
             {frases[`${site}`]}
             </Typography>
             <div className={classes.heroButtons}>

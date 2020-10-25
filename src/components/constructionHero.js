@@ -114,12 +114,12 @@ export default function Hero( domain ) {
         
           <Container  md={7} className={classes.heroTitles}>
             <Fade in={true} timeout={500}>
-              <Typography variant="h5" align="center" color="textPrimary" paragraph >
+              <Typography variant="h5"component="h3"  align="center" color="textPrimary" paragraph >
               We have over 35 years of experience in foam fabrication
               </Typography>
             </Fade>
             <Fade in={true} timeout={1000}>
-              <Typography variant="h5" align="center" color="textSecondary" paragraph>
+              <Typography variant="h5"component="h3"  align="center" color="textSecondary" paragraph>
               {frases[`${site}`]}
               </Typography>
             </Fade>
@@ -176,7 +176,7 @@ export default function Hero( domain ) {
 
                 <Fade in={true} timeout={1000}>
                 <div >
-                <Typography variant='h6'  className={classes.heroDynamicText}>
+                <Typography variant='h6' component="h3"  className={classes.heroDynamicText}>
                  {word}
                 </Typography>
                 </div>

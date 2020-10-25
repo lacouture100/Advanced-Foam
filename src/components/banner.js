@@ -87,7 +87,7 @@ export default function Banner(props) {
 
                         {/* CARD UPPER CATEGORY TITLES & BUTTON*/}
 
-                        <Typography variant="h5" align="center" color="textPrimary" paragraph className={classes.sectionTitle}>
+                        <Typography variant="h5"  component="h4" align="center" color="textPrimary" paragraph className={classes.sectionTitle}>
                         {post.title.rendered}
                         </Typography>
                     

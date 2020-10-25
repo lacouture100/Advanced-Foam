@@ -129,7 +129,7 @@ export default function Banner() {
   return (
     <React.Fragment>
 
-          <Typography   align="center" variant="h4" component="h2" className={classes.sectionTitle}>
+          <Typography   align="center" variant="h4" component="h3" className={classes.sectionTitle}>
                             Our clients
                             </Typography>
           <Grid  className={classes.sectionGrid} container >
@@ -156,7 +156,7 @@ export default function Banner() {
 
 
                           <CardContent className={classes.cardContent}>
-                            <Typography align="center" variant="h5" component="h4" className={classes.cardTitle}>
+                            <Typography align="center" variant="h5" component="h5" className={classes.cardTitle}>
                             {client.title}
                             </Typography>
                           </CardContent>
