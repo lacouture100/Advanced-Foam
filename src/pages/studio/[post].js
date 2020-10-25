@@ -5,7 +5,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 
 import { Typography } from '@material-ui/core';
-import { NextSeo } from 'next-seo'
+import { NextSeo } from 'next-seo';
 
 
 
@@ -82,7 +82,7 @@ export default function Post({postData}) {
     return (
 
         <Layout domain={'studio'}>
-                    <NextSeo
+        <NextSeo
         title={postData.title.rendered}
         description={`${postData.excerpt.rendered}`}
       />

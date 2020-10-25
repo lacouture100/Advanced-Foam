@@ -5,7 +5,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 
 import { Typography } from '@material-ui/core';
-
+import { NextSeo } from 'next-seo';
 
 
 
@@ -80,6 +80,10 @@ export default function Post({postData}) {
     if (!postData){return <div>Loading…</div>}
     return (
         <Layout domain={'packaging'}>
+            <NextSeo
+        title={postData.title.rendered}
+        description={`${postData.excerpt.rendered}`}
+      />
             <Grid >
         {/*We can access the domain with {router.query.domain} abd the query, or blog post, with {router.query.post}*/}
                 <Typography variant="h3" align="center" color="textPrimary"className={classes.postTitle} >{postData.title.rendered}</Typography>

@@ -4,6 +4,7 @@ import Banner from '../components/banner';
 import Layout from '../components/layout';
 import Clients from '../components/clients2';
 import Hero from '../components/packagingHero';
+import { NextSeo } from 'next-seo';
 
 const domain = 'packaging';
 
@@ -11,6 +12,10 @@ export default function Packaging({ postList }){
 
     return (
         <Layout domain={domain}>
+                        <NextSeo
+        title={`Advanced Foam Packaging Site`}
+        description={`Advanced Foam Packaging Site. We make everything in foam including custom packaging, props, and more. We always have stock available.`}
+      />
             <Hero domain={domain}/>
             <Banner data={postList} domain={domain} />
             <Clients/>

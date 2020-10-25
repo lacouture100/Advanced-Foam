@@ -4,11 +4,16 @@ import Banner from '../components/mainBanner'
 import WorkshopBanner from '../components/workshopBanner'
 import Clients from '../components/clients2'
 import axios from 'axios';
+import { NextSeo } from 'next-seo';
 
 export default function Homepage({ postList }){
 
     return (
         <Layout >
+        <NextSeo
+        title={`Advanced Foam Main Site`}
+        description={`Advanced Foam Packaging Site. We make everything in foam for the Move and TV production industry, architectural projects, and custom packaging needs. We always have stock available.`}
+      />
             <Hero/>
             <Banner/>
             <WorkshopBanner data={postList}/>

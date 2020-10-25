@@ -4,6 +4,7 @@ import Banner from '../components/banner';
 import Layout from '../components/layout';
 import Clients from '../components/clients2';
 import Hero from '../components/hero';
+import { NextSeo } from 'next-seo';
 
 const domain = 'studio';
 
@@ -11,6 +12,10 @@ export default function Studio({ postList }){
 
     return (
         <Layout domain={domain}>
+                                    <NextSeo
+        title={`Advanced Foam Studio Site`}
+        description={`Advanced Foam Studio Site. We make everything in foam including custom movie props, columns, and more. We always have stock available.`}
+      />
             <Hero domain={domain}/>
             <Banner data={postList} domain={domain} />
             <Clients/>
