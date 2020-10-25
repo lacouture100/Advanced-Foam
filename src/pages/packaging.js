@@ -7,7 +7,7 @@ import Hero from '../components/packagingHero';
 
 const domain = 'packaging';
 
-export default function Construction({ postList }){
+export default function Packaging({ postList }){
 
     return (
         <Layout domain={domain}>
@@ -18,7 +18,26 @@ export default function Construction({ postList }){
     )
 }
 
-Construction.getInitialProps = async () => {
+
+
+export async function getStaticProps( {params} ) {
+    // Call an external API endpoint to get posts.
+    // You can use any data fetching library
+    
+    const wpCategoryFilter = 19;
+    //const { post } = params;
+    //console.log(`https://www.advancedfoam.com/wp-json/wp/v2/posts?slug=${params.post}`)
+    const response = await axios.get(`https://www.advancedfoam.com/wp-json/wp/v2/posts?categories=${wpCategoryFilter}`);
+    ///console.log("res: " + response)
+    const postList = await response.data
+
+    return {
+      props: {postList},
+    }
+}
+    /*
+
+Packaging.getInitialProps = async () => {
     const response = await axios.get(`https://www.advancedfoam.com/wp-json/wp/v2/posts?categories=19`);
             //console.log(response)
             const postList = await response.data;
@@ -26,7 +45,7 @@ Construction.getInitialProps = async () => {
     return {postList : postList}
 }
 
-
+*/
 
 
 

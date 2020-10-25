@@ -18,6 +18,25 @@ export default function Studio({ postList }){
     )
 }
 
+
+export async function getStaticProps( {params} ) {
+    // Call an external API endpoint to get posts.
+    // You can use any data fetching library
+    
+    const wpCategoryFilter = 3;
+    //const { post } = params;
+    //console.log(`https://www.advancedfoam.com/wp-json/wp/v2/posts?slug=${params.post}`)
+    const response = await axios.get(`https://www.advancedfoam.com/wp-json/wp/v2/posts?categories=${wpCategoryFilter}`);
+    ///console.log("res: " + response)
+    const postList = await response.data
+
+    return {
+      props: {postList},
+    }
+}
+
+
+/*
 Studio.getInitialProps = async () => {
     //Studio projects
     const response = await axios.get(`https://www.advancedfoam.com/wp-json/wp/v2/posts?categories=3`);
@@ -27,3 +46,4 @@ Studio.getInitialProps = async () => {
     return {postList : postList}
 }
 
+*/

@@ -84,18 +84,14 @@ export default function Post({postData}) {
 
 /*
 Post.getInitialProps = async ( context ) => {
-    //check if the context is making a request server-side. req and res only exist/are defined server-side
-    
+    //check if the context is making a request server-side. req and res only exist/are defined server-side    
     const {query} = context;
     // This is the construction category number in wordpress
     const wpCategoryFilter = 22;
 
-
-    const LINK = `https://www.advancedfoam.com/wp-json/wp/v2/posts?categories=${wpCategoryFilter}&slug=${query.post}`;
-    //console.log(LINK);
+    const LINK = `https://www.advancedfoam.com/wp-json/wp/v2/posts?categories=${wpCategoryFilter}&slug=${query.post}`
     const response = await axios.get(`https://www.advancedfoam.com/wp-json/wp/v2/posts?categories=${wpCategoryFilter}&slug=${query.post}`);
     //const response = await axios.get(`https://www.${query.domain}.advancedfoam.com/wp-json/wp/v2/posts?slug=${query.post}`);
-            //console.log(response)
             const postData = await response.data[0];
 
     return {postData : postData}
@@ -140,7 +136,5 @@ export async function getStaticProps( {params} ) {
     return {
       props: {postData},
     }
-    }
+}
     
-
-    // USE GET SERVERPROPS
