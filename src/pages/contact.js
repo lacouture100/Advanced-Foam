@@ -78,6 +78,10 @@ export default function Contact({ data }){
   if (!data){return <div>Loading…</div>}
     return (
           <Layout >
+                            <NextSeo
+                      title={`${data.title.rendered}`}
+        description={`Advanced Foam Contact Site. `}
+      />
           <Grid >
       {/*We can access the domain with {router.query.domain} abd the query, or blog post, with {router.query.post}*/}
               <Typography variant="h3" align="center" color="textPrimary"className={classes.postTitle} >{data.title.rendered}</Typography>
