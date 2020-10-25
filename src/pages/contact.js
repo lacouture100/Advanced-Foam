@@ -4,6 +4,7 @@ import axios from 'axios'
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import { Typography } from '@material-ui/core';
+import { NextSeo } from 'next-seo';
 
 
 

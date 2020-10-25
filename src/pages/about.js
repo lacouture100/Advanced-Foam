@@ -4,6 +4,7 @@ import axios from 'axios'
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import { Typography } from '@material-ui/core';
+import { NextSeo } from 'next-seo';
 
 
 
@@ -71,6 +72,10 @@ export default function Contact({ data }){
 
     return (
           <Layout >
+              <NextSeo
+                      title={`${data.title.rendered}`}
+        description={`Advanced Foam About Site. `}
+      />
           <Grid >
       {/*We can access the domain with {router.query.domain} abd the query, or blog post, with {router.query.post}*/}
               <Typography variant="h3" align="center" color="textPrimary"className={classes.postTitle} >{data.title.rendered}</Typography>
