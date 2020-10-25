@@ -1,0 +1,1612 @@
+<!DOCTYPE html><html lang="en"><head><meta name="theme-color" content="#9c27b0"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap"/><title>Advanced Foam</title><meta name="Advanced Foam Inc." content="Advanced Foam Inc. - Foam Fabrication and props made in California."/><meta charSet="utf-8"/><meta name="viewport" content="initial-scale=1.0, width=device-width"/><noscript data-n-css="true"></noscript><link rel="preload" href="/_next/static/chunks/main-316bbd78e6029733d79a.js" as="script"/><link rel="preload" href="/_next/static/chunks/webpack-e067438c4cf4ef2ef178.js" as="script"/><link rel="preload" href="/_next/static/chunks/framework.1d36bc031662b4dc4c28.js" as="script"/><link rel="preload" href="/_next/static/chunks/commons.fea7482b100b72cadc8f.js" as="script"/><link rel="preload" href="/_next/static/chunks/96c1ae029ad230b058ae1974ec5096c1a5e58baf.20f538b0492f717bdf47.js" as="script"/><link rel="preload" href="/_next/static/chunks/18548bddf1a4f9b0bb0515adccde54fa4f78afcd.e97a68b0a43790a2be72.js" as="script"/><link rel="preload" href="/_next/static/chunks/pages/_app-cf34b6c6dcbd8e5e19d8.js" as="script"/><link rel="preload" href="/_next/static/chunks/52410961c79984d95a83f41e23279451651567a8.0eecca90880bdb72a7cb.js" as="script"/><link rel="preload" href="/_next/static/chunks/af59b78634e634ff824f14c7f9e06d0e55cb0614.14215d4d4f09a4de9724.js" as="script"/><link rel="preload" href="/_next/static/chunks/pages/construction-3ba3b836db8c33e3c8de.js" as="script"/><style id="jss-server-side">.MuiSvgIcon-root {
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  font-size: 1.5rem;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  flex-shrink: 0;
+  user-select: none;
+}
+.MuiSvgIcon-colorPrimary {
+  color: #9c27b0;
+}
+.MuiSvgIcon-colorSecondary {
+  color: #651fff;
+}
+.MuiSvgIcon-colorAction {
+  color: rgba(0, 0, 0, 0.54);
+}
+.MuiSvgIcon-colorError {
+  color: #f44336;
+}
+.MuiSvgIcon-colorDisabled {
+  color: rgba(0, 0, 0, 0.26);
+}
+.MuiSvgIcon-fontSizeInherit {
+  font-size: inherit;
+}
+.MuiSvgIcon-fontSizeSmall {
+  font-size: 1.25rem;
+}
+.MuiSvgIcon-fontSizeLarge {
+  font-size: 2.1875rem;
+}
+.MuiPaper-root {
+  color: rgba(0, 0, 0, 0.87);
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  background-color: #fff;
+}
+.MuiPaper-rounded {
+  border-radius: 4px;
+}
+.MuiPaper-outlined {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+.MuiPaper-elevation0 {
+  box-shadow: none;
+}
+.MuiPaper-elevation1 {
+  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation2 {
+  box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation3 {
+  box-shadow: 0px 3px 3px -2px rgba(0,0,0,0.2),0px 3px 4px 0px rgba(0,0,0,0.14),0px 1px 8px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation4 {
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation5 {
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation6 {
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation7 {
+  box-shadow: 0px 4px 5px -2px rgba(0,0,0,0.2),0px 7px 10px 1px rgba(0,0,0,0.14),0px 2px 16px 1px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation8 {
+  box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation9 {
+  box-shadow: 0px 5px 6px -3px rgba(0,0,0,0.2),0px 9px 12px 1px rgba(0,0,0,0.14),0px 3px 16px 2px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation10 {
+  box-shadow: 0px 6px 6px -3px rgba(0,0,0,0.2),0px 10px 14px 1px rgba(0,0,0,0.14),0px 4px 18px 3px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation11 {
+  box-shadow: 0px 6px 7px -4px rgba(0,0,0,0.2),0px 11px 15px 1px rgba(0,0,0,0.14),0px 4px 20px 3px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation12 {
+  box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation13 {
+  box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 13px 19px 2px rgba(0,0,0,0.14),0px 5px 24px 4px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation14 {
+  box-shadow: 0px 7px 9px -4px rgba(0,0,0,0.2),0px 14px 21px 2px rgba(0,0,0,0.14),0px 5px 26px 4px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation15 {
+  box-shadow: 0px 8px 9px -5px rgba(0,0,0,0.2),0px 15px 22px 2px rgba(0,0,0,0.14),0px 6px 28px 5px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation16 {
+  box-shadow: 0px 8px 10px -5px rgba(0,0,0,0.2),0px 16px 24px 2px rgba(0,0,0,0.14),0px 6px 30px 5px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation17 {
+  box-shadow: 0px 8px 11px -5px rgba(0,0,0,0.2),0px 17px 26px 2px rgba(0,0,0,0.14),0px 6px 32px 5px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation18 {
+  box-shadow: 0px 9px 11px -5px rgba(0,0,0,0.2),0px 18px 28px 2px rgba(0,0,0,0.14),0px 7px 34px 6px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation19 {
+  box-shadow: 0px 9px 12px -6px rgba(0,0,0,0.2),0px 19px 29px 2px rgba(0,0,0,0.14),0px 7px 36px 6px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation20 {
+  box-shadow: 0px 10px 13px -6px rgba(0,0,0,0.2),0px 20px 31px 3px rgba(0,0,0,0.14),0px 8px 38px 7px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation21 {
+  box-shadow: 0px 10px 13px -6px rgba(0,0,0,0.2),0px 21px 33px 3px rgba(0,0,0,0.14),0px 8px 40px 7px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation22 {
+  box-shadow: 0px 10px 14px -6px rgba(0,0,0,0.2),0px 22px 35px 3px rgba(0,0,0,0.14),0px 8px 42px 7px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation23 {
+  box-shadow: 0px 11px 14px -7px rgba(0,0,0,0.2),0px 23px 36px 3px rgba(0,0,0,0.14),0px 9px 44px 8px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation24 {
+  box-shadow: 0px 11px 15px -7px rgba(0,0,0,0.2),0px 24px 38px 3px rgba(0,0,0,0.14),0px 9px 46px 8px rgba(0,0,0,0.12);
+}
+.MuiButtonBase-root {
+  color: inherit;
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  display: inline-flex;
+  outline: 0;
+  padding: 0;
+  position: relative;
+  align-items: center;
+  user-select: none;
+  border-radius: 0;
+  vertical-align: middle;
+  -moz-appearance: none;
+  justify-content: center;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.MuiButtonBase-root::-moz-focus-inner {
+  border-style: none;
+}
+.MuiButtonBase-root.Mui-disabled {
+  cursor: default;
+  pointer-events: none;
+}
+@media print {
+  .MuiButtonBase-root {
+    color-adjust: exact;
+  }
+}
+  .MuiIconButton-root {
+    flex: 0 0 auto;
+    color: rgba(0, 0, 0, 0.54);
+    padding: 12px;
+    overflow: visible;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 50%;
+  }
+  .MuiIconButton-root:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+  }
+  .MuiIconButton-root.Mui-disabled {
+    color: rgba(0, 0, 0, 0.26);
+    background-color: transparent;
+  }
+@media (hover: none) {
+  .MuiIconButton-root:hover {
+    background-color: transparent;
+  }
+}
+  .MuiIconButton-edgeStart {
+    margin-left: -12px;
+  }
+  .MuiIconButton-sizeSmall.MuiIconButton-edgeStart {
+    margin-left: -3px;
+  }
+  .MuiIconButton-edgeEnd {
+    margin-right: -12px;
+  }
+  .MuiIconButton-sizeSmall.MuiIconButton-edgeEnd {
+    margin-right: -3px;
+  }
+  .MuiIconButton-colorInherit {
+    color: inherit;
+  }
+  .MuiIconButton-colorPrimary {
+    color: #9c27b0;
+  }
+  .MuiIconButton-colorPrimary:hover {
+    background-color: rgba(156, 39, 176, 0.04);
+  }
+@media (hover: none) {
+  .MuiIconButton-colorPrimary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiIconButton-colorSecondary {
+    color: #651fff;
+  }
+  .MuiIconButton-colorSecondary:hover {
+    background-color: rgba(101, 31, 255, 0.04);
+  }
+@media (hover: none) {
+  .MuiIconButton-colorSecondary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiIconButton-sizeSmall {
+    padding: 3px;
+    font-size: 1.125rem;
+  }
+  .MuiIconButton-label {
+    width: 100%;
+    display: flex;
+    align-items: inherit;
+    justify-content: inherit;
+  }
+  .MuiAppBar-root {
+    width: 100%;
+    display: flex;
+    z-index: 1100;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    flex-direction: column;
+  }
+  .MuiAppBar-positionFixed {
+    top: 0;
+    left: auto;
+    right: 0;
+    position: fixed;
+  }
+@media print {
+  .MuiAppBar-positionFixed {
+    position: absolute;
+  }
+}
+  .MuiAppBar-positionAbsolute {
+    top: 0;
+    left: auto;
+    right: 0;
+    position: absolute;
+  }
+  .MuiAppBar-positionSticky {
+    top: 0;
+    left: auto;
+    right: 0;
+    position: sticky;
+  }
+  .MuiAppBar-positionStatic {
+    position: static;
+  }
+  .MuiAppBar-positionRelative {
+    position: relative;
+  }
+  .MuiAppBar-colorDefault {
+    color: rgba(0, 0, 0, 0.87);
+    background-color: #f5f5f5;
+  }
+  .MuiAppBar-colorPrimary {
+    color: #fff;
+    background-color: #9c27b0;
+  }
+  .MuiAppBar-colorSecondary {
+    color: #fff;
+    background-color: #651fff;
+  }
+  .MuiAppBar-colorInherit {
+    color: inherit;
+  }
+  .MuiAppBar-colorTransparent {
+    color: inherit;
+    background-color: transparent;
+  }
+  .MuiTypography-root {
+    margin: 0;
+  }
+  .MuiTypography-body2 {
+    font-size: 0.875rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.43;
+    letter-spacing: 0.01071em;
+  }
+  .MuiTypography-body1 {
+    font-size: 1rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+  }
+  .MuiTypography-caption {
+    font-size: 0.75rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.66;
+    letter-spacing: 0.03333em;
+  }
+  .MuiTypography-button {
+    font-size: 0.875rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+  }
+  .MuiTypography-h1 {
+    font-size: 6rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 300;
+    line-height: 1.167;
+    letter-spacing: -0.01562em;
+  }
+  .MuiTypography-h2 {
+    font-size: 3.75rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 300;
+    line-height: 1.2;
+    letter-spacing: -0.00833em;
+  }
+  .MuiTypography-h3 {
+    font-size: 3rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.167;
+    letter-spacing: 0em;
+  }
+  .MuiTypography-h4 {
+    font-size: 2.125rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.235;
+    letter-spacing: 0.00735em;
+  }
+  .MuiTypography-h5 {
+    font-size: 1.5rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.334;
+    letter-spacing: 0em;
+  }
+  .MuiTypography-h6 {
+    font-size: 1.25rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.0075em;
+  }
+  .MuiTypography-subtitle1 {
+    font-size: 1rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    letter-spacing: 0.00938em;
+  }
+  .MuiTypography-subtitle2 {
+    font-size: 0.875rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.57;
+    letter-spacing: 0.00714em;
+  }
+  .MuiTypography-overline {
+    font-size: 0.75rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 2.66;
+    letter-spacing: 0.08333em;
+    text-transform: uppercase;
+  }
+  .MuiTypography-srOnly {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+  }
+  .MuiTypography-alignLeft {
+    text-align: left;
+  }
+  .MuiTypography-alignCenter {
+    text-align: center;
+  }
+  .MuiTypography-alignRight {
+    text-align: right;
+  }
+  .MuiTypography-alignJustify {
+    text-align: justify;
+  }
+  .MuiTypography-noWrap {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .MuiTypography-gutterBottom {
+    margin-bottom: 0.35em;
+  }
+  .MuiTypography-paragraph {
+    margin-bottom: 16px;
+  }
+  .MuiTypography-colorInherit {
+    color: inherit;
+  }
+  .MuiTypography-colorPrimary {
+    color: #9c27b0;
+  }
+  .MuiTypography-colorSecondary {
+    color: #651fff;
+  }
+  .MuiTypography-colorTextPrimary {
+    color: rgba(0, 0, 0, 0.87);
+  }
+  .MuiTypography-colorTextSecondary {
+    color: rgba(0, 0, 0, 0.54);
+  }
+  .MuiTypography-colorError {
+    color: #f44336;
+  }
+  .MuiTypography-displayInline {
+    display: inline;
+  }
+  .MuiTypography-displayBlock {
+    display: block;
+  }
+  .MuiButton-root {
+    color: rgba(0, 0, 0, 0.87);
+    padding: 6px 16px;
+    font-size: 0.875rem;
+    min-width: 64px;
+    box-sizing: border-box;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    border-radius: 4px;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+  }
+  .MuiButton-root:hover {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.04);
+  }
+  .MuiButton-root.Mui-disabled {
+    color: rgba(0, 0, 0, 0.26);
+  }
+@media (hover: none) {
+  .MuiButton-root:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-root:hover.Mui-disabled {
+    background-color: transparent;
+  }
+  .MuiButton-label {
+    width: 100%;
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+  }
+  .MuiButton-text {
+    padding: 6px 8px;
+  }
+  .MuiButton-textPrimary {
+    color: #9c27b0;
+  }
+  .MuiButton-textPrimary:hover {
+    background-color: rgba(156, 39, 176, 0.04);
+  }
+@media (hover: none) {
+  .MuiButton-textPrimary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-textSecondary {
+    color: #651fff;
+  }
+  .MuiButton-textSecondary:hover {
+    background-color: rgba(101, 31, 255, 0.04);
+  }
+@media (hover: none) {
+  .MuiButton-textSecondary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-outlined {
+    border: 1px solid rgba(0, 0, 0, 0.23);
+    padding: 5px 15px;
+  }
+  .MuiButton-outlined.Mui-disabled {
+    border: 1px solid rgba(0, 0, 0, 0.12);
+  }
+  .MuiButton-outlinedPrimary {
+    color: #9c27b0;
+    border: 1px solid rgba(156, 39, 176, 0.5);
+  }
+  .MuiButton-outlinedPrimary:hover {
+    border: 1px solid #9c27b0;
+    background-color: rgba(156, 39, 176, 0.04);
+  }
+@media (hover: none) {
+  .MuiButton-outlinedPrimary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-outlinedSecondary {
+    color: #651fff;
+    border: 1px solid rgba(101, 31, 255, 0.5);
+  }
+  .MuiButton-outlinedSecondary:hover {
+    border: 1px solid #651fff;
+    background-color: rgba(101, 31, 255, 0.04);
+  }
+  .MuiButton-outlinedSecondary.Mui-disabled {
+    border: 1px solid rgba(0, 0, 0, 0.26);
+  }
+@media (hover: none) {
+  .MuiButton-outlinedSecondary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-contained {
+    color: rgba(0, 0, 0, 0.87);
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+    background-color: #e0e0e0;
+  }
+  .MuiButton-contained:hover {
+    box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+    background-color: #d5d5d5;
+  }
+  .MuiButton-contained.Mui-focusVisible {
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+  }
+  .MuiButton-contained:active {
+    box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+  }
+  .MuiButton-contained.Mui-disabled {
+    color: rgba(0, 0, 0, 0.26);
+    box-shadow: none;
+    background-color: rgba(0, 0, 0, 0.12);
+  }
+@media (hover: none) {
+  .MuiButton-contained:hover {
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+    background-color: #e0e0e0;
+  }
+}
+  .MuiButton-contained:hover.Mui-disabled {
+    background-color: rgba(0, 0, 0, 0.12);
+  }
+  .MuiButton-containedPrimary {
+    color: #fff;
+    background-color: #9c27b0;
+  }
+  .MuiButton-containedPrimary:hover {
+    background-color: #7b1fa2;
+  }
+@media (hover: none) {
+  .MuiButton-containedPrimary:hover {
+    background-color: #9c27b0;
+  }
+}
+  .MuiButton-containedSecondary {
+    color: #fff;
+    background-color: #651fff;
+  }
+  .MuiButton-containedSecondary:hover {
+    background-color: #6200ea;
+  }
+@media (hover: none) {
+  .MuiButton-containedSecondary:hover {
+    background-color: #651fff;
+  }
+}
+  .MuiButton-disableElevation {
+    box-shadow: none;
+  }
+  .MuiButton-disableElevation:hover {
+    box-shadow: none;
+  }
+  .MuiButton-disableElevation.Mui-focusVisible {
+    box-shadow: none;
+  }
+  .MuiButton-disableElevation:active {
+    box-shadow: none;
+  }
+  .MuiButton-disableElevation.Mui-disabled {
+    box-shadow: none;
+  }
+  .MuiButton-colorInherit {
+    color: inherit;
+    border-color: currentColor;
+  }
+  .MuiButton-textSizeSmall {
+    padding: 4px 5px;
+    font-size: 0.8125rem;
+  }
+  .MuiButton-textSizeLarge {
+    padding: 8px 11px;
+    font-size: 0.9375rem;
+  }
+  .MuiButton-outlinedSizeSmall {
+    padding: 3px 9px;
+    font-size: 0.8125rem;
+  }
+  .MuiButton-outlinedSizeLarge {
+    padding: 7px 21px;
+    font-size: 0.9375rem;
+  }
+  .MuiButton-containedSizeSmall {
+    padding: 4px 10px;
+    font-size: 0.8125rem;
+  }
+  .MuiButton-containedSizeLarge {
+    padding: 8px 22px;
+    font-size: 0.9375rem;
+  }
+  .MuiButton-fullWidth {
+    width: 100%;
+  }
+  .MuiButton-startIcon {
+    display: inherit;
+    margin-left: -4px;
+    margin-right: 8px;
+  }
+  .MuiButton-startIcon.MuiButton-iconSizeSmall {
+    margin-left: -2px;
+  }
+  .MuiButton-endIcon {
+    display: inherit;
+    margin-left: 8px;
+    margin-right: -4px;
+  }
+  .MuiButton-endIcon.MuiButton-iconSizeSmall {
+    margin-right: -2px;
+  }
+  .MuiButton-iconSizeSmall > *:first-child {
+    font-size: 18px;
+  }
+  .MuiButton-iconSizeMedium > *:first-child {
+    font-size: 20px;
+  }
+  .MuiButton-iconSizeLarge > *:first-child {
+    font-size: 22px;
+  }
+  .MuiCard-root {
+    overflow: hidden;
+  }
+  .MuiCardActionArea-root {
+    width: 100%;
+    display: block;
+    text-align: inherit;
+  }
+  .MuiCardActionArea-root:hover .MuiCardActionArea-focusHighlight {
+    opacity: 0.04;
+  }
+  .MuiCardActionArea-root.Mui-focusVisible .MuiCardActionArea-focusHighlight {
+    opacity: 0.12;
+  }
+  .MuiCardActionArea-focusHighlight {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: inherit;
+    pointer-events: none;
+    background-color: currentcolor;
+  }
+  .MuiCardActions-root {
+    display: flex;
+    padding: 8px;
+    align-items: center;
+  }
+  .MuiCardActions-spacing > :not(:first-child) {
+    margin-left: 8px;
+  }
+  .MuiCardContent-root {
+    padding: 16px;
+  }
+  .MuiCardContent-root:last-child {
+    padding-bottom: 24px;
+  }
+  .MuiCardMedia-root {
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .MuiCardMedia-media {
+    width: 100%;
+  }
+  .MuiCardMedia-img {
+    object-fit: cover;
+  }
+  .MuiContainer-root {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+@media (min-width:600px) {
+  .MuiContainer-root {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+  .MuiContainer-disableGutters {
+    padding-left: 0;
+    padding-right: 0;
+  }
+@media (min-width:600px) {
+  .MuiContainer-fixed {
+    max-width: 600px;
+  }
+}
+@media (min-width:960px) {
+  .MuiContainer-fixed {
+    max-width: 960px;
+  }
+}
+@media (min-width:1280px) {
+  .MuiContainer-fixed {
+    max-width: 1280px;
+  }
+}
+@media (min-width:1920px) {
+  .MuiContainer-fixed {
+    max-width: 1920px;
+  }
+}
+@media (min-width:0px) {
+  .MuiContainer-maxWidthXs {
+    max-width: 444px;
+  }
+}
+@media (min-width:600px) {
+  .MuiContainer-maxWidthSm {
+    max-width: 600px;
+  }
+}
+@media (min-width:960px) {
+  .MuiContainer-maxWidthMd {
+    max-width: 960px;
+  }
+}
+@media (min-width:1280px) {
+  .MuiContainer-maxWidthLg {
+    max-width: 1280px;
+  }
+}
+@media (min-width:1920px) {
+  .MuiContainer-maxWidthXl {
+    max-width: 1920px;
+  }
+}
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+strong, b {
+  font-weight: 700;
+}
+body {
+  color: rgba(0, 0, 0, 0.87);
+  margin: 0;
+  font-size: 0.875rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+  background-color: #fafafa;
+}
+@media print {
+  body {
+    background-color: #fff;
+  }
+}
+body::backdrop {
+  background-color: #fafafa;
+}
+  .MuiGrid-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+  .MuiGrid-item {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .MuiGrid-zeroMinWidth {
+    min-width: 0;
+  }
+  .MuiGrid-direction-xs-column {
+    flex-direction: column;
+  }
+  .MuiGrid-direction-xs-column-reverse {
+    flex-direction: column-reverse;
+  }
+  .MuiGrid-direction-xs-row-reverse {
+    flex-direction: row-reverse;
+  }
+  .MuiGrid-wrap-xs-nowrap {
+    flex-wrap: nowrap;
+  }
+  .MuiGrid-wrap-xs-wrap-reverse {
+    flex-wrap: wrap-reverse;
+  }
+  .MuiGrid-align-items-xs-center {
+    align-items: center;
+  }
+  .MuiGrid-align-items-xs-flex-start {
+    align-items: flex-start;
+  }
+  .MuiGrid-align-items-xs-flex-end {
+    align-items: flex-end;
+  }
+  .MuiGrid-align-items-xs-baseline {
+    align-items: baseline;
+  }
+  .MuiGrid-align-content-xs-center {
+    align-content: center;
+  }
+  .MuiGrid-align-content-xs-flex-start {
+    align-content: flex-start;
+  }
+  .MuiGrid-align-content-xs-flex-end {
+    align-content: flex-end;
+  }
+  .MuiGrid-align-content-xs-space-between {
+    align-content: space-between;
+  }
+  .MuiGrid-align-content-xs-space-around {
+    align-content: space-around;
+  }
+  .MuiGrid-justify-xs-center {
+    justify-content: center;
+  }
+  .MuiGrid-justify-xs-flex-end {
+    justify-content: flex-end;
+  }
+  .MuiGrid-justify-xs-space-between {
+    justify-content: space-between;
+  }
+  .MuiGrid-justify-xs-space-around {
+    justify-content: space-around;
+  }
+  .MuiGrid-justify-xs-space-evenly {
+    justify-content: space-evenly;
+  }
+  .MuiGrid-spacing-xs-1 {
+    width: calc(100% + 8px);
+    margin: -4px;
+  }
+  .MuiGrid-spacing-xs-1 > .MuiGrid-item {
+    padding: 4px;
+  }
+  .MuiGrid-spacing-xs-2 {
+    width: calc(100% + 16px);
+    margin: -8px;
+  }
+  .MuiGrid-spacing-xs-2 > .MuiGrid-item {
+    padding: 8px;
+  }
+  .MuiGrid-spacing-xs-3 {
+    width: calc(100% + 24px);
+    margin: -12px;
+  }
+  .MuiGrid-spacing-xs-3 > .MuiGrid-item {
+    padding: 12px;
+  }
+  .MuiGrid-spacing-xs-4 {
+    width: calc(100% + 32px);
+    margin: -16px;
+  }
+  .MuiGrid-spacing-xs-4 > .MuiGrid-item {
+    padding: 16px;
+  }
+  .MuiGrid-spacing-xs-5 {
+    width: calc(100% + 40px);
+    margin: -20px;
+  }
+  .MuiGrid-spacing-xs-5 > .MuiGrid-item {
+    padding: 20px;
+  }
+  .MuiGrid-spacing-xs-6 {
+    width: calc(100% + 48px);
+    margin: -24px;
+  }
+  .MuiGrid-spacing-xs-6 > .MuiGrid-item {
+    padding: 24px;
+  }
+  .MuiGrid-spacing-xs-7 {
+    width: calc(100% + 56px);
+    margin: -28px;
+  }
+  .MuiGrid-spacing-xs-7 > .MuiGrid-item {
+    padding: 28px;
+  }
+  .MuiGrid-spacing-xs-8 {
+    width: calc(100% + 64px);
+    margin: -32px;
+  }
+  .MuiGrid-spacing-xs-8 > .MuiGrid-item {
+    padding: 32px;
+  }
+  .MuiGrid-spacing-xs-9 {
+    width: calc(100% + 72px);
+    margin: -36px;
+  }
+  .MuiGrid-spacing-xs-9 > .MuiGrid-item {
+    padding: 36px;
+  }
+  .MuiGrid-spacing-xs-10 {
+    width: calc(100% + 80px);
+    margin: -40px;
+  }
+  .MuiGrid-spacing-xs-10 > .MuiGrid-item {
+    padding: 40px;
+  }
+  .MuiGrid-grid-xs-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-xs-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-xs-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-xs-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-xs-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-xs-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-xs-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-xs-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-xs-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-xs-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-xs-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-xs-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-xs-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-xs-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+@media (min-width:600px) {
+  .MuiGrid-grid-sm-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-sm-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-sm-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-sm-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-sm-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-sm-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-sm-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-sm-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-sm-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-sm-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-sm-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-sm-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-sm-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-sm-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+@media (min-width:960px) {
+  .MuiGrid-grid-md-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-md-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-md-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-md-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-md-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-md-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-md-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-md-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-md-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-md-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-md-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-md-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-md-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-md-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+@media (min-width:1280px) {
+  .MuiGrid-grid-lg-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-lg-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-lg-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-lg-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-lg-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-lg-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-lg-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-lg-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-lg-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-lg-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-lg-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-lg-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-lg-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-lg-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+@media (min-width:1920px) {
+  .MuiGrid-grid-xl-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-xl-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-xl-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-xl-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-xl-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-xl-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-xl-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-xl-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-xl-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-xl-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-xl-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-xl-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-xl-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-xl-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+  .MuiIcon-root {
+    width: 1em;
+    height: 1em;
+    overflow: hidden;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+    user-select: none;
+  }
+  .MuiIcon-colorPrimary {
+    color: #9c27b0;
+  }
+  .MuiIcon-colorSecondary {
+    color: #651fff;
+  }
+  .MuiIcon-colorAction {
+    color: rgba(0, 0, 0, 0.54);
+  }
+  .MuiIcon-colorError {
+    color: #f44336;
+  }
+  .MuiIcon-colorDisabled {
+    color: rgba(0, 0, 0, 0.26);
+  }
+  .MuiIcon-fontSizeInherit {
+    font-size: inherit;
+  }
+  .MuiIcon-fontSizeSmall {
+    font-size: 1.25rem;
+  }
+  .MuiIcon-fontSizeLarge {
+    font-size: 2.25rem;
+  }
+  .MuiLink-underlineNone {
+    text-decoration: none;
+  }
+  .MuiLink-underlineHover {
+    text-decoration: none;
+  }
+  .MuiLink-underlineHover:hover {
+    text-decoration: underline;
+  }
+  .MuiLink-underlineAlways {
+    text-decoration: underline;
+  }
+  .MuiLink-button {
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    position: relative;
+    user-select: none;
+    border-radius: 0;
+    vertical-align: middle;
+    -moz-appearance: none;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .MuiLink-button::-moz-focus-inner {
+    border-style: none;
+  }
+  .MuiLink-button.Mui-focusVisible {
+    outline: auto;
+  }
+  .MuiPopover-paper {
+    outline: 0;
+    position: absolute;
+    max-width: calc(100% - 32px);
+    min-width: 16px;
+    max-height: calc(100% - 32px);
+    min-height: 16px;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .MuiMenu-paper {
+    max-height: calc(100% - 96px);
+    -webkit-overflow-scrolling: touch;
+  }
+  .MuiMenu-list {
+    outline: 0;
+  }
+  .MuiToolbar-root {
+    display: flex;
+    position: relative;
+    align-items: center;
+  }
+  .MuiToolbar-gutters {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+@media (min-width:600px) {
+  .MuiToolbar-gutters {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+  .MuiToolbar-regular {
+    min-height: 56px;
+  }
+@media (min-width:0px) and (orientation: landscape) {
+  .MuiToolbar-regular {
+    min-height: 48px;
+  }
+}
+@media (min-width:600px) {
+  .MuiToolbar-regular {
+    min-height: 64px;
+  }
+}
+  .MuiToolbar-dense {
+    min-height: 48px;
+  }
+  .jss18 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .jss19 {
+    display: flex;
+    padding: 16px;
+    justify-content: flex-start;
+    background-color: #313131;
+  }
+@media (max-width:1279.95px) {
+  .jss19 {
+    padding: 16px;
+  }
+}
+  .jss20 {
+    width: 95%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .jss21 {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .jss22 {
+    padding-top: 90%;
+  }
+  .jss23 {
+    display: flex;
+    justify-content: space-evenly;
+  }
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+  .jss1 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  }
+  .jss2 {
+    flex-wrap: no-wrap;
+  }
+  .jss3 {
+    flex-grow: 1;
+  }
+  .jss4 {
+    width: 100%;
+    height: auto;
+  }
+  .jss5 {
+    margin: 8px 12px;
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+  .jss6 {
+    color: white;
+    background-color: red;
+  }
+@media (max-width:599.95px) {
+  .jss6 {
+    display: none;
+  }
+}
+  .jss7 {
+    display: none;
+  }
+@media (min-width:960px) {
+  .jss7 {
+    display: flex;
+  }
+}
+  .jss8 {
+    display: flex;
+  }
+@media (min-width:960px) {
+  .jss8 {
+    display: none;
+  }
+}
+  .jss9 {
+    width: 60%;
+    height: auto;
+    display: flex;
+  }
+@media (max-width:599.95px) {
+  .jss9 {
+    width: 80%;
+  }
+}
+  .jss10 {
+    width: 100%;
+    height: auto;
+  }
+  .jss32 {
+    padding: 48px 0px;
+    background-color: #fff;
+  }
+  .jss33 {
+    display: flex;
+    justify-content: space-evenly;
+  }
+@media (max-width:959.95px) {
+  .jss33 {
+    margin: 3rem;
+    flex-direction: column;
+  }
+}
+@media (max-width:959.95px) {
+  .jss34 {
+    margin: 16px;
+    flex-direction: column;
+  }
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+  .jss30 {
+    display: flex;
+    padding: 80px;
+    flex-direction: column;
+  }
+@media (min-width:960px) {
+  .jss30 {
+    padding: 80px 360px;
+  }
+}
+  .jss31 {
+    align-items: center;
+  }
+  .jss24 {
+    color: black;
+    padding: 8px;
+    justify-content: center;
+    background-color: #fff;
+  }
+  .jss25 {
+    display: flex;
+    padding: 48px 80px 48px;
+    justify-content: center;
+  }
+@media (max-width:1279.95px) {
+  .jss25 {
+    padding: 16px;
+  }
+}
+  .jss26 {
+    width: 95%;
+    margin: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+  .jss27 {
+    height: 0;
+    margin: 16px;
+    padding-top: 56.25%;
+  }
+  .jss28 {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .jss29 {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .jss11 {
+    margin-right: 16px;
+  }
+  .jss12 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 16px;
+  }
+  .jss13 {
+    align: center;
+    color: #FFFFFF;
+    padding: 8px;
+    background-color: black;
+  }
+  .jss14 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .jss15 {
+    display: flex;
+    padding: 64px 0px 48px;
+    background-color: #fff;
+  }
+@media (max-width:959.95px) {
+  .jss15 {
+    flex-direction: column-reverse;
+  }
+}
+  .jss16 {
+    margin-top: 32px;
+  }
+  .jss17 {
+    width: 50%;
+    height: auto;
+  }</style></head><body><div id="__next"><div class="layout"><header class="MuiPaper-root MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorDefault jss1 MuiPaper-elevation0"><div class="MuiToolbar-root MuiToolbar-regular jss2 MuiToolbar-gutters"><div class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"><div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-md-3"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="/" aria-label="Advanced Foam Home"><span class="material-icons MuiIcon-root jss10" aria-hidden="true"><img class="jss9" src="/graphics/mainLogo.svg"/></span></a></div><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-justify-xs-flex-end MuiGrid-grid-xs-6 MuiGrid-grid-md-9"><button class="MuiButtonBase-root MuiButton-root MuiButton-text jss6" tabindex="0" type="button"><span class="MuiButton-label"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit" href="/construction/redicoat">IN STOCK NOW</a></span></button><div class="jss7"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss5 MuiTypography-button MuiTypography-colorInherit MuiTypography-noWrap" href="/">Main</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss5 MuiTypography-button MuiTypography-colorInherit MuiTypography-noWrap" href="/studio">Studio</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss5 MuiTypography-button MuiTypography-colorInherit MuiTypography-noWrap" href="/construction">Construction</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss5 MuiTypography-button MuiTypography-colorInherit MuiTypography-noWrap" href="/packaging">Packaging</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss5 MuiTypography-button MuiTypography-colorInherit MuiTypography-noWrap" href="/about">About</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss5 MuiTypography-button MuiTypography-colorInherit MuiTypography-noWrap" href="/contact">Contact us</a></div><div><button class="MuiButtonBase-root MuiIconButton-root jss8 MuiIconButton-colorInherit" tabindex="0" type="button" aria-label="account of current user" aria-controls="menu-appbar" aria-haspopup="true"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></span></button></div></div></div></div></header><div class="content"><div class="jss15"><div class="MuiContainer-root jss14 MuiContainer-maxWidthLg" md="7"><p class="MuiTypography-root MuiTypography-h5 MuiTypography-colorTextPrimary MuiTypography-paragraph MuiTypography-alignCenter" style="opacity:0">We have over 35 years of experience in foam fabrication</p><p class="MuiTypography-root MuiTypography-h5 MuiTypography-colorTextSecondary MuiTypography-paragraph MuiTypography-alignCenter" style="opacity:0">Our specialty are architectural shapes that have extremely quick production times.</p><div class="jss16"><div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-justify-xs-center"><div class="MuiGrid-root MuiGrid-item"><button class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary" tabindex="0" type="button" style="opacity:0"><span class="MuiButton-label">Redicoat In Stock Today</span></button></div><div class="MuiGrid-root MuiGrid-item"><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary" tabindex="0" aria-disabled="false" href="/construction/pricing" style="opacity:0"><span class="MuiButton-label">Pricing &amp; Ordering</span></a></div><div class="MuiGrid-root MuiGrid-item"><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary" tabindex="0" aria-disabled="false" href="/about" style="opacity:0"><span class="MuiButton-label">Technical Info</span></a></div><div class="MuiGrid-root MuiGrid-item"><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary" tabindex="0" aria-disabled="false" href="/construction/faq" style="opacity:0"><span class="MuiButton-label">FAQ</span></a></div></div></div></div><div class="MuiContainer-root MuiContainer-maxWidthLg" md="5"><div class="MuiContainer-root jss12 MuiContainer-maxWidthLg"><img src="http://www.advancedfoam.com/wp-content/uploads/2020/09/Logo-min.gif" alt=" Advanced Foam main logo" class="jss17" style="opacity:0"/><div style="opacity:0"><h6 class="MuiTypography-root jss13 MuiTypography-h6">FACADES</h6></div></div></div></div><div class="MuiGrid-root jss19 MuiGrid-container" style="opacity:0"><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3 MuiGrid-grid-lg-2" style="opacity:0"><div class="MuiPaper-root MuiCard-root jss20 MuiPaper-elevation1 MuiPaper-rounded" align="center" xs="12" sm="6" md="3" lg="2" id="card-1640"><div class="MuiCardContent-root jss21"><p class="MuiTypography-root MuiTypography-h5 MuiTypography-colorTextPrimary MuiTypography-paragraph MuiTypography-alignCenter">Redicoat Products</p></div><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit" href="/construction/redicoat"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss22" style="background-image:url(&quot;https://advancedfoam.com/wp-content/uploads/2020/10/redicoat-stock-150x150.jpg&quot;)" title="Redicoat Products"></div><span class="MuiCardActionArea-focusHighlight"></span></button></a><div class="MuiCardActions-root MuiCardActions-spacing"><div class="MuiContainer-root jss23 MuiContainer-maxWidthLg"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-textSizeSmall MuiButton-sizeSmall" tabindex="0" aria-disabled="false" href="/construction/redicoat"><span class="MuiButton-label">Show me more</span></a></div></div></div></div><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3 MuiGrid-grid-lg-2" style="opacity:0"><div class="MuiPaper-root MuiCard-root jss20 MuiPaper-elevation1 MuiPaper-rounded" align="center" xs="12" sm="6" md="3" lg="2" id="card-1602"><div class="MuiCardContent-root jss21"><p class="MuiTypography-root MuiTypography-h5 MuiTypography-colorTextPrimary MuiTypography-paragraph MuiTypography-alignCenter">Bands</p></div><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit" href="/construction/bands"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss22" style="background-image:url(&quot;https://advancedfoam.com/wp-content/uploads/2020/10/band_290x290-150x150.png&quot;)" title="Bands"></div><span class="MuiCardActionArea-focusHighlight"></span></button></a><div class="MuiCardActions-root MuiCardActions-spacing"><div class="MuiContainer-root jss23 MuiContainer-maxWidthLg"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-textSizeSmall MuiButton-sizeSmall" tabindex="0" aria-disabled="false" href="/construction/bands"><span class="MuiButton-label">Show me more</span></a></div></div></div></div><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3 MuiGrid-grid-lg-2" style="opacity:0"><div class="MuiPaper-root MuiCard-root jss20 MuiPaper-elevation1 MuiPaper-rounded" align="center" xs="12" sm="6" md="3" lg="2" id="card-1604"><div class="MuiCardContent-root jss21"><p class="MuiTypography-root MuiTypography-h5 MuiTypography-colorTextPrimary MuiTypography-paragraph MuiTypography-alignCenter">Window Trims</p></div><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit" href="/construction/window-trims"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss22" style="background-image:url(&quot;https://advancedfoam.com/wp-content/uploads/2020/10/trim_290x290-290x290-1-150x150.png&quot;)" title="Window Trims"></div><span class="MuiCardActionArea-focusHighlight"></span></button></a><div class="MuiCardActions-root MuiCardActions-spacing"><div class="MuiContainer-root jss23 MuiContainer-maxWidthLg"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-textSizeSmall MuiButton-sizeSmall" tabindex="0" aria-disabled="false" href="/construction/window-trims"><span class="MuiButton-label">Show me more</span></a></div></div></div></div><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3 MuiGrid-grid-lg-2" style="opacity:0"><div class="MuiPaper-root MuiCard-root jss20 MuiPaper-elevation1 MuiPaper-rounded" align="center" xs="12" sm="6" md="3" lg="2" id="card-493"><div class="MuiCardContent-root jss21"><p class="MuiTypography-root MuiTypography-h5 MuiTypography-colorTextPrimary MuiTypography-paragraph MuiTypography-alignCenter">Cornices</p></div><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit" href="/construction/cornices"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss22" style="background-image:url(&quot;https://advancedfoam.com/wp-content/uploads/2011/06/cornice_290x290-150x150.png&quot;)" title="Cornices"></div><span class="MuiCardActionArea-focusHighlight"></span></button></a><div class="MuiCardActions-root MuiCardActions-spacing"><div class="MuiContainer-root jss23 MuiContainer-maxWidthLg"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-textSizeSmall MuiButton-sizeSmall" tabindex="0" aria-disabled="false" href="/construction/cornices"><span class="MuiButton-label">Show me more</span></a></div></div></div></div><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3 MuiGrid-grid-lg-2" style="opacity:0"><div class="MuiPaper-root MuiCard-root jss20 MuiPaper-elevation1 MuiPaper-rounded" align="center" xs="12" sm="6" md="3" lg="2" id="card-495"><div class="MuiCardContent-root jss21"><p class="MuiTypography-root MuiTypography-h5 MuiTypography-colorTextPrimary MuiTypography-paragraph MuiTypography-alignCenter">Keystones</p></div><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit" href="/construction/keystones"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss22" style="background-image:url(&quot;https://advancedfoam.com/wp-content/uploads/2011/06/keystone_290x290-150x150.png&quot;)" title="Keystones"></div><span class="MuiCardActionArea-focusHighlight"></span></button></a><div class="MuiCardActions-root MuiCardActions-spacing"><div class="MuiContainer-root jss23 MuiContainer-maxWidthLg"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-textSizeSmall MuiButton-sizeSmall" tabindex="0" aria-disabled="false" href="/construction/keystones"><span class="MuiButton-label">Show me more</span></a></div></div></div></div><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3 MuiGrid-grid-lg-2" style="opacity:0"><div class="MuiPaper-root MuiCard-root jss20 MuiPaper-elevation1 MuiPaper-rounded" align="center" xs="12" sm="6" md="3" lg="2" id="card-497"><div class="MuiCardContent-root jss21"><p class="MuiTypography-root MuiTypography-h5 MuiTypography-colorTextPrimary MuiTypography-paragraph MuiTypography-alignCenter">Quatrefoils</p></div><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit" href="/construction/quatrefoils"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss22" style="background-image:url(&quot;https://advancedfoam.com/wp-content/uploads/2011/06/quatrefoil_290x290-150x150.png&quot;)" title="Quatrefoils"></div><span class="MuiCardActionArea-focusHighlight"></span></button></a><div class="MuiCardActions-root MuiCardActions-spacing"><div class="MuiContainer-root jss23 MuiContainer-maxWidthLg"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-textSizeSmall MuiButton-sizeSmall" tabindex="0" aria-disabled="false" href="/construction/quatrefoils"><span class="MuiButton-label">Show me more</span></a></div></div></div></div><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3 MuiGrid-grid-lg-2" style="opacity:0"><div class="MuiPaper-root MuiCard-root jss20 MuiPaper-elevation1 MuiPaper-rounded" align="center" xs="12" sm="6" md="3" lg="2" id="card-499"><div class="MuiCardContent-root jss21"><p class="MuiTypography-root MuiTypography-h5 MuiTypography-colorTextPrimary MuiTypography-paragraph MuiTypography-alignCenter">Quoins</p></div><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit" href="/construction/quoins"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss22" style="background-image:url(&quot;https://advancedfoam.com/wp-content/uploads/2011/06/quoin_290x290-290x290-1-150x150.png&quot;)" title="Quoins"></div><span class="MuiCardActionArea-focusHighlight"></span></button></a><div class="MuiCardActions-root MuiCardActions-spacing"><div class="MuiContainer-root jss23 MuiContainer-maxWidthLg"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-textSizeSmall MuiButton-sizeSmall" tabindex="0" aria-disabled="false" href="/construction/quoins"><span class="MuiButton-label">Show me more</span></a></div></div></div></div><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3 MuiGrid-grid-lg-2" style="opacity:0"><div class="MuiPaper-root MuiCard-root jss20 MuiPaper-elevation1 MuiPaper-rounded" align="center" xs="12" sm="6" md="3" lg="2" id="card-501"><div class="MuiCardContent-root jss21"><p class="MuiTypography-root MuiTypography-h5 MuiTypography-colorTextPrimary MuiTypography-paragraph MuiTypography-alignCenter">Window Sills</p></div><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit" href="/construction/window-sills"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss22" style="background-image:url(&quot;https://advancedfoam.com/wp-content/uploads/2011/06/sills_290x290-150x150.png&quot;)" title="Window Sills"></div><span class="MuiCardActionArea-focusHighlight"></span></button></a><div class="MuiCardActions-root MuiCardActions-spacing"><div class="MuiContainer-root jss23 MuiContainer-maxWidthLg"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-textSizeSmall MuiButton-sizeSmall" tabindex="0" aria-disabled="false" href="/construction/window-sills"><span class="MuiButton-label">Show me more</span></a></div></div></div></div></div><h2 class="MuiTypography-root jss24 MuiTypography-h4 MuiTypography-alignCenter">Our clients</h2><div class="MuiGrid-root jss25 MuiGrid-container"><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3" style="opacity:0"><div class="MuiPaper-root MuiCard-root jss26 MuiPaper-elevation1 MuiPaper-rounded" align="center" xs="12" sm="6" md="3"><a class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit" href="https://www.universalstudios.com" aria-label="Universal Studios logo"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss27" style="background-image:url(&quot;https://www.advancedfoam.com/wp-content/uploads/2020/09/universalStudios_logo.png&quot;)" width="75%" alt="Universal Studios logo"></div><div class="MuiCardContent-root jss28"><h4 class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter"></h4></div><span class="MuiCardActionArea-focusHighlight"></span></button></a></div></div><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3" style="opacity:0"><div class="MuiPaper-root MuiCard-root jss26 MuiPaper-elevation1 MuiPaper-rounded" align="center" xs="12" sm="6" md="3"><a class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit" href="https://www.dreamworks.com" aria-label="Dreamworks logo"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss27" style="background-image:url(&quot;https://www.advancedfoam.com/wp-content/uploads/2020/09/dreamworks_logo.png&quot;)" width="75%" alt="Dreamworks logo"></div><div class="MuiCardContent-root jss28"><h4 class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter"></h4></div><span class="MuiCardActionArea-focusHighlight"></span></button></a></div></div><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3" style="opacity:0"><div class="MuiPaper-root MuiCard-root jss26 MuiPaper-elevation1 MuiPaper-rounded" align="center" xs="12" sm="6" md="3"><a class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit" href="https://www.hasbro.com" aria-label="Hasbro logo"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss27" style="background-image:url(&quot;https://www.advancedfoam.com/wp-content/uploads/2020/09/hasbro_logo.png&quot;)" width="75%" alt="Hasbro logo"></div><div class="MuiCardContent-root jss28"><h4 class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter"></h4></div><span class="MuiCardActionArea-focusHighlight"></span></button></a></div></div><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3" style="opacity:0"><div class="MuiPaper-root MuiCard-root jss26 MuiPaper-elevation1 MuiPaper-rounded" align="center" xs="12" sm="6" md="3"><a class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit" href="https://www.honda.com" aria-label="Honda logo"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss27" style="background-image:url(&quot;https://www.advancedfoam.com/wp-content/uploads/2020/09/honda_logo.png&quot;)" width="75%" alt="Honda logo"></div><div class="MuiCardContent-root jss28"><h4 class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter"></h4></div><span class="MuiCardActionArea-focusHighlight"></span></button></a></div></div><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3" style="opacity:0"><div class="MuiPaper-root MuiCard-root jss26 MuiPaper-elevation1 MuiPaper-rounded" align="center" xs="12" sm="6" md="3"><a class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit" href="https://www.nissan.com" aria-label="Nissan logo"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss27" style="background-image:url(&quot;https://www.advancedfoam.com/wp-content/uploads/2020/09/nissan_logo.png&quot;)" width="75%" alt="Nissan logo"></div><div class="MuiCardContent-root jss28"><h4 class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter"></h4></div><span class="MuiCardActionArea-focusHighlight"></span></button></a></div></div><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3" style="opacity:0"><div class="MuiPaper-root MuiCard-root jss26 MuiPaper-elevation1 MuiPaper-rounded" align="center" xs="12" sm="6" md="3"><a class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit" href="http://www.zanuckco.com/" aria-label="The Zanuck Company logo"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss27" style="background-image:url(&quot;https://www.advancedfoam.com/wp-content/uploads/2020/09/theZanuckCompany_logo_BW.png&quot;)" width="75%" alt="The Zanuck Company logo"></div><div class="MuiCardContent-root jss28"><h4 class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter"></h4></div><span class="MuiCardActionArea-focusHighlight"></span></button></a></div></div><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3" style="opacity:0"><div class="MuiPaper-root MuiCard-root jss26 MuiPaper-elevation1 MuiPaper-rounded" align="center" xs="12" sm="6" md="3"><a class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit" href="https://www.fremantle.com" aria-label="Fremantle Media logo"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss27" style="background-image:url(&quot;https://www.advancedfoam.com/wp-content/uploads/2020/09/fremantleMediaNorthAmerica_logo.png&quot;)" width="75%" alt="Fremantle Media logo"></div><div class="MuiCardContent-root jss28"><h4 class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter"></h4></div><span class="MuiCardActionArea-focusHighlight"></span></button></a></div></div><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3" style="opacity:0"><div class="MuiPaper-root MuiCard-root jss26 MuiPaper-elevation1 MuiPaper-rounded" align="center" xs="12" sm="6" md="3"><a class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit" href="https://www.dannon.com" aria-label="Dannon logo"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss27" style="background-image:url(&quot;https://www.advancedfoam.com/wp-content/uploads/2020/09/dannon_logo.png&quot;)" width="75%" alt="Dannon logo"></div><div class="MuiCardContent-root jss28"><h4 class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter"></h4></div><span class="MuiCardActionArea-focusHighlight"></span></button></a></div></div><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3" style="opacity:0"><div class="MuiPaper-root MuiCard-root jss26 MuiPaper-elevation1 MuiPaper-rounded" align="center" xs="12" sm="6" md="3"><a class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit" href="https://www.grammy.com" aria-label="56th Grammy Awards logo"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss27" style="background-image:url(&quot;https://www.advancedfoam.com/wp-content/uploads/2020/09/grammyAwards_logo.png&quot;)" width="75%" alt="56th Grammy Awards logo"></div><div class="MuiCardContent-root jss28"><h4 class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter"></h4></div><span class="MuiCardActionArea-focusHighlight"></span></button></a></div></div><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3" style="opacity:0"><div class="MuiPaper-root MuiCard-root jss26 MuiPaper-elevation1 MuiPaper-rounded" align="center" xs="12" sm="6" md="3"><a class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit" href="https://www.infected-mushroom.com" aria-label="Infected Mushroom logo"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss27" style="background-image:url(&quot;https://www.advancedfoam.com/wp-content/uploads/2020/09/infectedMushroom_logo.png&quot;)" width="75%" alt="Infected Mushroom logo"></div><div class="MuiCardContent-root jss28"><h4 class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter"></h4></div><span class="MuiCardActionArea-focusHighlight"></span></button></a></div></div></div></div><div class="MuiGrid-root jss30"><button class="MuiButtonBase-root MuiButton-root MuiButton-contained jss31 MuiButton-containedPrimary" tabindex="0" type="button" style="opacity:0"><span class="MuiButton-label"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit" href="/construction/redicoat">Contact us today</a></span></button></div><footer class="jss32"><grid direction="row" class="jss33"><grid class="jss34" style="opacity:0"><div class="MuiContainer-root MuiContainer-maxWidthLg"><h5 class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom MuiTypography-alignCenter">Speak to us</h5><p class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-colorTextSecondary MuiTypography-alignCenter">Phone: (310) 515-0728</p><p class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-colorTextSecondary MuiTypography-alignCenter">Fax: (310) 515-3548</p><p class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-alignCenter">Copyright © <a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit" href="https://www.advancedfoam.com/">Advanced Foam</a> <!-- -->2020<!-- -->.</p></div></grid><grid class="jss34" style="opacity:0"><div class="MuiContainer-root MuiContainer-maxWidthLg"><h5 class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom MuiTypography-alignCenter">Email us</h5><p class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-colorTextSecondary MuiTypography-alignCenter">info@advancedfoam.com</p></div></grid><grid class="jss34" style="opacity:0"><div class="MuiContainer-root MuiContainer-maxWidthLg"><h5 class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom MuiTypography-alignCenter">Headquarters</h5><p class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-colorTextSecondary MuiTypography-alignCenter">1745 W. 134th St.</p><p class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-colorTextSecondary MuiTypography-alignCenter">Gardena, CA 90249</p><p class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-alignCenter">Copyright © <a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit" href="https://www.advancedfoam.com/">Advanced Foam</a> <!-- -->2020<!-- -->.</p></div></grid></grid></footer></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"postList":[{"id":1640,"date":"2020-10-04T16:00:28","date_gmt":"2020-10-04T23:00:28","guid":{"rendered":"http://advancedfoam.com/?p=1640"},"modified":"2020-10-24T09:23:04","modified_gmt":"2020-10-24T16:23:04","slug":"redicoat","status":"publish","type":"post","link":"https://advancedfoam.com/redicoat/","title":{"rendered":"Redicoat Products"},"content":{"rendered":"\n\u003cfigure class=\"wp-block-image size-large is-resized\"\u003e\u003cimg loading=\"lazy\" src=\"https://advancedfoam.com/wp-content/uploads/2020/10/redicoat-stock.jpg\" alt=\"\" class=\"wp-image-1789\" width=\"654\" height=\"491\" srcset=\"https://advancedfoam.com/wp-content/uploads/2020/10/redicoat-stock.jpg 850w, https://advancedfoam.com/wp-content/uploads/2020/10/redicoat-stock-300x225.jpg 300w, https://advancedfoam.com/wp-content/uploads/2020/10/redicoat-stock-768x576.jpg 768w\" sizes=\"(max-width: 654px) 100vw, 654px\" /\u003e\u003cfigcaption\u003eRedicoat Stock \u0026#8211; Always available!\u003c/figcaption\u003e\u003c/figure\u003e\n\n\n\n\u003cp\u003eThese popular Redicoat shapes are kept\u003cstrong\u003e in stock at all times\u003c/strong\u003e to ensure a quick delivery. You won’t find a more complete line of high quality and ready-to-install decorative moldings anywhere.\u003c/p\u003e\n\n\n\n\u003cp\u003eDelivery in the greater L.A. area is free with a $500 order.\u003c/p\u003e\n\n\n\n\u003cfigure class=\"wp-block-image size-large\"\u003e\u003cimg loading=\"lazy\" width=\"519\" height=\"1024\" src=\"https://advancedfoam.com/wp-content/uploads/2020/10/redicoatinstock_1_72-519x1024.jpg\" alt=\"\" class=\"wp-image-1787\" srcset=\"https://advancedfoam.com/wp-content/uploads/2020/10/redicoatinstock_1_72-519x1024.jpg 519w, https://advancedfoam.com/wp-content/uploads/2020/10/redicoatinstock_1_72-152x300.jpg 152w, https://advancedfoam.com/wp-content/uploads/2020/10/redicoatinstock_1_72.jpg 675w\" sizes=\"(max-width: 519px) 100vw, 519px\" /\u003e\u003c/figure\u003e\n\n\n\n\u003cfigure class=\"wp-block-image size-large\"\u003e\u003cimg loading=\"lazy\" width=\"424\" height=\"1024\" src=\"https://advancedfoam.com/wp-content/uploads/2020/10/redicoatinstock-02-424x1024.jpg\" alt=\"\" class=\"wp-image-1788\" srcset=\"https://advancedfoam.com/wp-content/uploads/2020/10/redicoatinstock-02-424x1024.jpg 424w, https://advancedfoam.com/wp-content/uploads/2020/10/redicoatinstock-02-124x300.jpg 124w, https://advancedfoam.com/wp-content/uploads/2020/10/redicoatinstock-02-768x1854.jpg 768w, https://advancedfoam.com/wp-content/uploads/2020/10/redicoatinstock-02-636x1536.jpg 636w, https://advancedfoam.com/wp-content/uploads/2020/10/redicoatinstock-02-848x2048.jpg 848w, https://advancedfoam.com/wp-content/uploads/2020/10/redicoatinstock-02-scaled.jpg 1060w\" sizes=\"(max-width: 424px) 100vw, 424px\" /\u003e\u003c/figure\u003e\n\n\n\n\u003cp\u003e\u003c/p\u003e\n","protected":false},"excerpt":{"rendered":"\u003cp\u003eThese popular Redicoat shapes are kept in stock at all times to ensure a quick delivery. You won’t find a more complete line of high quality and ready-to-install decorative moldings anywhere. Delivery in the greater L.A. area is free with a $500 order.\u003c/p\u003e\n","protected":false},"author":1,"featured_media":1789,"comment_status":"open","ping_status":"open","sticky":false,"template":"","format":"standard","meta":[],"categories":[16,15],"tags":[],"better_featured_image":{"id":1789,"alt_text":"Redicoat Stock","caption":"Redicoat Stock ","description":"Redicoat Stock ","media_type":"image","media_details":{"width":850,"height":638,"file":"2020/10/redicoat-stock.jpg","sizes":{"medium":{"file":"redicoat-stock-300x225.jpg","width":300,"height":225,"mime-type":"image/jpeg","source_url":"https://advancedfoam.com/wp-content/uploads/2020/10/redicoat-stock-300x225.jpg"},"thumbnail":{"file":"redicoat-stock-150x150.jpg","width":150,"height":150,"mime-type":"image/jpeg","source_url":"https://advancedfoam.com/wp-content/uploads/2020/10/redicoat-stock-150x150.jpg"},"medium_large":{"file":"redicoat-stock-768x576.jpg","width":768,"height":576,"mime-type":"image/jpeg","source_url":"https://advancedfoam.com/wp-content/uploads/2020/10/redicoat-stock-768x576.jpg"}},"image_meta":{"aperture":"2.8","credit":"","camera":"COOLPIX L4","caption":"","created_timestamp":"-62169984000","copyright":"Copyright 2006","focal_length":"6.3","iso":"84","shutter_speed":"0.016666666666667","title":"","orientation":"1","keywords":[]}},"post":1640,"source_url":"https://advancedfoam.com/wp-content/uploads/2020/10/redicoat-stock.jpg"},"_links":{"self":[{"href":"https://advancedfoam.com/wp-json/wp/v2/posts/1640"}],"collection":[{"href":"https://advancedfoam.com/wp-json/wp/v2/posts"}],"about":[{"href":"https://advancedfoam.com/wp-json/wp/v2/types/post"}],"author":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/users/1"}],"replies":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/comments?post=1640"}],"version-history":[{"count":3,"href":"https://advancedfoam.com/wp-json/wp/v2/posts/1640/revisions"}],"predecessor-version":[{"id":1790,"href":"https://advancedfoam.com/wp-json/wp/v2/posts/1640/revisions/1790"}],"wp:featuredmedia":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/media/1789"}],"wp:attachment":[{"href":"https://advancedfoam.com/wp-json/wp/v2/media?parent=1640"}],"wp:term":[{"taxonomy":"category","embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/categories?post=1640"},{"taxonomy":"post_tag","embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/tags?post=1640"}],"curies":[{"name":"wp","href":"https://api.w.org/{rel}","templated":true}]}},{"id":1602,"date":"2020-10-04T15:07:49","date_gmt":"2020-10-04T22:07:49","guid":{"rendered":"http://advancedfoam.com/?p=1602"},"modified":"2020-10-23T14:57:06","modified_gmt":"2020-10-23T21:57:06","slug":"bands","status":"publish","type":"post","link":"https://advancedfoam.com/bands/","title":{"rendered":"Bands"},"content":{"rendered":"\n\u003cfigure class=\"wp-block-image size-large is-resized\"\u003e\u003cimg loading=\"lazy\" src=\"http://advancedfoam.com/wp-content/uploads/2020/10/band_290x290.png\" alt=\"\" class=\"wp-image-1611\" width=\"291\" height=\"291\" srcset=\"https://advancedfoam.com/wp-content/uploads/2020/10/band_290x290.png 290w, https://advancedfoam.com/wp-content/uploads/2020/10/band_290x290-150x150.png 150w\" sizes=\"(max-width: 291px) 100vw, 291px\" /\u003e\u003c/figure\u003e\n\n\n\n\u003ch2\u003eFoam Bands\u003c/h2\u003e\n\n\n\n\u003cp\u003eAdd an exciting dimension to any exterior surface of your building easily and economically.\u003cstrong\u003e\u0026nbsp;Redicoat® Bands\u003c/strong\u003e can break up a large or plain wall, giving depth and feel that would otherwise be missing. Consider a contrasting color to emphasize the effect these profiles bring. They\u0026nbsp;are easy to install and are made of high-density foam for outstanding durability.\u003c/p\u003e\n\n\n\n\u003cp\u003eWe have several models and different sizes that adjust to every need. Have a custom project? Call us now!\u003c/p\u003e\n\n\n\n\u003ch4\u003eBand Variations :\u003c/h4\u003e\n\n\n\n\u003cfigure class=\"wp-block-image size-large\"\u003e\u003cimg loading=\"lazy\" width=\"1024\" height=\"469\" src=\"http://advancedfoam.com/wp-content/uploads/2020/10/bands-1024x469-2.jpg\" alt=\"\" class=\"wp-image-1614\" srcset=\"https://advancedfoam.com/wp-content/uploads/2020/10/bands-1024x469-2.jpg 1024w, https://advancedfoam.com/wp-content/uploads/2020/10/bands-1024x469-2-300x137.jpg 300w, https://advancedfoam.com/wp-content/uploads/2020/10/bands-1024x469-2-768x352.jpg 768w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" /\u003e\u003c/figure\u003e\n\n\n\n\u003cfigure class=\"wp-block-image size-large\"\u003e\u003cimg loading=\"lazy\" width=\"656\" height=\"1024\" src=\"http://advancedfoam.com/wp-content/uploads/2020/10/Bands_715-01-656x1024.jpg\" alt=\"\" class=\"wp-image-1612\" srcset=\"https://advancedfoam.com/wp-content/uploads/2020/10/Bands_715-01-656x1024.jpg 656w, https://advancedfoam.com/wp-content/uploads/2020/10/Bands_715-01-192x300.jpg 192w, https://advancedfoam.com/wp-content/uploads/2020/10/Bands_715-01.jpg 750w\" sizes=\"(max-width: 656px) 100vw, 656px\" /\u003e\u003c/figure\u003e\n\n\n\n\u003cp\u003e\u003c/p\u003e\n","protected":false},"excerpt":{"rendered":"\u003cp\u003eFoam Bands Add an exciting dimension to any exterior surface of your building easily and economically.\u0026nbsp;Redicoat® Bands can break up a large or plain wall, giving depth and feel that would otherwise be missing. Consider a contrasting color to emphasize the effect these profiles bring. They\u0026nbsp;are easy to install and are made of high-density foam [\u0026hellip;]\u003c/p\u003e\n","protected":false},"author":1,"featured_media":1611,"comment_status":"open","ping_status":"open","sticky":false,"template":"","format":"standard","meta":[],"categories":[16,15],"tags":[],"better_featured_image":{"id":1611,"alt_text":"Redicoat Bands","caption":"Redicoat Bands","description":"Redicoat Bands","media_type":"image","media_details":{"width":290,"height":290,"file":"2020/10/band_290x290.png","sizes":{"thumbnail":{"file":"band_290x290-150x150.png","width":150,"height":150,"mime-type":"image/png","source_url":"https://advancedfoam.com/wp-content/uploads/2020/10/band_290x290-150x150.png"}},"image_meta":{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0","keywords":[]}},"post":1602,"source_url":"https://advancedfoam.com/wp-content/uploads/2020/10/band_290x290.png"},"_links":{"self":[{"href":"https://advancedfoam.com/wp-json/wp/v2/posts/1602"}],"collection":[{"href":"https://advancedfoam.com/wp-json/wp/v2/posts"}],"about":[{"href":"https://advancedfoam.com/wp-json/wp/v2/types/post"}],"author":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/users/1"}],"replies":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/comments?post=1602"}],"version-history":[{"count":3,"href":"https://advancedfoam.com/wp-json/wp/v2/posts/1602/revisions"}],"predecessor-version":[{"id":1749,"href":"https://advancedfoam.com/wp-json/wp/v2/posts/1602/revisions/1749"}],"wp:featuredmedia":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/media/1611"}],"wp:attachment":[{"href":"https://advancedfoam.com/wp-json/wp/v2/media?parent=1602"}],"wp:term":[{"taxonomy":"category","embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/categories?post=1602"},{"taxonomy":"post_tag","embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/tags?post=1602"}],"curies":[{"name":"wp","href":"https://api.w.org/{rel}","templated":true}]}},{"id":1604,"date":"2020-10-04T15:02:45","date_gmt":"2020-10-04T22:02:45","guid":{"rendered":"http://advancedfoam.com/?p=1604"},"modified":"2020-10-23T14:57:39","modified_gmt":"2020-10-23T21:57:39","slug":"window-trims","status":"publish","type":"post","link":"https://advancedfoam.com/window-trims/","title":{"rendered":"Window Trims"},"content":{"rendered":"\n\u003cfigure class=\"wp-block-image size-large is-resized\"\u003e\u003cimg loading=\"lazy\" src=\"http://advancedfoam.com/wp-content/uploads/2020/10/trim_290x290-290x290-1.png\" alt=\"\" class=\"wp-image-1609\" width=\"290\" height=\"290\" srcset=\"https://advancedfoam.com/wp-content/uploads/2020/10/trim_290x290-290x290-1.png 290w, https://advancedfoam.com/wp-content/uploads/2020/10/trim_290x290-290x290-1-150x150.png 150w\" sizes=\"(max-width: 290px) 100vw, 290px\" /\u003e\u003cfigcaption\u003eOur Window Trims\u003c/figcaption\u003e\u003c/figure\u003e\n\n\n\n\u003ch2\u003eFoam Window Trims\u003c/h2\u003e\n\n\n\n\u003cp\u003eOur specialty is dressing up your building, and there is no better way than \u003cstrong\u003eRedicoat® Window Trims and Sill\u003c/strong\u003e. Each \u003cstrong\u003eRedicoat® Trim and Sill\u003c/strong\u003e is offered in multiple sizes to accommodate most any window. Trim moldings and Sills can easily be mixed to your liking. \u003c/p\u003e\n\n\n\n\u003cp\u003eEach Redicoat® Trim and Sill is made of high-density foam for exceptional durability. Easy to install, miter-cut window surrounds can be achieved by using simple tools such as miter-boxes and chopsaws.\u003c/p\u003e\n","protected":false},"excerpt":{"rendered":"\u003cp\u003eFoam Window Trims Our specialty is dressing up your building, and there is no better way than Redicoat® Window Trims and Sill. Each Redicoat® Trim and Sill is offered in multiple sizes to accommodate most any window. Trim moldings and Sills can easily be mixed to your liking. Each Redicoat® Trim and Sill is made [\u0026hellip;]\u003c/p\u003e\n","protected":false},"author":1,"featured_media":1609,"comment_status":"open","ping_status":"open","sticky":false,"template":"","format":"standard","meta":[],"categories":[16,15],"tags":[],"better_featured_image":{"id":1609,"alt_text":"Window Trims","caption":"Window Trims","description":"Window Trims","media_type":"image","media_details":{"width":290,"height":290,"file":"2020/10/trim_290x290-290x290-1.png","sizes":{"thumbnail":{"file":"trim_290x290-290x290-1-150x150.png","width":150,"height":150,"mime-type":"image/png","source_url":"https://advancedfoam.com/wp-content/uploads/2020/10/trim_290x290-290x290-1-150x150.png"}},"image_meta":{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0","keywords":[]}},"post":1604,"source_url":"https://advancedfoam.com/wp-content/uploads/2020/10/trim_290x290-290x290-1.png"},"_links":{"self":[{"href":"https://advancedfoam.com/wp-json/wp/v2/posts/1604"}],"collection":[{"href":"https://advancedfoam.com/wp-json/wp/v2/posts"}],"about":[{"href":"https://advancedfoam.com/wp-json/wp/v2/types/post"}],"author":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/users/1"}],"replies":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/comments?post=1604"}],"version-history":[{"count":2,"href":"https://advancedfoam.com/wp-json/wp/v2/posts/1604/revisions"}],"predecessor-version":[{"id":1610,"href":"https://advancedfoam.com/wp-json/wp/v2/posts/1604/revisions/1610"}],"wp:featuredmedia":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/media/1609"}],"wp:attachment":[{"href":"https://advancedfoam.com/wp-json/wp/v2/media?parent=1604"}],"wp:term":[{"taxonomy":"category","embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/categories?post=1604"},{"taxonomy":"post_tag","embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/tags?post=1604"}],"curies":[{"name":"wp","href":"https://api.w.org/{rel}","templated":true}]}},{"id":493,"date":"2011-06-07T03:48:25","date_gmt":"2011-06-07T10:48:25","guid":{"rendered":"http://test1.advancedfoam.com/?p=493"},"modified":"2020-10-23T15:00:46","modified_gmt":"2020-10-23T22:00:46","slug":"cornices","status":"publish","type":"post","link":"https://advancedfoam.com/cornices/","title":{"rendered":"Cornices"},"content":{"rendered":"\u003ch1\u003eFoam Cornices\u003c/h1\u003e\n\u003cp\u003eCornices can add the illusion of height to your windows. Our elegantly styled Redicoat® Cornice moldings are available in Square Edges, Round Edges, and Back Cut styles to allow you to select the one that best fits your design. Redicoat® Cornice moldings have outstanding workability and can be easily sawed for mitering, requiring no special tools to install.\u003c/p\u003e\n\u003ch2\u003eFunctions of cornices for architectural purposes\u003c/h2\u003e\n\u003cp\u003eThe function of the projecting cornice of a building is to throw rainwater free of the building’s walls. In residential building practice, this function is handled by projecting gable ends, roof eaves, and gutters. However, house eaves may also be called “cornices” if they are finished with decorative molding. In this sense, while most cornices are also eaves (in that they overhang the sides of the building), not all eaves are usually considered cornices— eaves are primarily functional and not necessarily decorative, and a cornice has a decorative aspect to it.\u003c/p\u003e\n\n\n\u003cfigure class=\"wp-block-image size-large\"\u003e\u003cimg loading=\"lazy\" width=\"625\" height=\"1024\" src=\"https://advancedfoam.com/wp-content/uploads/2020/10/cornices1-625x1024.jpg\" alt=\"\" class=\"wp-image-1752\" srcset=\"https://advancedfoam.com/wp-content/uploads/2020/10/cornices1-625x1024.jpg 625w, https://advancedfoam.com/wp-content/uploads/2020/10/cornices1-183x300.jpg 183w, https://advancedfoam.com/wp-content/uploads/2020/10/cornices1-768x1259.jpg 768w, https://advancedfoam.com/wp-content/uploads/2020/10/cornices1-937x1536.jpg 937w, https://advancedfoam.com/wp-content/uploads/2020/10/cornices1-1249x2048.jpg 1249w, https://advancedfoam.com/wp-content/uploads/2020/10/cornices1.jpg 1340w\" sizes=\"(max-width: 625px) 100vw, 625px\" /\u003e\u003c/figure\u003e\n\n\n\n\u003cp\u003e\u003c/p\u003e\n","protected":false},"excerpt":{"rendered":"\u003cp\u003eFoam Cornices Cornices can add the illusion of height to your windows. Our elegantly styled Redicoat® Cornice moldings are available in Square Edges, Round Edges, and Back Cut styles to allow you to select the one that best fits your design. Redicoat® Cornice moldings have outstanding workability and can be easily sawed for mitering, requiring [\u0026hellip;]\u003c/p\u003e\n","protected":false},"author":1,"featured_media":1810,"comment_status":"open","ping_status":"open","sticky":false,"template":"","format":"standard","meta":[],"categories":[16,15],"tags":[],"better_featured_image":{"id":1810,"alt_text":"Cornices","caption":"Cornices","description":"Cornices","media_type":"image","media_details":{"width":290,"height":290,"file":"2011/06/cornice_290x290.png","sizes":{"thumbnail":{"file":"cornice_290x290-150x150.png","width":150,"height":150,"mime-type":"image/png","source_url":"https://advancedfoam.com/wp-content/uploads/2011/06/cornice_290x290-150x150.png"}},"image_meta":{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0","keywords":[]}},"post":493,"source_url":"https://advancedfoam.com/wp-content/uploads/2011/06/cornice_290x290.png"},"_links":{"self":[{"href":"https://advancedfoam.com/wp-json/wp/v2/posts/493"}],"collection":[{"href":"https://advancedfoam.com/wp-json/wp/v2/posts"}],"about":[{"href":"https://advancedfoam.com/wp-json/wp/v2/types/post"}],"author":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/users/1"}],"replies":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/comments?post=493"}],"version-history":[{"count":5,"href":"https://advancedfoam.com/wp-json/wp/v2/posts/493/revisions"}],"predecessor-version":[{"id":1753,"href":"https://advancedfoam.com/wp-json/wp/v2/posts/493/revisions/1753"}],"wp:featuredmedia":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/media/1810"}],"wp:attachment":[{"href":"https://advancedfoam.com/wp-json/wp/v2/media?parent=493"}],"wp:term":[{"taxonomy":"category","embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/categories?post=493"},{"taxonomy":"post_tag","embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/tags?post=493"}],"curies":[{"name":"wp","href":"https://api.w.org/{rel}","templated":true}]}},{"id":495,"date":"2011-06-05T20:49:02","date_gmt":"2011-06-06T03:49:02","guid":{"rendered":"http://test1.advancedfoam.com/?p=495"},"modified":"2020-10-23T15:01:12","modified_gmt":"2020-10-23T22:01:12","slug":"keystones","status":"publish","type":"post","link":"https://advancedfoam.com/keystones/","title":{"rendered":"Keystones"},"content":{"rendered":"\u003cp\u003eWindow surrounds can be embellished with the use of Redicoat® Keystones, always factory-coated for quality. A great way to add value to your home, office, or any other room. Window surrounds or a Keystone can easily be mixed for building design flexibility.\u003c/p\u003e\n\u003cp\u003e\u003c/p\u003e\n\n\n\u003cfigure class=\"wp-block-image size-large\"\u003e\u003cimg loading=\"lazy\" width=\"350\" height=\"259\" src=\"https://advancedfoam.com/wp-content/uploads/2020/10/K4.gif\" alt=\"\" class=\"wp-image-1754\"/\u003e\u003cfigcaption\u003eKeystones\u003c/figcaption\u003e\u003c/figure\u003e\n\n\n\n\u003cfigure class=\"wp-block-image size-large\"\u003e\u003cimg loading=\"lazy\" width=\"560\" height=\"274\" src=\"https://advancedfoam.com/wp-content/uploads/2020/10/K2.gif\" alt=\"\" class=\"wp-image-1755\"/\u003e\u003cfigcaption\u003eDiagram\u003c/figcaption\u003e\u003c/figure\u003e\n\n\n\n\u003cfigure class=\"wp-block-image size-large\"\u003e\u003cimg loading=\"lazy\" width=\"560\" height=\"274\" src=\"https://advancedfoam.com/wp-content/uploads/2020/10/K3.gif\" alt=\"\" class=\"wp-image-1756\"/\u003e\u003cfigcaption\u003eDiagram 2\u003c/figcaption\u003e\u003c/figure\u003e\n\n\n\n\u003cp\u003eKeystones\u003c/p\u003e\n","protected":false},"excerpt":{"rendered":"\u003cp\u003eWindow surrounds can be embellished with the use of Redicoat® Keystones, always factory-coated for quality. A great way to add value to your home, office, or any other room. Window surrounds or a Keystone can easily be mixed for building design flexibility. Keystones\u003c/p\u003e\n","protected":false},"author":1,"featured_media":1811,"comment_status":"open","ping_status":"open","sticky":false,"template":"","format":"standard","meta":[],"categories":[16,15],"tags":[],"better_featured_image":{"id":1811,"alt_text":"Keystone","caption":"Keystone","description":"Keystone","media_type":"image","media_details":{"width":290,"height":290,"file":"2011/06/keystone_290x290.png","sizes":{"thumbnail":{"file":"keystone_290x290-150x150.png","width":150,"height":150,"mime-type":"image/png","source_url":"https://advancedfoam.com/wp-content/uploads/2011/06/keystone_290x290-150x150.png"}},"image_meta":{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0","keywords":[]}},"post":495,"source_url":"https://advancedfoam.com/wp-content/uploads/2011/06/keystone_290x290.png"},"_links":{"self":[{"href":"https://advancedfoam.com/wp-json/wp/v2/posts/495"}],"collection":[{"href":"https://advancedfoam.com/wp-json/wp/v2/posts"}],"about":[{"href":"https://advancedfoam.com/wp-json/wp/v2/types/post"}],"author":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/users/1"}],"replies":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/comments?post=495"}],"version-history":[{"count":5,"href":"https://advancedfoam.com/wp-json/wp/v2/posts/495/revisions"}],"predecessor-version":[{"id":1812,"href":"https://advancedfoam.com/wp-json/wp/v2/posts/495/revisions/1812"}],"wp:featuredmedia":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/media/1811"}],"wp:attachment":[{"href":"https://advancedfoam.com/wp-json/wp/v2/media?parent=495"}],"wp:term":[{"taxonomy":"category","embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/categories?post=495"},{"taxonomy":"post_tag","embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/tags?post=495"}],"curies":[{"name":"wp","href":"https://api.w.org/{rel}","templated":true}]}},{"id":497,"date":"2011-06-04T20:49:42","date_gmt":"2011-06-05T03:49:42","guid":{"rendered":"http://test1.advancedfoam.com/?p=497"},"modified":"2020-10-23T15:03:23","modified_gmt":"2020-10-23T22:03:23","slug":"quatrefoils","status":"publish","type":"post","link":"https://advancedfoam.com/quatrefoils/","title":{"rendered":"Quatrefoils"},"content":{"rendered":"\u003cp\u003eFor a contemporary architectural look, add a Redicoat® Quatrefoil. Sometimes called Arabesques, these are used either as a surface decoration or with a window and are extremely easy to install. Redicoat® Quatrefoils can give your project an extra expression of style at very little cost, and the factory coating ensures a quality product.\u003c/p\u003e\n\u003cp\u003eEach quatrefoil design is kept in stock in three standard sizes: 24”, 36”, and 48″. Custom sizes and designs are also available upon request.\u003c/p\u003e\n\n\n\u003cfigure class=\"wp-block-image size-large\"\u003e\u003cimg loading=\"lazy\" width=\"330\" height=\"309\" src=\"https://advancedfoam.com/wp-content/uploads/2020/10/QF21.gif\" alt=\"\" class=\"wp-image-1814\"/\u003e\u003c/figure\u003e\n\n\n\n\u003cfigure class=\"wp-block-image size-large\"\u003e\u003cimg loading=\"lazy\" width=\"320\" height=\"156\" src=\"https://advancedfoam.com/wp-content/uploads/2020/10/QF411.gif\" alt=\"\" class=\"wp-image-1813\"/\u003e\u003c/figure\u003e\n\n\n\n\u003cfigure class=\"wp-block-image size-large\"\u003e\u003cimg loading=\"lazy\" width=\"170\" height=\"122\" src=\"https://advancedfoam.com/wp-content/uploads/2020/10/QF3.gif\" alt=\"\" class=\"wp-image-1815\"/\u003e\u003c/figure\u003e\n\n\n\n\u003cfigure class=\"wp-block-image size-large\"\u003e\u003cimg loading=\"lazy\" width=\"585\" height=\"1024\" src=\"https://advancedfoam.com/wp-content/uploads/2020/10/quatrefoils_new-01-585x1024.jpg\" alt=\"\" class=\"wp-image-1816\" srcset=\"https://advancedfoam.com/wp-content/uploads/2020/10/quatrefoils_new-01-585x1024.jpg 585w, https://advancedfoam.com/wp-content/uploads/2020/10/quatrefoils_new-01-171x300.jpg 171w, https://advancedfoam.com/wp-content/uploads/2020/10/quatrefoils_new-01.jpg 655w\" sizes=\"(max-width: 585px) 100vw, 585px\" /\u003e\u003c/figure\u003e\n","protected":false},"excerpt":{"rendered":"\u003cp\u003eFor a contemporary architectural look, add a Redicoat® Quatrefoil. Sometimes called Arabesques, these are used either as a surface decoration or with a window and are extremely easy to install. Redicoat® Quatrefoils can give your project an extra expression of style at very little cost, and the factory coating ensures a quality product. Each quatrefoil [\u0026hellip;]\u003c/p\u003e\n","protected":false},"author":1,"featured_media":1818,"comment_status":"open","ping_status":"open","sticky":false,"template":"","format":"standard","meta":[],"categories":[16,15],"tags":[],"better_featured_image":{"id":1818,"alt_text":"Quatrefoil","caption":"Quatrefoil","description":"Quatrefoil","media_type":"image","media_details":{"width":290,"height":290,"file":"2011/06/quatrefoil_290x290.png","sizes":{"thumbnail":{"file":"quatrefoil_290x290-150x150.png","width":150,"height":150,"mime-type":"image/png","source_url":"https://advancedfoam.com/wp-content/uploads/2011/06/quatrefoil_290x290-150x150.png"}},"image_meta":{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0","keywords":[]}},"post":497,"source_url":"https://advancedfoam.com/wp-content/uploads/2011/06/quatrefoil_290x290.png"},"_links":{"self":[{"href":"https://advancedfoam.com/wp-json/wp/v2/posts/497"}],"collection":[{"href":"https://advancedfoam.com/wp-json/wp/v2/posts"}],"about":[{"href":"https://advancedfoam.com/wp-json/wp/v2/types/post"}],"author":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/users/1"}],"replies":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/comments?post=497"}],"version-history":[{"count":5,"href":"https://advancedfoam.com/wp-json/wp/v2/posts/497/revisions"}],"predecessor-version":[{"id":1817,"href":"https://advancedfoam.com/wp-json/wp/v2/posts/497/revisions/1817"}],"wp:featuredmedia":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/media/1818"}],"wp:attachment":[{"href":"https://advancedfoam.com/wp-json/wp/v2/media?parent=497"}],"wp:term":[{"taxonomy":"category","embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/categories?post=497"},{"taxonomy":"post_tag","embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/tags?post=497"}],"curies":[{"name":"wp","href":"https://api.w.org/{rel}","templated":true}]}},{"id":499,"date":"2011-06-04T03:50:46","date_gmt":"2011-06-04T10:50:46","guid":{"rendered":"http://test1.advancedfoam.com/?p=499"},"modified":"2020-10-23T15:05:35","modified_gmt":"2020-10-23T22:05:35","slug":"quoins","status":"publish","type":"post","link":"https://advancedfoam.com/quoins/","title":{"rendered":"Quoins"},"content":{"rendered":"\u003cp\u003eRedicoat® Quoins are an easy way to give your building or structure more texture and depth. They can turn an outside corner into a major architectural statement. Quoins can blend with or create a contrasting accent with the background wall through the use of color.\u003c/p\u003e\n\u003cp\u003eAll styles come in the L-shaped staggered version for use in any residential or commercial structure. Supplied only in high-density foam with our durable Redicoat® finish for exceptional impact strength.\u003c/p\u003e\n\u003cp\u003e \u003c/p\u003e\n\u003cp\u003eThe square edge is used to keep an authentic period look. For a softer look, we offer quoins with its rounded edges. Somewhat in between, we offer an option with beveled edges. All create a distinct and beautiful focal point.\u003c/p\u003e\n\n\n\u003cfigure class=\"wp-block-image size-large\"\u003e\u003cimg loading=\"lazy\" width=\"181\" height=\"385\" src=\"https://advancedfoam.com/wp-content/uploads/2020/10/QN3.gif\" alt=\"\" class=\"wp-image-1821\"/\u003e\u003c/figure\u003e\n\n\n\n\u003cfigure class=\"wp-block-image size-large\"\u003e\u003cimg loading=\"lazy\" width=\"340\" height=\"254\" src=\"https://advancedfoam.com/wp-content/uploads/2020/10/QN2.gif\" alt=\"\" class=\"wp-image-1820\"/\u003e\u003c/figure\u003e\n\n\n\n\u003cfigure class=\"wp-block-image size-large\"\u003e\u003cimg loading=\"lazy\" width=\"400\" height=\"411\" src=\"https://advancedfoam.com/wp-content/uploads/2020/10/QN4.gif\" alt=\"\" class=\"wp-image-1819\"/\u003e\u003c/figure\u003e\n","protected":false},"excerpt":{"rendered":"\u003cp\u003eRedicoat® Quoins are an easy way to give your building or structure more texture and depth. They can turn an outside corner into a major architectural statement. Quoins can blend with or create a contrasting accent with the background wall through the use of color. All styles come in the L-shaped staggered version for use [\u0026hellip;]\u003c/p\u003e\n","protected":false},"author":1,"featured_media":1822,"comment_status":"open","ping_status":"open","sticky":false,"template":"","format":"standard","meta":[],"categories":[16,15],"tags":[],"better_featured_image":{"id":1822,"alt_text":"Quoin","caption":"Quoin","description":"Quoin","media_type":"image","media_details":{"width":290,"height":290,"file":"2011/06/quoin_290x290-290x290-1.png","sizes":{"thumbnail":{"file":"quoin_290x290-290x290-1-150x150.png","width":150,"height":150,"mime-type":"image/png","source_url":"https://advancedfoam.com/wp-content/uploads/2011/06/quoin_290x290-290x290-1-150x150.png"}},"image_meta":{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0","keywords":[]}},"post":499,"source_url":"https://advancedfoam.com/wp-content/uploads/2011/06/quoin_290x290-290x290-1.png"},"_links":{"self":[{"href":"https://advancedfoam.com/wp-json/wp/v2/posts/499"}],"collection":[{"href":"https://advancedfoam.com/wp-json/wp/v2/posts"}],"about":[{"href":"https://advancedfoam.com/wp-json/wp/v2/types/post"}],"author":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/users/1"}],"replies":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/comments?post=499"}],"version-history":[{"count":5,"href":"https://advancedfoam.com/wp-json/wp/v2/posts/499/revisions"}],"predecessor-version":[{"id":1823,"href":"https://advancedfoam.com/wp-json/wp/v2/posts/499/revisions/1823"}],"wp:featuredmedia":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/media/1822"}],"wp:attachment":[{"href":"https://advancedfoam.com/wp-json/wp/v2/media?parent=499"}],"wp:term":[{"taxonomy":"category","embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/categories?post=499"},{"taxonomy":"post_tag","embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/tags?post=499"}],"curies":[{"name":"wp","href":"https://api.w.org/{rel}","templated":true}]}},{"id":501,"date":"2011-06-03T03:51:10","date_gmt":"2011-06-03T10:51:10","guid":{"rendered":"http://test1.advancedfoam.com/?p=501"},"modified":"2020-10-24T09:40:24","modified_gmt":"2020-10-24T16:40:24","slug":"window-sills","status":"publish","type":"post","link":"https://advancedfoam.com/window-sills/","title":{"rendered":"Window Sills"},"content":{"rendered":"\u003cp\u003eRedicoat® Window Sills are provided as a set of pre-finished Right and Left sides, each 2 feet long. The outer Sill ends are already finished . . . no mitering or fitting necessary. Just remove enough from the uncoated ends to fit your window. If needed, we can provide 4-foot straight lengths for longer Sills and special treatments. All Redicoat® Sill components are made of high-density foam for superior impact resistance.\u003c/p\u003e\n\n\n\u003cfigure class=\"wp-block-image size-large is-resized\"\u003e\u003cimg loading=\"lazy\" src=\"https://advancedfoam.com/wp-content/uploads/2020/10/SillIllus1.gif\" alt=\"\" class=\"wp-image-1824\" width=\"334\" height=\"427\"/\u003e\u003c/figure\u003e\n\n\n\n\u003cfigure class=\"wp-block-image size-large is-resized\"\u003e\u003cimg loading=\"lazy\" src=\"https://advancedfoam.com/wp-content/uploads/2020/10/WS9-300x184-1.gif\" alt=\"\" class=\"wp-image-1825\" width=\"316\" height=\"194\"/\u003e\u003c/figure\u003e\n\n\n\n\u003cfigure class=\"wp-block-image size-large\"\u003e\u003cimg loading=\"lazy\" width=\"561\" height=\"1024\" src=\"https://advancedfoam.com/wp-content/uploads/2020/10/WindowSills715-01-561x1024.jpg\" alt=\"\" class=\"wp-image-1826\" srcset=\"https://advancedfoam.com/wp-content/uploads/2020/10/WindowSills715-01-561x1024.jpg 561w, https://advancedfoam.com/wp-content/uploads/2020/10/WindowSills715-01-164x300.jpg 164w, https://advancedfoam.com/wp-content/uploads/2020/10/WindowSills715-01.jpg 750w\" sizes=\"(max-width: 561px) 100vw, 561px\" /\u003e\u003c/figure\u003e\n\n\n\n\u003cp\u003e\u003c/p\u003e\n","protected":false},"excerpt":{"rendered":"\u003cp\u003eRedicoat® Window Sills are provided as a set of pre-finished Right and Left sides, each 2 feet long. The outer Sill ends are already finished . . . no mitering or fitting necessary. Just remove enough from the uncoated ends to fit your window. If needed, we can provide 4-foot straight lengths for longer Sills [\u0026hellip;]\u003c/p\u003e\n","protected":false},"author":1,"featured_media":1827,"comment_status":"open","ping_status":"open","sticky":false,"template":"","format":"standard","meta":[],"categories":[16,15],"tags":[],"better_featured_image":{"id":1827,"alt_text":"Window Sills","caption":"Window Sills","description":"Window Sills","media_type":"image","media_details":{"width":290,"height":290,"file":"2011/06/sills_290x290.png","sizes":{"thumbnail":{"file":"sills_290x290-150x150.png","width":150,"height":150,"mime-type":"image/png","source_url":"https://advancedfoam.com/wp-content/uploads/2011/06/sills_290x290-150x150.png"}},"image_meta":{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0","keywords":[]}},"post":501,"source_url":"https://advancedfoam.com/wp-content/uploads/2011/06/sills_290x290.png"},"_links":{"self":[{"href":"https://advancedfoam.com/wp-json/wp/v2/posts/501"}],"collection":[{"href":"https://advancedfoam.com/wp-json/wp/v2/posts"}],"about":[{"href":"https://advancedfoam.com/wp-json/wp/v2/types/post"}],"author":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/users/1"}],"replies":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/comments?post=501"}],"version-history":[{"count":5,"href":"https://advancedfoam.com/wp-json/wp/v2/posts/501/revisions"}],"predecessor-version":[{"id":1873,"href":"https://advancedfoam.com/wp-json/wp/v2/posts/501/revisions/1873"}],"wp:featuredmedia":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/media/1827"}],"wp:attachment":[{"href":"https://advancedfoam.com/wp-json/wp/v2/media?parent=501"}],"wp:term":[{"taxonomy":"category","embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/categories?post=501"},{"taxonomy":"post_tag","embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/tags?post=501"}],"curies":[{"name":"wp","href":"https://api.w.org/{rel}","templated":true}]}}]}},"page":"/construction","query":{},"buildId":"HAfs2AVYDM_PHvnVmJyQS","runtimeConfig":{},"nextExport":true,"isFallback":false,"gip":true,"head":[["title",{"children":"Advanced Foam"}],["meta",{"name":"Advanced Foam Inc.","content":"Advanced Foam Inc. - Foam Fabrication and props made in California."}],["meta",{"charSet":"utf-8"}],["meta",{"name":"viewport","content":"initial-scale=1.0, width=device-width"}]]}</script><script nomodule="" src="/_next/static/chunks/polyfills-8bebc7aacc0076174a73.js"></script><script src="/_next/static/chunks/main-316bbd78e6029733d79a.js" async=""></script><script src="/_next/static/chunks/webpack-e067438c4cf4ef2ef178.js" async=""></script><script src="/_next/static/chunks/framework.1d36bc031662b4dc4c28.js" async=""></script><script src="/_next/static/chunks/commons.fea7482b100b72cadc8f.js" async=""></script><script src="/_next/static/chunks/96c1ae029ad230b058ae1974ec5096c1a5e58baf.20f538b0492f717bdf47.js" async=""></script><script src="/_next/static/chunks/18548bddf1a4f9b0bb0515adccde54fa4f78afcd.e97a68b0a43790a2be72.js" async=""></script><script src="/_next/static/chunks/pages/_app-cf34b6c6dcbd8e5e19d8.js" async=""></script><script src="/_next/static/chunks/52410961c79984d95a83f41e23279451651567a8.0eecca90880bdb72a7cb.js" async=""></script><script src="/_next/static/chunks/af59b78634e634ff824f14c7f9e06d0e55cb0614.14215d4d4f09a4de9724.js" async=""></script><script src="/_next/static/chunks/pages/construction-3ba3b836db8c33e3c8de.js" async=""></script><script src="/_next/static/HAfs2AVYDM_PHvnVmJyQS/_buildManifest.js" async=""></script><script src="/_next/static/HAfs2AVYDM_PHvnVmJyQS/_ssgManifest.js" async=""></script></body></html>

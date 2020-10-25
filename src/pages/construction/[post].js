@@ -63,7 +63,7 @@ export default function Post({postData}) {
     const router = useRouter();
     const classes = useStyles();
     return (
-        <Layout domain={router.query.domain}>
+        <Layout domain={'construction'}>
             <Grid >
         {/*We can access the domain with {router.query.domain} abd the query, or blog post, with {router.query.post}*/}
                 <Typography variant="h3" align="center" color="textPrimary"className={classes.postTitle} >{postData.title.rendered}</Typography>

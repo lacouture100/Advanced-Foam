@@ -1,0 +1,1612 @@
+<!DOCTYPE html><html lang="en"><head><meta name="theme-color" content="#9c27b0"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap"/><title>Advanced Foam</title><meta name="Advanced Foam Inc." content="Advanced Foam Inc. - Foam Fabrication and props made in California."/><meta charSet="utf-8"/><meta name="viewport" content="initial-scale=1.0, width=device-width"/><noscript data-n-css="true"></noscript><link rel="preload" href="/_next/static/chunks/main-316bbd78e6029733d79a.js" as="script"/><link rel="preload" href="/_next/static/chunks/webpack-e067438c4cf4ef2ef178.js" as="script"/><link rel="preload" href="/_next/static/chunks/framework.1d36bc031662b4dc4c28.js" as="script"/><link rel="preload" href="/_next/static/chunks/commons.fea7482b100b72cadc8f.js" as="script"/><link rel="preload" href="/_next/static/chunks/96c1ae029ad230b058ae1974ec5096c1a5e58baf.20f538b0492f717bdf47.js" as="script"/><link rel="preload" href="/_next/static/chunks/18548bddf1a4f9b0bb0515adccde54fa4f78afcd.e97a68b0a43790a2be72.js" as="script"/><link rel="preload" href="/_next/static/chunks/pages/_app-cf34b6c6dcbd8e5e19d8.js" as="script"/><link rel="preload" href="/_next/static/chunks/52410961c79984d95a83f41e23279451651567a8.0eecca90880bdb72a7cb.js" as="script"/><link rel="preload" href="/_next/static/chunks/af59b78634e634ff824f14c7f9e06d0e55cb0614.14215d4d4f09a4de9724.js" as="script"/><link rel="preload" href="/_next/static/chunks/pages/studio-ecb41eba21f0dfb274ec.js" as="script"/><style id="jss-server-side">.MuiSvgIcon-root {
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  font-size: 1.5rem;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  flex-shrink: 0;
+  user-select: none;
+}
+.MuiSvgIcon-colorPrimary {
+  color: #9c27b0;
+}
+.MuiSvgIcon-colorSecondary {
+  color: #651fff;
+}
+.MuiSvgIcon-colorAction {
+  color: rgba(0, 0, 0, 0.54);
+}
+.MuiSvgIcon-colorError {
+  color: #f44336;
+}
+.MuiSvgIcon-colorDisabled {
+  color: rgba(0, 0, 0, 0.26);
+}
+.MuiSvgIcon-fontSizeInherit {
+  font-size: inherit;
+}
+.MuiSvgIcon-fontSizeSmall {
+  font-size: 1.25rem;
+}
+.MuiSvgIcon-fontSizeLarge {
+  font-size: 2.1875rem;
+}
+.MuiPaper-root {
+  color: rgba(0, 0, 0, 0.87);
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  background-color: #fff;
+}
+.MuiPaper-rounded {
+  border-radius: 4px;
+}
+.MuiPaper-outlined {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+.MuiPaper-elevation0 {
+  box-shadow: none;
+}
+.MuiPaper-elevation1 {
+  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation2 {
+  box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation3 {
+  box-shadow: 0px 3px 3px -2px rgba(0,0,0,0.2),0px 3px 4px 0px rgba(0,0,0,0.14),0px 1px 8px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation4 {
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation5 {
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation6 {
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation7 {
+  box-shadow: 0px 4px 5px -2px rgba(0,0,0,0.2),0px 7px 10px 1px rgba(0,0,0,0.14),0px 2px 16px 1px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation8 {
+  box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation9 {
+  box-shadow: 0px 5px 6px -3px rgba(0,0,0,0.2),0px 9px 12px 1px rgba(0,0,0,0.14),0px 3px 16px 2px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation10 {
+  box-shadow: 0px 6px 6px -3px rgba(0,0,0,0.2),0px 10px 14px 1px rgba(0,0,0,0.14),0px 4px 18px 3px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation11 {
+  box-shadow: 0px 6px 7px -4px rgba(0,0,0,0.2),0px 11px 15px 1px rgba(0,0,0,0.14),0px 4px 20px 3px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation12 {
+  box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation13 {
+  box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 13px 19px 2px rgba(0,0,0,0.14),0px 5px 24px 4px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation14 {
+  box-shadow: 0px 7px 9px -4px rgba(0,0,0,0.2),0px 14px 21px 2px rgba(0,0,0,0.14),0px 5px 26px 4px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation15 {
+  box-shadow: 0px 8px 9px -5px rgba(0,0,0,0.2),0px 15px 22px 2px rgba(0,0,0,0.14),0px 6px 28px 5px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation16 {
+  box-shadow: 0px 8px 10px -5px rgba(0,0,0,0.2),0px 16px 24px 2px rgba(0,0,0,0.14),0px 6px 30px 5px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation17 {
+  box-shadow: 0px 8px 11px -5px rgba(0,0,0,0.2),0px 17px 26px 2px rgba(0,0,0,0.14),0px 6px 32px 5px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation18 {
+  box-shadow: 0px 9px 11px -5px rgba(0,0,0,0.2),0px 18px 28px 2px rgba(0,0,0,0.14),0px 7px 34px 6px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation19 {
+  box-shadow: 0px 9px 12px -6px rgba(0,0,0,0.2),0px 19px 29px 2px rgba(0,0,0,0.14),0px 7px 36px 6px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation20 {
+  box-shadow: 0px 10px 13px -6px rgba(0,0,0,0.2),0px 20px 31px 3px rgba(0,0,0,0.14),0px 8px 38px 7px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation21 {
+  box-shadow: 0px 10px 13px -6px rgba(0,0,0,0.2),0px 21px 33px 3px rgba(0,0,0,0.14),0px 8px 40px 7px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation22 {
+  box-shadow: 0px 10px 14px -6px rgba(0,0,0,0.2),0px 22px 35px 3px rgba(0,0,0,0.14),0px 8px 42px 7px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation23 {
+  box-shadow: 0px 11px 14px -7px rgba(0,0,0,0.2),0px 23px 36px 3px rgba(0,0,0,0.14),0px 9px 44px 8px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation24 {
+  box-shadow: 0px 11px 15px -7px rgba(0,0,0,0.2),0px 24px 38px 3px rgba(0,0,0,0.14),0px 9px 46px 8px rgba(0,0,0,0.12);
+}
+.MuiButtonBase-root {
+  color: inherit;
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  display: inline-flex;
+  outline: 0;
+  padding: 0;
+  position: relative;
+  align-items: center;
+  user-select: none;
+  border-radius: 0;
+  vertical-align: middle;
+  -moz-appearance: none;
+  justify-content: center;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.MuiButtonBase-root::-moz-focus-inner {
+  border-style: none;
+}
+.MuiButtonBase-root.Mui-disabled {
+  cursor: default;
+  pointer-events: none;
+}
+@media print {
+  .MuiButtonBase-root {
+    color-adjust: exact;
+  }
+}
+  .MuiIconButton-root {
+    flex: 0 0 auto;
+    color: rgba(0, 0, 0, 0.54);
+    padding: 12px;
+    overflow: visible;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 50%;
+  }
+  .MuiIconButton-root:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+  }
+  .MuiIconButton-root.Mui-disabled {
+    color: rgba(0, 0, 0, 0.26);
+    background-color: transparent;
+  }
+@media (hover: none) {
+  .MuiIconButton-root:hover {
+    background-color: transparent;
+  }
+}
+  .MuiIconButton-edgeStart {
+    margin-left: -12px;
+  }
+  .MuiIconButton-sizeSmall.MuiIconButton-edgeStart {
+    margin-left: -3px;
+  }
+  .MuiIconButton-edgeEnd {
+    margin-right: -12px;
+  }
+  .MuiIconButton-sizeSmall.MuiIconButton-edgeEnd {
+    margin-right: -3px;
+  }
+  .MuiIconButton-colorInherit {
+    color: inherit;
+  }
+  .MuiIconButton-colorPrimary {
+    color: #9c27b0;
+  }
+  .MuiIconButton-colorPrimary:hover {
+    background-color: rgba(156, 39, 176, 0.04);
+  }
+@media (hover: none) {
+  .MuiIconButton-colorPrimary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiIconButton-colorSecondary {
+    color: #651fff;
+  }
+  .MuiIconButton-colorSecondary:hover {
+    background-color: rgba(101, 31, 255, 0.04);
+  }
+@media (hover: none) {
+  .MuiIconButton-colorSecondary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiIconButton-sizeSmall {
+    padding: 3px;
+    font-size: 1.125rem;
+  }
+  .MuiIconButton-label {
+    width: 100%;
+    display: flex;
+    align-items: inherit;
+    justify-content: inherit;
+  }
+  .MuiAppBar-root {
+    width: 100%;
+    display: flex;
+    z-index: 1100;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    flex-direction: column;
+  }
+  .MuiAppBar-positionFixed {
+    top: 0;
+    left: auto;
+    right: 0;
+    position: fixed;
+  }
+@media print {
+  .MuiAppBar-positionFixed {
+    position: absolute;
+  }
+}
+  .MuiAppBar-positionAbsolute {
+    top: 0;
+    left: auto;
+    right: 0;
+    position: absolute;
+  }
+  .MuiAppBar-positionSticky {
+    top: 0;
+    left: auto;
+    right: 0;
+    position: sticky;
+  }
+  .MuiAppBar-positionStatic {
+    position: static;
+  }
+  .MuiAppBar-positionRelative {
+    position: relative;
+  }
+  .MuiAppBar-colorDefault {
+    color: rgba(0, 0, 0, 0.87);
+    background-color: #f5f5f5;
+  }
+  .MuiAppBar-colorPrimary {
+    color: #fff;
+    background-color: #9c27b0;
+  }
+  .MuiAppBar-colorSecondary {
+    color: #fff;
+    background-color: #651fff;
+  }
+  .MuiAppBar-colorInherit {
+    color: inherit;
+  }
+  .MuiAppBar-colorTransparent {
+    color: inherit;
+    background-color: transparent;
+  }
+  .MuiTypography-root {
+    margin: 0;
+  }
+  .MuiTypography-body2 {
+    font-size: 0.875rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.43;
+    letter-spacing: 0.01071em;
+  }
+  .MuiTypography-body1 {
+    font-size: 1rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+  }
+  .MuiTypography-caption {
+    font-size: 0.75rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.66;
+    letter-spacing: 0.03333em;
+  }
+  .MuiTypography-button {
+    font-size: 0.875rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+  }
+  .MuiTypography-h1 {
+    font-size: 6rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 300;
+    line-height: 1.167;
+    letter-spacing: -0.01562em;
+  }
+  .MuiTypography-h2 {
+    font-size: 3.75rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 300;
+    line-height: 1.2;
+    letter-spacing: -0.00833em;
+  }
+  .MuiTypography-h3 {
+    font-size: 3rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.167;
+    letter-spacing: 0em;
+  }
+  .MuiTypography-h4 {
+    font-size: 2.125rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.235;
+    letter-spacing: 0.00735em;
+  }
+  .MuiTypography-h5 {
+    font-size: 1.5rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.334;
+    letter-spacing: 0em;
+  }
+  .MuiTypography-h6 {
+    font-size: 1.25rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.0075em;
+  }
+  .MuiTypography-subtitle1 {
+    font-size: 1rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    letter-spacing: 0.00938em;
+  }
+  .MuiTypography-subtitle2 {
+    font-size: 0.875rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.57;
+    letter-spacing: 0.00714em;
+  }
+  .MuiTypography-overline {
+    font-size: 0.75rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 2.66;
+    letter-spacing: 0.08333em;
+    text-transform: uppercase;
+  }
+  .MuiTypography-srOnly {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+  }
+  .MuiTypography-alignLeft {
+    text-align: left;
+  }
+  .MuiTypography-alignCenter {
+    text-align: center;
+  }
+  .MuiTypography-alignRight {
+    text-align: right;
+  }
+  .MuiTypography-alignJustify {
+    text-align: justify;
+  }
+  .MuiTypography-noWrap {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .MuiTypography-gutterBottom {
+    margin-bottom: 0.35em;
+  }
+  .MuiTypography-paragraph {
+    margin-bottom: 16px;
+  }
+  .MuiTypography-colorInherit {
+    color: inherit;
+  }
+  .MuiTypography-colorPrimary {
+    color: #9c27b0;
+  }
+  .MuiTypography-colorSecondary {
+    color: #651fff;
+  }
+  .MuiTypography-colorTextPrimary {
+    color: rgba(0, 0, 0, 0.87);
+  }
+  .MuiTypography-colorTextSecondary {
+    color: rgba(0, 0, 0, 0.54);
+  }
+  .MuiTypography-colorError {
+    color: #f44336;
+  }
+  .MuiTypography-displayInline {
+    display: inline;
+  }
+  .MuiTypography-displayBlock {
+    display: block;
+  }
+  .MuiButton-root {
+    color: rgba(0, 0, 0, 0.87);
+    padding: 6px 16px;
+    font-size: 0.875rem;
+    min-width: 64px;
+    box-sizing: border-box;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    border-radius: 4px;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+  }
+  .MuiButton-root:hover {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.04);
+  }
+  .MuiButton-root.Mui-disabled {
+    color: rgba(0, 0, 0, 0.26);
+  }
+@media (hover: none) {
+  .MuiButton-root:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-root:hover.Mui-disabled {
+    background-color: transparent;
+  }
+  .MuiButton-label {
+    width: 100%;
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+  }
+  .MuiButton-text {
+    padding: 6px 8px;
+  }
+  .MuiButton-textPrimary {
+    color: #9c27b0;
+  }
+  .MuiButton-textPrimary:hover {
+    background-color: rgba(156, 39, 176, 0.04);
+  }
+@media (hover: none) {
+  .MuiButton-textPrimary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-textSecondary {
+    color: #651fff;
+  }
+  .MuiButton-textSecondary:hover {
+    background-color: rgba(101, 31, 255, 0.04);
+  }
+@media (hover: none) {
+  .MuiButton-textSecondary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-outlined {
+    border: 1px solid rgba(0, 0, 0, 0.23);
+    padding: 5px 15px;
+  }
+  .MuiButton-outlined.Mui-disabled {
+    border: 1px solid rgba(0, 0, 0, 0.12);
+  }
+  .MuiButton-outlinedPrimary {
+    color: #9c27b0;
+    border: 1px solid rgba(156, 39, 176, 0.5);
+  }
+  .MuiButton-outlinedPrimary:hover {
+    border: 1px solid #9c27b0;
+    background-color: rgba(156, 39, 176, 0.04);
+  }
+@media (hover: none) {
+  .MuiButton-outlinedPrimary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-outlinedSecondary {
+    color: #651fff;
+    border: 1px solid rgba(101, 31, 255, 0.5);
+  }
+  .MuiButton-outlinedSecondary:hover {
+    border: 1px solid #651fff;
+    background-color: rgba(101, 31, 255, 0.04);
+  }
+  .MuiButton-outlinedSecondary.Mui-disabled {
+    border: 1px solid rgba(0, 0, 0, 0.26);
+  }
+@media (hover: none) {
+  .MuiButton-outlinedSecondary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-contained {
+    color: rgba(0, 0, 0, 0.87);
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+    background-color: #e0e0e0;
+  }
+  .MuiButton-contained:hover {
+    box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+    background-color: #d5d5d5;
+  }
+  .MuiButton-contained.Mui-focusVisible {
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+  }
+  .MuiButton-contained:active {
+    box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+  }
+  .MuiButton-contained.Mui-disabled {
+    color: rgba(0, 0, 0, 0.26);
+    box-shadow: none;
+    background-color: rgba(0, 0, 0, 0.12);
+  }
+@media (hover: none) {
+  .MuiButton-contained:hover {
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+    background-color: #e0e0e0;
+  }
+}
+  .MuiButton-contained:hover.Mui-disabled {
+    background-color: rgba(0, 0, 0, 0.12);
+  }
+  .MuiButton-containedPrimary {
+    color: #fff;
+    background-color: #9c27b0;
+  }
+  .MuiButton-containedPrimary:hover {
+    background-color: #7b1fa2;
+  }
+@media (hover: none) {
+  .MuiButton-containedPrimary:hover {
+    background-color: #9c27b0;
+  }
+}
+  .MuiButton-containedSecondary {
+    color: #fff;
+    background-color: #651fff;
+  }
+  .MuiButton-containedSecondary:hover {
+    background-color: #6200ea;
+  }
+@media (hover: none) {
+  .MuiButton-containedSecondary:hover {
+    background-color: #651fff;
+  }
+}
+  .MuiButton-disableElevation {
+    box-shadow: none;
+  }
+  .MuiButton-disableElevation:hover {
+    box-shadow: none;
+  }
+  .MuiButton-disableElevation.Mui-focusVisible {
+    box-shadow: none;
+  }
+  .MuiButton-disableElevation:active {
+    box-shadow: none;
+  }
+  .MuiButton-disableElevation.Mui-disabled {
+    box-shadow: none;
+  }
+  .MuiButton-colorInherit {
+    color: inherit;
+    border-color: currentColor;
+  }
+  .MuiButton-textSizeSmall {
+    padding: 4px 5px;
+    font-size: 0.8125rem;
+  }
+  .MuiButton-textSizeLarge {
+    padding: 8px 11px;
+    font-size: 0.9375rem;
+  }
+  .MuiButton-outlinedSizeSmall {
+    padding: 3px 9px;
+    font-size: 0.8125rem;
+  }
+  .MuiButton-outlinedSizeLarge {
+    padding: 7px 21px;
+    font-size: 0.9375rem;
+  }
+  .MuiButton-containedSizeSmall {
+    padding: 4px 10px;
+    font-size: 0.8125rem;
+  }
+  .MuiButton-containedSizeLarge {
+    padding: 8px 22px;
+    font-size: 0.9375rem;
+  }
+  .MuiButton-fullWidth {
+    width: 100%;
+  }
+  .MuiButton-startIcon {
+    display: inherit;
+    margin-left: -4px;
+    margin-right: 8px;
+  }
+  .MuiButton-startIcon.MuiButton-iconSizeSmall {
+    margin-left: -2px;
+  }
+  .MuiButton-endIcon {
+    display: inherit;
+    margin-left: 8px;
+    margin-right: -4px;
+  }
+  .MuiButton-endIcon.MuiButton-iconSizeSmall {
+    margin-right: -2px;
+  }
+  .MuiButton-iconSizeSmall > *:first-child {
+    font-size: 18px;
+  }
+  .MuiButton-iconSizeMedium > *:first-child {
+    font-size: 20px;
+  }
+  .MuiButton-iconSizeLarge > *:first-child {
+    font-size: 22px;
+  }
+  .MuiCard-root {
+    overflow: hidden;
+  }
+  .MuiCardActionArea-root {
+    width: 100%;
+    display: block;
+    text-align: inherit;
+  }
+  .MuiCardActionArea-root:hover .MuiCardActionArea-focusHighlight {
+    opacity: 0.04;
+  }
+  .MuiCardActionArea-root.Mui-focusVisible .MuiCardActionArea-focusHighlight {
+    opacity: 0.12;
+  }
+  .MuiCardActionArea-focusHighlight {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: inherit;
+    pointer-events: none;
+    background-color: currentcolor;
+  }
+  .MuiCardActions-root {
+    display: flex;
+    padding: 8px;
+    align-items: center;
+  }
+  .MuiCardActions-spacing > :not(:first-child) {
+    margin-left: 8px;
+  }
+  .MuiCardContent-root {
+    padding: 16px;
+  }
+  .MuiCardContent-root:last-child {
+    padding-bottom: 24px;
+  }
+  .MuiCardMedia-root {
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .MuiCardMedia-media {
+    width: 100%;
+  }
+  .MuiCardMedia-img {
+    object-fit: cover;
+  }
+  .MuiContainer-root {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+@media (min-width:600px) {
+  .MuiContainer-root {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+  .MuiContainer-disableGutters {
+    padding-left: 0;
+    padding-right: 0;
+  }
+@media (min-width:600px) {
+  .MuiContainer-fixed {
+    max-width: 600px;
+  }
+}
+@media (min-width:960px) {
+  .MuiContainer-fixed {
+    max-width: 960px;
+  }
+}
+@media (min-width:1280px) {
+  .MuiContainer-fixed {
+    max-width: 1280px;
+  }
+}
+@media (min-width:1920px) {
+  .MuiContainer-fixed {
+    max-width: 1920px;
+  }
+}
+@media (min-width:0px) {
+  .MuiContainer-maxWidthXs {
+    max-width: 444px;
+  }
+}
+@media (min-width:600px) {
+  .MuiContainer-maxWidthSm {
+    max-width: 600px;
+  }
+}
+@media (min-width:960px) {
+  .MuiContainer-maxWidthMd {
+    max-width: 960px;
+  }
+}
+@media (min-width:1280px) {
+  .MuiContainer-maxWidthLg {
+    max-width: 1280px;
+  }
+}
+@media (min-width:1920px) {
+  .MuiContainer-maxWidthXl {
+    max-width: 1920px;
+  }
+}
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+strong, b {
+  font-weight: 700;
+}
+body {
+  color: rgba(0, 0, 0, 0.87);
+  margin: 0;
+  font-size: 0.875rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+  background-color: #fafafa;
+}
+@media print {
+  body {
+    background-color: #fff;
+  }
+}
+body::backdrop {
+  background-color: #fafafa;
+}
+  .MuiGrid-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+  .MuiGrid-item {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .MuiGrid-zeroMinWidth {
+    min-width: 0;
+  }
+  .MuiGrid-direction-xs-column {
+    flex-direction: column;
+  }
+  .MuiGrid-direction-xs-column-reverse {
+    flex-direction: column-reverse;
+  }
+  .MuiGrid-direction-xs-row-reverse {
+    flex-direction: row-reverse;
+  }
+  .MuiGrid-wrap-xs-nowrap {
+    flex-wrap: nowrap;
+  }
+  .MuiGrid-wrap-xs-wrap-reverse {
+    flex-wrap: wrap-reverse;
+  }
+  .MuiGrid-align-items-xs-center {
+    align-items: center;
+  }
+  .MuiGrid-align-items-xs-flex-start {
+    align-items: flex-start;
+  }
+  .MuiGrid-align-items-xs-flex-end {
+    align-items: flex-end;
+  }
+  .MuiGrid-align-items-xs-baseline {
+    align-items: baseline;
+  }
+  .MuiGrid-align-content-xs-center {
+    align-content: center;
+  }
+  .MuiGrid-align-content-xs-flex-start {
+    align-content: flex-start;
+  }
+  .MuiGrid-align-content-xs-flex-end {
+    align-content: flex-end;
+  }
+  .MuiGrid-align-content-xs-space-between {
+    align-content: space-between;
+  }
+  .MuiGrid-align-content-xs-space-around {
+    align-content: space-around;
+  }
+  .MuiGrid-justify-xs-center {
+    justify-content: center;
+  }
+  .MuiGrid-justify-xs-flex-end {
+    justify-content: flex-end;
+  }
+  .MuiGrid-justify-xs-space-between {
+    justify-content: space-between;
+  }
+  .MuiGrid-justify-xs-space-around {
+    justify-content: space-around;
+  }
+  .MuiGrid-justify-xs-space-evenly {
+    justify-content: space-evenly;
+  }
+  .MuiGrid-spacing-xs-1 {
+    width: calc(100% + 8px);
+    margin: -4px;
+  }
+  .MuiGrid-spacing-xs-1 > .MuiGrid-item {
+    padding: 4px;
+  }
+  .MuiGrid-spacing-xs-2 {
+    width: calc(100% + 16px);
+    margin: -8px;
+  }
+  .MuiGrid-spacing-xs-2 > .MuiGrid-item {
+    padding: 8px;
+  }
+  .MuiGrid-spacing-xs-3 {
+    width: calc(100% + 24px);
+    margin: -12px;
+  }
+  .MuiGrid-spacing-xs-3 > .MuiGrid-item {
+    padding: 12px;
+  }
+  .MuiGrid-spacing-xs-4 {
+    width: calc(100% + 32px);
+    margin: -16px;
+  }
+  .MuiGrid-spacing-xs-4 > .MuiGrid-item {
+    padding: 16px;
+  }
+  .MuiGrid-spacing-xs-5 {
+    width: calc(100% + 40px);
+    margin: -20px;
+  }
+  .MuiGrid-spacing-xs-5 > .MuiGrid-item {
+    padding: 20px;
+  }
+  .MuiGrid-spacing-xs-6 {
+    width: calc(100% + 48px);
+    margin: -24px;
+  }
+  .MuiGrid-spacing-xs-6 > .MuiGrid-item {
+    padding: 24px;
+  }
+  .MuiGrid-spacing-xs-7 {
+    width: calc(100% + 56px);
+    margin: -28px;
+  }
+  .MuiGrid-spacing-xs-7 > .MuiGrid-item {
+    padding: 28px;
+  }
+  .MuiGrid-spacing-xs-8 {
+    width: calc(100% + 64px);
+    margin: -32px;
+  }
+  .MuiGrid-spacing-xs-8 > .MuiGrid-item {
+    padding: 32px;
+  }
+  .MuiGrid-spacing-xs-9 {
+    width: calc(100% + 72px);
+    margin: -36px;
+  }
+  .MuiGrid-spacing-xs-9 > .MuiGrid-item {
+    padding: 36px;
+  }
+  .MuiGrid-spacing-xs-10 {
+    width: calc(100% + 80px);
+    margin: -40px;
+  }
+  .MuiGrid-spacing-xs-10 > .MuiGrid-item {
+    padding: 40px;
+  }
+  .MuiGrid-grid-xs-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-xs-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-xs-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-xs-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-xs-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-xs-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-xs-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-xs-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-xs-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-xs-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-xs-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-xs-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-xs-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-xs-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+@media (min-width:600px) {
+  .MuiGrid-grid-sm-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-sm-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-sm-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-sm-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-sm-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-sm-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-sm-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-sm-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-sm-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-sm-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-sm-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-sm-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-sm-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-sm-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+@media (min-width:960px) {
+  .MuiGrid-grid-md-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-md-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-md-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-md-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-md-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-md-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-md-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-md-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-md-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-md-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-md-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-md-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-md-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-md-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+@media (min-width:1280px) {
+  .MuiGrid-grid-lg-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-lg-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-lg-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-lg-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-lg-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-lg-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-lg-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-lg-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-lg-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-lg-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-lg-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-lg-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-lg-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-lg-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+@media (min-width:1920px) {
+  .MuiGrid-grid-xl-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-xl-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-xl-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-xl-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-xl-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-xl-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-xl-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-xl-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-xl-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-xl-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-xl-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-xl-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-xl-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-xl-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+  .MuiIcon-root {
+    width: 1em;
+    height: 1em;
+    overflow: hidden;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+    user-select: none;
+  }
+  .MuiIcon-colorPrimary {
+    color: #9c27b0;
+  }
+  .MuiIcon-colorSecondary {
+    color: #651fff;
+  }
+  .MuiIcon-colorAction {
+    color: rgba(0, 0, 0, 0.54);
+  }
+  .MuiIcon-colorError {
+    color: #f44336;
+  }
+  .MuiIcon-colorDisabled {
+    color: rgba(0, 0, 0, 0.26);
+  }
+  .MuiIcon-fontSizeInherit {
+    font-size: inherit;
+  }
+  .MuiIcon-fontSizeSmall {
+    font-size: 1.25rem;
+  }
+  .MuiIcon-fontSizeLarge {
+    font-size: 2.25rem;
+  }
+  .MuiLink-underlineNone {
+    text-decoration: none;
+  }
+  .MuiLink-underlineHover {
+    text-decoration: none;
+  }
+  .MuiLink-underlineHover:hover {
+    text-decoration: underline;
+  }
+  .MuiLink-underlineAlways {
+    text-decoration: underline;
+  }
+  .MuiLink-button {
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    position: relative;
+    user-select: none;
+    border-radius: 0;
+    vertical-align: middle;
+    -moz-appearance: none;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .MuiLink-button::-moz-focus-inner {
+    border-style: none;
+  }
+  .MuiLink-button.Mui-focusVisible {
+    outline: auto;
+  }
+  .MuiPopover-paper {
+    outline: 0;
+    position: absolute;
+    max-width: calc(100% - 32px);
+    min-width: 16px;
+    max-height: calc(100% - 32px);
+    min-height: 16px;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .MuiMenu-paper {
+    max-height: calc(100% - 96px);
+    -webkit-overflow-scrolling: touch;
+  }
+  .MuiMenu-list {
+    outline: 0;
+  }
+  .MuiToolbar-root {
+    display: flex;
+    position: relative;
+    align-items: center;
+  }
+  .MuiToolbar-gutters {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+@media (min-width:600px) {
+  .MuiToolbar-gutters {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+  .MuiToolbar-regular {
+    min-height: 56px;
+  }
+@media (min-width:0px) and (orientation: landscape) {
+  .MuiToolbar-regular {
+    min-height: 48px;
+  }
+}
+@media (min-width:600px) {
+  .MuiToolbar-regular {
+    min-height: 64px;
+  }
+}
+  .MuiToolbar-dense {
+    min-height: 48px;
+  }
+  .jss18 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .jss19 {
+    display: flex;
+    padding: 16px;
+    justify-content: flex-start;
+    background-color: #313131;
+  }
+@media (max-width:1279.95px) {
+  .jss19 {
+    padding: 16px;
+  }
+}
+  .jss20 {
+    width: 95%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .jss21 {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .jss22 {
+    padding-top: 90%;
+  }
+  .jss23 {
+    display: flex;
+    justify-content: space-evenly;
+  }
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+  .jss1 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  }
+  .jss2 {
+    flex-wrap: no-wrap;
+  }
+  .jss3 {
+    flex-grow: 1;
+  }
+  .jss4 {
+    width: 100%;
+    height: auto;
+  }
+  .jss5 {
+    margin: 8px 12px;
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+  .jss6 {
+    color: white;
+    background-color: red;
+  }
+@media (max-width:599.95px) {
+  .jss6 {
+    display: none;
+  }
+}
+  .jss7 {
+    display: none;
+  }
+@media (min-width:960px) {
+  .jss7 {
+    display: flex;
+  }
+}
+  .jss8 {
+    display: flex;
+  }
+@media (min-width:960px) {
+  .jss8 {
+    display: none;
+  }
+}
+  .jss9 {
+    width: 60%;
+    height: auto;
+    display: flex;
+  }
+@media (max-width:599.95px) {
+  .jss9 {
+    width: 80%;
+  }
+}
+  .jss10 {
+    width: 100%;
+    height: auto;
+  }
+  .jss32 {
+    padding: 48px 0px;
+    background-color: #fff;
+  }
+  .jss33 {
+    display: flex;
+    justify-content: space-evenly;
+  }
+@media (max-width:959.95px) {
+  .jss33 {
+    margin: 3rem;
+    flex-direction: column;
+  }
+}
+@media (max-width:959.95px) {
+  .jss34 {
+    margin: 16px;
+    flex-direction: column;
+  }
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+  .jss30 {
+    display: flex;
+    padding: 80px;
+    flex-direction: column;
+  }
+@media (min-width:960px) {
+  .jss30 {
+    padding: 80px 360px;
+  }
+}
+  .jss31 {
+    align-items: center;
+  }
+  .jss24 {
+    color: black;
+    padding: 8px;
+    justify-content: center;
+    background-color: #fff;
+  }
+  .jss25 {
+    display: flex;
+    padding: 48px 80px 48px;
+    justify-content: center;
+  }
+@media (max-width:1279.95px) {
+  .jss25 {
+    padding: 16px;
+  }
+}
+  .jss26 {
+    width: 95%;
+    margin: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+  .jss27 {
+    height: 0;
+    margin: 16px;
+    padding-top: 56.25%;
+  }
+  .jss28 {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .jss29 {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .jss11 {
+    margin-right: 16px;
+  }
+  .jss12 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 16px;
+  }
+  .jss13 {
+    align: center;
+    color: #FFFFFF;
+    padding: 8px;
+    background-color: black;
+  }
+  .jss14 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .jss15 {
+    display: flex;
+    padding: 64px 0px 48px;
+    background-color: #fff;
+  }
+@media (max-width:959.95px) {
+  .jss15 {
+    flex-direction: column-reverse;
+  }
+}
+  .jss16 {
+    margin-top: 32px;
+  }
+  .jss17 {
+    width: 50%;
+    height: auto;
+  }</style></head><body><div id="__next"><div class="layout"><header class="MuiPaper-root MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorDefault jss1 MuiPaper-elevation0"><div class="MuiToolbar-root MuiToolbar-regular jss2 MuiToolbar-gutters"><div class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"><div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-md-3"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="/" aria-label="Advanced Foam Home"><span class="material-icons MuiIcon-root jss10" aria-hidden="true"><img class="jss9" src="/graphics/mainLogo.svg"/></span></a></div><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-justify-xs-flex-end MuiGrid-grid-xs-6 MuiGrid-grid-md-9"><button class="MuiButtonBase-root MuiButton-root MuiButton-text jss6" tabindex="0" type="button"><span class="MuiButton-label"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit" href="/construction/redicoat">IN STOCK NOW</a></span></button><div class="jss7"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss5 MuiTypography-button MuiTypography-colorInherit MuiTypography-noWrap" href="/">Main</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss5 MuiTypography-button MuiTypography-colorInherit MuiTypography-noWrap" href="/studio">Studio</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss5 MuiTypography-button MuiTypography-colorInherit MuiTypography-noWrap" href="/construction">Construction</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss5 MuiTypography-button MuiTypography-colorInherit MuiTypography-noWrap" href="/packaging">Packaging</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss5 MuiTypography-button MuiTypography-colorInherit MuiTypography-noWrap" href="/about">About</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss5 MuiTypography-button MuiTypography-colorInherit MuiTypography-noWrap" href="/contact">Contact us</a></div><div><button class="MuiButtonBase-root MuiIconButton-root jss8 MuiIconButton-colorInherit" tabindex="0" type="button" aria-label="account of current user" aria-controls="menu-appbar" aria-haspopup="true"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></span></button></div></div></div></div></header><div class="content"><div class="jss15"><div class="MuiContainer-root jss14 MuiContainer-maxWidthLg" md="7"><p class="MuiTypography-root MuiTypography-h5 MuiTypography-colorTextPrimary MuiTypography-paragraph MuiTypography-alignCenter">We have over 35 years of experience in foam fabrication</p><p class="MuiTypography-root MuiTypography-h5 MuiTypography-colorTextSecondary MuiTypography-paragraph MuiTypography-alignCenter">for Movie and Television production companies.</p><div class="jss16"><div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-justify-xs-center"><div class="MuiGrid-root MuiGrid-item"><button class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary" tabindex="0" type="button" style="opacity:0"><span class="MuiButton-label">Call us Today</span></button></div><div class="MuiGrid-root MuiGrid-item"><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary" tabindex="0" aria-disabled="false" href="/about" style="opacity:0"><span class="MuiButton-label">About Us</span></a></div><div class="MuiGrid-root MuiGrid-item"><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary" tabindex="0" aria-disabled="false" href="/about" style="opacity:0"><span class="MuiButton-label">FAQ</span></a></div><div class="MuiGrid-root MuiGrid-item"><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary" tabindex="0" aria-disabled="false" href="/about" style="opacity:0"><span class="MuiButton-label">See our Workshop</span></a></div><div class="MuiGrid-root MuiGrid-item"><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary" tabindex="0" aria-disabled="false" href="/about" style="opacity:0"><span class="MuiButton-label">In Stock Today</span></a></div></div></div></div><div class="MuiContainer-root MuiContainer-maxWidthLg" md="5"><div class="MuiContainer-root jss12 MuiContainer-maxWidthLg"><img src="https://www.advancedfoam.com/wp-content/uploads/2020/09/Logo-min.gif" alt=" Advanced Foam main logo" class="jss17"/><div><h6 class="MuiTypography-root jss13 MuiTypography-h6">MOVIE SETS</h6></div></div></div></div><div class="MuiGrid-root jss19 MuiGrid-container" style="opacity:0"><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3 MuiGrid-grid-lg-2" style="opacity:0"><div class="MuiPaper-root MuiCard-root jss20 MuiPaper-elevation1 MuiPaper-rounded" align="center" xs="12" sm="6" md="3" lg="2" id="card-975"><div class="MuiCardContent-root jss21"><p class="MuiTypography-root MuiTypography-h5 MuiTypography-colorTextPrimary MuiTypography-paragraph MuiTypography-alignCenter">Earth to Echo</p></div><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit" href="/studio/earth-to-echo"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss22" style="background-image:url(&quot;https://advancedfoam.com/wp-content/uploads/2016/04/Earth-to-Echo-Aug-2012-Untitled-Wolf-Project-WOLF03-1-150x150.jpg&quot;)" title="Earth to Echo"></div><span class="MuiCardActionArea-focusHighlight"></span></button></a><div class="MuiCardActions-root MuiCardActions-spacing"><div class="MuiContainer-root jss23 MuiContainer-maxWidthLg"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-textSizeSmall MuiButton-sizeSmall" tabindex="0" aria-disabled="false" href="/studio/earth-to-echo"><span class="MuiButton-label">Show me more</span></a></div></div></div></div><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3 MuiGrid-grid-lg-2" style="opacity:0"><div class="MuiPaper-root MuiCard-root jss20 MuiPaper-elevation1 MuiPaper-rounded" align="center" xs="12" sm="6" md="3" lg="2" id="card-1530"><div class="MuiCardContent-root jss21"><p class="MuiTypography-root MuiTypography-h5 MuiTypography-colorTextPrimary MuiTypography-paragraph MuiTypography-alignCenter">The Mummy</p></div><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit" href="/studio/mummy"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss22" style="background-image:url(&quot;https://advancedfoam.com/wp-content/uploads/2017/07/The_Mummy_2017_poster-150x150.jpg&quot;)" title="The Mummy"></div><span class="MuiCardActionArea-focusHighlight"></span></button></a><div class="MuiCardActions-root MuiCardActions-spacing"><div class="MuiContainer-root jss23 MuiContainer-maxWidthLg"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-textSizeSmall MuiButton-sizeSmall" tabindex="0" aria-disabled="false" href="/studio/mummy"><span class="MuiButton-label">Show me more</span></a></div></div></div></div><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3 MuiGrid-grid-lg-2" style="opacity:0"><div class="MuiPaper-root MuiCard-root jss20 MuiPaper-elevation1 MuiPaper-rounded" align="center" xs="12" sm="6" md="3" lg="2" id="card-970"><div class="MuiCardContent-root jss21"><p class="MuiTypography-root MuiTypography-h5 MuiTypography-colorTextPrimary MuiTypography-paragraph MuiTypography-alignCenter">Hail Caesar</p></div><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit" href="/studio/hail-caesar"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss22" style="background-image:url(&quot;https://advancedfoam.com/wp-content/uploads/2016/04/Hail-Cesar-on-sceen-1-150x150.png&quot;)" title="Hail Caesar"></div><span class="MuiCardActionArea-focusHighlight"></span></button></a><div class="MuiCardActions-root MuiCardActions-spacing"><div class="MuiContainer-root jss23 MuiContainer-maxWidthLg"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-textSizeSmall MuiButton-sizeSmall" tabindex="0" aria-disabled="false" href="/studio/hail-caesar"><span class="MuiButton-label">Show me more</span></a></div></div></div></div><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3 MuiGrid-grid-lg-2" style="opacity:0"><div class="MuiPaper-root MuiCard-root jss20 MuiPaper-elevation1 MuiPaper-rounded" align="center" xs="12" sm="6" md="3" lg="2" id="card-587"><div class="MuiCardContent-root jss21"><p class="MuiTypography-root MuiTypography-h5 MuiTypography-colorTextPrimary MuiTypography-paragraph MuiTypography-alignCenter">Cowboys and Aliens</p></div><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit" href="/studio/cowboys-aliens"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss22" style="background-image:url(&quot;https://advancedfoam.com/wp-content/uploads/2011/06/Cowboys__Aliens-150x150.jpg&quot;)" title="Cowboys and Aliens"></div><span class="MuiCardActionArea-focusHighlight"></span></button></a><div class="MuiCardActions-root MuiCardActions-spacing"><div class="MuiContainer-root jss23 MuiContainer-maxWidthLg"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-textSizeSmall MuiButton-sizeSmall" tabindex="0" aria-disabled="false" href="/studio/cowboys-aliens"><span class="MuiButton-label">Show me more</span></a></div></div></div></div><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3 MuiGrid-grid-lg-2" style="opacity:0"><div class="MuiPaper-root MuiCard-root jss20 MuiPaper-elevation1 MuiPaper-rounded" align="center" xs="12" sm="6" md="3" lg="2" id="card-89"><div class="MuiCardContent-root jss21"><p class="MuiTypography-root MuiTypography-h5 MuiTypography-colorTextPrimary MuiTypography-paragraph MuiTypography-alignCenter">Planet of the Apes</p></div><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit" href="/studio/planet-of-the-apes"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss22" style="background-image:url(&quot;https://advancedfoam.com/wp-content/uploads/2020/10/PlanetApes_1-1-150x150.jpg&quot;)" title="Planet of the Apes"></div><span class="MuiCardActionArea-focusHighlight"></span></button></a><div class="MuiCardActions-root MuiCardActions-spacing"><div class="MuiContainer-root jss23 MuiContainer-maxWidthLg"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-textSizeSmall MuiButton-sizeSmall" tabindex="0" aria-disabled="false" href="/studio/planet-of-the-apes"><span class="MuiButton-label">Show me more</span></a></div></div></div></div><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3 MuiGrid-grid-lg-2" style="opacity:0"><div class="MuiPaper-root MuiCard-root jss20 MuiPaper-elevation1 MuiPaper-rounded" align="center" xs="12" sm="6" md="3" lg="2" id="card-45"><div class="MuiCardContent-root jss21"><p class="MuiTypography-root MuiTypography-h5 MuiTypography-colorTextPrimary MuiTypography-paragraph MuiTypography-alignCenter">Honda Ridgeline Chess</p></div><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit" href="/studio/honda-ridgeline-chess"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss22" style="background-image:url(&quot;https://advancedfoam.com/wp-content/uploads/2011/06/Honda_chess_screenshot-e13092104844101-150x150.png&quot;)" title="Honda Ridgeline Chess"></div><span class="MuiCardActionArea-focusHighlight"></span></button></a><div class="MuiCardActions-root MuiCardActions-spacing"><div class="MuiContainer-root jss23 MuiContainer-maxWidthLg"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-textSizeSmall MuiButton-sizeSmall" tabindex="0" aria-disabled="false" href="/studio/honda-ridgeline-chess"><span class="MuiButton-label">Show me more</span></a></div></div></div></div><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3 MuiGrid-grid-lg-2" style="opacity:0"><div class="MuiPaper-root MuiCard-root jss20 MuiPaper-elevation1 MuiPaper-rounded" align="center" xs="12" sm="6" md="3" lg="2" id="card-21"><div class="MuiCardContent-root jss21"><p class="MuiTypography-root MuiTypography-h5 MuiTypography-colorTextPrimary MuiTypography-paragraph MuiTypography-alignCenter">Star Trek</p></div><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit" href="/studio/star-trek"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss22" style="background-image:url(&quot;https://advancedfoam.com/wp-content/uploads/2020/09/starTrek_preview-150x150.png&quot;)" title="Star Trek"></div><span class="MuiCardActionArea-focusHighlight"></span></button></a><div class="MuiCardActions-root MuiCardActions-spacing"><div class="MuiContainer-root jss23 MuiContainer-maxWidthLg"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-textSizeSmall MuiButton-sizeSmall" tabindex="0" aria-disabled="false" href="/studio/star-trek"><span class="MuiButton-label">Show me more</span></a></div></div></div></div><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3 MuiGrid-grid-lg-2" style="opacity:0"><div class="MuiPaper-root MuiCard-root jss20 MuiPaper-elevation1 MuiPaper-rounded" align="center" xs="12" sm="6" md="3" lg="2" id="card-458"><div class="MuiCardContent-root jss21"><p class="MuiTypography-root MuiTypography-h5 MuiTypography-colorTextPrimary MuiTypography-paragraph MuiTypography-alignCenter">Transformers 3</p></div><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit" href="/studio/transformers-3"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss22" style="background-image:url(&quot;https://advancedfoam.com/wp-content/uploads/2020/10/Transformers_pier-150x150.png&quot;)" title="Transformers 3"></div><span class="MuiCardActionArea-focusHighlight"></span></button></a><div class="MuiCardActions-root MuiCardActions-spacing"><div class="MuiContainer-root jss23 MuiContainer-maxWidthLg"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-textSizeSmall MuiButton-sizeSmall" tabindex="0" aria-disabled="false" href="/studio/transformers-3"><span class="MuiButton-label">Show me more</span></a></div></div></div></div><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3 MuiGrid-grid-lg-2" style="opacity:0"><div class="MuiPaper-root MuiCard-root jss20 MuiPaper-elevation1 MuiPaper-rounded" align="center" xs="12" sm="6" md="3" lg="2" id="card-48"><div class="MuiCardContent-root jss21"><p class="MuiTypography-root MuiTypography-h5 MuiTypography-colorTextPrimary MuiTypography-paragraph MuiTypography-alignCenter">Nissan Cube</p></div><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit" href="/studio/nissan-cube"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss22" style="background-image:url(&quot;https://advancedfoam.com/wp-content/uploads/2011/06/IMG_231521-150x150.jpg&quot;)" title="Nissan Cube"></div><span class="MuiCardActionArea-focusHighlight"></span></button></a><div class="MuiCardActions-root MuiCardActions-spacing"><div class="MuiContainer-root jss23 MuiContainer-maxWidthLg"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-textSizeSmall MuiButton-sizeSmall" tabindex="0" aria-disabled="false" href="/studio/nissan-cube"><span class="MuiButton-label">Show me more</span></a></div></div></div></div><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3 MuiGrid-grid-lg-2" style="opacity:0"><div class="MuiPaper-root MuiCard-root jss20 MuiPaper-elevation1 MuiPaper-rounded" align="center" xs="12" sm="6" md="3" lg="2" id="card-58"><div class="MuiCardContent-root jss21"><p class="MuiTypography-root MuiTypography-h5 MuiTypography-colorTextPrimary MuiTypography-paragraph MuiTypography-alignCenter">Hole in the Wall</p></div><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit" href="/studio/hole-in-the-wall"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss22" style="background-image:url(&quot;https://advancedfoam.com/wp-content/uploads/2020/10/studio_holeInTheWall-150x150.jpg&quot;)" title="Hole in the Wall"></div><span class="MuiCardActionArea-focusHighlight"></span></button></a><div class="MuiCardActions-root MuiCardActions-spacing"><div class="MuiContainer-root jss23 MuiContainer-maxWidthLg"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-textSizeSmall MuiButton-sizeSmall" tabindex="0" aria-disabled="false" href="/studio/hole-in-the-wall"><span class="MuiButton-label">Show me more</span></a></div></div></div></div></div><h2 class="MuiTypography-root jss24 MuiTypography-h4 MuiTypography-alignCenter">Our clients</h2><div class="MuiGrid-root jss25 MuiGrid-container"><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3" style="opacity:0"><div class="MuiPaper-root MuiCard-root jss26 MuiPaper-elevation1 MuiPaper-rounded" align="center" xs="12" sm="6" md="3"><a class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit" href="https://www.universalstudios.com" aria-label="Universal Studios logo"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss27" style="background-image:url(&quot;https://www.advancedfoam.com/wp-content/uploads/2020/09/universalStudios_logo.png&quot;)" width="75%" alt="Universal Studios logo"></div><div class="MuiCardContent-root jss28"><h4 class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter"></h4></div><span class="MuiCardActionArea-focusHighlight"></span></button></a></div></div><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3" style="opacity:0"><div class="MuiPaper-root MuiCard-root jss26 MuiPaper-elevation1 MuiPaper-rounded" align="center" xs="12" sm="6" md="3"><a class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit" href="https://www.dreamworks.com" aria-label="Dreamworks logo"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss27" style="background-image:url(&quot;https://www.advancedfoam.com/wp-content/uploads/2020/09/dreamworks_logo.png&quot;)" width="75%" alt="Dreamworks logo"></div><div class="MuiCardContent-root jss28"><h4 class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter"></h4></div><span class="MuiCardActionArea-focusHighlight"></span></button></a></div></div><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3" style="opacity:0"><div class="MuiPaper-root MuiCard-root jss26 MuiPaper-elevation1 MuiPaper-rounded" align="center" xs="12" sm="6" md="3"><a class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit" href="https://www.hasbro.com" aria-label="Hasbro logo"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss27" style="background-image:url(&quot;https://www.advancedfoam.com/wp-content/uploads/2020/09/hasbro_logo.png&quot;)" width="75%" alt="Hasbro logo"></div><div class="MuiCardContent-root jss28"><h4 class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter"></h4></div><span class="MuiCardActionArea-focusHighlight"></span></button></a></div></div><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3" style="opacity:0"><div class="MuiPaper-root MuiCard-root jss26 MuiPaper-elevation1 MuiPaper-rounded" align="center" xs="12" sm="6" md="3"><a class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit" href="https://www.honda.com" aria-label="Honda logo"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss27" style="background-image:url(&quot;https://www.advancedfoam.com/wp-content/uploads/2020/09/honda_logo.png&quot;)" width="75%" alt="Honda logo"></div><div class="MuiCardContent-root jss28"><h4 class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter"></h4></div><span class="MuiCardActionArea-focusHighlight"></span></button></a></div></div><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3" style="opacity:0"><div class="MuiPaper-root MuiCard-root jss26 MuiPaper-elevation1 MuiPaper-rounded" align="center" xs="12" sm="6" md="3"><a class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit" href="https://www.nissan.com" aria-label="Nissan logo"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss27" style="background-image:url(&quot;https://www.advancedfoam.com/wp-content/uploads/2020/09/nissan_logo.png&quot;)" width="75%" alt="Nissan logo"></div><div class="MuiCardContent-root jss28"><h4 class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter"></h4></div><span class="MuiCardActionArea-focusHighlight"></span></button></a></div></div><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3" style="opacity:0"><div class="MuiPaper-root MuiCard-root jss26 MuiPaper-elevation1 MuiPaper-rounded" align="center" xs="12" sm="6" md="3"><a class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit" href="http://www.zanuckco.com/" aria-label="The Zanuck Company logo"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss27" style="background-image:url(&quot;https://www.advancedfoam.com/wp-content/uploads/2020/09/theZanuckCompany_logo_BW.png&quot;)" width="75%" alt="The Zanuck Company logo"></div><div class="MuiCardContent-root jss28"><h4 class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter"></h4></div><span class="MuiCardActionArea-focusHighlight"></span></button></a></div></div><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3" style="opacity:0"><div class="MuiPaper-root MuiCard-root jss26 MuiPaper-elevation1 MuiPaper-rounded" align="center" xs="12" sm="6" md="3"><a class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit" href="https://www.fremantle.com" aria-label="Fremantle Media logo"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss27" style="background-image:url(&quot;https://www.advancedfoam.com/wp-content/uploads/2020/09/fremantleMediaNorthAmerica_logo.png&quot;)" width="75%" alt="Fremantle Media logo"></div><div class="MuiCardContent-root jss28"><h4 class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter"></h4></div><span class="MuiCardActionArea-focusHighlight"></span></button></a></div></div><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3" style="opacity:0"><div class="MuiPaper-root MuiCard-root jss26 MuiPaper-elevation1 MuiPaper-rounded" align="center" xs="12" sm="6" md="3"><a class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit" href="https://www.dannon.com" aria-label="Dannon logo"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss27" style="background-image:url(&quot;https://www.advancedfoam.com/wp-content/uploads/2020/09/dannon_logo.png&quot;)" width="75%" alt="Dannon logo"></div><div class="MuiCardContent-root jss28"><h4 class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter"></h4></div><span class="MuiCardActionArea-focusHighlight"></span></button></a></div></div><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3" style="opacity:0"><div class="MuiPaper-root MuiCard-root jss26 MuiPaper-elevation1 MuiPaper-rounded" align="center" xs="12" sm="6" md="3"><a class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit" href="https://www.grammy.com" aria-label="56th Grammy Awards logo"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss27" style="background-image:url(&quot;https://www.advancedfoam.com/wp-content/uploads/2020/09/grammyAwards_logo.png&quot;)" width="75%" alt="56th Grammy Awards logo"></div><div class="MuiCardContent-root jss28"><h4 class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter"></h4></div><span class="MuiCardActionArea-focusHighlight"></span></button></a></div></div><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3" style="opacity:0"><div class="MuiPaper-root MuiCard-root jss26 MuiPaper-elevation1 MuiPaper-rounded" align="center" xs="12" sm="6" md="3"><a class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit" href="https://www.infected-mushroom.com" aria-label="Infected Mushroom logo"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss27" style="background-image:url(&quot;https://www.advancedfoam.com/wp-content/uploads/2020/09/infectedMushroom_logo.png&quot;)" width="75%" alt="Infected Mushroom logo"></div><div class="MuiCardContent-root jss28"><h4 class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter"></h4></div><span class="MuiCardActionArea-focusHighlight"></span></button></a></div></div></div></div><div class="MuiGrid-root jss30"><button class="MuiButtonBase-root MuiButton-root MuiButton-contained jss31 MuiButton-containedPrimary" tabindex="0" type="button" style="opacity:0"><span class="MuiButton-label"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit" href="/construction/redicoat">Contact us today</a></span></button></div><footer class="jss32"><grid direction="row" class="jss33"><grid class="jss34" style="opacity:0"><div class="MuiContainer-root MuiContainer-maxWidthLg"><h5 class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom MuiTypography-alignCenter">Speak to us</h5><p class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-colorTextSecondary MuiTypography-alignCenter">Phone: (310) 515-0728</p><p class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-colorTextSecondary MuiTypography-alignCenter">Fax: (310) 515-3548</p><p class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-alignCenter">Copyright © <a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit" href="https://www.advancedfoam.com/">Advanced Foam</a> <!-- -->2020<!-- -->.</p></div></grid><grid class="jss34" style="opacity:0"><div class="MuiContainer-root MuiContainer-maxWidthLg"><h5 class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom MuiTypography-alignCenter">Email us</h5><p class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-colorTextSecondary MuiTypography-alignCenter">info@advancedfoam.com</p></div></grid><grid class="jss34" style="opacity:0"><div class="MuiContainer-root MuiContainer-maxWidthLg"><h5 class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom MuiTypography-alignCenter">Headquarters</h5><p class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-colorTextSecondary MuiTypography-alignCenter">1745 W. 134th St.</p><p class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-colorTextSecondary MuiTypography-alignCenter">Gardena, CA 90249</p><p class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-alignCenter">Copyright © <a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit" href="https://www.advancedfoam.com/">Advanced Foam</a> <!-- -->2020<!-- -->.</p></div></grid></grid></footer></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"postList":[{"id":975,"date":"2020-10-23T13:37:24","date_gmt":"2020-10-23T20:37:24","guid":{"rendered":"http://advancedfoam.com/?p=975"},"modified":"2020-10-23T15:16:14","modified_gmt":"2020-10-23T22:16:14","slug":"earth-to-echo","status":"publish","type":"post","link":"https://advancedfoam.com/earth-to-echo/","title":{"rendered":"Earth to Echo"},"content":{"rendered":"\u003cdiv id=\"attachment_974\" style=\"width: 509px\" class=\"wp-caption alignnone\"\u003e\u003cimg aria-describedby=\"caption-attachment-974\" loading=\"lazy\" class=\"size-full wp-image-974\" src=\"http://advancedfoam.com/wp-content/uploads/2016/04/Earth-to-Echo-Aug-2012-Untitled-Wolf-Project-WOLF03-1.jpg\" alt=\"Earth to Echo\" width=\"499\" height=\"373\" srcset=\"https://advancedfoam.com/wp-content/uploads/2016/04/Earth-to-Echo-Aug-2012-Untitled-Wolf-Project-WOLF03-1.jpg 499w, https://advancedfoam.com/wp-content/uploads/2016/04/Earth-to-Echo-Aug-2012-Untitled-Wolf-Project-WOLF03-1-300x224.jpg 300w\" sizes=\"(max-width: 499px) 100vw, 499px\" /\u003e\u003cp id=\"caption-attachment-974\" class=\"wp-caption-text\"\u003eEarth to Echo\u003c/p\u003e\u003c/div\u003e\n","protected":false},"excerpt":{"rendered":"","protected":false},"author":1,"featured_media":974,"comment_status":"open","ping_status":"open","sticky":false,"template":"","format":"standard","meta":[],"categories":[22,3],"tags":[],"better_featured_image":{"id":974,"alt_text":"Earth to Echo Screenshot","caption":"Earth to Echo Screenshot","description":"Earth to Echo Screenshot","media_type":"image","media_details":{"width":499,"height":373,"file":"2016/04/Earth-to-Echo-Aug-2012-Untitled-Wolf-Project-WOLF03-1.jpg","sizes":{"thumbnail":{"file":"Earth-to-Echo-Aug-2012-Untitled-Wolf-Project-WOLF03-1-150x150.jpg","width":150,"height":150,"mime-type":"image/jpeg","source_url":"https://advancedfoam.com/wp-content/uploads/2016/04/Earth-to-Echo-Aug-2012-Untitled-Wolf-Project-WOLF03-1-150x150.jpg"},"medium":{"file":"Earth-to-Echo-Aug-2012-Untitled-Wolf-Project-WOLF03-1-300x224.jpg","width":300,"height":224,"mime-type":"image/jpeg","source_url":"https://advancedfoam.com/wp-content/uploads/2016/04/Earth-to-Echo-Aug-2012-Untitled-Wolf-Project-WOLF03-1-300x224.jpg"}},"image_meta":{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0","keywords":[]}},"post":975,"source_url":"https://advancedfoam.com/wp-content/uploads/2016/04/Earth-to-Echo-Aug-2012-Untitled-Wolf-Project-WOLF03-1.jpg"},"_links":{"self":[{"href":"https://advancedfoam.com/wp-json/wp/v2/posts/975"}],"collection":[{"href":"https://advancedfoam.com/wp-json/wp/v2/posts"}],"about":[{"href":"https://advancedfoam.com/wp-json/wp/v2/types/post"}],"author":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/users/1"}],"replies":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/comments?post=975"}],"version-history":[{"count":2,"href":"https://advancedfoam.com/wp-json/wp/v2/posts/975/revisions"}],"predecessor-version":[{"id":1750,"href":"https://advancedfoam.com/wp-json/wp/v2/posts/975/revisions/1750"}],"wp:featuredmedia":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/media/974"}],"wp:attachment":[{"href":"https://advancedfoam.com/wp-json/wp/v2/media?parent=975"}],"wp:term":[{"taxonomy":"category","embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/categories?post=975"},{"taxonomy":"post_tag","embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/tags?post=975"}],"curies":[{"name":"wp","href":"https://api.w.org/{rel}","templated":true}]}},{"id":1530,"date":"2017-07-01T23:10:01","date_gmt":"2017-07-02T06:10:01","guid":{"rendered":"http://advancedfoam.com/?p=1530"},"modified":"2020-10-18T19:14:31","modified_gmt":"2020-10-19T02:14:31","slug":"mummy","status":"publish","type":"post","link":"https://advancedfoam.com/mummy/","title":{"rendered":"The Mummy"},"content":{"rendered":"\u003cp\u003e\u003ciframe src=\"https://www.youtube.com/embed/IjHgzkQM2Sg\" width=\"560\" height=\"315\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"\u003e\u003c/iframe\u003e\u003c/p\u003e\n\u003cp\u003eFor the 2017 film, \u003cem\u003eThe Mummy\u003c/em\u003e, Advanced Foam fabricated this 75-foot foam sarcophagus with polyurethane coating for an event produced and designed by the \u003ca href=\"http://www.joelewiscompany.com\"\u003eJoe Lewis Company\u003c/a\u003e for \u003ca href=\"https://www.universalpictures.com\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eUniversal Pictures\u003c/a\u003e. This is the largest sarcophagus in the world and the largest single vertical structure ever assembled at the gateway of Hollywood and Highland. It took our two firms a total of eight weeks to construct, and scores of workers more than 160 hours to install.  To prepare Princess Ahmanet’s sarcophagus for its revealing for \u003ca href=\"http://www.themummy.com\"\u003eThe Mummy\u003c/a\u003e Premier starring \u003ca href=\"http://www.tomcruise.com\"\u003eTom Cruise\u003c/a\u003e, the tomb required 18 wide-load tractor trailers to move all of the elements into place.\u003c/p\u003e\n\u003cdiv id=\"attachment_1521\" style=\"width: 348px\" class=\"wp-caption alignnone\"\u003e\u003cimg aria-describedby=\"caption-attachment-1521\" loading=\"lazy\" class=\"wp-image-1521 size-full\" src=\"http://advancedfoam.com/wp-content/uploads/2017/07/mummy-photos-2017-JLC-2685-e1498974338583.jpg\" alt=\"mummy sarcophagus behind the scenes\" width=\"338\" height=\"450\" /\u003e\u003cp id=\"caption-attachment-1521\" class=\"wp-caption-text\"\u003eAdvanced Foam Fabricating the Mummy\u0026#8217;s Sarcophagus Behind the Scenes\u003c/p\u003e\u003c/div\u003e\n\u003cdiv id=\"attachment_1522\" style=\"width: 810px\" class=\"wp-caption alignnone\"\u003e\u003cimg aria-describedby=\"caption-attachment-1522\" loading=\"lazy\" class=\"size-full wp-image-1522\" src=\"http://advancedfoam.com/wp-content/uploads/2017/07/mummy-photos-2017-JLC-2779-e1498972429437.jpg\" alt=\"Mummy Sarcophagus\" width=\"800\" height=\"600\" /\u003e\u003cp id=\"caption-attachment-1522\" class=\"wp-caption-text\"\u003eAdvanced Foam Poly Coating the Mummy\u0026#8217;s Sarcophagus\u003c/p\u003e\u003c/div\u003e\n\u003cdiv id=\"attachment_1523\" style=\"width: 810px\" class=\"wp-caption alignnone\"\u003e\u003cimg aria-describedby=\"caption-attachment-1523\" loading=\"lazy\" class=\"size-full wp-image-1523\" src=\"http://advancedfoam.com/wp-content/uploads/2017/07/mummy-photos-2017-JLC-3036-e1498972405274.jpg\" alt=\"Mummy Sarcophagus\" width=\"800\" height=\"600\" /\u003e\u003cp id=\"caption-attachment-1523\" class=\"wp-caption-text\"\u003eAdvanced Foam Fabricating the Mummy\u0026#8217;s Sarcophagus\u003c/p\u003e\u003c/div\u003e\n\u003cdiv id=\"attachment_1524\" style=\"width: 460px\" class=\"wp-caption alignnone\"\u003e\u003cimg aria-describedby=\"caption-attachment-1524\" loading=\"lazy\" class=\"size-full wp-image-1524\" src=\"http://advancedfoam.com/wp-content/uploads/2017/07/mummy-photos-2017-JLC-3589-e1498972355328.jpg\" alt=\"Mummy Sarcophagus\" width=\"450\" height=\"600\" /\u003e\u003cp id=\"caption-attachment-1524\" class=\"wp-caption-text\"\u003eAdvance Foam Team Installs Largest Sarcophagus in the World for The Mummy Premier\u003c/p\u003e\u003c/div\u003e\n\u003cdiv id=\"attachment_1525\" style=\"width: 460px\" class=\"wp-caption alignnone\"\u003e\u003cimg aria-describedby=\"caption-attachment-1525\" loading=\"lazy\" class=\"size-full wp-image-1525\" src=\"http://advancedfoam.com/wp-content/uploads/2017/07/mummy-photos-2017-JLC-3630-e1498972338654.jpg\" alt=\"Mummy Sarcophagus\" width=\"450\" height=\"600\" /\u003e\u003cp id=\"caption-attachment-1525\" class=\"wp-caption-text\"\u003eBettye Poses for Reference with the Sarcophagus\u003c/p\u003e\u003c/div\u003e\n\u003cdiv id=\"attachment_1526\" style=\"width: 348px\" class=\"wp-caption alignnone\"\u003e\u003cimg aria-describedby=\"caption-attachment-1526\" loading=\"lazy\" class=\"size-full wp-image-1526\" src=\"http://advancedfoam.com/wp-content/uploads/2017/07/mummy-photos-2017-JLC-3640-e1498972320629.jpg\" alt=\"mummy sarcophagus\" width=\"338\" height=\"600\" /\u003e\u003cp id=\"caption-attachment-1526\" class=\"wp-caption-text\"\u003eLargest Sarcophagus for The Mummy Installation\u003c/p\u003e\u003c/div\u003e\n\u003cdiv id=\"attachment_1527\" style=\"width: 460px\" class=\"wp-caption alignnone\"\u003e\u003cimg aria-describedby=\"caption-attachment-1527\" loading=\"lazy\" class=\"size-full wp-image-1527\" src=\"http://advancedfoam.com/wp-content/uploads/2017/07/mummy-photos-2017-JLC-3653-e1498972306731.jpg\" alt=\"Mummy Sarcophagus\" width=\"450\" height=\"600\" /\u003e\u003cp id=\"caption-attachment-1527\" class=\"wp-caption-text\"\u003eLargest Foam Sarcophagus in the World for The Mummy (2017) Premier on Display\u003c/p\u003e\u003c/div\u003e\n\u003cdiv id=\"attachment_1528\" style=\"width: 348px\" class=\"wp-caption alignnone\"\u003e\u003cimg aria-describedby=\"caption-attachment-1528\" loading=\"lazy\" class=\"size-full wp-image-1528\" src=\"http://advancedfoam.com/wp-content/uploads/2017/07/mummy-photos-2017-JLC-3722-e1498972279494.jpg\" alt=\"Mummy Sarcophagus\" width=\"338\" height=\"600\" /\u003e\u003cp id=\"caption-attachment-1528\" class=\"wp-caption-text\"\u003eLargest Foam Sarcophagus in the World on Display for The Mummy (2017) Premier\u003c/p\u003e\u003c/div\u003e\n","protected":false},"excerpt":{"rendered":"\u003cp\u003eFor the 2017 film, The Mummy, Advanced Foam fabricated this 75-foot foam sarcophagus with polyurethane coating for an event produced and designed by the Joe Lewis Company for Universal Pictures. This is the largest sarcophagus in the world and the largest single vertical structure ever assembled at the gateway of Hollywood and Highland. It took our two [\u0026hellip;]\u003c/p\u003e\n","protected":false},"author":1,"featured_media":1533,"comment_status":"open","ping_status":"open","sticky":false,"template":"","format":"standard","meta":[],"categories":[22,3],"tags":[],"better_featured_image":{"id":1533,"alt_text":"The Mummy","caption":"The Mummy (2017) Movie Poster","description":"\u003ca href=\"http://www.themummy.com\" target=\"_blank\"\u003eThe Mummy (2017)\u003c/a\u003e\n\nNick Morton is a soldier of fortune who plunders ancient sites for timeless artifacts and sells them to the highest bidder. When Nick and his partner come under attack in the Middle East, the ensuing battle accidentally unearths Ahmanet, a betrayed Egyptian princess who was entombed under the desert for thousands of years. With her powers constantly evolving, Morton must now stop the resurrected monster as she embarks on a furious rampage through the streets of London.","media_type":"image","media_details":{"width":220,"height":348,"file":"2017/07/The_Mummy_2017_poster.jpg","sizes":{"thumbnail":{"file":"The_Mummy_2017_poster-150x150.jpg","width":150,"height":150,"mime-type":"image/jpeg","source_url":"https://advancedfoam.com/wp-content/uploads/2017/07/The_Mummy_2017_poster-150x150.jpg"},"medium":{"file":"The_Mummy_2017_poster-190x300.jpg","width":190,"height":300,"mime-type":"image/jpeg","source_url":"https://advancedfoam.com/wp-content/uploads/2017/07/The_Mummy_2017_poster-190x300.jpg"}},"image_meta":{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0","keywords":[]}},"post":1530,"source_url":"https://advancedfoam.com/wp-content/uploads/2017/07/The_Mummy_2017_poster.jpg"},"_links":{"self":[{"href":"https://advancedfoam.com/wp-json/wp/v2/posts/1530"}],"collection":[{"href":"https://advancedfoam.com/wp-json/wp/v2/posts"}],"about":[{"href":"https://advancedfoam.com/wp-json/wp/v2/types/post"}],"author":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/users/1"}],"replies":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/comments?post=1530"}],"version-history":[{"count":5,"href":"https://advancedfoam.com/wp-json/wp/v2/posts/1530/revisions"}],"predecessor-version":[{"id":1637,"href":"https://advancedfoam.com/wp-json/wp/v2/posts/1530/revisions/1637"}],"wp:featuredmedia":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/media/1533"}],"wp:attachment":[{"href":"https://advancedfoam.com/wp-json/wp/v2/media?parent=1530"}],"wp:term":[{"taxonomy":"category","embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/categories?post=1530"},{"taxonomy":"post_tag","embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/tags?post=1530"}],"curies":[{"name":"wp","href":"https://api.w.org/{rel}","templated":true}]}},{"id":970,"date":"2016-04-29T11:23:58","date_gmt":"2016-04-29T18:23:58","guid":{"rendered":"http://advancedfoam.com/?p=970"},"modified":"2020-10-24T09:52:44","modified_gmt":"2020-10-24T16:52:44","slug":"hail-caesar","status":"publish","type":"post","link":"https://advancedfoam.com/hail-caesar/","title":{"rendered":"Hail Caesar"},"content":{"rendered":"\n\u003cfigure class=\"wp-block-image size-large\"\u003e\u003cimg loading=\"lazy\" width=\"1024\" height=\"726\" src=\"https://advancedfoam.com/wp-content/uploads/2016/04/Hail-Cesar-on-sceen-1-1024x726.png\" alt=\"Hail Caesar\" class=\"wp-image-973\" srcset=\"https://advancedfoam.com/wp-content/uploads/2016/04/Hail-Cesar-on-sceen-1-1024x726.png 1024w, https://advancedfoam.com/wp-content/uploads/2016/04/Hail-Cesar-on-sceen-1-300x213.png 300w, https://advancedfoam.com/wp-content/uploads/2016/04/Hail-Cesar-on-sceen-1-768x545.png 768w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" /\u003e\u003cfigcaption\u003eHail Caesar\u003c/figcaption\u003e\u003c/figure\u003e\n\n\n\n\u003cp\u003eAdvanced Foam was hired to make the Shells you see on set in the image above for \u0026#8220;\u003ca href=\"https://en.wikipedia.org/wiki/Hail,_Caesar!\" data-type=\"URL\" data-id=\"https://en.wikipedia.org/wiki/Hail,_Caesar!\"\u003e Hail Caesar\u003c/a\u003e\u0026#8220;.\u003c/p\u003e\n","protected":false},"excerpt":{"rendered":"\u003cp\u003eAdvanced Foam was hired to make the Shells you see on set in the image above for \u0026#8220; Hail Caesar\u0026#8220;.\u003c/p\u003e\n","protected":false},"author":1,"featured_media":973,"comment_status":"open","ping_status":"open","sticky":false,"template":"","format":"standard","meta":[],"categories":[22,3],"tags":[],"better_featured_image":{"id":973,"alt_text":"Hail Caesar","caption":"Hail Caesar","description":"Hail Caesar","media_type":"image","media_details":{"width":2346,"height":1664,"file":"2016/04/Hail-Cesar-on-sceen-1.png","sizes":{"thumbnail":{"file":"Hail-Cesar-on-sceen-1-150x150.png","width":150,"height":150,"mime-type":"image/png","source_url":"https://advancedfoam.com/wp-content/uploads/2016/04/Hail-Cesar-on-sceen-1-150x150.png"},"medium":{"file":"Hail-Cesar-on-sceen-1-300x213.png","width":300,"height":213,"mime-type":"image/png","source_url":"https://advancedfoam.com/wp-content/uploads/2016/04/Hail-Cesar-on-sceen-1-300x213.png"},"medium_large":{"file":"Hail-Cesar-on-sceen-1-768x545.png","width":768,"height":545,"mime-type":"image/png","source_url":"https://advancedfoam.com/wp-content/uploads/2016/04/Hail-Cesar-on-sceen-1-768x545.png"},"large":{"file":"Hail-Cesar-on-sceen-1-1024x726.png","width":1024,"height":726,"mime-type":"image/png","source_url":"https://advancedfoam.com/wp-content/uploads/2016/04/Hail-Cesar-on-sceen-1-1024x726.png"}},"image_meta":{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0","keywords":[]}},"post":null,"source_url":"https://advancedfoam.com/wp-content/uploads/2016/04/Hail-Cesar-on-sceen-1.png"},"_links":{"self":[{"href":"https://advancedfoam.com/wp-json/wp/v2/posts/970"}],"collection":[{"href":"https://advancedfoam.com/wp-json/wp/v2/posts"}],"about":[{"href":"https://advancedfoam.com/wp-json/wp/v2/types/post"}],"author":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/users/1"}],"replies":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/comments?post=970"}],"version-history":[{"count":4,"href":"https://advancedfoam.com/wp-json/wp/v2/posts/970/revisions"}],"predecessor-version":[{"id":1874,"href":"https://advancedfoam.com/wp-json/wp/v2/posts/970/revisions/1874"}],"wp:featuredmedia":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/media/973"}],"wp:attachment":[{"href":"https://advancedfoam.com/wp-json/wp/v2/media?parent=970"}],"wp:term":[{"taxonomy":"category","embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/categories?post=970"},{"taxonomy":"post_tag","embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/tags?post=970"}],"curies":[{"name":"wp","href":"https://api.w.org/{rel}","templated":true}]}},{"id":587,"date":"2011-06-30T13:27:07","date_gmt":"2011-06-30T20:27:07","guid":{"rendered":"http://test1.advancedfoam.com/?p=587"},"modified":"2020-10-23T15:39:08","modified_gmt":"2020-10-23T22:39:08","slug":"cowboys-aliens","status":"publish","type":"post","link":"https://advancedfoam.com/cowboys-aliens/","title":{"rendered":"Cowboys and Aliens"},"content":{"rendered":"\u003cp\u003e\u003cdiv id=\"attachment_1017\" style=\"width: 249px\" class=\"wp-caption alignnone\"\u003e\u003cimg aria-describedby=\"caption-attachment-1017\" loading=\"lazy\" class=\"wp-image-1017\" src=\"http://advancedfoam.com/wp-content/uploads/2011/06/Cowboys__Aliens.jpg\" alt=\"Cowboys \u0026amp; Aliens\" width=\"239\" height=\"354\" srcset=\"https://advancedfoam.com/wp-content/uploads/2011/06/Cowboys__Aliens.jpg 290w, https://advancedfoam.com/wp-content/uploads/2011/06/Cowboys__Aliens-202x300.jpg 202w\" sizes=\"(max-width: 239px) 100vw, 239px\" /\u003e\u003cp id=\"caption-attachment-1017\" class=\"wp-caption-text\"\u003eMovie Poster\u003c/p\u003e\u003c/div\u003e\u003c/p\u003e\n\u003ch2\u003e\u003c/h2\u003e\n\u003cp\u003eAdvanced Foam executed a number of set pieces for the 2011 film Cowboys \u0026amp; Aliens directed by \u003ca class=\"a-link-normal\" href=\"https://en.wikipedia.org/wiki/Jon_Favreau_(speechwriter)\"\u003eJon Favreau,\u003c/a\u003e starring \u003ca href=\"https://en.wikipedia.org/wiki/Daniel_Craig\"\u003eDaniel Craig\u003c/a\u003e, \u003ca href=\"https://en.wikipedia.org/wiki/Harrison_Ford\"\u003eHarrison Ford\u003c/a\u003e and more. The film is based on \u003ca style=\"color: inherit !important;\" title=\"wall cloud\" href=\"http://www.clofind.xyz\"\u003ethe 2006\u003c/a\u003e graphic novel of the same name created by Scott Mitchell Rosenberg. Various support \u003ca style=\"text-decoration: none;\" title=\"site database\" href=\"http://www.ipdisco.xyz\"\u003estruts were\u003c/a\u003e also made that are used in almost every scene. There are also several custom-made architectural shape \u003ca style=\"text-decoration: none; color: inherit !important;\" title=\"dom information\" href=\"http://www.domehash.xyz\"\u003edesigns that\u003c/a\u003e can be seen throughout the western town set.\u003c/p\u003e\n","protected":false},"excerpt":{"rendered":"\u003cp\u003eAdvanced Foam executed a number of set pieces for the 2011 film Cowboys \u0026amp; Aliens directed by Jon Favreau, starring Daniel Craig, Harrison Ford and more. The film is based on the 2006 graphic novel of the same name created by Scott Mitchell Rosenberg. Various support struts were also made that are used in almost every [\u0026hellip;]\u003c/p\u003e\n","protected":false},"author":1,"featured_media":1017,"comment_status":"open","ping_status":"open","sticky":false,"template":"","format":"standard","meta":[],"categories":[22,3],"tags":[],"better_featured_image":{"id":1017,"alt_text":"Cowboys and Aliens Poster","caption":"Cowboys and Aliens Poster","description":"Cowboys and Aliens Poster","media_type":"image","media_details":{"width":290,"height":430,"file":"2011/06/Cowboys__Aliens.jpg","sizes":{"thumbnail":{"file":"Cowboys__Aliens-150x150.jpg","width":150,"height":150,"mime-type":"image/jpeg","source_url":"https://advancedfoam.com/wp-content/uploads/2011/06/Cowboys__Aliens-150x150.jpg"},"medium":{"file":"Cowboys__Aliens-202x300.jpg","width":202,"height":300,"mime-type":"image/jpeg","source_url":"https://advancedfoam.com/wp-content/uploads/2011/06/Cowboys__Aliens-202x300.jpg"}},"image_meta":{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"1","keywords":[]}},"post":587,"source_url":"https://advancedfoam.com/wp-content/uploads/2011/06/Cowboys__Aliens.jpg"},"_links":{"self":[{"href":"https://advancedfoam.com/wp-json/wp/v2/posts/587"}],"collection":[{"href":"https://advancedfoam.com/wp-json/wp/v2/posts"}],"about":[{"href":"https://advancedfoam.com/wp-json/wp/v2/types/post"}],"author":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/users/1"}],"replies":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/comments?post=587"}],"version-history":[{"count":5,"href":"https://advancedfoam.com/wp-json/wp/v2/posts/587/revisions"}],"predecessor-version":[{"id":1857,"href":"https://advancedfoam.com/wp-json/wp/v2/posts/587/revisions/1857"}],"wp:featuredmedia":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/media/1017"}],"wp:attachment":[{"href":"https://advancedfoam.com/wp-json/wp/v2/media?parent=587"}],"wp:term":[{"taxonomy":"category","embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/categories?post=587"},{"taxonomy":"post_tag","embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/tags?post=587"}],"curies":[{"name":"wp","href":"https://api.w.org/{rel}","templated":true}]}},{"id":89,"date":"2011-06-28T13:14:31","date_gmt":"2011-06-28T20:14:31","guid":{"rendered":"http://test.advancedfoam.com/?p=89"},"modified":"2020-10-23T15:23:48","modified_gmt":"2020-10-23T22:23:48","slug":"planet-of-the-apes","status":"publish","type":"post","link":"https://advancedfoam.com/planet-of-the-apes/","title":{"rendered":"Planet of the Apes"},"content":{"rendered":"\u003cp\u003e\u003ciframe src=\"//www.youtube.com/embed/ut75yKBIhew\" width=\"560\" height=\"420\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"\u003e\u003c/iframe\u003e\u003c/p\u003e\n\u003cp\u003eAll the foam parts we made for the 2001 movie \u0026#8216;Planet of The Apes\u0026#8217; were fabricated in our facilities and had to be taken to the Mojave Desert, where the scenes were shot. There was seven truckloads worth \u003ca style=\"text-decoration: none; color: inherit !important;\" title=\"wall cloud\" href=\"http://www.clofind.xyz\"\u003eof pinnacles\u003c/a\u003e alone. Each of the pinnacles was nearly 100 feet long. The final product ended up being equivalent to a 10-story building tilted \u003ca style=\"color: inherit !important;\" title=\"steam cloud\" href=\"http://www.ajpiina.xyz\"\u003eat about\u003c/a\u003e 30 degrees. It was a real challenge because the footings had been placed in the sand nearly a month before the pinnacles were put in. There was absolutely no room for error.\u003c/p\u003e\n\u003cp\u003e \u003c/p\u003e\n\u003cp\u003e \u003c/p\u003e\n\u003cp\u003e \u003c/p\u003e\n\u003cp\u003e \u003c/p\u003e\n\u003cp\u003e\u0026#8220;PLANET OF THE APES\u0026#8221; © 2001 Twentieth Century Fox. All rights reserved. \u003c/p\u003e\n\n\n\u003cfigure class=\"wp-block-image size-large\"\u003e\u003cimg loading=\"lazy\" width=\"900\" height=\"300\" src=\"https://advancedfoam.com/wp-content/uploads/2020/10/PlanetApes_screenshot_900x300.png\" alt=\"\" class=\"wp-image-1838\" srcset=\"https://advancedfoam.com/wp-content/uploads/2020/10/PlanetApes_screenshot_900x300.png 900w, https://advancedfoam.com/wp-content/uploads/2020/10/PlanetApes_screenshot_900x300-300x100.png 300w, https://advancedfoam.com/wp-content/uploads/2020/10/PlanetApes_screenshot_900x300-768x256.png 768w\" sizes=\"(max-width: 900px) 100vw, 900px\" /\u003e\u003c/figure\u003e\n\n\n\n\u003cfigure class=\"wp-block-image size-large\"\u003e\u003cimg loading=\"lazy\" width=\"750\" height=\"503\" src=\"https://advancedfoam.com/wp-content/uploads/2020/10/PlanetApes_1-1.jpg\" alt=\"\" class=\"wp-image-1836\" srcset=\"https://advancedfoam.com/wp-content/uploads/2020/10/PlanetApes_1-1.jpg 750w, https://advancedfoam.com/wp-content/uploads/2020/10/PlanetApes_1-1-300x201.jpg 300w\" sizes=\"(max-width: 750px) 100vw, 750px\" /\u003e\u003c/figure\u003e\n\n\n\n\u003cfigure class=\"wp-block-image size-large\"\u003e\u003cimg loading=\"lazy\" width=\"726\" height=\"490\" src=\"https://advancedfoam.com/wp-content/uploads/2020/10/PlanetApes_detail.jpg\" alt=\"\" class=\"wp-image-1837\" srcset=\"https://advancedfoam.com/wp-content/uploads/2020/10/PlanetApes_detail.jpg 726w, https://advancedfoam.com/wp-content/uploads/2020/10/PlanetApes_detail-300x202.jpg 300w\" sizes=\"(max-width: 726px) 100vw, 726px\" /\u003e\u003c/figure\u003e\n","protected":false},"excerpt":{"rendered":"\u003cp\u003eAdvanced Foam created numerous foam parts for the crashed spaceship featured in Planet of the Apes (2001). All the foam parts were fabricated in our facilities and had to be taken to the Mojave Desert, where the scenes were shot. The final product ended up being equivalent to a 10-story building tilted at about 30 degrees. \u003c/p\u003e\n\u003cp\u003e\u003ca title=\"Planet of the Apes\" href=\"http://test.advancedfoam.com/?p=89\"\u003eClick here for more information.\u003c/a\u003e\u003c/p\u003e\n","protected":false},"author":1,"featured_media":1836,"comment_status":"open","ping_status":"open","sticky":false,"template":"","format":"standard","meta":[],"categories":[22,3],"tags":[],"better_featured_image":{"id":1836,"alt_text":"Planet of The Apes structure","caption":"Planet of The Apes structure","description":"Planet of The Apes structure","media_type":"image","media_details":{"width":750,"height":503,"file":"2020/10/PlanetApes_1-1.jpg","sizes":{"medium":{"file":"PlanetApes_1-1-300x201.jpg","width":300,"height":201,"mime-type":"image/jpeg","source_url":"https://advancedfoam.com/wp-content/uploads/2020/10/PlanetApes_1-1-300x201.jpg"},"thumbnail":{"file":"PlanetApes_1-1-150x150.jpg","width":150,"height":150,"mime-type":"image/jpeg","source_url":"https://advancedfoam.com/wp-content/uploads/2020/10/PlanetApes_1-1-150x150.jpg"}},"image_meta":{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"1","keywords":[]}},"post":89,"source_url":"https://advancedfoam.com/wp-content/uploads/2020/10/PlanetApes_1-1.jpg"},"_links":{"self":[{"href":"https://advancedfoam.com/wp-json/wp/v2/posts/89"}],"collection":[{"href":"https://advancedfoam.com/wp-json/wp/v2/posts"}],"about":[{"href":"https://advancedfoam.com/wp-json/wp/v2/types/post"}],"author":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/users/1"}],"replies":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/comments?post=89"}],"version-history":[{"count":5,"href":"https://advancedfoam.com/wp-json/wp/v2/posts/89/revisions"}],"predecessor-version":[{"id":1841,"href":"https://advancedfoam.com/wp-json/wp/v2/posts/89/revisions/1841"}],"wp:featuredmedia":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/media/1836"}],"wp:attachment":[{"href":"https://advancedfoam.com/wp-json/wp/v2/media?parent=89"}],"wp:term":[{"taxonomy":"category","embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/categories?post=89"},{"taxonomy":"post_tag","embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/tags?post=89"}],"curies":[{"name":"wp","href":"https://api.w.org/{rel}","templated":true}]}},{"id":45,"date":"2011-06-27T20:37:33","date_gmt":"2011-06-28T03:37:33","guid":{"rendered":"http://test.advancedfoam.com/?p=45"},"modified":"2020-10-24T09:52:54","modified_gmt":"2020-10-24T16:52:54","slug":"honda-ridgeline-chess","status":"publish","type":"post","link":"https://advancedfoam.com/honda-ridgeline-chess/","title":{"rendered":"Honda Ridgeline Chess"},"content":{"rendered":"\n\u003ch2\u003e\u0026nbsp;\u003c/h2\u003e\n\n\n\n\u003cfigure class=\"wp-block-image alignnone is-resized wp-image-755 size-medium\"\u003e\u003cimg loading=\"lazy\" src=\"http://advancedfoam.com/wp-content/uploads/2011/06/Chesspieces_inshop-300x150.jpg\" alt=\"Honda Ridgeline Chess Pieces\" class=\"wp-image-755\" width=\"392\" height=\"196\" srcset=\"https://advancedfoam.com/wp-content/uploads/2011/06/Chesspieces_inshop-300x150.jpg 300w, https://advancedfoam.com/wp-content/uploads/2011/06/Chesspieces_inshop.jpg 600w\" sizes=\"(max-width: 392px) 100vw, 392px\" /\u003e\u003cfigcaption\u003eHonda Ridgeline Chess Pieces in our workshop\u003c/figcaption\u003e\u003c/figure\u003e\n\n\n\n\u003cfigure class=\"wp-block-image size-large\"\u003e\u003cimg loading=\"lazy\" width=\"639\" height=\"361\" src=\"https://advancedfoam.com/wp-content/uploads/2011/06/Honda_chess_screenshot11.png\" alt=\"\" class=\"wp-image-107\" srcset=\"https://advancedfoam.com/wp-content/uploads/2011/06/Honda_chess_screenshot11.png 639w, https://advancedfoam.com/wp-content/uploads/2011/06/Honda_chess_screenshot11-300x169.png 300w\" sizes=\"(max-width: 639px) 100vw, 639px\" /\u003e\u003c/figure\u003e\n\n\n\n\u003cp\u003eSculpting is not Advanced Foam’s line of work, but that doesn’t mean we can’t help Honda with\u0026nbsp;their\u0026nbsp;Honda Ridgeline Chess commercial. In the case of the five-foot-high knight chess figures for a Honda Ridgeline Chess commercial, we first machine-cut the horse side and front profiles, then they were shaped by the customer and returned to us for cement coating. A full \u003ca style=\"color: inherit !important;\" title=\"domain list\" href=\"http://www.ipdisco.xyz\"\u003e32-piece chess\u003c/a\u003e set was produced for a Honda commercial.\u0026nbsp;\u003c/p\u003e\n","protected":false},"excerpt":{"rendered":"\u003cp\u003eA full 32-piece chess set was produced for this Honda commercial. Sculpting is not our forte, but we can help the process. In this case, we first machine-cut the horse side and front profiles, then they were sculpted by the customer and returned to us for cementitious coating.\u003c/p\u003e\n\u003cp\u003e\u003ca title=\"Life-Size Chess\" href=\"http://test.advancedfoam.com/?p=45\"\u003eClick here for more information\u003c/a\u003e\u003c/p\u003e\n","protected":false},"author":1,"featured_media":73,"comment_status":"open","ping_status":"open","sticky":false,"template":"","format":"standard","meta":[],"categories":[22,3],"tags":[],"better_featured_image":{"id":73,"alt_text":"Honda Chess Commercial Shoot","caption":"Honda Chess Commercial Shoot","description":"Honda Chess Commercial Shoot","media_type":"image","media_details":{"width":"750","height":"423","hwstring_small":"height='72' width='128'","file":"2011/06/Honda_chess_screenshot-e13092104844101.png","sizes":{"thumbnail":{"file":"Honda_chess_screenshot-e13092104844101-150x150.png","width":"150","height":"150","source_url":"https://advancedfoam.com/wp-content/uploads/2011/06/Honda_chess_screenshot-e13092104844101-150x150.png"},"medium":{"file":"Honda_chess_screenshot-e13092104844101-300x169.png","width":"300","height":"169","source_url":"https://advancedfoam.com/wp-content/uploads/2011/06/Honda_chess_screenshot-e13092104844101-300x169.png"},"post-thumbnail":{"file":"Honda_chess_screenshot-e13092104844101-750x198.png","width":"750","height":"198","source_url":"https://advancedfoam.com/wp-content/uploads/2011/06/Honda_chess_screenshot-e13092104844101-750x198.png"}},"image_meta":{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":""}},"post":45,"source_url":"https://advancedfoam.com/wp-content/uploads/2011/06/Honda_chess_screenshot-e13092104844101.png"},"_links":{"self":[{"href":"https://advancedfoam.com/wp-json/wp/v2/posts/45"}],"collection":[{"href":"https://advancedfoam.com/wp-json/wp/v2/posts"}],"about":[{"href":"https://advancedfoam.com/wp-json/wp/v2/types/post"}],"author":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/users/1"}],"replies":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/comments?post=45"}],"version-history":[{"count":5,"href":"https://advancedfoam.com/wp-json/wp/v2/posts/45/revisions"}],"predecessor-version":[{"id":1856,"href":"https://advancedfoam.com/wp-json/wp/v2/posts/45/revisions/1856"}],"wp:featuredmedia":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/media/73"}],"wp:attachment":[{"href":"https://advancedfoam.com/wp-json/wp/v2/media?parent=45"}],"wp:term":[{"taxonomy":"category","embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/categories?post=45"},{"taxonomy":"post_tag","embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/tags?post=45"}],"curies":[{"name":"wp","href":"https://api.w.org/{rel}","templated":true}]}},{"id":21,"date":"2011-06-26T12:10:42","date_gmt":"2011-06-26T19:10:42","guid":{"rendered":"http://test.advancedfoam.com/?p=21"},"modified":"2020-10-24T09:53:01","modified_gmt":"2020-10-24T16:53:01","slug":"star-trek","status":"publish","type":"post","link":"https://advancedfoam.com/star-trek/","title":{"rendered":"Star Trek"},"content":{"rendered":"\n\u003cfigure class=\"wp-block-image size-large is-resized\"\u003e\u003cimg loading=\"lazy\" src=\"https://advancedfoam.com/wp-content/uploads/2020/09/starTrek_preview.png\" alt=\"Star Trek movie screenshot preview\" class=\"wp-image-1580\" width=\"506\" height=\"675\" srcset=\"https://advancedfoam.com/wp-content/uploads/2020/09/starTrek_preview.png 480w, https://advancedfoam.com/wp-content/uploads/2020/09/starTrek_preview-225x300.png 225w\" sizes=\"(max-width: 506px) 100vw, 506px\" /\u003e\u003cfigcaption\u003eStar Trek movie screenshot.\u003c/figcaption\u003e\u003c/figure\u003e\n\n\n\u003cp\u003e\u003cbr /\u003eFor the 2009 science fiction and adventure film based off of the TV show with the same name and directed by \u003ca title=\"J. J. Abrams\" href=\"https://en.wikipedia.org/wiki/J._J._Abrams\"\u003eJ. J. Abrams\u003c/a\u003e, we had the honor of working on this \u003ca style=\"text-decoration: none; color: inherit !important;\" title=\"check domain owner\" href=\"http://www.ipizer.info\"\u003eaddition to\u003c/a\u003e the Star Trek film franchise. \u003ca title=\"wall cloud\" href=\"http://www.clofind.xyz\"\u003eAdvanced Foam got\u003c/a\u003e the chance to create several foam details for a large scale model of the U.S.S. Enterprise spaceship.\u003c/p\u003e\n\n\n\u003cfigure class=\"wp-block-image size-large\"\u003e\u003cimg loading=\"lazy\" width=\"1024\" height=\"432\" src=\"https://advancedfoam.com/wp-content/uploads/2020/10/Screen-shot-2011-06-16-at-1.14.56-PM-1024x432.png\" alt=\"\" class=\"wp-image-1849\" srcset=\"https://advancedfoam.com/wp-content/uploads/2020/10/Screen-shot-2011-06-16-at-1.14.56-PM-1024x432.png 1024w, https://advancedfoam.com/wp-content/uploads/2020/10/Screen-shot-2011-06-16-at-1.14.56-PM-300x127.png 300w, https://advancedfoam.com/wp-content/uploads/2020/10/Screen-shot-2011-06-16-at-1.14.56-PM-768x324.png 768w, https://advancedfoam.com/wp-content/uploads/2020/10/Screen-shot-2011-06-16-at-1.14.56-PM.png 1440w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" /\u003e\u003cfigcaption\u003eFoam model of the USS Enterprise.\u003c/figcaption\u003e\u003c/figure\u003e\n\n\n\n\u003cp\u003e\u003c/p\u003e\n","protected":false},"excerpt":{"rendered":"\u003cp\u003eFor the 2009 science fiction and adventure film based off of the TV show with the same name and directed by J. J. Abrams, we had the honor of working on this addition to the Star Trek film franchise. Advanced Foam got the chance to create several foam details for a large scale model of the U.S.S. Enterprise spaceship.\u003c/p\u003e\n","protected":false},"author":1,"featured_media":1580,"comment_status":"open","ping_status":"open","sticky":false,"template":"","format":"standard","meta":[],"categories":[22,3],"tags":[],"better_featured_image":{"id":1580,"alt_text":"Star Trek movie screenshot preview","caption":"Star Trek movie screenshot preview","description":"Advanced Foam made custom pieces for the Star Trek movie.","media_type":"image","media_details":{"width":480,"height":640,"file":"2020/09/starTrek_preview.png","sizes":{"medium":{"file":"starTrek_preview-225x300.png","width":225,"height":300,"mime-type":"image/png","source_url":"https://advancedfoam.com/wp-content/uploads/2020/09/starTrek_preview-225x300.png"},"thumbnail":{"file":"starTrek_preview-150x150.png","width":150,"height":150,"mime-type":"image/png","source_url":"https://advancedfoam.com/wp-content/uploads/2020/09/starTrek_preview-150x150.png"}},"image_meta":{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0","keywords":[]}},"post":null,"source_url":"https://advancedfoam.com/wp-content/uploads/2020/09/starTrek_preview.png"},"_links":{"self":[{"href":"https://advancedfoam.com/wp-json/wp/v2/posts/21"}],"collection":[{"href":"https://advancedfoam.com/wp-json/wp/v2/posts"}],"about":[{"href":"https://advancedfoam.com/wp-json/wp/v2/types/post"}],"author":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/users/1"}],"replies":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/comments?post=21"}],"version-history":[{"count":5,"href":"https://advancedfoam.com/wp-json/wp/v2/posts/21/revisions"}],"predecessor-version":[{"id":1850,"href":"https://advancedfoam.com/wp-json/wp/v2/posts/21/revisions/1850"}],"wp:featuredmedia":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/media/1580"}],"wp:attachment":[{"href":"https://advancedfoam.com/wp-json/wp/v2/media?parent=21"}],"wp:term":[{"taxonomy":"category","embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/categories?post=21"},{"taxonomy":"post_tag","embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/tags?post=21"}],"curies":[{"name":"wp","href":"https://api.w.org/{rel}","templated":true}]}},{"id":458,"date":"2011-06-25T08:32:20","date_gmt":"2011-06-25T15:32:20","guid":{"rendered":"http://studio.advancedfoam.com/?p=209"},"modified":"2020-10-24T09:53:07","modified_gmt":"2020-10-24T16:53:07","slug":"transformers-3","status":"publish","type":"post","link":"https://advancedfoam.com/transformers-3/","title":{"rendered":"Transformers 3"},"content":{"rendered":"\n\u003cfigure class=\"wp-block-image size-large is-resized\"\u003e\u003cimg loading=\"lazy\" src=\"https://advancedfoam.com/wp-content/uploads/2020/10/Transformers_dark_of_the_moon_ver5.jpg\" alt=\"\" class=\"wp-image-1851\" width=\"384\" height=\"571\" srcset=\"https://advancedfoam.com/wp-content/uploads/2020/10/Transformers_dark_of_the_moon_ver5.jpg 259w, https://advancedfoam.com/wp-content/uploads/2020/10/Transformers_dark_of_the_moon_ver5-202x300.jpg 202w\" sizes=\"(max-width: 384px) 100vw, 384px\" /\u003e\u003c/figure\u003e\n\n\n\u003cp\u003e \u003c/p\u003e\n\u003cp\u003eFor the feature film Transformers 3: Dark of the Moon,  a 2011 American science fiction action film directed by \u003ca title=\"Michael Bay\" href=\"https://en.wikipedia.org/wiki/Michael_Bay\"\u003eMichael Bay\u003c/a\u003e and based on the \u003ci\u003eTransformers\u003c/i\u003e toy line, we were asked for our help making set props. Advanced Foam created \u003ca style=\"text-decoration: none; color: inherit !important;\" title=\"wall cloud\" href=\"http://www.clofind.xyz\"\u003ea number\u003c/a\u003e of architectural set features, like the ones seen below.\u003c/p\u003e\n\n\n\u003cfigure class=\"wp-block-image size-large\"\u003e\u003cimg loading=\"lazy\" width=\"807\" height=\"450\" src=\"https://advancedfoam.com/wp-content/uploads/2020/10/Transformers_pier.png\" alt=\"Transformers 3: Dark Side of the Moon architectural prop\" class=\"wp-image-1852\" srcset=\"https://advancedfoam.com/wp-content/uploads/2020/10/Transformers_pier.png 807w, https://advancedfoam.com/wp-content/uploads/2020/10/Transformers_pier-300x167.png 300w, https://advancedfoam.com/wp-content/uploads/2020/10/Transformers_pier-768x428.png 768w\" sizes=\"(max-width: 807px) 100vw, 807px\" /\u003e\u003cfigcaption\u003eTransformers 3: Dark Side of the Moon architectural prop\u003c/figcaption\u003e\u003c/figure\u003e\n\n\n\n\u003cfigure class=\"wp-block-image size-large\"\u003e\u003cimg loading=\"lazy\" width=\"1024\" height=\"426\" src=\"https://advancedfoam.com/wp-content/uploads/2020/10/Transformers3_columns-1024x426.png\" alt=\"Transformers 3: Dark Side of the Moon foam columns\" class=\"wp-image-1853\" srcset=\"https://advancedfoam.com/wp-content/uploads/2020/10/Transformers3_columns-1024x426.png 1024w, https://advancedfoam.com/wp-content/uploads/2020/10/Transformers3_columns-300x125.png 300w, https://advancedfoam.com/wp-content/uploads/2020/10/Transformers3_columns-768x319.png 768w, https://advancedfoam.com/wp-content/uploads/2020/10/Transformers3_columns.png 1082w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" /\u003e\u003cfigcaption\u003eTransformers 3: Dark Side of the Moon foam columns\u003c/figcaption\u003e\u003c/figure\u003e\n\n\n\n\u003cp\u003e\u003c/p\u003e\n","protected":false},"excerpt":{"rendered":"\u003cp\u003e  For the feature film Transformers 3: Dark of the Moon,  a 2011 American science fiction action film directed by Michael Bay and based on the Transformers toy line, we were asked for our help making set props. Advanced Foam created a number of architectural set features, like the ones seen below.\u003c/p\u003e\n","protected":false},"author":1,"featured_media":1852,"comment_status":"open","ping_status":"open","sticky":false,"template":"","format":"standard","meta":[],"categories":[22,3],"tags":[],"better_featured_image":{"id":1852,"alt_text":"Transformers 3: Dark Side of the Moon architectural prop","caption":"Transformers 3: Dark Side of the Moon architectural prop","description":"Transformers 3: Dark Side of the Moon architectural prop","media_type":"image","media_details":{"width":807,"height":450,"file":"2020/10/Transformers_pier.png","sizes":{"medium":{"file":"Transformers_pier-300x167.png","width":300,"height":167,"mime-type":"image/png","source_url":"https://advancedfoam.com/wp-content/uploads/2020/10/Transformers_pier-300x167.png"},"thumbnail":{"file":"Transformers_pier-150x150.png","width":150,"height":150,"mime-type":"image/png","source_url":"https://advancedfoam.com/wp-content/uploads/2020/10/Transformers_pier-150x150.png"},"medium_large":{"file":"Transformers_pier-768x428.png","width":768,"height":428,"mime-type":"image/png","source_url":"https://advancedfoam.com/wp-content/uploads/2020/10/Transformers_pier-768x428.png"}},"image_meta":{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0","keywords":[]}},"post":458,"source_url":"https://advancedfoam.com/wp-content/uploads/2020/10/Transformers_pier.png"},"_links":{"self":[{"href":"https://advancedfoam.com/wp-json/wp/v2/posts/458"}],"collection":[{"href":"https://advancedfoam.com/wp-json/wp/v2/posts"}],"about":[{"href":"https://advancedfoam.com/wp-json/wp/v2/types/post"}],"author":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/users/1"}],"replies":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/comments?post=458"}],"version-history":[{"count":5,"href":"https://advancedfoam.com/wp-json/wp/v2/posts/458/revisions"}],"predecessor-version":[{"id":1854,"href":"https://advancedfoam.com/wp-json/wp/v2/posts/458/revisions/1854"}],"wp:featuredmedia":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/media/1852"}],"wp:attachment":[{"href":"https://advancedfoam.com/wp-json/wp/v2/media?parent=458"}],"wp:term":[{"taxonomy":"category","embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/categories?post=458"},{"taxonomy":"post_tag","embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/tags?post=458"}],"curies":[{"name":"wp","href":"https://api.w.org/{rel}","templated":true}]}},{"id":48,"date":"2011-06-24T13:11:07","date_gmt":"2011-06-24T20:11:07","guid":{"rendered":"http://studio.advancedfoam.com/?p=48"},"modified":"2020-10-24T09:53:13","modified_gmt":"2020-10-24T16:53:13","slug":"nissan-cube","status":"publish","type":"post","link":"https://advancedfoam.com/nissan-cube/","title":{"rendered":"Nissan Cube"},"content":{"rendered":"\u003cp\u003e\u003cdiv id=\"attachment_49\" style=\"width: 426px\" class=\"wp-caption alignnone\"\u003e\u003ca href=\"http://advancedfoam.com/wp-content/uploads/2011/07/IMG_23151.jpg\"\u003e\u003cimg aria-describedby=\"caption-attachment-49\" loading=\"lazy\" class=\"wp-image-49 size-full\" title=\"CUBE\" src=\"http://advancedfoam.com/wp-content/uploads/2011/07/IMG_23151.jpg\" alt=\"Nissan Cube Sculpture\" width=\"416\" height=\"425\" /\u003e\u003c/a\u003e\u003cp id=\"caption-attachment-49\" class=\"wp-caption-text\"\u003eNissan Cube Sculpture\u003c/p\u003e\u003c/div\u003e\u003c/p\u003e\n\u003cp\u003eAs part of a campaign to promote the Nissan Cube Advanced Foam built ten of these 6\u0026#8242; x 6\u0026#8242; x 6\u0026#8242; structures, with cutouts to resemble the car\u0026#8217;s rounded, asymmetrical windows. Half-inch-thick heat-formed acrylic windows \u003ca style=\"text-decoration: none; color: inherit !important;\" title=\"domain list\" href=\"http://www.domtrafi.xyz\"\u003ewere placed\u003c/a\u003e inside before the tops were added. All exterior surfaces were Polycoated before finishing by the customer.\u003c/p\u003e\n\u003cp\u003e\u003cem\u003e\u003cspan style=\"font-family: Arial;\"\u003eAbove: One of the finished Cubes photographed at The Grove in Los Angeles. The Cubes are scheduled to be displayed at various locations across the U.S\u003c/span\u003e\u003c/em\u003e.\u003c/p\u003e\n","protected":false},"excerpt":{"rendered":"\u003cp\u003eAs part of a campaign to promote the Nissan Cube Advanced Foam built ten of these 6\u0026#8242; x 6\u0026#8242; x 6\u0026#8242; structures, with cutouts to resemble the car\u0026#8217;s rounded, asymmetrical windows. \u003c/p\u003e\n","protected":false},"author":1,"featured_media":276,"comment_status":"open","ping_status":"open","sticky":false,"template":"","format":"standard","meta":[],"categories":[22,3],"tags":[],"better_featured_image":{"id":276,"alt_text":"Nissan Cube","caption":"Nissan Cube","description":"Nissan Cube","media_type":"image","media_details":{"width":"416","height":"425","hwstring_small":"height='96' width='93'","file":"2011/06/IMG_231521.jpg","sizes":{"thumbnail":{"file":"IMG_231521-150x150.jpg","width":"150","height":"150","source_url":"https://advancedfoam.com/wp-content/uploads/2011/06/IMG_231521-150x150.jpg"},"medium":{"file":"IMG_231521-293x300.jpg","width":"293","height":"300","source_url":"https://advancedfoam.com/wp-content/uploads/2011/06/IMG_231521-293x300.jpg"},"post-thumbnail":{"file":"IMG_231521-416x198.jpg","width":"416","height":"198","source_url":"https://advancedfoam.com/wp-content/uploads/2011/06/IMG_231521-416x198.jpg"}},"image_meta":{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":""}},"post":null,"source_url":"https://advancedfoam.com/wp-content/uploads/2011/06/IMG_231521.jpg"},"_links":{"self":[{"href":"https://advancedfoam.com/wp-json/wp/v2/posts/48"}],"collection":[{"href":"https://advancedfoam.com/wp-json/wp/v2/posts"}],"about":[{"href":"https://advancedfoam.com/wp-json/wp/v2/types/post"}],"author":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/users/1"}],"replies":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/comments?post=48"}],"version-history":[{"count":5,"href":"https://advancedfoam.com/wp-json/wp/v2/posts/48/revisions"}],"predecessor-version":[{"id":1844,"href":"https://advancedfoam.com/wp-json/wp/v2/posts/48/revisions/1844"}],"wp:featuredmedia":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/media/276"}],"wp:attachment":[{"href":"https://advancedfoam.com/wp-json/wp/v2/media?parent=48"}],"wp:term":[{"taxonomy":"category","embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/categories?post=48"},{"taxonomy":"post_tag","embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/tags?post=48"}],"curies":[{"name":"wp","href":"https://api.w.org/{rel}","templated":true}]}},{"id":58,"date":"2011-06-23T13:36:54","date_gmt":"2011-06-23T20:36:54","guid":{"rendered":"http://studio.advancedfoam.com/?p=58"},"modified":"2020-10-24T09:53:20","modified_gmt":"2020-10-24T16:53:20","slug":"hole-in-the-wall","status":"publish","type":"post","link":"https://advancedfoam.com/hole-in-the-wall/","title":{"rendered":"Hole in the Wall"},"content":{"rendered":"\n\u003ch2\u003e\u0026nbsp;\u003c/h2\u003e\n\n\n\n\u003cp\u003eAdvanced Foam turned out nearly 300 traveling foam walls for the game show \u003cem\u003eHole in the Wall\u003c/em\u003e.\u003c/p\u003e\n\n\n\n\u003cfigure class=\"wp-block-image size-large\"\u003e\u003cimg loading=\"lazy\" width=\"685\" height=\"450\" src=\"https://advancedfoam.com/wp-content/uploads/2011/06/hole-in-the-wall-fox-red-team1.jpg\" alt=\"HOLE IN THE WALL\" class=\"wp-image-642\" srcset=\"https://advancedfoam.com/wp-content/uploads/2011/06/hole-in-the-wall-fox-red-team1.jpg 685w, https://advancedfoam.com/wp-content/uploads/2011/06/hole-in-the-wall-fox-red-team1-300x197.jpg 300w\" sizes=\"(max-width: 685px) 100vw, 685px\" /\u003e\u003cfigcaption\u003eHOLE IN THE WALL\u003c/figcaption\u003e\u003c/figure\u003e\n\n\n\n\u003cfigure class=\"wp-block-image size-large\"\u003e\u003cimg loading=\"lazy\" width=\"560\" height=\"420\" src=\"https://advancedfoam.com/wp-content/uploads/2020/10/studio_holeInTheWall.jpg\" alt=\"\" class=\"wp-image-1846\" srcset=\"https://advancedfoam.com/wp-content/uploads/2020/10/studio_holeInTheWall.jpg 560w, https://advancedfoam.com/wp-content/uploads/2020/10/studio_holeInTheWall-300x225.jpg 300w\" sizes=\"(max-width: 560px) 100vw, 560px\" /\u003e\u003c/figure\u003e\n","protected":false},"excerpt":{"rendered":"\u003cp\u003eAdvanced Foam turned out nearly 300 traveling foam walls for the game show Hole in the Wall.\u003c/p\u003e\n","protected":false},"author":1,"featured_media":1846,"comment_status":"open","ping_status":"open","sticky":false,"template":"","format":"standard","meta":[],"categories":[22,3],"tags":[],"better_featured_image":{"id":1846,"alt_text":"Hole in the Wall","caption":"Hole in the Wall","description":"Hole in the Wall","media_type":"image","media_details":{"width":560,"height":420,"file":"2020/10/studio_holeInTheWall.jpg","sizes":{"medium":{"file":"studio_holeInTheWall-300x225.jpg","width":300,"height":225,"mime-type":"image/jpeg","source_url":"https://advancedfoam.com/wp-content/uploads/2020/10/studio_holeInTheWall-300x225.jpg"},"thumbnail":{"file":"studio_holeInTheWall-150x150.jpg","width":150,"height":150,"mime-type":"image/jpeg","source_url":"https://advancedfoam.com/wp-content/uploads/2020/10/studio_holeInTheWall-150x150.jpg"}},"image_meta":{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0","keywords":[]}},"post":58,"source_url":"https://advancedfoam.com/wp-content/uploads/2020/10/studio_holeInTheWall.jpg"},"_links":{"self":[{"href":"https://advancedfoam.com/wp-json/wp/v2/posts/58"}],"collection":[{"href":"https://advancedfoam.com/wp-json/wp/v2/posts"}],"about":[{"href":"https://advancedfoam.com/wp-json/wp/v2/types/post"}],"author":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/users/1"}],"replies":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/comments?post=58"}],"version-history":[{"count":5,"href":"https://advancedfoam.com/wp-json/wp/v2/posts/58/revisions"}],"predecessor-version":[{"id":1847,"href":"https://advancedfoam.com/wp-json/wp/v2/posts/58/revisions/1847"}],"wp:featuredmedia":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/media/1846"}],"wp:attachment":[{"href":"https://advancedfoam.com/wp-json/wp/v2/media?parent=58"}],"wp:term":[{"taxonomy":"category","embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/categories?post=58"},{"taxonomy":"post_tag","embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/tags?post=58"}],"curies":[{"name":"wp","href":"https://api.w.org/{rel}","templated":true}]}}]}},"page":"/studio","query":{},"buildId":"HAfs2AVYDM_PHvnVmJyQS","runtimeConfig":{},"nextExport":true,"isFallback":false,"gip":true,"head":[["title",{"children":"Advanced Foam"}],["meta",{"name":"Advanced Foam Inc.","content":"Advanced Foam Inc. - Foam Fabrication and props made in California."}],["meta",{"charSet":"utf-8"}],["meta",{"name":"viewport","content":"initial-scale=1.0, width=device-width"}]]}</script><script nomodule="" src="/_next/static/chunks/polyfills-8bebc7aacc0076174a73.js"></script><script src="/_next/static/chunks/main-316bbd78e6029733d79a.js" async=""></script><script src="/_next/static/chunks/webpack-e067438c4cf4ef2ef178.js" async=""></script><script src="/_next/static/chunks/framework.1d36bc031662b4dc4c28.js" async=""></script><script src="/_next/static/chunks/commons.fea7482b100b72cadc8f.js" async=""></script><script src="/_next/static/chunks/96c1ae029ad230b058ae1974ec5096c1a5e58baf.20f538b0492f717bdf47.js" async=""></script><script src="/_next/static/chunks/18548bddf1a4f9b0bb0515adccde54fa4f78afcd.e97a68b0a43790a2be72.js" async=""></script><script src="/_next/static/chunks/pages/_app-cf34b6c6dcbd8e5e19d8.js" async=""></script><script src="/_next/static/chunks/52410961c79984d95a83f41e23279451651567a8.0eecca90880bdb72a7cb.js" async=""></script><script src="/_next/static/chunks/af59b78634e634ff824f14c7f9e06d0e55cb0614.14215d4d4f09a4de9724.js" async=""></script><script src="/_next/static/chunks/pages/studio-ecb41eba21f0dfb274ec.js" async=""></script><script src="/_next/static/HAfs2AVYDM_PHvnVmJyQS/_buildManifest.js" async=""></script><script src="/_next/static/HAfs2AVYDM_PHvnVmJyQS/_ssgManifest.js" async=""></script></body></html>

@@ -7,7 +7,7 @@ import Hero from '../components/hero';
 
 const domain = 'studio';
 
-export default function Construction({ postList }){
+export default function Studio({ postList }){
 
     return (
         <Layout domain={domain}>
@@ -18,7 +18,7 @@ export default function Construction({ postList }){
     )
 }
 
-Construction.getInitialProps = async () => {
+Studio.getInitialProps = async () => {
     //Studio projects
     const response = await axios.get(`https://www.advancedfoam.com/wp-json/wp/v2/posts?categories=3`);
             //console.log(response)

@@ -1,0 +1,1655 @@
+<!DOCTYPE html><html lang="en"><head><meta name="theme-color" content="#9c27b0"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap"/><title>Advanced Foam</title><meta name="Advanced Foam Inc." content="Advanced Foam Inc. - Foam Fabrication and props made in California."/><meta charSet="utf-8"/><meta name="viewport" content="initial-scale=1.0, width=device-width"/><noscript data-n-css="true"></noscript><link rel="preload" href="/_next/static/chunks/main-316bbd78e6029733d79a.js" as="script"/><link rel="preload" href="/_next/static/chunks/webpack-e067438c4cf4ef2ef178.js" as="script"/><link rel="preload" href="/_next/static/chunks/framework.1d36bc031662b4dc4c28.js" as="script"/><link rel="preload" href="/_next/static/chunks/commons.fea7482b100b72cadc8f.js" as="script"/><link rel="preload" href="/_next/static/chunks/96c1ae029ad230b058ae1974ec5096c1a5e58baf.20f538b0492f717bdf47.js" as="script"/><link rel="preload" href="/_next/static/chunks/18548bddf1a4f9b0bb0515adccde54fa4f78afcd.e97a68b0a43790a2be72.js" as="script"/><link rel="preload" href="/_next/static/chunks/pages/_app-cf34b6c6dcbd8e5e19d8.js" as="script"/><link rel="preload" href="/_next/static/chunks/52410961c79984d95a83f41e23279451651567a8.0eecca90880bdb72a7cb.js" as="script"/><link rel="preload" href="/_next/static/chunks/c62b1f5506a3d85383b562dbd5dbc47675d7d427.0cfe078be4acccc5af6f.js" as="script"/><link rel="preload" href="/_next/static/chunks/pages/home-f89fde3b1ff3270db409.js" as="script"/><style id="jss-server-side">.MuiSvgIcon-root {
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  font-size: 1.5rem;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  flex-shrink: 0;
+  user-select: none;
+}
+.MuiSvgIcon-colorPrimary {
+  color: #9c27b0;
+}
+.MuiSvgIcon-colorSecondary {
+  color: #651fff;
+}
+.MuiSvgIcon-colorAction {
+  color: rgba(0, 0, 0, 0.54);
+}
+.MuiSvgIcon-colorError {
+  color: #f44336;
+}
+.MuiSvgIcon-colorDisabled {
+  color: rgba(0, 0, 0, 0.26);
+}
+.MuiSvgIcon-fontSizeInherit {
+  font-size: inherit;
+}
+.MuiSvgIcon-fontSizeSmall {
+  font-size: 1.25rem;
+}
+.MuiSvgIcon-fontSizeLarge {
+  font-size: 2.1875rem;
+}
+.MuiPaper-root {
+  color: rgba(0, 0, 0, 0.87);
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  background-color: #fff;
+}
+.MuiPaper-rounded {
+  border-radius: 4px;
+}
+.MuiPaper-outlined {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+.MuiPaper-elevation0 {
+  box-shadow: none;
+}
+.MuiPaper-elevation1 {
+  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation2 {
+  box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation3 {
+  box-shadow: 0px 3px 3px -2px rgba(0,0,0,0.2),0px 3px 4px 0px rgba(0,0,0,0.14),0px 1px 8px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation4 {
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation5 {
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation6 {
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation7 {
+  box-shadow: 0px 4px 5px -2px rgba(0,0,0,0.2),0px 7px 10px 1px rgba(0,0,0,0.14),0px 2px 16px 1px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation8 {
+  box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation9 {
+  box-shadow: 0px 5px 6px -3px rgba(0,0,0,0.2),0px 9px 12px 1px rgba(0,0,0,0.14),0px 3px 16px 2px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation10 {
+  box-shadow: 0px 6px 6px -3px rgba(0,0,0,0.2),0px 10px 14px 1px rgba(0,0,0,0.14),0px 4px 18px 3px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation11 {
+  box-shadow: 0px 6px 7px -4px rgba(0,0,0,0.2),0px 11px 15px 1px rgba(0,0,0,0.14),0px 4px 20px 3px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation12 {
+  box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation13 {
+  box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 13px 19px 2px rgba(0,0,0,0.14),0px 5px 24px 4px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation14 {
+  box-shadow: 0px 7px 9px -4px rgba(0,0,0,0.2),0px 14px 21px 2px rgba(0,0,0,0.14),0px 5px 26px 4px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation15 {
+  box-shadow: 0px 8px 9px -5px rgba(0,0,0,0.2),0px 15px 22px 2px rgba(0,0,0,0.14),0px 6px 28px 5px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation16 {
+  box-shadow: 0px 8px 10px -5px rgba(0,0,0,0.2),0px 16px 24px 2px rgba(0,0,0,0.14),0px 6px 30px 5px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation17 {
+  box-shadow: 0px 8px 11px -5px rgba(0,0,0,0.2),0px 17px 26px 2px rgba(0,0,0,0.14),0px 6px 32px 5px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation18 {
+  box-shadow: 0px 9px 11px -5px rgba(0,0,0,0.2),0px 18px 28px 2px rgba(0,0,0,0.14),0px 7px 34px 6px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation19 {
+  box-shadow: 0px 9px 12px -6px rgba(0,0,0,0.2),0px 19px 29px 2px rgba(0,0,0,0.14),0px 7px 36px 6px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation20 {
+  box-shadow: 0px 10px 13px -6px rgba(0,0,0,0.2),0px 20px 31px 3px rgba(0,0,0,0.14),0px 8px 38px 7px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation21 {
+  box-shadow: 0px 10px 13px -6px rgba(0,0,0,0.2),0px 21px 33px 3px rgba(0,0,0,0.14),0px 8px 40px 7px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation22 {
+  box-shadow: 0px 10px 14px -6px rgba(0,0,0,0.2),0px 22px 35px 3px rgba(0,0,0,0.14),0px 8px 42px 7px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation23 {
+  box-shadow: 0px 11px 14px -7px rgba(0,0,0,0.2),0px 23px 36px 3px rgba(0,0,0,0.14),0px 9px 44px 8px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation24 {
+  box-shadow: 0px 11px 15px -7px rgba(0,0,0,0.2),0px 24px 38px 3px rgba(0,0,0,0.14),0px 9px 46px 8px rgba(0,0,0,0.12);
+}
+.MuiButtonBase-root {
+  color: inherit;
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  display: inline-flex;
+  outline: 0;
+  padding: 0;
+  position: relative;
+  align-items: center;
+  user-select: none;
+  border-radius: 0;
+  vertical-align: middle;
+  -moz-appearance: none;
+  justify-content: center;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.MuiButtonBase-root::-moz-focus-inner {
+  border-style: none;
+}
+.MuiButtonBase-root.Mui-disabled {
+  cursor: default;
+  pointer-events: none;
+}
+@media print {
+  .MuiButtonBase-root {
+    color-adjust: exact;
+  }
+}
+  .MuiIconButton-root {
+    flex: 0 0 auto;
+    color: rgba(0, 0, 0, 0.54);
+    padding: 12px;
+    overflow: visible;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 50%;
+  }
+  .MuiIconButton-root:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+  }
+  .MuiIconButton-root.Mui-disabled {
+    color: rgba(0, 0, 0, 0.26);
+    background-color: transparent;
+  }
+@media (hover: none) {
+  .MuiIconButton-root:hover {
+    background-color: transparent;
+  }
+}
+  .MuiIconButton-edgeStart {
+    margin-left: -12px;
+  }
+  .MuiIconButton-sizeSmall.MuiIconButton-edgeStart {
+    margin-left: -3px;
+  }
+  .MuiIconButton-edgeEnd {
+    margin-right: -12px;
+  }
+  .MuiIconButton-sizeSmall.MuiIconButton-edgeEnd {
+    margin-right: -3px;
+  }
+  .MuiIconButton-colorInherit {
+    color: inherit;
+  }
+  .MuiIconButton-colorPrimary {
+    color: #9c27b0;
+  }
+  .MuiIconButton-colorPrimary:hover {
+    background-color: rgba(156, 39, 176, 0.04);
+  }
+@media (hover: none) {
+  .MuiIconButton-colorPrimary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiIconButton-colorSecondary {
+    color: #651fff;
+  }
+  .MuiIconButton-colorSecondary:hover {
+    background-color: rgba(101, 31, 255, 0.04);
+  }
+@media (hover: none) {
+  .MuiIconButton-colorSecondary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiIconButton-sizeSmall {
+    padding: 3px;
+    font-size: 1.125rem;
+  }
+  .MuiIconButton-label {
+    width: 100%;
+    display: flex;
+    align-items: inherit;
+    justify-content: inherit;
+  }
+  .MuiAppBar-root {
+    width: 100%;
+    display: flex;
+    z-index: 1100;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    flex-direction: column;
+  }
+  .MuiAppBar-positionFixed {
+    top: 0;
+    left: auto;
+    right: 0;
+    position: fixed;
+  }
+@media print {
+  .MuiAppBar-positionFixed {
+    position: absolute;
+  }
+}
+  .MuiAppBar-positionAbsolute {
+    top: 0;
+    left: auto;
+    right: 0;
+    position: absolute;
+  }
+  .MuiAppBar-positionSticky {
+    top: 0;
+    left: auto;
+    right: 0;
+    position: sticky;
+  }
+  .MuiAppBar-positionStatic {
+    position: static;
+  }
+  .MuiAppBar-positionRelative {
+    position: relative;
+  }
+  .MuiAppBar-colorDefault {
+    color: rgba(0, 0, 0, 0.87);
+    background-color: #f5f5f5;
+  }
+  .MuiAppBar-colorPrimary {
+    color: #fff;
+    background-color: #9c27b0;
+  }
+  .MuiAppBar-colorSecondary {
+    color: #fff;
+    background-color: #651fff;
+  }
+  .MuiAppBar-colorInherit {
+    color: inherit;
+  }
+  .MuiAppBar-colorTransparent {
+    color: inherit;
+    background-color: transparent;
+  }
+  .MuiTypography-root {
+    margin: 0;
+  }
+  .MuiTypography-body2 {
+    font-size: 0.875rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.43;
+    letter-spacing: 0.01071em;
+  }
+  .MuiTypography-body1 {
+    font-size: 1rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+  }
+  .MuiTypography-caption {
+    font-size: 0.75rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.66;
+    letter-spacing: 0.03333em;
+  }
+  .MuiTypography-button {
+    font-size: 0.875rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+  }
+  .MuiTypography-h1 {
+    font-size: 6rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 300;
+    line-height: 1.167;
+    letter-spacing: -0.01562em;
+  }
+  .MuiTypography-h2 {
+    font-size: 3.75rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 300;
+    line-height: 1.2;
+    letter-spacing: -0.00833em;
+  }
+  .MuiTypography-h3 {
+    font-size: 3rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.167;
+    letter-spacing: 0em;
+  }
+  .MuiTypography-h4 {
+    font-size: 2.125rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.235;
+    letter-spacing: 0.00735em;
+  }
+  .MuiTypography-h5 {
+    font-size: 1.5rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.334;
+    letter-spacing: 0em;
+  }
+  .MuiTypography-h6 {
+    font-size: 1.25rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.0075em;
+  }
+  .MuiTypography-subtitle1 {
+    font-size: 1rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    letter-spacing: 0.00938em;
+  }
+  .MuiTypography-subtitle2 {
+    font-size: 0.875rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.57;
+    letter-spacing: 0.00714em;
+  }
+  .MuiTypography-overline {
+    font-size: 0.75rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 2.66;
+    letter-spacing: 0.08333em;
+    text-transform: uppercase;
+  }
+  .MuiTypography-srOnly {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+  }
+  .MuiTypography-alignLeft {
+    text-align: left;
+  }
+  .MuiTypography-alignCenter {
+    text-align: center;
+  }
+  .MuiTypography-alignRight {
+    text-align: right;
+  }
+  .MuiTypography-alignJustify {
+    text-align: justify;
+  }
+  .MuiTypography-noWrap {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .MuiTypography-gutterBottom {
+    margin-bottom: 0.35em;
+  }
+  .MuiTypography-paragraph {
+    margin-bottom: 16px;
+  }
+  .MuiTypography-colorInherit {
+    color: inherit;
+  }
+  .MuiTypography-colorPrimary {
+    color: #9c27b0;
+  }
+  .MuiTypography-colorSecondary {
+    color: #651fff;
+  }
+  .MuiTypography-colorTextPrimary {
+    color: rgba(0, 0, 0, 0.87);
+  }
+  .MuiTypography-colorTextSecondary {
+    color: rgba(0, 0, 0, 0.54);
+  }
+  .MuiTypography-colorError {
+    color: #f44336;
+  }
+  .MuiTypography-displayInline {
+    display: inline;
+  }
+  .MuiTypography-displayBlock {
+    display: block;
+  }
+  .MuiButton-root {
+    color: rgba(0, 0, 0, 0.87);
+    padding: 6px 16px;
+    font-size: 0.875rem;
+    min-width: 64px;
+    box-sizing: border-box;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    border-radius: 4px;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+  }
+  .MuiButton-root:hover {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.04);
+  }
+  .MuiButton-root.Mui-disabled {
+    color: rgba(0, 0, 0, 0.26);
+  }
+@media (hover: none) {
+  .MuiButton-root:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-root:hover.Mui-disabled {
+    background-color: transparent;
+  }
+  .MuiButton-label {
+    width: 100%;
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+  }
+  .MuiButton-text {
+    padding: 6px 8px;
+  }
+  .MuiButton-textPrimary {
+    color: #9c27b0;
+  }
+  .MuiButton-textPrimary:hover {
+    background-color: rgba(156, 39, 176, 0.04);
+  }
+@media (hover: none) {
+  .MuiButton-textPrimary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-textSecondary {
+    color: #651fff;
+  }
+  .MuiButton-textSecondary:hover {
+    background-color: rgba(101, 31, 255, 0.04);
+  }
+@media (hover: none) {
+  .MuiButton-textSecondary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-outlined {
+    border: 1px solid rgba(0, 0, 0, 0.23);
+    padding: 5px 15px;
+  }
+  .MuiButton-outlined.Mui-disabled {
+    border: 1px solid rgba(0, 0, 0, 0.12);
+  }
+  .MuiButton-outlinedPrimary {
+    color: #9c27b0;
+    border: 1px solid rgba(156, 39, 176, 0.5);
+  }
+  .MuiButton-outlinedPrimary:hover {
+    border: 1px solid #9c27b0;
+    background-color: rgba(156, 39, 176, 0.04);
+  }
+@media (hover: none) {
+  .MuiButton-outlinedPrimary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-outlinedSecondary {
+    color: #651fff;
+    border: 1px solid rgba(101, 31, 255, 0.5);
+  }
+  .MuiButton-outlinedSecondary:hover {
+    border: 1px solid #651fff;
+    background-color: rgba(101, 31, 255, 0.04);
+  }
+  .MuiButton-outlinedSecondary.Mui-disabled {
+    border: 1px solid rgba(0, 0, 0, 0.26);
+  }
+@media (hover: none) {
+  .MuiButton-outlinedSecondary:hover {
+    background-color: transparent;
+  }
+}
+  .MuiButton-contained {
+    color: rgba(0, 0, 0, 0.87);
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+    background-color: #e0e0e0;
+  }
+  .MuiButton-contained:hover {
+    box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+    background-color: #d5d5d5;
+  }
+  .MuiButton-contained.Mui-focusVisible {
+    box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+  }
+  .MuiButton-contained:active {
+    box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+  }
+  .MuiButton-contained.Mui-disabled {
+    color: rgba(0, 0, 0, 0.26);
+    box-shadow: none;
+    background-color: rgba(0, 0, 0, 0.12);
+  }
+@media (hover: none) {
+  .MuiButton-contained:hover {
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+    background-color: #e0e0e0;
+  }
+}
+  .MuiButton-contained:hover.Mui-disabled {
+    background-color: rgba(0, 0, 0, 0.12);
+  }
+  .MuiButton-containedPrimary {
+    color: #fff;
+    background-color: #9c27b0;
+  }
+  .MuiButton-containedPrimary:hover {
+    background-color: #7b1fa2;
+  }
+@media (hover: none) {
+  .MuiButton-containedPrimary:hover {
+    background-color: #9c27b0;
+  }
+}
+  .MuiButton-containedSecondary {
+    color: #fff;
+    background-color: #651fff;
+  }
+  .MuiButton-containedSecondary:hover {
+    background-color: #6200ea;
+  }
+@media (hover: none) {
+  .MuiButton-containedSecondary:hover {
+    background-color: #651fff;
+  }
+}
+  .MuiButton-disableElevation {
+    box-shadow: none;
+  }
+  .MuiButton-disableElevation:hover {
+    box-shadow: none;
+  }
+  .MuiButton-disableElevation.Mui-focusVisible {
+    box-shadow: none;
+  }
+  .MuiButton-disableElevation:active {
+    box-shadow: none;
+  }
+  .MuiButton-disableElevation.Mui-disabled {
+    box-shadow: none;
+  }
+  .MuiButton-colorInherit {
+    color: inherit;
+    border-color: currentColor;
+  }
+  .MuiButton-textSizeSmall {
+    padding: 4px 5px;
+    font-size: 0.8125rem;
+  }
+  .MuiButton-textSizeLarge {
+    padding: 8px 11px;
+    font-size: 0.9375rem;
+  }
+  .MuiButton-outlinedSizeSmall {
+    padding: 3px 9px;
+    font-size: 0.8125rem;
+  }
+  .MuiButton-outlinedSizeLarge {
+    padding: 7px 21px;
+    font-size: 0.9375rem;
+  }
+  .MuiButton-containedSizeSmall {
+    padding: 4px 10px;
+    font-size: 0.8125rem;
+  }
+  .MuiButton-containedSizeLarge {
+    padding: 8px 22px;
+    font-size: 0.9375rem;
+  }
+  .MuiButton-fullWidth {
+    width: 100%;
+  }
+  .MuiButton-startIcon {
+    display: inherit;
+    margin-left: -4px;
+    margin-right: 8px;
+  }
+  .MuiButton-startIcon.MuiButton-iconSizeSmall {
+    margin-left: -2px;
+  }
+  .MuiButton-endIcon {
+    display: inherit;
+    margin-left: 8px;
+    margin-right: -4px;
+  }
+  .MuiButton-endIcon.MuiButton-iconSizeSmall {
+    margin-right: -2px;
+  }
+  .MuiButton-iconSizeSmall > *:first-child {
+    font-size: 18px;
+  }
+  .MuiButton-iconSizeMedium > *:first-child {
+    font-size: 20px;
+  }
+  .MuiButton-iconSizeLarge > *:first-child {
+    font-size: 22px;
+  }
+  .MuiCard-root {
+    overflow: hidden;
+  }
+  .MuiCardActionArea-root {
+    width: 100%;
+    display: block;
+    text-align: inherit;
+  }
+  .MuiCardActionArea-root:hover .MuiCardActionArea-focusHighlight {
+    opacity: 0.04;
+  }
+  .MuiCardActionArea-root.Mui-focusVisible .MuiCardActionArea-focusHighlight {
+    opacity: 0.12;
+  }
+  .MuiCardActionArea-focusHighlight {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: inherit;
+    pointer-events: none;
+    background-color: currentcolor;
+  }
+  .MuiCardActions-root {
+    display: flex;
+    padding: 8px;
+    align-items: center;
+  }
+  .MuiCardActions-spacing > :not(:first-child) {
+    margin-left: 8px;
+  }
+  .MuiCardContent-root {
+    padding: 16px;
+  }
+  .MuiCardContent-root:last-child {
+    padding-bottom: 24px;
+  }
+  .MuiCardMedia-root {
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .MuiCardMedia-media {
+    width: 100%;
+  }
+  .MuiCardMedia-img {
+    object-fit: cover;
+  }
+  .MuiContainer-root {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+@media (min-width:600px) {
+  .MuiContainer-root {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+  .MuiContainer-disableGutters {
+    padding-left: 0;
+    padding-right: 0;
+  }
+@media (min-width:600px) {
+  .MuiContainer-fixed {
+    max-width: 600px;
+  }
+}
+@media (min-width:960px) {
+  .MuiContainer-fixed {
+    max-width: 960px;
+  }
+}
+@media (min-width:1280px) {
+  .MuiContainer-fixed {
+    max-width: 1280px;
+  }
+}
+@media (min-width:1920px) {
+  .MuiContainer-fixed {
+    max-width: 1920px;
+  }
+}
+@media (min-width:0px) {
+  .MuiContainer-maxWidthXs {
+    max-width: 444px;
+  }
+}
+@media (min-width:600px) {
+  .MuiContainer-maxWidthSm {
+    max-width: 600px;
+  }
+}
+@media (min-width:960px) {
+  .MuiContainer-maxWidthMd {
+    max-width: 960px;
+  }
+}
+@media (min-width:1280px) {
+  .MuiContainer-maxWidthLg {
+    max-width: 1280px;
+  }
+}
+@media (min-width:1920px) {
+  .MuiContainer-maxWidthXl {
+    max-width: 1920px;
+  }
+}
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+strong, b {
+  font-weight: 700;
+}
+body {
+  color: rgba(0, 0, 0, 0.87);
+  margin: 0;
+  font-size: 0.875rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+  background-color: #fafafa;
+}
+@media print {
+  body {
+    background-color: #fff;
+  }
+}
+body::backdrop {
+  background-color: #fafafa;
+}
+  .MuiGrid-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+  .MuiGrid-item {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .MuiGrid-zeroMinWidth {
+    min-width: 0;
+  }
+  .MuiGrid-direction-xs-column {
+    flex-direction: column;
+  }
+  .MuiGrid-direction-xs-column-reverse {
+    flex-direction: column-reverse;
+  }
+  .MuiGrid-direction-xs-row-reverse {
+    flex-direction: row-reverse;
+  }
+  .MuiGrid-wrap-xs-nowrap {
+    flex-wrap: nowrap;
+  }
+  .MuiGrid-wrap-xs-wrap-reverse {
+    flex-wrap: wrap-reverse;
+  }
+  .MuiGrid-align-items-xs-center {
+    align-items: center;
+  }
+  .MuiGrid-align-items-xs-flex-start {
+    align-items: flex-start;
+  }
+  .MuiGrid-align-items-xs-flex-end {
+    align-items: flex-end;
+  }
+  .MuiGrid-align-items-xs-baseline {
+    align-items: baseline;
+  }
+  .MuiGrid-align-content-xs-center {
+    align-content: center;
+  }
+  .MuiGrid-align-content-xs-flex-start {
+    align-content: flex-start;
+  }
+  .MuiGrid-align-content-xs-flex-end {
+    align-content: flex-end;
+  }
+  .MuiGrid-align-content-xs-space-between {
+    align-content: space-between;
+  }
+  .MuiGrid-align-content-xs-space-around {
+    align-content: space-around;
+  }
+  .MuiGrid-justify-xs-center {
+    justify-content: center;
+  }
+  .MuiGrid-justify-xs-flex-end {
+    justify-content: flex-end;
+  }
+  .MuiGrid-justify-xs-space-between {
+    justify-content: space-between;
+  }
+  .MuiGrid-justify-xs-space-around {
+    justify-content: space-around;
+  }
+  .MuiGrid-justify-xs-space-evenly {
+    justify-content: space-evenly;
+  }
+  .MuiGrid-spacing-xs-1 {
+    width: calc(100% + 8px);
+    margin: -4px;
+  }
+  .MuiGrid-spacing-xs-1 > .MuiGrid-item {
+    padding: 4px;
+  }
+  .MuiGrid-spacing-xs-2 {
+    width: calc(100% + 16px);
+    margin: -8px;
+  }
+  .MuiGrid-spacing-xs-2 > .MuiGrid-item {
+    padding: 8px;
+  }
+  .MuiGrid-spacing-xs-3 {
+    width: calc(100% + 24px);
+    margin: -12px;
+  }
+  .MuiGrid-spacing-xs-3 > .MuiGrid-item {
+    padding: 12px;
+  }
+  .MuiGrid-spacing-xs-4 {
+    width: calc(100% + 32px);
+    margin: -16px;
+  }
+  .MuiGrid-spacing-xs-4 > .MuiGrid-item {
+    padding: 16px;
+  }
+  .MuiGrid-spacing-xs-5 {
+    width: calc(100% + 40px);
+    margin: -20px;
+  }
+  .MuiGrid-spacing-xs-5 > .MuiGrid-item {
+    padding: 20px;
+  }
+  .MuiGrid-spacing-xs-6 {
+    width: calc(100% + 48px);
+    margin: -24px;
+  }
+  .MuiGrid-spacing-xs-6 > .MuiGrid-item {
+    padding: 24px;
+  }
+  .MuiGrid-spacing-xs-7 {
+    width: calc(100% + 56px);
+    margin: -28px;
+  }
+  .MuiGrid-spacing-xs-7 > .MuiGrid-item {
+    padding: 28px;
+  }
+  .MuiGrid-spacing-xs-8 {
+    width: calc(100% + 64px);
+    margin: -32px;
+  }
+  .MuiGrid-spacing-xs-8 > .MuiGrid-item {
+    padding: 32px;
+  }
+  .MuiGrid-spacing-xs-9 {
+    width: calc(100% + 72px);
+    margin: -36px;
+  }
+  .MuiGrid-spacing-xs-9 > .MuiGrid-item {
+    padding: 36px;
+  }
+  .MuiGrid-spacing-xs-10 {
+    width: calc(100% + 80px);
+    margin: -40px;
+  }
+  .MuiGrid-spacing-xs-10 > .MuiGrid-item {
+    padding: 40px;
+  }
+  .MuiGrid-grid-xs-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-xs-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-xs-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-xs-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-xs-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-xs-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-xs-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-xs-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-xs-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-xs-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-xs-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-xs-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-xs-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-xs-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+@media (min-width:600px) {
+  .MuiGrid-grid-sm-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-sm-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-sm-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-sm-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-sm-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-sm-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-sm-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-sm-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-sm-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-sm-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-sm-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-sm-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-sm-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-sm-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+@media (min-width:960px) {
+  .MuiGrid-grid-md-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-md-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-md-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-md-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-md-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-md-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-md-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-md-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-md-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-md-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-md-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-md-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-md-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-md-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+@media (min-width:1280px) {
+  .MuiGrid-grid-lg-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-lg-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-lg-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-lg-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-lg-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-lg-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-lg-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-lg-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-lg-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-lg-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-lg-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-lg-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-lg-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-lg-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+@media (min-width:1920px) {
+  .MuiGrid-grid-xl-auto {
+    flex-grow: 0;
+    max-width: none;
+    flex-basis: auto;
+  }
+  .MuiGrid-grid-xl-true {
+    flex-grow: 1;
+    max-width: 100%;
+    flex-basis: 0;
+  }
+  .MuiGrid-grid-xl-1 {
+    flex-grow: 0;
+    max-width: 8.333333%;
+    flex-basis: 8.333333%;
+  }
+  .MuiGrid-grid-xl-2 {
+    flex-grow: 0;
+    max-width: 16.666667%;
+    flex-basis: 16.666667%;
+  }
+  .MuiGrid-grid-xl-3 {
+    flex-grow: 0;
+    max-width: 25%;
+    flex-basis: 25%;
+  }
+  .MuiGrid-grid-xl-4 {
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+  }
+  .MuiGrid-grid-xl-5 {
+    flex-grow: 0;
+    max-width: 41.666667%;
+    flex-basis: 41.666667%;
+  }
+  .MuiGrid-grid-xl-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .MuiGrid-grid-xl-7 {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+  .MuiGrid-grid-xl-8 {
+    flex-grow: 0;
+    max-width: 66.666667%;
+    flex-basis: 66.666667%;
+  }
+  .MuiGrid-grid-xl-9 {
+    flex-grow: 0;
+    max-width: 75%;
+    flex-basis: 75%;
+  }
+  .MuiGrid-grid-xl-10 {
+    flex-grow: 0;
+    max-width: 83.333333%;
+    flex-basis: 83.333333%;
+  }
+  .MuiGrid-grid-xl-11 {
+    flex-grow: 0;
+    max-width: 91.666667%;
+    flex-basis: 91.666667%;
+  }
+  .MuiGrid-grid-xl-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+  .MuiIcon-root {
+    width: 1em;
+    height: 1em;
+    overflow: hidden;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+    user-select: none;
+  }
+  .MuiIcon-colorPrimary {
+    color: #9c27b0;
+  }
+  .MuiIcon-colorSecondary {
+    color: #651fff;
+  }
+  .MuiIcon-colorAction {
+    color: rgba(0, 0, 0, 0.54);
+  }
+  .MuiIcon-colorError {
+    color: #f44336;
+  }
+  .MuiIcon-colorDisabled {
+    color: rgba(0, 0, 0, 0.26);
+  }
+  .MuiIcon-fontSizeInherit {
+    font-size: inherit;
+  }
+  .MuiIcon-fontSizeSmall {
+    font-size: 1.25rem;
+  }
+  .MuiIcon-fontSizeLarge {
+    font-size: 2.25rem;
+  }
+  .MuiLink-underlineNone {
+    text-decoration: none;
+  }
+  .MuiLink-underlineHover {
+    text-decoration: none;
+  }
+  .MuiLink-underlineHover:hover {
+    text-decoration: underline;
+  }
+  .MuiLink-underlineAlways {
+    text-decoration: underline;
+  }
+  .MuiLink-button {
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    position: relative;
+    user-select: none;
+    border-radius: 0;
+    vertical-align: middle;
+    -moz-appearance: none;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .MuiLink-button::-moz-focus-inner {
+    border-style: none;
+  }
+  .MuiLink-button.Mui-focusVisible {
+    outline: auto;
+  }
+  .MuiPopover-paper {
+    outline: 0;
+    position: absolute;
+    max-width: calc(100% - 32px);
+    min-width: 16px;
+    max-height: calc(100% - 32px);
+    min-height: 16px;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .MuiMenu-paper {
+    max-height: calc(100% - 96px);
+    -webkit-overflow-scrolling: touch;
+  }
+  .MuiMenu-list {
+    outline: 0;
+  }
+  .MuiToolbar-root {
+    display: flex;
+    position: relative;
+    align-items: center;
+  }
+  .MuiToolbar-gutters {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+@media (min-width:600px) {
+  .MuiToolbar-gutters {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+  .MuiToolbar-regular {
+    min-height: 56px;
+  }
+@media (min-width:0px) and (orientation: landscape) {
+  .MuiToolbar-regular {
+    min-height: 48px;
+  }
+}
+@media (min-width:600px) {
+  .MuiToolbar-regular {
+    min-height: 64px;
+  }
+}
+  .MuiToolbar-dense {
+    min-height: 48px;
+  }
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+  .jss1 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  }
+  .jss2 {
+    flex-wrap: no-wrap;
+  }
+  .jss3 {
+    flex-grow: 1;
+  }
+  .jss4 {
+    width: 100%;
+    height: auto;
+  }
+  .jss5 {
+    margin: 8px 12px;
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+  .jss6 {
+    color: white;
+    background-color: red;
+  }
+@media (max-width:599.95px) {
+  .jss6 {
+    display: none;
+  }
+}
+  .jss7 {
+    display: none;
+  }
+@media (min-width:960px) {
+  .jss7 {
+    display: flex;
+  }
+}
+  .jss8 {
+    display: flex;
+  }
+@media (min-width:960px) {
+  .jss8 {
+    display: none;
+  }
+}
+  .jss9 {
+    width: 60%;
+    height: auto;
+    display: flex;
+  }
+@media (max-width:599.95px) {
+  .jss9 {
+    width: 80%;
+  }
+}
+  .jss10 {
+    width: 100%;
+    height: auto;
+  }
+  .jss39 {
+    padding: 48px 0px;
+    background-color: #fff;
+  }
+  .jss40 {
+    display: flex;
+    justify-content: space-evenly;
+  }
+@media (max-width:959.95px) {
+  .jss40 {
+    margin: 3rem;
+    flex-direction: column;
+  }
+}
+@media (max-width:959.95px) {
+  .jss41 {
+    margin: 16px;
+    flex-direction: column;
+  }
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+  .jss37 {
+    display: flex;
+    padding: 80px;
+    flex-direction: column;
+  }
+@media (min-width:960px) {
+  .jss37 {
+    padding: 80px 360px;
+  }
+}
+  .jss38 {
+    align-items: center;
+  }
+  .jss11 {
+    margin-right: 16px;
+  }
+  .jss12 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 16px;
+  }
+  .jss13 {
+    align: center;
+    color: #FFFFFF;
+    padding: 8px;
+    background-color: black;
+  }
+  .jss14 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .jss15 {
+    display: flex;
+    padding: 64px 0px 48px;
+    background-color: #fff;
+  }
+@media (max-width:959.95px) {
+  .jss15 {
+    flex-direction: column-reverse;
+  }
+}
+  .jss16 {
+    margin-top: 32px;
+  }
+  .jss17 {
+    width: 50%;
+    height: auto;
+  }
+  .jss18 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .jss19 {
+    display: flex;
+    padding: 48px 80px 48px;
+    justify-content: center;
+    background-color: #313131;
+  }
+@media (max-width:1279.95px) {
+  .jss19 {
+    padding: 16px;
+  }
+}
+  .jss20 {
+    width: 95%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .jss21 {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .jss22 {
+    padding-top: 90%;
+  }
+  .jss23 {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .jss24 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .jss25 {
+    color: textSecondary;
+    display: flex;
+    padding: 16px;
+    flex-wrap: wrap;
+    align-self: center;
+    justify-content: center;
+  }
+  .jss26 {
+    display: flex;
+    padding: 16px;
+    justify-content: flex-start;
+    background-color: #313131;
+  }
+@media (max-width:1279.95px) {
+  .jss26 {
+    padding: 16px;
+  }
+}
+  .jss27 {
+    width: 95%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .jss28 {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .jss29 {
+    padding-top: 90%;
+  }
+  .jss30 {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .jss31 {
+    color: black;
+    padding: 8px;
+    justify-content: center;
+    background-color: #fff;
+  }
+  .jss32 {
+    display: flex;
+    padding: 48px 80px 48px;
+    justify-content: center;
+  }
+@media (max-width:1279.95px) {
+  .jss32 {
+    padding: 16px;
+  }
+}
+  .jss33 {
+    width: 95%;
+    margin: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+  .jss34 {
+    height: 0;
+    margin: 16px;
+    padding-top: 56.25%;
+  }
+  .jss35 {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .jss36 {
+    display: flex;
+    justify-content: space-evenly;
+  }</style></head><body><div id="__next"><div class="layout"><header class="MuiPaper-root MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorDefault jss1 MuiPaper-elevation0"><div class="MuiToolbar-root MuiToolbar-regular jss2 MuiToolbar-gutters"><div class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-space-between"><div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-md-3"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary" href="/" aria-label="Advanced Foam Home"><span class="material-icons MuiIcon-root jss10" aria-hidden="true"><img class="jss9" src="/graphics/mainLogo.svg"/></span></a></div><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-justify-xs-flex-end MuiGrid-grid-xs-6 MuiGrid-grid-md-9"><button class="MuiButtonBase-root MuiButton-root MuiButton-text jss6" tabindex="0" type="button"><span class="MuiButton-label"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit" href="/construction/redicoat">IN STOCK NOW</a></span></button><div class="jss7"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss5 MuiTypography-button MuiTypography-colorInherit MuiTypography-noWrap" href="/">Main</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss5 MuiTypography-button MuiTypography-colorInherit MuiTypography-noWrap" href="/studio">Studio</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss5 MuiTypography-button MuiTypography-colorInherit MuiTypography-noWrap" href="/construction">Construction</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss5 MuiTypography-button MuiTypography-colorInherit MuiTypography-noWrap" href="/packaging">Packaging</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss5 MuiTypography-button MuiTypography-colorInherit MuiTypography-noWrap" href="/about">About</a><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover jss5 MuiTypography-button MuiTypography-colorInherit MuiTypography-noWrap" href="/contact">Contact us</a></div><div><button class="MuiButtonBase-root MuiIconButton-root jss8 MuiIconButton-colorInherit" tabindex="0" type="button" aria-label="account of current user" aria-controls="menu-appbar" aria-haspopup="true"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></span></button></div></div></div></div></header><div class="content"><div class="jss15"><div class="MuiContainer-root jss14 MuiContainer-maxWidthLg" md="7"><p class="MuiTypography-root MuiTypography-h5 MuiTypography-colorTextPrimary MuiTypography-paragraph MuiTypography-alignCenter" style="opacity:0">We have over 35 years of experience in foam fabrication.</p><p class="MuiTypography-root MuiTypography-h5 MuiTypography-colorTextSecondary MuiTypography-paragraph MuiTypography-alignCenter" style="opacity:0">We bring precision, innovation, creativity, and economy to your project.</p><div class="jss16"><div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-justify-xs-center"><div class="MuiGrid-root MuiGrid-item" style="opacity:0"><button class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary" tabindex="0" type="button"><span class="MuiButton-label">Call us Today</span></button></div><div class="MuiGrid-root MuiGrid-item" style="opacity:0"><a class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary" tabindex="0" aria-disabled="false" href="/about"><span class="MuiButton-label">About</span></a></div></div></div></div><div class="MuiContainer-root MuiContainer-maxWidthLg" md="5"><div class="MuiContainer-root jss12 MuiContainer-maxWidthLg"><img src="https://www.advancedfoam.com/wp-content/uploads/2020/09/Logo-min.gif" alt=" Advanced Foam main logo" class="jss17" style="opacity:0"/><div style="opacity:0"><h6 class="MuiTypography-root jss13 MuiTypography-h6">MOVIE SETS</h6></div></div></div></div><div class="MuiGrid-root jss19 MuiGrid-container"><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4" style="opacity:0"><div class="MuiPaper-root MuiCard-root jss20 MuiPaper-elevation1 MuiPaper-rounded" align="center" xs="12" md="4"><div class="MuiCardContent-root jss21"><p class="MuiTypography-root MuiTypography-h4 MuiTypography-colorTextPrimary MuiTypography-paragraph MuiTypography-alignCenter">Studio</p><p class="MuiTypography-root MuiTypography-h6 MuiTypography-colorTextSecondary MuiTypography-paragraph MuiTypography-alignCenter">TV and Movie Sets</p><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit" href="/studio"><button class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge" tabindex="0" type="button"><span class="MuiButton-label">Enter Here</span></button></a></div><a class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit" href="/studio"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss22" style="opacity:0"></div><div class="MuiCardContent-root jss21"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom MuiTypography-alignCenter"></h2><p class="MuiTypography-root MuiTypography-h6 MuiTypography-colorTextSecondary MuiTypography-alignCenter"></p></div><span class="MuiCardActionArea-focusHighlight"></span></button></a></div></div><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4" style="opacity:0"><div class="MuiPaper-root MuiCard-root jss20 MuiPaper-elevation1 MuiPaper-rounded" align="center" xs="12" md="4"><div class="MuiCardContent-root jss21"><p class="MuiTypography-root MuiTypography-h4 MuiTypography-colorTextPrimary MuiTypography-paragraph MuiTypography-alignCenter">Construction</p><p class="MuiTypography-root MuiTypography-h6 MuiTypography-colorTextSecondary MuiTypography-paragraph MuiTypography-alignCenter">Architectural Decorations</p><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit" href="/construction"><button class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge" tabindex="0" type="button"><span class="MuiButton-label">Enter Here</span></button></a></div><a class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit" href="/construction"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss22" style="opacity:0"></div><div class="MuiCardContent-root jss21"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom MuiTypography-alignCenter"></h2><p class="MuiTypography-root MuiTypography-h6 MuiTypography-colorTextSecondary MuiTypography-alignCenter"></p></div><span class="MuiCardActionArea-focusHighlight"></span></button></a></div></div><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-4" style="opacity:0"><div class="MuiPaper-root MuiCard-root jss20 MuiPaper-elevation1 MuiPaper-rounded" align="center" xs="12" md="4"><div class="MuiCardContent-root jss21"><p class="MuiTypography-root MuiTypography-h4 MuiTypography-colorTextPrimary MuiTypography-paragraph MuiTypography-alignCenter">Packaging</p><p class="MuiTypography-root MuiTypography-h6 MuiTypography-colorTextSecondary MuiTypography-paragraph MuiTypography-alignCenter">Design and Fabrication</p><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit" href="/packaging"><button class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge" tabindex="0" type="button"><span class="MuiButton-label">Enter Here</span></button></a></div><a class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit" href="/packaging"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss22" style="opacity:0"></div><div class="MuiCardContent-root jss21"><h2 class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom MuiTypography-alignCenter"></h2><p class="MuiTypography-root MuiTypography-h6 MuiTypography-colorTextSecondary MuiTypography-alignCenter"></p></div><span class="MuiCardActionArea-focusHighlight"></span></button></a></div></div></div><div class="MuiGrid-root jss26 MuiGrid-container" style="opacity:0"><p class="MuiTypography-root jss25 MuiTypography-h3 MuiTypography-paragraph MuiTypography-alignCenter">Studio Highlights</p><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3 MuiGrid-grid-lg-2" style="opacity:0"><div class="MuiPaper-root MuiCard-root jss27 MuiPaper-elevation1 MuiPaper-rounded" align="center" xs="12" sm="6" md="3" lg="2" id="card-1638"><div class="MuiCardContent-root jss28"><p class="MuiTypography-root MuiTypography-h5 MuiTypography-colorTextPrimary MuiTypography-paragraph MuiTypography-alignCenter">Decorative Panels</p></div><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit" href="/studio/decorative-panels"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss29" style="background-image:url(&quot;https://advancedfoam.com/wp-content/uploads/2020/10/DSCN0871-1024x768-1-150x150.jpg&quot;)" title="Decorative Panels"></div><span class="MuiCardActionArea-focusHighlight"></span></button></a><div class="MuiCardActions-root MuiCardActions-spacing"><div class="MuiContainer-root jss30 MuiContainer-maxWidthLg"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-textSizeSmall MuiButton-sizeSmall" tabindex="0" aria-disabled="false" href="/studio/decorative-panels"><span class="MuiButton-label">Show me more</span></a></div></div></div></div><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3 MuiGrid-grid-lg-2" style="opacity:0"><div class="MuiPaper-root MuiCard-root jss27 MuiPaper-elevation1 MuiPaper-rounded" align="center" xs="12" sm="6" md="3" lg="2" id="card-491"><div class="MuiCardContent-root jss28"><p class="MuiTypography-root MuiTypography-h5 MuiTypography-colorTextPrimary MuiTypography-paragraph MuiTypography-alignCenter">Columns</p></div><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit" href="/studio/columns"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss29" style="background-image:url(&quot;https://advancedfoam.com/wp-content/uploads/2011/07/TheAmericanPresident_columns1-150x150.jpg&quot;)" title="Columns"></div><span class="MuiCardActionArea-focusHighlight"></span></button></a><div class="MuiCardActions-root MuiCardActions-spacing"><div class="MuiContainer-root jss30 MuiContainer-maxWidthLg"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-textSizeSmall MuiButton-sizeSmall" tabindex="0" aria-disabled="false" href="/studio/columns"><span class="MuiButton-label">Show me more</span></a></div></div></div></div><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3 MuiGrid-grid-lg-2" style="opacity:0"><div class="MuiPaper-root MuiCard-root jss27 MuiPaper-elevation1 MuiPaper-rounded" align="center" xs="12" sm="6" md="3" lg="2" id="card-558"><div class="MuiCardContent-root jss28"><p class="MuiTypography-root MuiTypography-h5 MuiTypography-colorTextPrimary MuiTypography-paragraph MuiTypography-alignCenter">Balls and Spheres</p></div><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit" href="/studio/balls-and-spheres"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss29" style="background-image:url(&quot;https://advancedfoam.com/wp-content/uploads/2011/06/studio_thumb1-150x150.png&quot;)" title="Balls and Spheres"></div><span class="MuiCardActionArea-focusHighlight"></span></button></a><div class="MuiCardActions-root MuiCardActions-spacing"><div class="MuiContainer-root jss30 MuiContainer-maxWidthLg"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-textSizeSmall MuiButton-sizeSmall" tabindex="0" aria-disabled="false" href="/studio/balls-and-spheres"><span class="MuiButton-label">Show me more</span></a></div></div></div></div><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3 MuiGrid-grid-lg-2" style="opacity:0"><div class="MuiPaper-root MuiCard-root jss27 MuiPaper-elevation1 MuiPaper-rounded" align="center" xs="12" sm="6" md="3" lg="2" id="card-457"><div class="MuiCardContent-root jss28"><p class="MuiTypography-root MuiTypography-h5 MuiTypography-colorTextPrimary MuiTypography-paragraph MuiTypography-alignCenter">In the Workshop</p></div><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit" href="/studio/in-the-workshop"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss29" style="background-image:url(&quot;https://advancedfoam.com/wp-content/uploads/2020/10/DSCN08191-1024x817-1-150x150.jpg&quot;)" title="In the Workshop"></div><span class="MuiCardActionArea-focusHighlight"></span></button></a><div class="MuiCardActions-root MuiCardActions-spacing"><div class="MuiContainer-root jss30 MuiContainer-maxWidthLg"><a class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-textSizeSmall MuiButton-sizeSmall" tabindex="0" aria-disabled="false" href="/studio/in-the-workshop"><span class="MuiButton-label">Show me more</span></a></div></div></div></div></div><h2 class="MuiTypography-root jss31 MuiTypography-h4 MuiTypography-alignCenter">Our clients</h2><div class="MuiGrid-root jss32 MuiGrid-container"><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3" style="opacity:0"><div class="MuiPaper-root MuiCard-root jss33 MuiPaper-elevation1 MuiPaper-rounded" align="center" xs="12" sm="6" md="3"><a class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit" href="https://www.universalstudios.com" aria-label="Universal Studios logo"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss34" style="background-image:url(&quot;https://www.advancedfoam.com/wp-content/uploads/2020/09/universalStudios_logo.png&quot;)" width="75%" alt="Universal Studios logo"></div><div class="MuiCardContent-root jss35"><h4 class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter"></h4></div><span class="MuiCardActionArea-focusHighlight"></span></button></a></div></div><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3" style="opacity:0"><div class="MuiPaper-root MuiCard-root jss33 MuiPaper-elevation1 MuiPaper-rounded" align="center" xs="12" sm="6" md="3"><a class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit" href="https://www.dreamworks.com" aria-label="Dreamworks logo"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss34" style="background-image:url(&quot;https://www.advancedfoam.com/wp-content/uploads/2020/09/dreamworks_logo.png&quot;)" width="75%" alt="Dreamworks logo"></div><div class="MuiCardContent-root jss35"><h4 class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter"></h4></div><span class="MuiCardActionArea-focusHighlight"></span></button></a></div></div><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3" style="opacity:0"><div class="MuiPaper-root MuiCard-root jss33 MuiPaper-elevation1 MuiPaper-rounded" align="center" xs="12" sm="6" md="3"><a class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit" href="https://www.hasbro.com" aria-label="Hasbro logo"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss34" style="background-image:url(&quot;https://www.advancedfoam.com/wp-content/uploads/2020/09/hasbro_logo.png&quot;)" width="75%" alt="Hasbro logo"></div><div class="MuiCardContent-root jss35"><h4 class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter"></h4></div><span class="MuiCardActionArea-focusHighlight"></span></button></a></div></div><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3" style="opacity:0"><div class="MuiPaper-root MuiCard-root jss33 MuiPaper-elevation1 MuiPaper-rounded" align="center" xs="12" sm="6" md="3"><a class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit" href="https://www.honda.com" aria-label="Honda logo"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss34" style="background-image:url(&quot;https://www.advancedfoam.com/wp-content/uploads/2020/09/honda_logo.png&quot;)" width="75%" alt="Honda logo"></div><div class="MuiCardContent-root jss35"><h4 class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter"></h4></div><span class="MuiCardActionArea-focusHighlight"></span></button></a></div></div><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3" style="opacity:0"><div class="MuiPaper-root MuiCard-root jss33 MuiPaper-elevation1 MuiPaper-rounded" align="center" xs="12" sm="6" md="3"><a class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit" href="https://www.nissan.com" aria-label="Nissan logo"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss34" style="background-image:url(&quot;https://www.advancedfoam.com/wp-content/uploads/2020/09/nissan_logo.png&quot;)" width="75%" alt="Nissan logo"></div><div class="MuiCardContent-root jss35"><h4 class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter"></h4></div><span class="MuiCardActionArea-focusHighlight"></span></button></a></div></div><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3" style="opacity:0"><div class="MuiPaper-root MuiCard-root jss33 MuiPaper-elevation1 MuiPaper-rounded" align="center" xs="12" sm="6" md="3"><a class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit" href="http://www.zanuckco.com/" aria-label="The Zanuck Company logo"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss34" style="background-image:url(&quot;https://www.advancedfoam.com/wp-content/uploads/2020/09/theZanuckCompany_logo_BW.png&quot;)" width="75%" alt="The Zanuck Company logo"></div><div class="MuiCardContent-root jss35"><h4 class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter"></h4></div><span class="MuiCardActionArea-focusHighlight"></span></button></a></div></div><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3" style="opacity:0"><div class="MuiPaper-root MuiCard-root jss33 MuiPaper-elevation1 MuiPaper-rounded" align="center" xs="12" sm="6" md="3"><a class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit" href="https://www.fremantle.com" aria-label="Fremantle Media logo"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss34" style="background-image:url(&quot;https://www.advancedfoam.com/wp-content/uploads/2020/09/fremantleMediaNorthAmerica_logo.png&quot;)" width="75%" alt="Fremantle Media logo"></div><div class="MuiCardContent-root jss35"><h4 class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter"></h4></div><span class="MuiCardActionArea-focusHighlight"></span></button></a></div></div><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3" style="opacity:0"><div class="MuiPaper-root MuiCard-root jss33 MuiPaper-elevation1 MuiPaper-rounded" align="center" xs="12" sm="6" md="3"><a class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit" href="https://www.dannon.com" aria-label="Dannon logo"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss34" style="background-image:url(&quot;https://www.advancedfoam.com/wp-content/uploads/2020/09/dannon_logo.png&quot;)" width="75%" alt="Dannon logo"></div><div class="MuiCardContent-root jss35"><h4 class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter"></h4></div><span class="MuiCardActionArea-focusHighlight"></span></button></a></div></div><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3" style="opacity:0"><div class="MuiPaper-root MuiCard-root jss33 MuiPaper-elevation1 MuiPaper-rounded" align="center" xs="12" sm="6" md="3"><a class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit" href="https://www.grammy.com" aria-label="56th Grammy Awards logo"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss34" style="background-image:url(&quot;https://www.advancedfoam.com/wp-content/uploads/2020/09/grammyAwards_logo.png&quot;)" width="75%" alt="56th Grammy Awards logo"></div><div class="MuiCardContent-root jss35"><h4 class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter"></h4></div><span class="MuiCardActionArea-focusHighlight"></span></button></a></div></div><div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3" style="opacity:0"><div class="MuiPaper-root MuiCard-root jss33 MuiPaper-elevation1 MuiPaper-rounded" align="center" xs="12" sm="6" md="3"><a class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit" href="https://www.infected-mushroom.com" aria-label="Infected Mushroom logo"><button class="MuiButtonBase-root MuiCardActionArea-root" tabindex="0" type="button"><div class="MuiCardMedia-root jss34" style="background-image:url(&quot;https://www.advancedfoam.com/wp-content/uploads/2020/09/infectedMushroom_logo.png&quot;)" width="75%" alt="Infected Mushroom logo"></div><div class="MuiCardContent-root jss35"><h4 class="MuiTypography-root MuiTypography-h5 MuiTypography-alignCenter"></h4></div><span class="MuiCardActionArea-focusHighlight"></span></button></a></div></div></div></div><div class="MuiGrid-root jss37"><button class="MuiButtonBase-root MuiButton-root MuiButton-contained jss38 MuiButton-containedPrimary" tabindex="0" type="button" style="opacity:0"><span class="MuiButton-label"><a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit" href="/construction/redicoat">Contact us today</a></span></button></div><footer class="jss39"><grid direction="row" class="jss40"><grid class="jss41" style="opacity:0"><div class="MuiContainer-root MuiContainer-maxWidthLg"><h5 class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom MuiTypography-alignCenter">Speak to us</h5><p class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-colorTextSecondary MuiTypography-alignCenter">Phone: (310) 515-0728</p><p class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-colorTextSecondary MuiTypography-alignCenter">Fax: (310) 515-3548</p><p class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-alignCenter">Copyright © <a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit" href="https://www.advancedfoam.com/">Advanced Foam</a> <!-- -->2020<!-- -->.</p></div></grid><grid class="jss41" style="opacity:0"><div class="MuiContainer-root MuiContainer-maxWidthLg"><h5 class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom MuiTypography-alignCenter">Email us</h5><p class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-colorTextSecondary MuiTypography-alignCenter">info@advancedfoam.com</p></div></grid><grid class="jss41" style="opacity:0"><div class="MuiContainer-root MuiContainer-maxWidthLg"><h5 class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom MuiTypography-alignCenter">Headquarters</h5><p class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-colorTextSecondary MuiTypography-alignCenter">1745 W. 134th St.</p><p class="MuiTypography-root MuiTypography-subtitle1 MuiTypography-colorTextSecondary MuiTypography-alignCenter">Gardena, CA 90249</p><p class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-alignCenter">Copyright © <a class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit" href="https://www.advancedfoam.com/">Advanced Foam</a> <!-- -->2020<!-- -->.</p></div></grid></grid></footer></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"postList":[{"id":1638,"date":"2020-10-04T15:59:06","date_gmt":"2020-10-04T22:59:06","guid":{"rendered":"http://advancedfoam.com/?p=1638"},"modified":"2020-10-23T18:24:49","modified_gmt":"2020-10-24T01:24:49","slug":"decorative-panels","status":"publish","type":"post","link":"https://advancedfoam.com/decorative-panels/","title":{"rendered":"Decorative Panels"},"content":{"rendered":"\n\u003cp\u003e\u003c/p\u003e\n\n\n\n\u003cfigure class=\"wp-block-image size-large\"\u003e\u003cimg loading=\"lazy\" width=\"1024\" height=\"768\" src=\"https://advancedfoam.com/wp-content/uploads/2020/10/DSCN0871-1024x768-1.jpg\" alt=\"\" class=\"wp-image-1793\" srcset=\"https://advancedfoam.com/wp-content/uploads/2020/10/DSCN0871-1024x768-1.jpg 1024w, https://advancedfoam.com/wp-content/uploads/2020/10/DSCN0871-1024x768-1-300x225.jpg 300w, https://advancedfoam.com/wp-content/uploads/2020/10/DSCN0871-1024x768-1-768x576.jpg 768w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" /\u003e\u003c/figure\u003e\n\n\n\n\u003cfigure class=\"wp-block-image size-large\"\u003e\u003cimg loading=\"lazy\" width=\"480\" height=\"640\" src=\"https://advancedfoam.com/wp-content/uploads/2020/10/Breeze-block-ADV010-3-rotated.jpg\" alt=\"\" class=\"wp-image-1792\" srcset=\"https://advancedfoam.com/wp-content/uploads/2020/10/Breeze-block-ADV010-3-rotated.jpg 480w, https://advancedfoam.com/wp-content/uploads/2020/10/Breeze-block-ADV010-3-225x300.jpg 225w\" sizes=\"(max-width: 480px) 100vw, 480px\" /\u003e\u003c/figure\u003e\n","protected":false},"excerpt":{"rendered":"","protected":false},"author":1,"featured_media":1793,"comment_status":"open","ping_status":"open","sticky":false,"template":"","format":"standard","meta":[],"categories":[22,23],"tags":[],"better_featured_image":{"id":1793,"alt_text":"Decorative panel","caption":"Decorative panel","description":"Decorative panel","media_type":"image","media_details":{"width":1024,"height":768,"file":"2020/10/DSCN0871-1024x768-1.jpg","sizes":{"medium":{"file":"DSCN0871-1024x768-1-300x225.jpg","width":300,"height":225,"mime-type":"image/jpeg","source_url":"https://advancedfoam.com/wp-content/uploads/2020/10/DSCN0871-1024x768-1-300x225.jpg"},"thumbnail":{"file":"DSCN0871-1024x768-1-150x150.jpg","width":150,"height":150,"mime-type":"image/jpeg","source_url":"https://advancedfoam.com/wp-content/uploads/2020/10/DSCN0871-1024x768-1-150x150.jpg"},"medium_large":{"file":"DSCN0871-1024x768-1-768x576.jpg","width":768,"height":576,"mime-type":"image/jpeg","source_url":"https://advancedfoam.com/wp-content/uploads/2020/10/DSCN0871-1024x768-1-768x576.jpg"}},"image_meta":{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0","keywords":[]}},"post":1638,"source_url":"https://advancedfoam.com/wp-content/uploads/2020/10/DSCN0871-1024x768-1.jpg"},"_links":{"self":[{"href":"https://advancedfoam.com/wp-json/wp/v2/posts/1638"}],"collection":[{"href":"https://advancedfoam.com/wp-json/wp/v2/posts"}],"about":[{"href":"https://advancedfoam.com/wp-json/wp/v2/types/post"}],"author":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/users/1"}],"replies":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/comments?post=1638"}],"version-history":[{"count":2,"href":"https://advancedfoam.com/wp-json/wp/v2/posts/1638/revisions"}],"predecessor-version":[{"id":1794,"href":"https://advancedfoam.com/wp-json/wp/v2/posts/1638/revisions/1794"}],"wp:featuredmedia":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/media/1793"}],"wp:attachment":[{"href":"https://advancedfoam.com/wp-json/wp/v2/media?parent=1638"}],"wp:term":[{"taxonomy":"category","embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/categories?post=1638"},{"taxonomy":"post_tag","embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/tags?post=1638"}],"curies":[{"name":"wp","href":"https://api.w.org/{rel}","templated":true}]}},{"id":491,"date":"2020-06-08T13:47:05","date_gmt":"2020-06-08T20:47:05","guid":{"rendered":"http://test1.advancedfoam.com/?p=491"},"modified":"2020-10-24T09:40:54","modified_gmt":"2020-10-24T16:40:54","slug":"columns","status":"publish","type":"post","link":"https://advancedfoam.com/columns/","title":{"rendered":"Columns"},"content":{"rendered":"\n\u003cfigure class=\"wp-block-image size-large is-resized\"\u003e\u003cimg loading=\"lazy\" src=\"http://advancedfoam.com/wp-content/uploads/2020/10/Columns_715-02.jpg\" alt=\"Columns diagram.\" class=\"wp-image-1606\" width=\"300\" height=\"300\" srcset=\"https://advancedfoam.com/wp-content/uploads/2020/10/Columns_715-02.jpg 300w, https://advancedfoam.com/wp-content/uploads/2020/10/Columns_715-02-150x150.jpg 150w\" sizes=\"(max-width: 300px) 100vw, 300px\" /\u003e\u003cfigcaption\u003eColumn view.\u003c/figcaption\u003e\u003c/figure\u003e\n\n\n\n\u003ch2\u003eFoam Columns\u003c/h2\u003e\n\n\n\n\u003cp\u003e\u003cstrong\u003eNeed decorative exterior foam columns in a hurry? Consider one of our Redicoat® columns. \u003c/strong\u003eComponents for these columns are in stock and can be assembled, finished, and made ready for shipment within two working days of placing your order. Redicoat® columns are among our most popular designs and are available in any length to meet your needs. Simply specify the style ( \u003ccode\u003eRP601\u003c/code\u003e, \u003ccode\u003eRP602\u003c/code\u003e, etc.) and length, and let us take it from there.\u003c/p\u003e\n\n\n\n\u003cp\u003eAs with all of our columns, Redicoat® columns are supplied in two self-aligning halves with a 4″ x 4″ center cutout to wrap around the most commonly used load-bearing support. In addition, all of our column bases are made of high-density foam for extra impact resistance. Redicoat® foam columns\u0026nbsp;are an easy, economical way to add a\u0026nbsp;touch of elegance to any building.\u003c/p\u003e\n\n\n\n\u003cfigure class=\"wp-block-image size-large is-resized\"\u003e\u003cimg loading=\"lazy\" src=\"http://advancedfoam.com/wp-content/uploads/2020/10/Columns_715-01.jpg\" alt=\"\" class=\"wp-image-1607\" width=\"578\" height=\"539\" srcset=\"https://advancedfoam.com/wp-content/uploads/2020/10/Columns_715-01.jpg 750w, https://advancedfoam.com/wp-content/uploads/2020/10/Columns_715-01-300x280.jpg 300w\" sizes=\"(max-width: 578px) 100vw, 578px\" /\u003e\u003cfigcaption\u003eColumns variations.\u003c/figcaption\u003e\u003c/figure\u003e\n\n\n\n\u003cp\u003e\u003c/p\u003e\n","protected":false},"excerpt":{"rendered":"\u003cp\u003eFoam Columns Need decorative exterior foam columns in a hurry? Consider one of our Redicoat® columns. Components for these columns are in stock and can be assembled, finished, and made ready for shipment within two working days of placing your order. Redicoat® columns are among our most popular designs and are available in any length [\u0026hellip;]\u003c/p\u003e\n","protected":false},"author":1,"featured_media":705,"comment_status":"open","ping_status":"open","sticky":false,"template":"","format":"standard","meta":[],"categories":[22,23],"tags":[],"better_featured_image":{"id":705,"alt_text":"Columns","caption":"Columns","description":"Columns","media_type":"image","media_details":{"width":"668","height":"450","hwstring_small":"height='86' width='128'","file":"2011/07/TheAmericanPresident_columns1.jpg","sizes":{"thumbnail":{"file":"TheAmericanPresident_columns1-150x150.jpg","width":"150","height":"150","source_url":"https://advancedfoam.com/wp-content/uploads/2011/07/TheAmericanPresident_columns1-150x150.jpg"},"medium":{"file":"TheAmericanPresident_columns1-300x202.jpg","width":"300","height":"202","source_url":"https://advancedfoam.com/wp-content/uploads/2011/07/TheAmericanPresident_columns1-300x202.jpg"},"post-thumbnail":{"file":"TheAmericanPresident_columns1-668x198.jpg","width":"668","height":"198","source_url":"https://advancedfoam.com/wp-content/uploads/2011/07/TheAmericanPresident_columns1-668x198.jpg"}},"image_meta":{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":""}},"post":672,"source_url":"https://advancedfoam.com/wp-content/uploads/2011/07/TheAmericanPresident_columns1.jpg"},"_links":{"self":[{"href":"https://advancedfoam.com/wp-json/wp/v2/posts/491"}],"collection":[{"href":"https://advancedfoam.com/wp-json/wp/v2/posts"}],"about":[{"href":"https://advancedfoam.com/wp-json/wp/v2/types/post"}],"author":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/users/1"}],"replies":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/comments?post=491"}],"version-history":[{"count":5,"href":"https://advancedfoam.com/wp-json/wp/v2/posts/491/revisions"}],"predecessor-version":[{"id":1751,"href":"https://advancedfoam.com/wp-json/wp/v2/posts/491/revisions/1751"}],"wp:featuredmedia":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/media/705"}],"wp:attachment":[{"href":"https://advancedfoam.com/wp-json/wp/v2/media?parent=491"}],"wp:term":[{"taxonomy":"category","embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/categories?post=491"},{"taxonomy":"post_tag","embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/tags?post=491"}],"curies":[{"name":"wp","href":"https://api.w.org/{rel}","templated":true}]}},{"id":558,"date":"2011-06-30T04:26:41","date_gmt":"2011-06-30T11:26:41","guid":{"rendered":"http://test1.advancedfoam.com/?p=558"},"modified":"2020-10-18T19:27:09","modified_gmt":"2020-10-19T02:27:09","slug":"balls-and-spheres","status":"publish","type":"post","link":"https://advancedfoam.com/balls-and-spheres/","title":{"rendered":"Balls and Spheres"},"content":{"rendered":"\u003cp\u003eA \u003cb\u003esphere\u003c/b\u003e or ball is a perfectly round three-dimensional object. We have several different examples of Balls and Spheres designed and created here by our team at Advanced Foam in various sizes. We will probably be able to make any request you have, just \u003ca href=\"http://advancedfoam.com/contact-us\"\u003econtact us\u003c/a\u003e or send your specifications!\u003c/p\u003e\n\u003cp\u003e\u003cimg loading=\"lazy\" class=\"wp-image-404 size-medium\" src=\"http://advancedfoam.com/wp-content/uploads/2011/06/globe_721-300x202.jpg\" alt=\"Balls and Spheres\" width=\"300\" height=\"202\" srcset=\"https://advancedfoam.com/wp-content/uploads/2011/06/globe_721-300x202.jpg 300w, https://advancedfoam.com/wp-content/uploads/2011/06/globe_721-1024x690.jpg 1024w, https://advancedfoam.com/wp-content/uploads/2011/06/globe_721.jpg 1476w\" sizes=\"(max-width: 300px) 100vw, 300px\" /\u003e\u003c/p\u003e\n\u003cp\u003eGiant Globe\u003c/p\u003e\n\u003cp\u003e\u003cdiv id=\"attachment_511\" style=\"width: 172px\" class=\"wp-caption alignnone\"\u003e\u003cimg aria-describedby=\"caption-attachment-511\" loading=\"lazy\" class=\"wp-image-511 size-medium\" src=\"http://advancedfoam.com/wp-content/uploads/2011/06/studio_thumb1-162x300.png\" alt=\"Balls and Spheres\" width=\"162\" height=\"300\" srcset=\"https://advancedfoam.com/wp-content/uploads/2011/06/studio_thumb1-162x300.png 162w, https://advancedfoam.com/wp-content/uploads/2011/06/studio_thumb1.png 324w\" sizes=\"(max-width: 162px) 100vw, 162px\" /\u003e\u003cp id=\"caption-attachment-511\" class=\"wp-caption-text\"\u003eLarge scale spheres and columns\u003c/p\u003e\u003c/div\u003e\u003c/p\u003e\n","protected":false},"excerpt":{"rendered":"\u003cp\u003eA sphere or ball is a perfectly round three-dimensional object. We have several different examples of Balls and Spheres designed and created here by our team at Advanced Foam in various sizes. We will probably be able to make any request you have, just contact us or send your specifications! Giant Globe\u003c/p\u003e\n","protected":false},"author":1,"featured_media":511,"comment_status":"open","ping_status":"open","sticky":false,"template":"","format":"standard","meta":[],"categories":[22,23],"tags":[],"better_featured_image":{"id":511,"alt_text":"Spheres and columns","caption":"Spheres and columns","description":"Spheres and columns","media_type":"image","media_details":{"width":"324","height":"600","hwstring_small":"height='96' width='51'","file":"2011/06/studio_thumb1.png","sizes":{"thumbnail":{"file":"studio_thumb1-150x150.png","width":"150","height":"150","source_url":"https://advancedfoam.com/wp-content/uploads/2011/06/studio_thumb1-150x150.png"},"medium":{"file":"studio_thumb1-162x300.png","width":"162","height":"300","source_url":"https://advancedfoam.com/wp-content/uploads/2011/06/studio_thumb1-162x300.png"},"post-thumbnail":{"file":"studio_thumb1-324x198.png","width":"324","height":"198","source_url":"https://advancedfoam.com/wp-content/uploads/2011/06/studio_thumb1-324x198.png"}},"image_meta":{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":""}},"post":138,"source_url":"https://advancedfoam.com/wp-content/uploads/2011/06/studio_thumb1.png"},"_links":{"self":[{"href":"https://advancedfoam.com/wp-json/wp/v2/posts/558"}],"collection":[{"href":"https://advancedfoam.com/wp-json/wp/v2/posts"}],"about":[{"href":"https://advancedfoam.com/wp-json/wp/v2/types/post"}],"author":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/users/1"}],"replies":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/comments?post=558"}],"version-history":[{"count":5,"href":"https://advancedfoam.com/wp-json/wp/v2/posts/558/revisions"}],"predecessor-version":[{"id":1744,"href":"https://advancedfoam.com/wp-json/wp/v2/posts/558/revisions/1744"}],"wp:featuredmedia":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/media/511"}],"wp:attachment":[{"href":"https://advancedfoam.com/wp-json/wp/v2/media?parent=558"}],"wp:term":[{"taxonomy":"category","embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/categories?post=558"},{"taxonomy":"post_tag","embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/tags?post=558"}],"curies":[{"name":"wp","href":"https://api.w.org/{rel}","templated":true}]}},{"id":457,"date":"2011-06-21T00:21:51","date_gmt":"2011-06-21T07:21:51","guid":{"rendered":"http://studio.advancedfoam.com/?p=126"},"modified":"2020-10-23T18:28:09","modified_gmt":"2020-10-24T01:28:09","slug":"in-the-workshop","status":"publish","type":"post","link":"https://advancedfoam.com/in-the-workshop/","title":{"rendered":"In the Workshop"},"content":{"rendered":"\u003ch2\u003eIn the Workshop\u003c/h2\u003e\n\u003cp\u003eA sampling of some of the work that we do here in-house at Advanced Foam ranging from movie props, architectural designs, and moldings. Here are some creations from the workshop.\u003c/p\u003e\n\u003cp\u003e\u003cimg loading=\"lazy\" class=\"alignnone size-medium wp-image-650\" src=\"http://advancedfoam.com/wp-content/uploads/2011/07/IMG_23151-293x300.jpg\" alt=\"IMG_2315\" width=\"293\" height=\"300\" srcset=\"https://advancedfoam.com/wp-content/uploads/2011/07/IMG_23151-293x300.jpg 293w, https://advancedfoam.com/wp-content/uploads/2011/07/IMG_23151.jpg 416w\" sizes=\"(max-width: 293px) 100vw, 293px\" /\u003e\u003c/p\u003e\n\u003cp\u003e\u003cimg loading=\"lazy\" class=\"alignnone size-medium wp-image-74\" src=\"http://advancedfoam.com/wp-content/uploads/2011/06/knight2-209x300.jpg\" alt=\"knight pieces\" width=\"209\" height=\"300\" srcset=\"https://advancedfoam.com/wp-content/uploads/2011/06/knight2-209x300.jpg 209w, https://advancedfoam.com/wp-content/uploads/2011/06/knight2.jpg 246w\" sizes=\"(max-width: 209px) 100vw, 209px\" /\u003e\u003c/p\u003e\n\n\n\u003cfigure class=\"wp-block-image size-large\"\u003e\u003cimg loading=\"lazy\" width=\"1024\" height=\"817\" src=\"https://advancedfoam.com/wp-content/uploads/2020/10/DSCN08191-1024x817-1.jpg\" alt=\"\" class=\"wp-image-1842\" srcset=\"https://advancedfoam.com/wp-content/uploads/2020/10/DSCN08191-1024x817-1.jpg 1024w, https://advancedfoam.com/wp-content/uploads/2020/10/DSCN08191-1024x817-1-300x239.jpg 300w, https://advancedfoam.com/wp-content/uploads/2020/10/DSCN08191-1024x817-1-768x613.jpg 768w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" /\u003e\u003c/figure\u003e\n","protected":false},"excerpt":{"rendered":"\u003cp\u003eIn the Workshop A sampling of some of the work that we do here in-house at Advanced Foam ranging from movie props, architectural designs, and moldings. Here are some creations from the workshop.\u003c/p\u003e\n","protected":false},"author":1,"featured_media":1842,"comment_status":"open","ping_status":"open","sticky":false,"template":"","format":"standard","meta":[],"categories":[22,23],"tags":[],"better_featured_image":{"id":1842,"alt_text":"Workshop Columns","caption":"Workshop Columns","description":"Workshop Columns","media_type":"image","media_details":{"width":1024,"height":817,"file":"2020/10/DSCN08191-1024x817-1.jpg","sizes":{"medium":{"file":"DSCN08191-1024x817-1-300x239.jpg","width":300,"height":239,"mime-type":"image/jpeg","source_url":"https://advancedfoam.com/wp-content/uploads/2020/10/DSCN08191-1024x817-1-300x239.jpg"},"thumbnail":{"file":"DSCN08191-1024x817-1-150x150.jpg","width":150,"height":150,"mime-type":"image/jpeg","source_url":"https://advancedfoam.com/wp-content/uploads/2020/10/DSCN08191-1024x817-1-150x150.jpg"},"medium_large":{"file":"DSCN08191-1024x817-1-768x613.jpg","width":768,"height":613,"mime-type":"image/jpeg","source_url":"https://advancedfoam.com/wp-content/uploads/2020/10/DSCN08191-1024x817-1-768x613.jpg"}},"image_meta":{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0","keywords":[]}},"post":457,"source_url":"https://advancedfoam.com/wp-content/uploads/2020/10/DSCN08191-1024x817-1.jpg"},"_links":{"self":[{"href":"https://advancedfoam.com/wp-json/wp/v2/posts/457"}],"collection":[{"href":"https://advancedfoam.com/wp-json/wp/v2/posts"}],"about":[{"href":"https://advancedfoam.com/wp-json/wp/v2/types/post"}],"author":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/users/1"}],"replies":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/comments?post=457"}],"version-history":[{"count":5,"href":"https://advancedfoam.com/wp-json/wp/v2/posts/457/revisions"}],"predecessor-version":[{"id":1843,"href":"https://advancedfoam.com/wp-json/wp/v2/posts/457/revisions/1843"}],"wp:featuredmedia":[{"embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/media/1842"}],"wp:attachment":[{"href":"https://advancedfoam.com/wp-json/wp/v2/media?parent=457"}],"wp:term":[{"taxonomy":"category","embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/categories?post=457"},{"taxonomy":"post_tag","embeddable":true,"href":"https://advancedfoam.com/wp-json/wp/v2/tags?post=457"}],"curies":[{"name":"wp","href":"https://api.w.org/{rel}","templated":true}]}}]}},"page":"/home","query":{},"buildId":"HAfs2AVYDM_PHvnVmJyQS","runtimeConfig":{},"nextExport":true,"isFallback":false,"gip":true,"head":[["title",{"children":"Advanced Foam"}],["meta",{"name":"Advanced Foam Inc.","content":"Advanced Foam Inc. - Foam Fabrication and props made in California."}],["meta",{"charSet":"utf-8"}],["meta",{"name":"viewport","content":"initial-scale=1.0, width=device-width"}]]}</script><script nomodule="" src="/_next/static/chunks/polyfills-8bebc7aacc0076174a73.js"></script><script src="/_next/static/chunks/main-316bbd78e6029733d79a.js" async=""></script><script src="/_next/static/chunks/webpack-e067438c4cf4ef2ef178.js" async=""></script><script src="/_next/static/chunks/framework.1d36bc031662b4dc4c28.js" async=""></script><script src="/_next/static/chunks/commons.fea7482b100b72cadc8f.js" async=""></script><script src="/_next/static/chunks/96c1ae029ad230b058ae1974ec5096c1a5e58baf.20f538b0492f717bdf47.js" async=""></script><script src="/_next/static/chunks/18548bddf1a4f9b0bb0515adccde54fa4f78afcd.e97a68b0a43790a2be72.js" async=""></script><script src="/_next/static/chunks/pages/_app-cf34b6c6dcbd8e5e19d8.js" async=""></script><script src="/_next/static/chunks/52410961c79984d95a83f41e23279451651567a8.0eecca90880bdb72a7cb.js" async=""></script><script src="/_next/static/chunks/c62b1f5506a3d85383b562dbd5dbc47675d7d427.0cfe078be4acccc5af6f.js" async=""></script><script src="/_next/static/chunks/pages/home-f89fde3b1ff3270db409.js" async=""></script><script src="/_next/static/HAfs2AVYDM_PHvnVmJyQS/_buildManifest.js" async=""></script><script src="/_next/static/HAfs2AVYDM_PHvnVmJyQS/_ssgManifest.js" async=""></script></body></html>

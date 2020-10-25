@@ -4,6 +4,8 @@ import Head from 'next/head';
 import { ThemeProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import theme from '../theme';
+import App from 'next/app';
+
 
 export default function MyApp(props) {
   const { Component, pageProps } = props;
@@ -36,8 +38,18 @@ export default function MyApp(props) {
     </React.Fragment>
   );
 }
-
 MyApp.propTypes = {
   Component: PropTypes.elementType.isRequired,
   pageProps: PropTypes.object.isRequired,
+}
+/*
+
+MyApp.getInitialProps = async (appContext) => {
+  let pageProps = {};
+  if (appContext.Component.getInitialProps) {
+      pageProps = await appContext.Component.getInitialProps(appContext.ctx);
+  }
+
+  return { ...pageProps };
 };
+*/
