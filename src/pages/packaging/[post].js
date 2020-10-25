@@ -62,6 +62,8 @@ const useStyles = makeStyles((theme) => ({
 export default function Post({postData}) {
     const router = useRouter();
     const classes = useStyles();
+
+    if (!postData){return <div>Loading…</div>}
     return (
         <Layout domain={'packaging'}>
             <Grid >

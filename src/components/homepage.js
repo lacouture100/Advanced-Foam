@@ -34,6 +34,7 @@ export async function getStaticProps( {params} ) {
       props: {postList},
     }
 }
+
 /*
 Homepage.getInitialProps = async () => {
     const response = await axios.get(`https://www.advancedfoam.com/wp-json/wp/v2/posts?categories=23`);

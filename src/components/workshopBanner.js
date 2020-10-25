@@ -68,11 +68,12 @@ const useStyles = makeStyles((theme) => ({
 
 
 export default function WorkshopBanner(props) {
-
-  const [data,setData] = useState(props.data);
-  const domain = props.domain;
+  console.log(props)
+  const {data} = props;
   const classes = useStyles();
-  const checked = true;
+
+
+  if (!data){return <div>Loading…</div>}
 
   return (
     <React.Fragment>
