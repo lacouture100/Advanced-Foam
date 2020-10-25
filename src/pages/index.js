@@ -16,6 +16,7 @@ export default function Homepage({ postList }){
       />
             <Hero/>
             <Banner/>
+         
             <WorkshopBanner data={postList}/>
             <Clients/>
         </Layout>

@@ -1,6 +1,6 @@
 
 import axios from 'axios';
-import Banner from '../components/banner';
+import Banner from '../components/packagingBanner';
 import Layout from '../components/layout';
 import Clients from '../components/clients2';
 import Hero from '../components/packagingHero';

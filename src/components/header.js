@@ -16,7 +16,7 @@ import Image from 'material-ui-image'
 import Grid from '@material-ui/core/Grid'
 import { useMediaQuery, useMediaQueries } from '@react-hook/media-query';
 
-const inStockLink = '/Construction/redicoat'
+const inStockLink = '/construction/redicoat'
 //const logo = require('/img/logos/advancedFoam_main.png');
 const logo = '/img/logo512.png'
 

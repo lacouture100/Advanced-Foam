@@ -24,7 +24,23 @@ const useStyles = makeStyles((theme) => ({
     flexDirection : 'column',
     justifyContent : 'center'
   },
+  productButton : {
+    display: 'flex',
+    color : 'white',
+    width: '100%'
+
+    
+  },
   sectionGrid: {
+    display: 'flex',
+    flexDirection:'row',
+    padding: theme.spacing(2),
+    backgroundColor : '#313131' ,
+    [theme.breakpoints.down('md')]: {
+			padding: theme.spacing(2),
+		  },
+  },
+  itemsGrid: {
     display: 'flex',
     padding: theme.spacing(2),
     justifyContent:'flex-start',
@@ -70,11 +86,21 @@ export default function Banner(props) {
     <React.Fragment>
       <Fade in={true} timeout={100}>
           <Grid  className={classes.sectionGrid} container >
-          
+       
+
+       
+          <Grid  container item className={classes.projectsTitle}>
+
               {/* START Studio Section */}
 
-              {/*TODO Bring them in from categories and save them in arrays */}
+              </Grid>
 
+              {/*TODO Bring them in from categories and save them in arrays */}
+              <Grid  className={classes.itemsGrid} container item>
+              <Button variant="contained" color="primary" className={classes.productButton}>
+              Our Projects
+
+</Button>
               {data.map((post, index) => (
                 <Fade key={index} in={true} timeout={200*index}>
 
@@ -122,7 +148,7 @@ export default function Banner(props) {
                 ))
               }
               
-           
+              </Grid>
           </Grid>
           </Fade>
     </React.Fragment>

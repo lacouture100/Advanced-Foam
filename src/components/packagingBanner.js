@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Fragment } from 'react';
+
 import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
@@ -23,15 +24,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection : 'column',
     justifyContent : 'center'
   },
-  workshopTitle : {
-    display: 'flex',
-    color : 'white',
-    flexWrap:'wrap',
-    justifyContent : 'center',
-    alignSelf:'center',
-    padding:theme.spacing(2)
-  },
-  workshopButton : {
+  productButton : {
     display: 'flex',
     color : 'white',
     width: '100%'
@@ -40,8 +33,17 @@ const useStyles = makeStyles((theme) => ({
   },
   sectionGrid: {
     display: 'flex',
+    flexDirection:'row',
     padding: theme.spacing(2),
-    justifyContent:'center',
+    backgroundColor : '#313131' ,
+    [theme.breakpoints.down('md')]: {
+			padding: theme.spacing(2),
+		  },
+  },
+  itemsGrid: {
+    display: 'flex',
+    padding: theme.spacing(2),
+    justifyContent:'flex-start',
     backgroundColor : '#313131' ,
     [theme.breakpoints.down('md')]: {
 			padding: theme.spacing(2),
@@ -74,25 +76,29 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-export default function WorkshopBanner(props) {
-  const {data} = props;
-  const classes = useStyles();
+export default function Banner(props) {
 
-
-  if (!data){return <div>Loading…</div>}
+  const [data,setData] = useState(props.data);
+  const domain = props.domain;
+  const classes = useStyles();const checked = true;
 
   return (
-    <Fragment>
+    <React.Fragment>
       <Fade in={true} timeout={100}>
-
-                    
           <Grid  className={classes.sectionGrid} container >
-          
+       
+
+       
+          <Grid  container item className={classes.projectsTitle}>
+
               {/* START Studio Section */}
 
+              </Grid>
+
               {/*TODO Bring them in from categories and save them in arrays */}
-              <Button variant="contained" color="primary" className={classes.workshopButton}>
-              Our Workshop
+              <Grid  className={classes.itemsGrid} container item>
+              <Button variant="contained" color="primary" className={classes.productButton} aria-label="Our Redicoat Products">
+              Our Packaging Products
 
 </Button>
               {data.map((post, index) => (
@@ -107,7 +113,7 @@ export default function WorkshopBanner(props) {
 
                         {/* CARD UPPER CATEGORY TITLES & BUTTON*/}
 
-                        <Typography variant="h5" align="center" color="textPrimary" paragraph className={classes.sectionTitle}>
+                        <Typography variant="h5"  component="h4" align="center" color="textPrimary" paragraph className={classes.sectionTitle}>
                         {post.title.rendered}
                         </Typography>
                     
@@ -115,7 +121,7 @@ export default function WorkshopBanner(props) {
 
                       {/* CARD IMAGE */}
 
-                      <Link underline='hover' color="inherit" href={`/studio/${ post.slug }`}>
+                      <Link underline='hover' color="inherit" href={`/${domain}/${ post.slug }`}>
                         <CardActionArea>
                           <CardMedia
                             className={classes.cardMedia}
@@ -131,7 +137,7 @@ export default function WorkshopBanner(props) {
 
                         <CardActions>
                           <Container className={classes.cardButtons}>
-                            <Button size="small" color="primary" href={`/studio/${ post.slug }`}>
+                            <Button size="small" color="primary" href={`/${domain}/${ post.slug }`}>
                               {`Show me more`}
                             </Button>
                           </Container>
@@ -141,13 +147,11 @@ export default function WorkshopBanner(props) {
                     </Fade>
                 ))
               }
-
-
               
-           
+              </Grid>
           </Grid>
           </Fade>
-    </Fragment>
+    </React.Fragment>
   );
 }
 
