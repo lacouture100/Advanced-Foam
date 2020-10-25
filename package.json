@@ -20,6 +20,7 @@
     "next-compose-plugins": "^2.2.0",
     "next-images": "^1.6.0",
     "next-on-netlify": "^2.5.2",
+    "next-seo": "^4.14.0",
     "node-fetch": "^2.6.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",

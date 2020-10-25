@@ -12,6 +12,7 @@ I am using the following packages:
     "next-images": "^1.4.1",
     "react": "16.13.1",
     "react-dom": "16.13.1"
+    next-seo
 
 
 

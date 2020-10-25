@@ -136,9 +136,19 @@ export default function Hero( domain ) {
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">
 
+
+
+              <Grid item>
+                  <Fade in={true} timeout={1000}>
+                  <Button variant="contained" color="primary" href="/construction/redicoat">
+                    In Stock Today
+                  </Button>
+                  </Fade>
+                </Grid>
+
                 <Grid item>
                 <Fade in={true} timeout={200}>
-                  <Button variant="contained" color="primary">
+                  <Button variant="outlined" color="primary">
                     Call us Today
                   </Button>
                   </Fade>
@@ -152,29 +162,15 @@ export default function Hero( domain ) {
                   </Fade>
                 </Grid>
 
-                <Grid item>
-                <Fade in={true} timeout={600}>
-                  <Button variant="outlined" color="primary" href="/about">
-                   FAQ
-                  </Button>
-                  </Fade>
-                </Grid>
 
                 <Grid item>
                 <Fade in={true} timeout={800}>
-                  <Button variant="outlined" color="primary" href="/about">
+                  <Button variant="outlined" color="primary" href="/studio/workshop">
                    See our Workshop
                   </Button>
                   </Fade>
                 </Grid>
 
-                <Grid item>
-                  <Fade in={true} timeout={1000}>
-                  <Button variant="outlined" color="primary" href="/about">
-                    In Stock Today
-                  </Button>
-                  </Fade>
-                </Grid>
               </Grid>
             </div>
           </Container>

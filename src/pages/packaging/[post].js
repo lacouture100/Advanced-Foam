@@ -8,6 +8,7 @@ import { Typography } from '@material-ui/core';
 
 
 
+
 const useStyles = makeStyles((theme) => ({
 	'@global': {
 	  ul: {
@@ -25,6 +26,11 @@ const useStyles = makeStyles((theme) => ({
         flexDirection: 'column',
         alignItems: 'center',
         margin: theme.spacing(5),
+        '& li': {
+            margin: theme.spacing(2, 40,2,40),
+            textAlign: 'justify',
+            textJustify: 'inter-word'
+        },
         '& p': {
             margin: theme.spacing(2, 40,2,40),
             textAlign: 'justify',
@@ -34,6 +40,10 @@ const useStyles = makeStyles((theme) => ({
             height: 'auto'
         },
         [theme.breakpoints.down('sm')]: {
+            '& li': {
+                margin: theme.spacing(2, 5,2,5),
+                textAlign: 'justify',
+            },
             '& p': {
                 margin: theme.spacing(2, 5,2,5),
                 textAlign: 'justify',
@@ -44,6 +54,10 @@ const useStyles = makeStyles((theme) => ({
             }
         },
         [theme.breakpoints.down('xs')]: {
+            '& li': {
+                margin: theme.spacing(2),
+                textAlign: 'center',
+            },
             '& p': {
                 margin: theme.spacing(2),
                 textAlign: 'center',

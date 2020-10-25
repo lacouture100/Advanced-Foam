@@ -33,8 +33,7 @@ const words = {
 }
 
 let frases = {
-    "construction" : "for architecture and construction projects.",
-    "studio" : "for Movie and Television production companies.",
+
     "packaging" : "for companies that need specialized packaging needs."
 }
 
@@ -124,8 +123,8 @@ export default function Hero( domain ) {
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">
                 <Grid item>
-                  <Button variant="contained" color="primary" href="/packaging/products">
-                    Our products
+                  <Button variant="contained" color="primary" href="/construction/redicoat">
+                    In Stock Today
                   </Button>
                 </Grid>
                 <Grid item>

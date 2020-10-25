@@ -5,7 +5,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 
 import { Typography } from '@material-ui/core';
-
+import { NextSeo } from 'next-seo'
 
 
 
@@ -27,6 +27,11 @@ const useStyles = makeStyles((theme) => ({
         flexDirection: 'column',
         alignItems: 'center',
         margin: theme.spacing(5),
+        '& li': {
+            margin: theme.spacing(2, 40,2,40),
+            textAlign: 'justify',
+            textJustify: 'inter-word'
+        },
         '& p': {
             margin: theme.spacing(2, 40,2,40),
             textAlign: 'justify',
@@ -36,6 +41,10 @@ const useStyles = makeStyles((theme) => ({
             height: 'auto'
         },
         [theme.breakpoints.down('sm')]: {
+            '& li': {
+                margin: theme.spacing(2, 5,2,5),
+                textAlign: 'justify',
+            },
             '& p': {
                 margin: theme.spacing(2, 5,2,5),
                 textAlign: 'justify',
@@ -46,6 +55,10 @@ const useStyles = makeStyles((theme) => ({
             }
         },
         [theme.breakpoints.down('xs')]: {
+            '& li': {
+                margin: theme.spacing(2),
+                textAlign: 'center',
+            },
             '& p': {
                 margin: theme.spacing(2),
                 textAlign: 'center',
@@ -67,7 +80,12 @@ export default function Post({postData}) {
 
     if (!postData){return <div>Loading…</div>}
     return (
+
         <Layout domain={'studio'}>
+                    <NextSeo
+        title={postData.title.rendered}
+        description={`${postData.excerpt.rendered}`}
+      />
             <Grid >
         {/*We can access the domain with {router.query.domain} abd the query, or blog post, with {router.query.post}*/}
                 <Typography variant="h3" align="center" color="textPrimary"className={classes.postTitle} >{postData.title.rendered}</Typography>

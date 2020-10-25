@@ -25,15 +25,29 @@ const words = {
         {
             "word": "ARCHITECTURAL DECORATIONS",
             "index": 2
+        },
+        {
+            "word": "QUIONS",
+            "index": 2
+        },
+        {
+            "word": "CORNICES",
+            "index": 2
+        },        
+        {
+            "word": "QUATREFOILS",
+            "index": 2
+        },        
+        {
+            "word": "BANDS",
+            "index": 2
         }
     ]
 
 }
 
 let frases = {
-    "construction" : "Our specialty are architectural shapes that have extremely quick production times.",
-    "studio" : "for Movie and Television production companies.",
-    "packaging" : "for companies."
+    "construction" : "making architectural shapes that have extremely quick production times.",
 }
 
 
@@ -144,7 +158,7 @@ export default function Hero( domain ) {
                    
                 <Grid item>
                 <Fade in={true} timeout={800}>
-                  <Button variant="outlined" color="primary" href="/about">
+                  <Button variant="outlined" color="primary" href="/construction/technical-information">
                   Technical Info 
                   </Button>
                   </Fade>
