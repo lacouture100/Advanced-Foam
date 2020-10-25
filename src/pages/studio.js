@@ -19,7 +19,7 @@ export default function Studio({ bannerPostList, postList }){
       />
             <Hero domain={domain}/>
             <Banner data={bannerPostList} domain={domain} />
-            <br></br>
+            
             <WorkshopBanner data={postList}/>
             <Clients/>
         </Layout>
