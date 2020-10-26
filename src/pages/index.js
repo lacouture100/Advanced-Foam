@@ -6,7 +6,7 @@ import Clients from '../components/clients2'
 import axios from 'axios';
 import { NextSeo } from 'next-seo';
 
-export default function Homepage({ postList }){
+export default function Homepage({ workshopPostList, studioPostList, constructionPostList, packagingPostList }){
 
     return (
         <Layout >
@@ -15,9 +15,9 @@ export default function Homepage({ postList }){
         description={`Advanced Foam Packaging Site. We make everything in foam for the Move and TV production industry, architectural projects, and custom packaging needs. We always have stock available.`}
       />
             <Hero/>
-            <Banner/>
+            <Banner studioData={studioPostList} constructionData={constructionPostList} packagingData={packagingPostList}/>
          
-            <WorkshopBanner data={postList}/>
+            <WorkshopBanner data={workshopPostList}/>
             <Clients/>
         </Layout>
         )
@@ -26,18 +26,51 @@ export default function Homepage({ postList }){
 
 
 export async function getStaticProps( {params} ) {
-    // Call an external API endpoint to get posts.
-    // You can use any data fetching library
-    
-    const wpCategoryFilter = 23;
-    //const { post } = params;
-    //console.log(`https://www.advancedfoam.com/wp-json/wp/v2/posts?slug=${params.post}`)
-    const response = await axios.get(`https://www.advancedfoam.com/wp-json/wp/v2/posts?categories=${wpCategoryFilter}`);
-    ///console.log("res: " + response)
-    const postList = await response.data
 
+    const workshopLink = `https://www.advancedfoam.com/wp-json/wp/v2/posts?categories=23`;
+    const studioLink = `https://www.advancedfoam.com/wp-json/wp/v2/posts?categories=3`;
+    const constructionLink = `https://www.advancedfoam.com/wp-json/wp/v2/posts?categories=19`;
+    const packagingLink = `https://www.advancedfoam.com/wp-json/wp/v2/posts?categories=13`;
+
+    const request1 = await axios.get(workshopLink);
+    const request2 = await axios.get(studioLink);
+    const request3 = await axios.get(constructionLink);
+    const request4 = await axios.get(packagingLink);
+
+    let response1;
+    let response2;
+    let response3;
+    let response4;
+    // Workshop Post List Request
+    let workshopPostList = request1.data;
+    // Studio Post List Request
+    let studioPostList;
+
+    // Construction Post List Request
+    let constructionPostList;
+
+    // Packaging Post List Request
+    let packagingPostList;
+/*
+    axios.all([request1, request2, request3,request4]).then(axios.spread((...responses) => {
+        response1 = responses[0]
+         response2 = responses[1]
+         response3 = responses[2]
+         response4 = responses[3]
+
+        workshopPostList =  response1.data
+        studioPostList =  response2.data
+        constructionPostList =  response3.data
+        packagingPostList = response4.data
+
+        // use/access the results 
+      })).catch(errors => {
+        // react on errors.
+      })
+      */
     return {
-      props: {postList},
+        revalidate: 1,
+      props: {workshopPostList},
     }
 }
 

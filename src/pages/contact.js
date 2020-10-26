@@ -105,6 +105,7 @@ export default function Contact({ data }){
     const data = await response.data[0]
 
     return {
+        revalidate: 1,
       props: {data},
     }
 }

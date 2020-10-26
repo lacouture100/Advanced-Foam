@@ -37,6 +37,7 @@ export async function getStaticProps( {params} ) {
     const postList = await response.data
 
     return {
+        revalidate: 1,
       props: {postList},
     }
 }

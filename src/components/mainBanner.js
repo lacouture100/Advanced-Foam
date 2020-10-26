@@ -250,6 +250,8 @@ export default function Banner() {
                         <CardActionArea>
                           {
                             <Fade key={index} in={true} timeout={500}>
+
+                              
                           <CardMedia
                             className={classes.cardMedia}
                             image={content[index].imgSrc}
