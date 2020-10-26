@@ -181,9 +181,9 @@ export default function Banner() {
   let index = 0;
   
   // Set the words that will change in the hero dynamic word space
-  const [studio,setStudioIdx] = useState(0);
-  const [construction,setConstructionIdx] = useState(0);
-  const [packaging,setPackagingIdx] = useState(0);
+  const [studio,setStudioIdx] = useState(sections[0].content[index]);
+  const [construction,setConstructionIdx] = useState(sections[1].content[index]);
+  const [packaging,setPackagingIdx] = useState(sections[2].content[index]);
 
   // We set the interval in which we loop through the words
   useEffect(() =>{
@@ -248,10 +248,8 @@ export default function Banner() {
 
                       <Link underline='none' color="inherit" href={`/${domains[index]}`}>
                         <CardActionArea>
-                          {
-                            <Fade key={index} in={true} timeout={500}>
-
-                              
+                          
+                            <Fade key={index} in={true} timeout={500}>   
                           <CardMedia
                             className={classes.cardMedia}
                             image={content[index].imgSrc}
@@ -259,10 +257,8 @@ export default function Banner() {
                            
                           />
                           </Fade>
-                          }
+                          
                           {/* CARD BOTTOM TITLES */}
-
-
                           <CardContent className={classes.cardContent}>
                             <Typography gutterBottom  align="center" variant="h5" component="h5" className={classes.sectionTitle}>
                             {content[index].title}
@@ -273,20 +269,6 @@ export default function Banner() {
                           </CardContent>
                         </CardActionArea>
                         </Link>
-
-                         {/* SHARE & LEARN MORE BUTTONS */}
-                        { /*}
-                        <CardActions>
-                          <Container className={classes.cardButtons}>
-                            <Button size="small" color="primary">
-                              Share
-                            </Button>
-                            <Button size="small" color="primary">
-                              Learn More
-                            </Button>
-                          </Container>
-                        </CardActions>
-                          */}
                     </Card>
                     </Grid>
                     </Fade>
