@@ -34,11 +34,26 @@ const useStyles = makeStyles((theme) => ({
     postTitle : {
         margin: theme.spacing(5),
     },
+    figCaption : {
+        display: 'flex',
+        flexWrap: 'wrap',
+
+        margin: theme.spacing(5),
+    },
     postContent : {
         display: 'flex',
         flexDirection: 'column',
+        textAlign: 'justify',
         alignItems: 'center',
         margin: theme.spacing(5),
+        '& figCaption' : {
+            display: 'flex',
+            flexWrap: 'wrap',
+            textAlign: 'justify',
+            textJustify: 'inter-word',
+            margin: theme.spacing(2, 70,2,70),
+    
+        },
         '& li': {
             margin: theme.spacing(2, 40,2,40),
             textAlign: 'justify',
@@ -50,9 +65,24 @@ const useStyles = makeStyles((theme) => ({
             textJustify: 'inter-word'
         },'& img': {
             width: '500px',
-            height: 'auto'
+            height: 'auto',
+            alignSelf: 'center',
+            margin: theme.spacing(0, 70,0,70),
+        },'& iframe': {
+            width: '500px',
+            height: 'auto',
+            alignSelf: 'center',
+            margin: theme.spacing(0, 70,0,70),
         },
         [theme.breakpoints.down('sm')]: {
+            '& figCaption' : {
+                display: 'flex',
+                flexWrap: 'wrap',
+                textAlign: 'justify',
+                textJustify: 'inter-word',
+                margin: theme.spacing(2, 40,2,40),
+        
+            },
             '& li': {
                 margin: theme.spacing(2, 5,2,5),
                 textAlign: 'justify',
@@ -64,9 +94,21 @@ const useStyles = makeStyles((theme) => ({
             '& img': {
                 width: '500px',
                 height: 'auto'
+            },
+            '& iframe': {
+                width: '500px',
+                height: 'auto'
             }
         },
         [theme.breakpoints.down('xs')]: {
+            '& figCaption' : {
+                align: 'center',
+                textAlign: 'center',
+                textJustify: 'inter-word',
+                width: '250px',
+                
+        
+            },
             '& li': {
                 margin: theme.spacing(2),
                 textAlign: 'center',
@@ -76,6 +118,12 @@ const useStyles = makeStyles((theme) => ({
                 textAlign: 'center',
             },
             '& img': {
+                alignItems: 'center',
+                align: 'center',
+                width: '250px',
+                height: 'auto'
+            },
+            '& iframe': {
                 alignItems: 'center',
                 align: 'center',
                 width: '250px',
