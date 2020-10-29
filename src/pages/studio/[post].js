@@ -80,7 +80,7 @@ const useStyles = makeStyles((theme) => ({
                 flexWrap: 'wrap',
                 textAlign: 'justify',
                 textJustify: 'inter-word',
-                margin: theme.spacing(2, 40,2,40),
+               
         
             },
             '& li': {
@@ -102,11 +102,11 @@ const useStyles = makeStyles((theme) => ({
         },
         [theme.breakpoints.down('xs')]: {
             '& figCaption' : {
-                align: 'center',
-                textAlign: 'center',
+                display: 'flex',
+                flexWrap: 'wrap',
+                textAlign: 'justify',
                 textJustify: 'inter-word',
-                width: '250px',
-                
+               
         
             },
             '& li': {
