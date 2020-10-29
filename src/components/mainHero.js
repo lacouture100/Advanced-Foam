@@ -135,10 +135,21 @@ export default function Hero( props ) {
               </Typography>
             </Fade>
             <div className={classes.heroButtons}>
+
+
               <Grid container spacing={2} justify="center">
+
+              <Fade in={true} timeout={200}>
+              <Grid item>
+                  <Button variant="contained" color="primary" href="/construction/redicoat">
+                    In Stock Today
+                  </Button>
+                 </Grid>
+                </Fade>
+
                 <Fade in={true} timeout={200}>
                   <Grid item>
-                    <Button variant="contained" color="primary">
+                    <Button variant="outlined" color="primary" href="/contact">
                       Call us Today
                     </Button>
                   </Grid>

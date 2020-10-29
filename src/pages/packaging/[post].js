@@ -15,6 +15,7 @@ const useStyles = makeStyles((theme) => ({
 		margin: 0,
 		padding: 0,
         listStyle: 'none',
+        overflowX: 'hidden'
         
 	  },
     },
@@ -44,12 +45,13 @@ const useStyles = makeStyles((theme) => ({
         textAlign: 'justify',
         alignItems: 'center',
         margin: theme.spacing(5),
+        overflowX: 'hidden',
         '& figCaption' : {
             display: 'flex',
             flexWrap: 'wrap',
             textAlign: 'justify',
             textJustify: 'inter-word',
-            margin: theme.spacing(2, 70,2,70),
+            margin: theme.spacing(0, 70,2,70),
     
         },
         '& li': {
@@ -58,17 +60,18 @@ const useStyles = makeStyles((theme) => ({
             textJustify: 'inter-word'
         },
         '& p': {
-            margin: theme.spacing(2, 40,2,40),
+            margin: theme.spacing(2, 50,2,50),
+            minWidth: '600px',
             textAlign: 'justify',
             textJustify: 'inter-word'
         },'& img': {
-            width: '500px',
+            width: '1000px',
             height: 'auto',
             alignSelf: 'center',
             margin: theme.spacing(0, 70,0,70),
         },'& iframe': {
-            width: '500px',
-            height: 'auto',
+            width: '700px',
+            minHeight: '400px',
             alignSelf: 'center',
             margin: theme.spacing(0, 70,0,70),
         },
@@ -90,11 +93,11 @@ const useStyles = makeStyles((theme) => ({
                 textAlign: 'justify',
             },
             '& img': {
-                width: '500px',
+                width: '600px',
                 height: 'auto'
             },
             '& iframe': {
-                width: '500px',
+                width: '600px',
                 height: 'auto'
             }
         },
@@ -114,17 +117,19 @@ const useStyles = makeStyles((theme) => ({
             '& p': {
                 margin: theme.spacing(2),
                 textAlign: 'center',
+                textAlign: 'justify',
+                textJustify: 'inter-word'
             },
             '& img': {
                 alignItems: 'center',
                 align: 'center',
-                width: '250px',
+                width: '280px',
                 height: 'auto'
             },
             '& iframe': {
                 alignItems: 'center',
                 align: 'center',
-                width: '250px',
+                width: '280px',
                 height: 'auto'
             }
           }
