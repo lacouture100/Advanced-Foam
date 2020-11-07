@@ -27,7 +27,7 @@ export default function Homepage({ workshopPostList, studioPostList, constructio
 
 export async function getStaticProps( {params} ) {
 
-    const workshopLink = `https://www.advancedfoam.com/wp-json/wp/v2/posts?categories=23`;
+    const workshopLink = `https://www.advfoam.com/wp-json/wp/v2/posts?categories=23`;
 
     const request1 = await axios.get(workshopLink);
 
@@ -43,8 +43,8 @@ export async function getStaticProps( {params} ) {
 
 /*
 Homepage.getInitialProps = async () => {
-    const response = await axios.get(`https://www.advancedfoam.com/wp-json/wp/v2/posts?categories=23`);
-    //const response = await axios.get(`https://www.advancedfoam.com/wp-json/wp/v2/posts?categories=16`);
+    const response = await axios.get(`https://www.advfoam.com/wp-json/wp/v2/posts?categories=23`);
+    //const response = await axios.get(`https://www.advfoam.com/wp-json/wp/v2/posts?categories=16`);
             //console.log(response)
             const postList = await response.data;
             //console.log(postList)

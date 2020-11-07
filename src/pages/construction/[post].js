@@ -166,7 +166,7 @@ export default function Post({postData}) {
 export async function getStaticPaths() {
 
     const wpCategoryFilter = 16;
-    const res = await axios.get(`https://www.advancedfoam.com/wp-json/wp/v2/posts?categories=${wpCategoryFilter}`)
+    const res = await axios.get(`https://www.advfoam.com/wp-json/wp/v2/posts?categories=${wpCategoryFilter}`)
     const allPosts = await res.data;
     //console.log(allPosts);
     
@@ -189,8 +189,8 @@ export async function getStaticProps( {params} ) {
     
     const wpCategoryFilter = 16;
     //const { post } = params;
-    //console.log(`https://www.advancedfoam.com/wp-json/wp/v2/posts?slug=${params.post}`)
-    const response = await axios.get(`https://www.advancedfoam.com/wp-json/wp/v2/posts?categories=${wpCategoryFilter}&slug=${params.post}`);
+    //console.log(`https://www.advfoam.com/wp-json/wp/v2/posts?slug=${params.post}`)
+    const response = await axios.get(`https://www.advfoam.com/wp-json/wp/v2/posts?categories=${wpCategoryFilter}&slug=${params.post}`);
     ///console.log("res: " + response)
     const postData = await response.data[0]
     //console.log("post: " + postData)
@@ -212,10 +212,10 @@ Post.getInitialProps = async ( context ) => {
     const wpCategoryFilter = 16;
 
 
-    const LINK = `https://www.advancedfoam.com/wp-json/wp/v2/posts?categories=${wpCategoryFilter}&slug=${query.post}`;
+    const LINK = `https://www.advfoam.com/wp-json/wp/v2/posts?categories=${wpCategoryFilter}&slug=${query.post}`;
     //console.log(LINK);
-    const response = await axios.get(`https://www.advancedfoam.com/wp-json/wp/v2/posts?categories=${wpCategoryFilter}&slug=${query.post}`);
-    //const response = await axios.get(`https://www.${query.domain}.advancedfoam.com/wp-json/wp/v2/posts?slug=${query.post}`);
+    const response = await axios.get(`https://www.advfoam.com/wp-json/wp/v2/posts?categories=${wpCategoryFilter}&slug=${query.post}`);
+    //const response = await axios.get(`https://www.${query.domain}.advfoam.com/wp-json/wp/v2/posts?slug=${query.post}`);
             //console.log(response)
             const postData = await response.data[0];
 

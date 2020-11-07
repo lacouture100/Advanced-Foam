@@ -155,7 +155,7 @@ export default function Hero( domain ) {
          {/* Start Hero Dynamic Media and Titles (Right Side) */}
           <Container  md={5}>
             <Container className={classes.heroDynamic}>
-                <img  src="http://www.advancedfoam.com/wp-content/uploads/2020/09/Logo-min.gif" 
+                <img  src="http://www.advfoam.com/wp-content/uploads/2020/09/Logo-min.gif" 
                           alt =" Advanced Foam main logo"
                           className={classes.gif}>
 

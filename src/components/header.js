@@ -17,7 +17,7 @@ import Grid from '@material-ui/core/Grid'
 import { useMediaQuery, useMediaQueries } from '@react-hook/media-query';
 
 const inStockLink = '/construction/redicoat'
-//const logo = require('/img/logos/advancedFoam_main.png');
+//const logo = require('/img/logos/advfoam_main.png');
 const logo = '/img/logo512.png'
 
 const sections = [
@@ -122,7 +122,7 @@ export default function Header (props){
 							
 							{
 								/*<img 
-								src={`http://www.advancedfoam.com/wp-content/uploads/2020/09/advancedFoam_${props.site ? props.site : 'main' }.png`}  
+								src={`http://www.advfoam.com/wp-content/uploads/2020/09/advfoam_${props.site ? props.site : 'main' }.png`}  
 								className={classes.toolbarImage}>
 								</img>*/
 								<Icon className={classes.iconRoot}>

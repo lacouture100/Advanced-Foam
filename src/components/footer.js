@@ -13,7 +13,7 @@ const footer =[
     },
     {   
         'title':'Email us',
-        'subtitle1': 'info@advancedfoam.com',
+        'subtitle1': 'info@advfoam.com',
     },
     {   
         'title':'Headquarters',        
@@ -26,7 +26,7 @@ function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
-      <Link color="inherit" href="https://www.advancedfoam.com/">
+      <Link color="inherit" href="https://www.advfoam.com/">
         Advanced Foam
       </Link>{' '}
       {new Date().getFullYear()}

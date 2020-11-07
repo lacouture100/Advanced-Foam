@@ -31,8 +31,8 @@ export async function getStaticProps( {params} ) {
     
     const wpCategoryFilter = 19;
     //const { post } = params;
-    //console.log(`https://www.advancedfoam.com/wp-json/wp/v2/posts?slug=${params.post}`)
-    const response = await axios.get(`https://www.advancedfoam.com/wp-json/wp/v2/posts?categories=${wpCategoryFilter}`);
+    //console.log(`https://www.advfoam.com/wp-json/wp/v2/posts?slug=${params.post}`)
+    const response = await axios.get(`https://www.advfoam.com/wp-json/wp/v2/posts?categories=${wpCategoryFilter}`);
     ///console.log("res: " + response)
     const postList = await response.data
 
@@ -44,7 +44,7 @@ export async function getStaticProps( {params} ) {
     /*
 
 Packaging.getInitialProps = async () => {
-    const response = await axios.get(`https://www.advancedfoam.com/wp-json/wp/v2/posts?categories=19`);
+    const response = await axios.get(`https://www.advfoam.com/wp-json/wp/v2/posts?categories=19`);
             //console.log(response)
             const postList = await response.data;
             //console.log(postList)
@@ -59,7 +59,7 @@ Packaging.getInitialProps = async () => {
     const [posts, setPosts] = useState([]);
     useEffect(() => {
         async function loadData() {
-            const response = await axios.get(`https://www.construction.advancedfoam.com/wp-json/wp/v2/posts`);
+            const response = await axios.get(`https://www.construction.advfoam.com/wp-json/wp/v2/posts`);
             console.log(response)
             const postList = await response.data;
             setPosts(postList);
