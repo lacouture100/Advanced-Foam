@@ -72,7 +72,8 @@ const useStyles = makeStyles((theme) => ({
   cardButtons:{
     display: 'flex',
     justifyContent : 'space-evenly'
-  }
+  },
+  
 }));
 
 

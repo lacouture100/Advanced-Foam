@@ -7,7 +7,7 @@ import Container from '@material-ui/core/Container';
 import Fade from '@material-ui/core/Fade';
 
 
-let animatedHeroLink = "https://www.advancedfoam.com/wp-content/uploads/2020/09/Logo-min.gif" 
+let animatedHeroLink = "https://www.advfoam.com/wp-content/uploads/2020/09/Logo-min.gif" 
 //let animatedHeroLink = 'http://advancedfoam.com/wp-content/uploads/2020/10/onlyLogo.webm';
 
 const words = {
@@ -149,7 +149,7 @@ export default function Hero( props ) {
 
                 <Fade in={true} timeout={200}>
                   <Grid item>
-                    <Button variant="outlined" color="primary" href="/contact">
+                    <Button variant="" color="primary" href="/contact">
                       Call us Today
                     </Button>
                   </Grid>

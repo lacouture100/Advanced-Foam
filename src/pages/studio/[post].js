@@ -185,7 +185,7 @@ Post.getInitialProps = async ( context ) => {
   export async function getStaticPaths() {
 
     const wpCategoryFilter = 22;
-    const res = await axios.get(`https://www.advancedfoam.com/wp-json/wp/v2/posts?categories=${wpCategoryFilter}`)
+    const res = await axios.get(`https://www.advfoam.com/wp-json/wp/v2/posts?categories=${wpCategoryFilter}`)
     const allPosts = await res.data;
     //console.log(allPosts);
     
@@ -209,7 +209,7 @@ export async function getStaticProps( {params} ) {
     const wpCategoryFilter = 22;
     //const { post } = params;
     //console.log(`https://www.advancedfoam.com/wp-json/wp/v2/posts?slug=${params.post}`)
-    const response = await axios.get(`https://www.advancedfoam.com/wp-json/wp/v2/posts?categories=${wpCategoryFilter}&slug=${params.post}`);
+    const response = await axios.get(`https://www.advfoam.com/wp-json/wp/v2/posts?categories=${wpCategoryFilter}&slug=${params.post}`);
     ///console.log("res: " + response)
     const postData = await response.data[0]
     //console.log("post: " + postData)

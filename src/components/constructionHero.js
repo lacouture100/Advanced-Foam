@@ -143,7 +143,7 @@ export default function Hero( domain ) {
                 <Grid item>
                 <Fade in={true} timeout={200}>
                   <Button variant="contained" color="primary">
-                    Redicoat In Stock Today
+                    In Stock Today
                   </Button>
                   </Fade>
                 </Grid>
