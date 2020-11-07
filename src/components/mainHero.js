@@ -149,7 +149,7 @@ export default function Hero( props ) {
 
                 <Fade in={true} timeout={200}>
                   <Grid item>
-                    <Button variant="" color="primary" href="/contact">
+                    <Button variant="outlined" color="primary" href="/contact">
                       Call us Today
                     </Button>
                   </Grid>
