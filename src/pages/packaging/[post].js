@@ -89,8 +89,12 @@ const useStyles = makeStyles((theme) => ({
                 textAlign: 'justify',
             },
             '& p': {
-                margin: theme.spacing(2, 5,2,5),
+                display: 'flex',
+                flexWrap: 'wrap',
                 textAlign: 'justify',
+                textJustify: 'inter-word',
+                padding: theme.spacing(2, 20,2,20),
+                maxWidth:'500px'
             },
             '& img': {
                 width: '600px',
@@ -115,10 +119,12 @@ const useStyles = makeStyles((theme) => ({
                 textAlign: 'center',
             },
             '& p': {
-                margin: theme.spacing(2),
-                textAlign: 'center',
+                display: 'flex',
+                flexWrap: 'wrap',
                 textAlign: 'justify',
-                textJustify: 'inter-word'
+                textJustify: 'inter-word',
+                padding: theme.spacing(2, 20,2,20),
+                maxWidth:'500px'           
             },
             '& img': {
                 alignItems: 'center',

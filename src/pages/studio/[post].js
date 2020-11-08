@@ -115,10 +115,12 @@ const useStyles = makeStyles((theme) => ({
                 textAlign: 'center',
             },
             '& p': {
-                margin: theme.spacing(2),
-                textAlign: 'center',
+                display: 'flex',
+                flexWrap: 'wrap',
                 textAlign: 'justify',
-                textJustify: 'inter-word'
+                textJustify: 'inter-word',
+                padding: theme.spacing(2, 20,2,20),
+                maxWidth:'500px'
             },
             '& img': {
                 alignItems: 'center',
