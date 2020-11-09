@@ -10,6 +10,7 @@ import Icon from '@material-ui/core/Icon';
 import MenuIcon from '@material-ui/icons/Menu';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
+import { purple,deepPurple,red,white } from '@material-ui/core/colors';
 
 import Typography from '@material-ui/core/Typography';
 import Image from 'material-ui-image'
@@ -60,6 +61,13 @@ const useStyles = makeStyles((theme) => ({
 	},
 	stockButton : {
 		color:"white",
+		backgroundColor: "red",
+		[theme.breakpoints.down('xs')]: {
+			display: 'none',
+		  },
+	},
+	stockLink : {
+		color:theme.palette.getContrastText(red[500]),
 		backgroundColor: "red",
 		[theme.breakpoints.down('xs')]: {
 			display: 'none',
@@ -137,8 +145,8 @@ export default function Header (props){
 					<Grid item xs={6} md={9} justify="flex-end" container className={classes.navSection}>
 
 						{/* In Stock button*/}
-						<Button className={classes.stockButton}>
-							<Link underline='hover' color="textPrimary" href="/construction/redicoat" aria-label="In stock button">
+						<Button className={classes.stockButton} href="/construction/redicoat">
+							<Link underline='hover'  href="/construction/redicoat" aria-label="In stock button" className={classes.stockLink}>
 							IN STOCK NOW
 							</Link>
 						</Button>
