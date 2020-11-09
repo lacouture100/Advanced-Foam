@@ -13,7 +13,7 @@ const footer =[
     },
     {   
         'title':'Email us',
-        'subtitle1': 'info@advfoam.com',
+        'subtitle1': 'info@advancedfoam.com',
     },
     {   
         'title':'Headquarters',        
