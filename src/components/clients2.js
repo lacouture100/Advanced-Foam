@@ -73,6 +73,12 @@ const data ={
           "imgAlt" : "Infected Mushroom logo",
           "link" : "https://www.infected-mushroom.com"
       },
+      {
+        "name" : "Omega Products",
+        "imgSrc" : "https://advfoam.com/wp-content/uploads/2020/11/omega-oval.png",
+        "imgAlt" : "Omega Products logo",
+        "link" : "https://omega-products.com/"
+    },
   ]
 
 }
