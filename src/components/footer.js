@@ -112,7 +112,7 @@ export default function Footer(props) {
       </Fade>
 
       <Fade in={true} timeout={600}>
-      <grid item className={classes.item}>
+      <grid  className={classes.item}>
       <Container maxWidth="lg">
         <Typography variant="h6" component="h6" align="center" gutterBottom>
           {footer[2].title}

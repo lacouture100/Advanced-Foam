@@ -60,12 +60,12 @@ const useStyles = makeStyles((theme) => ({
             textJustify: 'inter-word'
         },
         '& p': {
-            margin: theme.spacing(2, 50,2,50),
-            minWidth: '600px',
+            margin: theme.spacing(2, 70,2,70),
+            minWidth:'800px',
             textAlign: 'justify',
             textJustify: 'inter-word'
         },'& img': {
-            width: '1000px',
+            width: 'max-width',
             height: 'auto',
             alignSelf: 'center',
             margin: theme.spacing(0, 70,0,70),
@@ -74,6 +74,34 @@ const useStyles = makeStyles((theme) => ({
             minHeight: '400px',
             alignSelf: 'center',
             margin: theme.spacing(0, 70,0,70),
+        },
+        [theme.breakpoints.down('md')]: {
+            '& figCaption' : {
+                display: 'flex',
+                flexWrap: 'wrap',
+                textAlign: 'justify',
+                textJustify: 'inter-word',
+               
+        
+            },
+            '& li': {
+                margin: theme.spacing(2, 5,2,5),
+                textAlign: 'justify',
+            },
+            '& p': {
+            minWidth:'800px',
+            textAlign: 'justify',
+            textJustify: 'inter-word'
+            },
+            
+            '& img': {
+                width: '600px',
+                height: 'auto'
+            },
+            '& iframe': {
+                width: '600px',
+                height: 'auto'
+            }
         },
         [theme.breakpoints.down('sm')]: {
             '& figCaption' : {
@@ -94,7 +122,7 @@ const useStyles = makeStyles((theme) => ({
                 textAlign: 'justify',
                 textJustify: 'inter-word',
                 padding: theme.spacing(2, 20,2,20),
-                maxWidth:'500px'
+                minWidth:'900px'
 
             },
             
@@ -124,7 +152,7 @@ const useStyles = makeStyles((theme) => ({
                 textAlign: 'justify',
                 textJustify: 'inter-word',
                 padding: theme.spacing(2, 20,2,20),
-                maxWidth:'500px'
+                minWidth:'600px'
             },
             '& img': {
                 alignItems: 'center',
