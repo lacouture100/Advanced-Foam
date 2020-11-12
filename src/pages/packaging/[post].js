@@ -8,6 +8,7 @@ import { Typography } from '@material-ui/core';
 import { NextSeo } from 'next-seo';
 import CircularProgress from '@material-ui/core/CircularProgress';
 
+
 const useStyles = makeStyles((theme) => ({
 	'@global': {
 	  ul: {
@@ -89,7 +90,10 @@ const useStyles = makeStyles((theme) => ({
             },
             '& p': {
             minWidth:'800px',
-            textAlign: 'justify',
+            display: 'block',
+              
+                textAlign: 'justify',
+
             textJustify: 'inter-word'
             },
             
@@ -100,6 +104,9 @@ const useStyles = makeStyles((theme) => ({
             '& iframe': {
                 width: '600px',
                 height: 'auto'
+            },
+            '& a': {
+                width: 'max-width',
             }
         },
         [theme.breakpoints.down('sm')]: {
@@ -116,7 +123,7 @@ const useStyles = makeStyles((theme) => ({
                 textAlign: 'justify',
             },
             '& p': {
-                display: 'flex',
+                display: 'block',
                 flexWrap: 'wrap',
                 textAlign: 'justify',
                 textJustify: 'inter-word',
@@ -132,6 +139,9 @@ const useStyles = makeStyles((theme) => ({
             '& iframe': {
                 width: '600px',
                 height: 'auto'
+            },
+            '& a': {
+                textJustify: 'inter-word',
             }
         },
         [theme.breakpoints.down('xs')]: {
@@ -146,8 +156,7 @@ const useStyles = makeStyles((theme) => ({
                 textAlign: 'center',
             },
             '& p': {  
-                display: 'flex',
-                flexWrap: 'wrap',
+                display: 'block',
                 textAlign: 'justify',
                 textJustify: 'inter-word',
                 padding: theme.spacing(2, 20,2,20),
@@ -169,7 +178,6 @@ const useStyles = makeStyles((theme) => ({
     }
 
 }));
-
 
 export default function Post({postData}) {
     const router = useRouter();

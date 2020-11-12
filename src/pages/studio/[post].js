@@ -74,6 +74,8 @@ const useStyles = makeStyles((theme) => ({
             minHeight: '400px',
             alignSelf: 'center',
             margin: theme.spacing(0, 70,0,70),
+        },'& blocks-gallery-item': {
+            backgroundColor: "#ff0000"
         },
         [theme.breakpoints.down('md')]: {
             '& figCaption' : {
@@ -90,7 +92,10 @@ const useStyles = makeStyles((theme) => ({
             },
             '& p': {
             minWidth:'800px',
-            textAlign: 'justify',
+            display: 'block',
+              
+                textAlign: 'justify',
+
             textJustify: 'inter-word'
             },
             
@@ -101,6 +106,9 @@ const useStyles = makeStyles((theme) => ({
             '& iframe': {
                 width: '600px',
                 height: 'auto'
+            },
+            '& a': {
+                width: 'max-width',
             }
         },
         [theme.breakpoints.down('sm')]: {
@@ -117,7 +125,7 @@ const useStyles = makeStyles((theme) => ({
                 textAlign: 'justify',
             },
             '& p': {
-                display: 'flex',
+                display: 'block',
                 flexWrap: 'wrap',
                 textAlign: 'justify',
                 textJustify: 'inter-word',
@@ -133,6 +141,9 @@ const useStyles = makeStyles((theme) => ({
             '& iframe': {
                 width: '600px',
                 height: 'auto'
+            },
+            '& a': {
+                textJustify: 'inter-word',
             }
         },
         [theme.breakpoints.down('xs')]: {
@@ -147,8 +158,7 @@ const useStyles = makeStyles((theme) => ({
                 textAlign: 'center',
             },
             '& p': {  
-                display: 'flex',
-                flexWrap: 'wrap',
+                display: 'block',
                 textAlign: 'justify',
                 textJustify: 'inter-word',
                 padding: theme.spacing(2, 20,2,20),

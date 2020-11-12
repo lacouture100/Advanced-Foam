@@ -24,6 +24,7 @@
     "node-fetch": "^2.6.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
+    "react-player": "^2.6.2",
     "react-promise-tracker": "^2.1.0"
   }
 }

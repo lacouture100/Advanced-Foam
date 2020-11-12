@@ -5,6 +5,7 @@ import ProjectsBanner from '../components/constructionProjectsBanner';
 import Layout from '../components/layout';
 import Clients from '../components/clients2';
 import Hero from '../components/constructionHero';
+import Video from '../components/backgroundVideo';
 import { NextSeo } from 'next-seo';
 
 const domain = 'construction';
@@ -18,8 +19,10 @@ export default function Construction({ productsList, projectsList }){
         description={`Advanced Foam Construction Site. We make everything in foam including architectural shapes, props, and more. We always have stock available.`}
       />
             <Hero domain={domain}/>
+            
             <Banner data={productsList} domain={domain} />
             <ProjectsBanner data={projectsList} domain={domain} />
+            <Video />
             <Clients/>
         </Layout>
     )
