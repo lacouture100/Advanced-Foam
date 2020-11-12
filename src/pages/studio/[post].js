@@ -7,6 +7,7 @@ import Grid from '@material-ui/core/Grid';
 import { Typography } from '@material-ui/core';
 import { NextSeo } from 'next-seo';
 import CircularProgress from '@material-ui/core/CircularProgress';
+import { Component, useEffect } from 'react';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -75,7 +76,20 @@ const useStyles = makeStyles((theme) => ({
             alignSelf: 'center',
             margin: theme.spacing(0, 70,0,70),
         }, 
-        
+        "& .blocks-gallery-grid  ": {
+            backgroundColor: "#ff0000",
+        },
+        "& .blocks-gallery-item  ": {
+            display:"block",
+            
+            backgroundColor: "#ffff00",
+        },
+        "& .wp-image-2020 img ": {
+            display: 'block',
+            width: '50%',
+            height: 'auto',
+            
+        },
         [theme.breakpoints.down('md')]: {
             '& figCaption' : {
                 display: 'flex',
@@ -183,6 +197,29 @@ const useStyles = makeStyles((theme) => ({
 export default function Post({postData}) {
     const router = useRouter();
     const classes = useStyles();
+
+    useEffect(() => {
+        
+        var galleryImages = document.querySelectorAll(".blocks-gallery-item");
+        var wrapper = document.createElement('Grid');
+        wrapper.setAttribute("class", "MuiGrid-root makeStyles-sectionGrid-21 MuiGrid-container");
+        wrapper.setAttribute("spacing", "{12}");
+
+        galleryImages.forEach((element)=>{
+            console.log(element);
+            element.parentNode.insertBefore(wrapper, element);
+            element.setAttribute("class", "MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3 MuiGrid-grid-lg-2");
+            element.setAttribute("xs", "{12}");
+            element.setAttribute("sm", "{6}");
+            element.setAttribute("md", "{3}");
+            element.setAttribute("lg", "{2}");
+            wrapper.appendChild(element);
+
+        })
+        
+        
+      }, []);
+    
 
     if (!postData){return <Layout domain={'packaging'}><Grid  className={classes.loading}><CircularProgress/></Grid ></Layout>}
     return (

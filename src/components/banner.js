@@ -98,7 +98,7 @@ export default function Banner(props) {
               <Button variant="contained" color="primary" className={classes.productButton}>
               Our Projects
 
-</Button>
+              </Button>
               {data.map((post, index) => (
                 <Fade key={index} in={true} timeout={200*index}>
 
