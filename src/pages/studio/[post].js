@@ -74,9 +74,8 @@ const useStyles = makeStyles((theme) => ({
             minHeight: '400px',
             alignSelf: 'center',
             margin: theme.spacing(0, 70,0,70),
-        },'& blocks-gallery-item': {
-            backgroundColor: "#ff0000"
-        },
+        }, 
+        
         [theme.breakpoints.down('md')]: {
             '& figCaption' : {
                 display: 'flex',
