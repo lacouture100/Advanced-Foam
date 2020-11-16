@@ -25,7 +25,7 @@ const sections = [
       {
         _id: "theMummy",
         index: 0,
-        imgSrc: "https://www.advfoam.com/wp-content/uploads/2020/09/mummy_preview.jpg",
+        imgSrc: "https://www.backend.advancedfoam.com/wp-content/uploads/2020/09/mummy_preview.jpg",
         title: "The Mummy",
         production: "Universal Studios",
         link: "/studio/mummy",
@@ -35,7 +35,7 @@ const sections = [
       {
         _id: "americanHorrorStory",
         index: 1,
-        imgSrc: "https://www.advfoam.com/wp-content/uploads/2020/09/americanHorror_preview.jpg",
+        imgSrc: "https://www.backend.advancedfoam.com/wp-content/uploads/2020/09/americanHorror_preview.jpg",
         title: "AHS: Hotel",
         production: "20th Century Fox",
         link: "/studio/american-horror-story-hotel",
@@ -45,7 +45,7 @@ const sections = [
       {
         _id: "starTrek",
         index: 2,
-        imgSrc: "https://www.advfoam.com/wp-content/uploads/2020/09/starTrek_preview.png",
+        imgSrc: "https://www.backend.advancedfoam.com/wp-content/uploads/2020/09/starTrek_preview.png",
         title: "Star Trek",
         production: "Paramount Pictures",
         link: "/studio/star-trek",
@@ -63,7 +63,7 @@ const sections = [
       {
         _id: "orsini",
         index: 0,
-        imgSrc: "https://advfoam.com/wp-content/uploads/2020/10/orsini.png",
+        imgSrc: "https://www.backend.advancedfoam.com/wp-content/uploads/2020/10/orsini.png",
         title: "The Orsini",
         production: "Los Angeles",
         link: "/construction",
@@ -73,7 +73,7 @@ const sections = [
     {
         _id: "appfels",
         index: 1,
-        imgSrc: "https://advfoam.com/wp-content/uploads/2020/10/appfels.jpg",
+        imgSrc: "https://www.backend.advancedfoam.com/wp-content/uploads/2020/10/appfels.jpg",
         title: "Apffels Coffee Building",
         production: "Apffels Coffee",
         slug: "appfels",
@@ -83,7 +83,7 @@ const sections = [
     {
         _id: "hamner",
         index: 2,
-        imgSrc: "https://advfoam.com/wp-content/uploads/2020/10/HamnerAve.jpg",
+        imgSrc: "https://www.backend.advancedfoam.com/wp-content/uploads/2020/10/HamnerAve.jpg",
         title: "6987-6993 Hamner Ave",
         slug: "hamner",
         production: "Strip Center",
@@ -101,7 +101,7 @@ const sections = [
       {
         _id: "polystyrene",
         index: 0,
-        imgSrc: "https://advfoam.com/wp-content/uploads/2020/10/polystyrene_72_shopped.jpg",
+        imgSrc: "https://www.backend.advancedfoam.com/wp-content/uploads/2020/10/polystyrene_72_shopped.jpg",
         title: "Anti-Impact Foam",
         production: "Custom Fabrication",
         link: "/packaging",
@@ -109,7 +109,7 @@ const sections = [
     {
         _id: "polyethylene",
         index: 1,
-        imgSrc: "https://advfoam.com/wp-content/uploads/2020/10/polyethylene_72_shopped.jpg",
+        imgSrc: "https://www.backend.advancedfoam.com/wp-content/uploads/2020/10/polyethylene_72_shopped.jpg",
         title: "Polystyrene",
         production: "Custom Fabrication",
         link: "/packaging",
@@ -117,7 +117,7 @@ const sections = [
     {
         _id: "polyurethane",
         index: 2,
-        imgSrc: "https://advfoam.com/wp-content/uploads/2020/10/polyurethane_72_shopped.jpg",
+        imgSrc: "https://www.backend.advancedfoam.com/wp-content/uploads/2020/10/polyurethane_72_shopped.jpg",
         title: "Polyurethane",
         production: "Custom Fabrication",
         year: "",

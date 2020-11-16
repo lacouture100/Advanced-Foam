@@ -35,8 +35,8 @@ export async function getStaticProps( {params} ) {
     const wpCategoryFilter = 15;
     //const { post } = params;
     //console.log(`https://www.advfoam.com/wp-json/wp/v2/posts?slug=${params.post}`)
-    const response1 = await axios.get(`https://www.advfoam.com/wp-json/wp/v2/posts?categories=15`);
-    const response2 = await axios.get(`https://www.advfoam.com/wp-json/wp/v2/posts?categories=13`);
+    const response1 = await axios.get(`https://www.backend.advancedfoam.com/wp-json/wp/v2/posts?categories=15`);
+    const response2 = await axios.get(`https://www.backend.advancedfoam.com/wp-json/wp/v2/posts?categories=13`);
 
     ///console.log("res: " + response)
     const productsList = await response1.data

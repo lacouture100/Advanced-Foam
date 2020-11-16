@@ -21,55 +21,55 @@ const data ={
       },
       {
           "name" : "Dreamworks",
-          "imgSrc" : "https://www.advfoam.com/wp-content/uploads/2020/09/dreamworks_logo.png",
+          "imgSrc" : "https://www.backend.advancedfoam.com/wp-content/uploads/2020/09/dreamworks_logo.png",
           "imgAlt" : "Dreamworks logo",
           "link" : "https://www.dreamworks.com"
       },
       {
           "name" : "Hasbro",
-          "imgSrc" : "https://www.advfoam.com/wp-content/uploads/2020/09/hasbro_logo.png",
+          "imgSrc" : "https://www.backend.advancedfoam.com/wp-content/uploads/2020/09/hasbro_logo.png",
           "imgAlt" : "Hasbro logo",
           "link" : "https://www.hasbro.com"
       },
       {
           "name" : "Honda",
-          "imgSrc" : "https://www.advfoam.com/wp-content/uploads/2020/09/honda_logo.png",
+          "imgSrc" : "https://www.backend.advancedfoam.com/wp-content/uploads/2020/09/honda_logo.png",
           "imgAlt" : "Honda logo",
           "link" : "https://www.honda.com"
       },
       {
           "name" : "Nissan",
-          "imgSrc" : "https://www.advfoam.com/wp-content/uploads/2020/09/nissan_logo.png",
+          "imgSrc" : "https://www.backend.advancedfoam.com/wp-content/uploads/2020/09/nissan_logo.png",
           "imgAlt" : "Nissan logo",
           "link" : "https://www.nissan.com"
       },
       {
           "name" : "The Zanuck Company",
-          "imgSrc" : "https://www.advfoam.com/wp-content/uploads/2020/09/theZanuckCompany_logo_BW.png",
+          "imgSrc" : "https://www.backend.advancedfoam.com/wp-content/uploads/2020/09/theZanuckCompany_logo_BW.png",
           "imgAlt" : "The Zanuck Company logo",
           "link" : "http://www.zanuckco.com/"
       },
       {
           "name" : "Fremantle Media North America",
-          "imgSrc" : "https://www.advfoam.com/wp-content/uploads/2020/09/fremantleMediaNorthAmerica_logo.png",
+          "imgSrc" : "https://www.backend.advancedfoam.com/wp-content/uploads/2020/09/fremantleMediaNorthAmerica_logo.png",
           "imgAlt" : "Fremantle Media logo",
           "link" : "https://www.fremantle.com"
       },
       {
           "name" : "Dannon",
-          "imgSrc" : "https://www.advfoam.com/wp-content/uploads/2020/09/dannon_logo.png",
+          "imgSrc" : "https://www.backend.advancedfoam.com/wp-content/uploads/2020/09/dannon_logo.png",
           "imgAlt" : "Dannon logo",
           "link" : "https://www.dannon.com"
       },
       {
           "name" : "56th Grammy Awards",
-          "imgSrc" : "https://www.advfoam.com/wp-content/uploads/2020/09/grammyAwards_logo.png",
+          "imgSrc" : "https://www.backend.advancedfoam.com/wp-content/uploads/2020/09/grammyAwards_logo.png",
           "imgAlt" : "56th Grammy Awards logo",
           "link" : "https://www.grammy.com"
       },
       {
           "name" : "Infected Mushroom",
-          "imgSrc" : "https://www.advfoam.com/wp-content/uploads/2020/09/infectedMushroom_logo.png",
+          "imgSrc" : "https://www.backend.advancedfoam.com/wp-content/uploads/2020/09/infectedMushroom_logo.png",
           "imgAlt" : "Infected Mushroom logo",
           "link" : "https://www.infected-mushroom.com"
       },

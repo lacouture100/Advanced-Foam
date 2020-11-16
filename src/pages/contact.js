@@ -100,7 +100,7 @@ export default function Contact({ data }){
   export async function getStaticProps( {params} ) {
     // Call an external API endpoint to get posts.
 
-    const response = await axios.get(`http://www.advfoam.com/wp-json/wp/v2/pages?slug=contact-us`);
+    const response = await axios.get(`https://www.backend.advancedfoam.com/wp-json/wp/v2/pages?slug=contact-us`);
     ///console.log("res: " + response)
     const data = await response.data[0]
 
