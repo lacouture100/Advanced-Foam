@@ -7,9 +7,11 @@ import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
 import Fade from '@material-ui/core/Fade';
 
+import ReactPlayer from 'react-player'
+
 
 let animatedHeroLink = "https://backend.advancedfoam.com/wp-content/uploads/2020/11/constructionLogoAnimation_optimized.gif" 
-//let animatedHeroLink = 'http://advfoam.com/wp-content/uploads/2020/10/onlyLogo.webm';
+const videoURL = "https://youtu.be/RU6XBc08vkk";
 
 const words = {
     "studio" : 
@@ -181,11 +183,10 @@ export default function Hero( domain ) {
           <Container  md={5}>
             <Container className={classes.heroDynamic}>
             <Fade in={true} timeout={600}>
-                <img  src={animatedHeroLink}
-                          alt =" Advanced Foam main logo"
-                          className={classes.gif}>
+                          <ReactPlayer url={videoURL} playing loop muted className={classes.gif} />
 
-                </img>
+
+                
                 </Fade>
 
                 <Fade in={true} timeout={1000}>

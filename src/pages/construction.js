@@ -22,7 +22,7 @@ export default function Construction({ productsList, projectsList }){
             
             <Banner data={productsList} domain={domain} />
             <ProjectsBanner data={projectsList} domain={domain} />
-            <Video />
+
             <Clients/>
         </Layout>
     )

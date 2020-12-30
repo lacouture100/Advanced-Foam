@@ -7,7 +7,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Fade from '@material-ui/core/Fade';
 
 
-const videoURL = "https://youtu.be/IBBhAa7G8nM";
+const videoURL = "https://youtu.be/RU6XBc08vkk";
 
 // Define the style for each of the components
 
@@ -51,9 +51,8 @@ export default function Banner(props) {
       <Grid container className={classes.Container}>
 
           <Grid item >
-          <ReactPlayer url={videoURL} playing loop muted className={classes.Video} >
-              
-              </ReactPlayer>
+          <ReactPlayer url={videoURL} playing loop muted className={classes.Video} />
+
           </Grid>
         </Grid>
 
