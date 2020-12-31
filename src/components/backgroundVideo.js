@@ -51,7 +51,7 @@ export default function Banner(props) {
       <Grid container className={classes.Container}>
 
           <Grid item >
-          <ReactPlayer url={videoURL} playing loop muted className={classes.Video} />
+          <ReactPlayer url={videoURL} playing loop muted controls="true" className={classes.Video} />
 
           </Grid>
         </Grid>
