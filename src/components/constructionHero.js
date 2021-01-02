@@ -189,13 +189,6 @@ export default function Hero( domain ) {
                 
                 </Fade>
 
-                <Fade in={true} timeout={1000}>
-                <div >
-                <Typography variant='h6' component="h3"  className={classes.heroDynamicText}>
-                 {word}
-                </Typography>
-                </div>
-                </Fade>
             </Container>
           </Container>
         
