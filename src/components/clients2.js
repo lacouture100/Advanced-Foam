@@ -13,27 +13,68 @@ import Button from '@material-ui/core/Button';
 
 const data ={
   "Clients":[
+    {
+      "name" : "Netflix",
+      "imgSrc" : "https://backend.advancedfoam.com/wp-content/uploads/2021/01/netflix_logo.png",
+      "imgAlt" : "Universal Studios logo",
+      "link" : "https://www.universalstudios.com"
+  },{
+    "name" : "Disney",
+    "imgSrc" : "https://backend.advancedfoam.com/wp-content/uploads/2021/01/disney_logo.png",
+    "imgAlt" : "Universal Studios logo",
+    "link" : "https://www.universalstudios.com"
+},{
+  "name" : "Warner Brothers",
+  "imgSrc" : "https://backend.advancedfoam.com/wp-content/uploads/2021/01/warner_bros_logo-2.png",
+  "imgAlt" : "Universal Studios logo",
+  "link" : "https://www.universalstudios.com"
+},{
+  "name" : "CBS",
+  "imgSrc" : "https://backend.advancedfoam.com/wp-content/uploads/2021/01/cbs_logo.png",
+  "imgAlt" : "Universal Studios logo",
+  "link" : "https://www.universalstudios.com"
+},{
+  "name" : "ABC",
+  "imgSrc" : "https://backend.advancedfoam.com/wp-content/uploads/2021/01/abc_logo.png",
+  "imgAlt" : "Universal Studios logo",
+  "link" : "https://www.universalstudios.com"
+},{
+  "name" : "20th Century Fox",
+  "imgSrc" : "https://backend.advancedfoam.com/wp-content/uploads/2021/01/20th_century_fox.png",
+  "imgAlt" : "Universal Studios logo",
+  "link" : "https://www.universalstudios.com"
+},{
+  "name" : "DWP Productions",
+  "imgSrc" : "https://backend.advancedfoam.com/wp-content/uploads/2021/01/dwp_logo.png",
+  "imgAlt" : "Universal Studios logo",
+  "link" : "https://www.universalstudios.com"
+},{
+  "name" : "Paramount Pictures",
+  "imgSrc" : "https://backend.advancedfoam.com/wp-content/uploads/2021/01/paramount_pictures_logo-1.png",
+  "imgAlt" : "Universal Studios logo",
+  "link" : "https://www.universalstudios.com"
+},
       {
           "name" : "Universal Studios",
-          "imgSrc" : "https://advfoam.com/wp-content/uploads/2020/10/universalStudios_logo.png",
+          "imgSrc" : "https://backend.advancedfoam.com/wp-content/uploads/2021/01/universal_studios_logo_color-1.png",
           "imgAlt" : "Universal Studios logo",
           "link" : "https://www.universalstudios.com"
       },
       {
           "name" : "Dreamworks",
-          "imgSrc" : "https://www.backend.advancedfoam.com/wp-content/uploads/2020/09/dreamworks_logo.png",
+          "imgSrc" : "https://backend.advancedfoam.com/wp-content/uploads/2021/01/dreamworks_logo_color-1.png",
           "imgAlt" : "Dreamworks logo",
           "link" : "https://www.dreamworks.com"
       },
       {
           "name" : "Hasbro",
-          "imgSrc" : "https://www.backend.advancedfoam.com/wp-content/uploads/2020/09/hasbro_logo.png",
+          "imgSrc" : "https://backend.advancedfoam.com/wp-content/uploads/2021/01/hasbro_logo_color.png",
           "imgAlt" : "Hasbro logo",
           "link" : "https://www.hasbro.com"
       },
       {
           "name" : "Honda",
-          "imgSrc" : "https://www.backend.advancedfoam.com/wp-content/uploads/2020/09/honda_logo.png",
+          "imgSrc" : "https://backend.advancedfoam.com/wp-content/uploads/2021/01/honda_logo_color-1.png",
           "imgAlt" : "Honda logo",
           "link" : "https://www.honda.com"
       },
@@ -51,19 +92,19 @@ const data ={
       },
       {
           "name" : "Fremantle Media North America",
-          "imgSrc" : "https://www.backend.advancedfoam.com/wp-content/uploads/2020/09/fremantleMediaNorthAmerica_logo.png",
+          "imgSrc" : "https://backend.advancedfoam.com/wp-content/uploads/2021/01/fremantleMediaNorthAmerica_logo.png",
           "imgAlt" : "Fremantle Media logo",
           "link" : "https://www.fremantle.com"
       },
       {
           "name" : "Dannon",
-          "imgSrc" : "https://www.backend.advancedfoam.com/wp-content/uploads/2020/09/dannon_logo.png",
+          "imgSrc" : "https://backend.advancedfoam.com/wp-content/uploads/2021/01/dannon_logo_color-1.png",
           "imgAlt" : "Dannon logo",
           "link" : "https://www.dannon.com"
       },
       {
           "name" : "56th Grammy Awards",
-          "imgSrc" : "https://www.backend.advancedfoam.com/wp-content/uploads/2020/09/grammyAwards_logo.png",
+          "imgSrc" : "https://backend.advancedfoam.com/wp-content/uploads/2021/01/grammy_awards_color.png",
           "imgAlt" : "56th Grammy Awards logo",
           "link" : "https://www.grammy.com"
       },
@@ -125,8 +166,8 @@ const useStyles = makeStyles((theme) => ({
     margin : theme.spacing(2)
   },
   cardMedia: {
-    height: 0,
-    paddingTop: '56.25%', // 16:9,
+    
+    paddingTop: '70%', // 16:9,
     margin : theme.spacing(2)
      
   },
