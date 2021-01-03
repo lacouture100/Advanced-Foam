@@ -135,12 +135,13 @@ const useStyles = makeStyles((theme) => ({
   sectionTitles : {
     display: 'flex',
     flexDirection : 'column',
-    justifyContent : 'center'
+    justifyContent : 'center',
+    padding : theme.spacing(0)
   },
   sectionGrid: {
     display: 'flex',
     justifyContent: 'center',
-    padding: theme.spacing(6, 10, 6),
+    padding: theme.spacing(2, 6, 6),
     
     backgroundColor : '#313131' ,
     [theme.breakpoints.down('md')]: {
@@ -148,7 +149,7 @@ const useStyles = makeStyles((theme) => ({
 		  },
   },
   card: {
-    width: '95%',
+    width: '100%',
     display: 'flex',
     flexDirection: 'column',
     margin: '10px'

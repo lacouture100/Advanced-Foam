@@ -54,7 +54,7 @@ const useStyles = makeStyles((theme) => ({
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
-      paddingBottom: theme.spacing(2),
+      
   },
   heroDynamicText: {
     backgroundColor: 'black',
