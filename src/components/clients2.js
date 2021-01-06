@@ -11,49 +11,55 @@ import Fade from '@material-ui/core/Fade';
 import Button from '@material-ui/core/Button';
 
 
+
 const data ={
   "Clients":[
-    {
-      "name" : "Netflix",
-      "imgSrc" : "https://backend.advancedfoam.com/wp-content/uploads/2021/01/netflix_logo.png",
-      "imgAlt" : "Universal Studios logo",
-      "link" : "https://www.universalstudios.com"
-  },{
-    "name" : "Disney",
-    "imgSrc" : "https://backend.advancedfoam.com/wp-content/uploads/2021/01/disney_logo.png",
-    "imgAlt" : "Universal Studios logo",
-    "link" : "https://www.universalstudios.com"
-},{
-  "name" : "Warner Brothers",
-  "imgSrc" : "https://backend.advancedfoam.com/wp-content/uploads/2021/01/warner_bros_logo-2.png",
-  "imgAlt" : "Universal Studios logo",
-  "link" : "https://www.universalstudios.com"
-},{
-  "name" : "CBS",
-  "imgSrc" : "https://backend.advancedfoam.com/wp-content/uploads/2021/01/cbs_logo.png",
-  "imgAlt" : "Universal Studios logo",
-  "link" : "https://www.universalstudios.com"
-},{
-  "name" : "ABC",
-  "imgSrc" : "https://backend.advancedfoam.com/wp-content/uploads/2021/01/abc_logo.png",
-  "imgAlt" : "Universal Studios logo",
-  "link" : "https://www.universalstudios.com"
-},{
-  "name" : "20th Century Fox",
-  "imgSrc" : "https://backend.advancedfoam.com/wp-content/uploads/2021/01/20th_century_fox.png",
-  "imgAlt" : "Universal Studios logo",
-  "link" : "https://www.universalstudios.com"
-},{
-  "name" : "DWP Productions",
-  "imgSrc" : "https://backend.advancedfoam.com/wp-content/uploads/2021/01/dwp_logo.png",
-  "imgAlt" : "Universal Studios logo",
-  "link" : "https://www.universalstudios.com"
-},{
-  "name" : "Paramount Pictures",
-  "imgSrc" : "https://backend.advancedfoam.com/wp-content/uploads/2021/01/paramount_pictures_logo-1.png",
-  "imgAlt" : "Universal Studios logo",
-  "link" : "https://www.universalstudios.com"
-},
+      {
+          "name" : "Netflix",
+          "imgSrc" : "https://backend.advancedfoam.com/wp-content/uploads/2021/01/netflix_logo.png",
+          "imgAlt" : "Netflix logo",
+          "link" : "https://www.netflix.com"
+      },{
+          "name" : "Disney",
+          "imgSrc" : "https://backend.advancedfoam.com/wp-content/uploads/2021/01/disney_logo.png",
+          "imgAlt" : "Disney logo",
+          "link" : "https://www.disney.com"
+      },{
+          "name" : "Warner Brothers",
+          "imgSrc" : "https://backend.advancedfoam.com/wp-content/uploads/2021/01/warner_bros_logo-2.png",
+          "imgAlt" : "Warner Brothers logo",
+          "link" : "https://www.warnerbros.com/"
+      },{
+          "name" : "Google",
+          "imgSrc" : "https://backend.advancedfoam.com/wp-content/uploads/2021/01/google-logo.png",
+          "imgAlt" : "Google logo",
+          "link" : "https://www.google.com/"
+      },{
+          "name" : "CBS",
+          "imgSrc" : "https://backend.advancedfoam.com/wp-content/uploads/2021/01/cbs_logo.png",
+          "imgAlt" : "CBS logo",
+          "link" : "https://www.cbs.com"
+      },{
+          "name" : "ABC",
+          "imgSrc" : "https://backend.advancedfoam.com/wp-content/uploads/2021/01/abc_logo.png",
+          "imgAlt" : "ABC Studios logo",
+          "link" : "https://www.abc.com"
+      },{
+          "name" : "20th Century Studios",
+          "imgSrc" : "https://backend.advancedfoam.com/wp-content/uploads/2021/01/20th_century_fox.png",
+          "imgAlt" : "20th Century Studios logo",
+          "link" : "https://www.20thcenturystudios.com/"
+      },{
+          "name" : "DWP Productions",
+          "imgSrc" : "https://backend.advancedfoam.com/wp-content/uploads/2021/01/dwp_logo.png",
+          "imgAlt" : "DWP Productions logo",
+          "link" : "https://dannywimmerpresents.com/"
+      },{
+          "name" : "Paramount Pictures",
+          "imgSrc" : "https://backend.advancedfoam.com/wp-content/uploads/2021/01/paramount_pictures_logo-1.png",
+          "imgAlt" : "Paramount Pictures logo",
+          "link" : "https://www.paramount.com/"
+      },
       {
           "name" : "Universal Studios",
           "imgSrc" : "https://backend.advancedfoam.com/wp-content/uploads/2021/01/universal_studios_logo_color-1.png",
@@ -82,7 +88,7 @@ const data ={
           "name" : "Nissan",
           "imgSrc" : "https://www.backend.advancedfoam.com/wp-content/uploads/2020/09/nissan_logo.png",
           "imgAlt" : "Nissan logo",
-          "link" : "https://www.nissan.com"
+          "link" : "https://www.nissanusa.com/"
       },
       {
           "name" : "The Zanuck Company",
@@ -95,6 +101,12 @@ const data ={
           "imgSrc" : "https://backend.advancedfoam.com/wp-content/uploads/2021/01/fremantleMediaNorthAmerica_logo.png",
           "imgAlt" : "Fremantle Media logo",
           "link" : "https://www.fremantle.com"
+      },
+      {
+          "name" : "McDonalds",
+          "imgSrc" : "https://backend.advancedfoam.com/wp-content/uploads/2021/01/mcdonalds_logo.png",
+          "imgAlt" : "McDonald's logo",
+          "link" : "https://www.mcdonalds.com"
       },
       {
           "name" : "Dannon",
