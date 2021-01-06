@@ -225,7 +225,7 @@ export default function Banner() {
 
                     {/* CARD START */}
 
-                    <Card className={classes.card} align="center" item xs={12}md={4} >
+                    <Card className={classes.card} align="center" item="true" xs={12}md={4} >
                       <CardContent className={classes.cardContent}>
 
                         {/* CARD UPPER CATEGORY TITLES & BUTTON*/}
