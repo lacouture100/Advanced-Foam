@@ -214,8 +214,8 @@ export default function Banner() {
               {
                 data.Clients.map((client, index) => (
                   <Fade key={index} in={true} timeout={200 * index}>
-                  <Grid item xs={6} sm={3} md={2} container >
-                    <Card className={classes.card} align="center" item xs={6} sm={3} md={2} >
+                  <Grid item="true" xs={6} sm={3} md={2} container >
+                    <Card className={classes.card} align="center" item="true" xs={6} sm={3} md={2} >
                     <Link underline='none' color="inherit" href={client.link} aria-label={client.imgAlt}>
                         <CardActionArea>
 

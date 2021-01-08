@@ -1,11 +1,12 @@
 
 import axios from 'axios';
-import Banner from '../components/banner';
+import Banner from '../components/studioBanner';
 import Layout from '../components/layout';
 import WorkshopBanner from '../components/workshopBanner'
 import Clients from '../components/clients2';
-import Hero from '../components/hero';
+import Hero from '../components/studioHero';
 import { NextSeo } from 'next-seo';
+
 
 const domain = 'studio';
 

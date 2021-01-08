@@ -4,9 +4,7 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import Link from '@material-ui/core/Link';
 import Fade from '@material-ui/core/Fade';
-
 import ReactPlayer from 'react-player'
 
 
@@ -182,13 +180,9 @@ export default function Hero( domain ) {
          
           <Container  md={5}>
             <Container className={classes.heroDynamic}>
-            <Fade in={true} timeout={600}>
-                          <ReactPlayer url={videoURL} playing loop muted controls="true" className={classes.gif} />
-
-
-                
+                <Fade in={true} timeout={600}>
+                    <ReactPlayer url={videoURL} playing loop muted controls="true" className={classes.gif} />
                 </Fade>
-
             </Container>
           </Container>
         

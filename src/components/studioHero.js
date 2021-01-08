@@ -4,12 +4,12 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import Link from '@material-ui/core/Link';
 import Fade from '@material-ui/core/Fade';
+import ReactPlayer from 'react-player'
 
 
 let animatedHeroLink = "https://www.advfoam.com/wp-content/uploads/2020/09/Logo-min.gif" ;
-//let animatedHeroLink = 'http://advfoam.com/wp-content/uploads/2020/10/onlyLogo.webm';
+const videoURL = "https://youtu.be/dVHZ-ciMd2Y";
 
 const words = {
     "studio" : 
@@ -179,16 +179,9 @@ export default function Hero( domain ) {
          {/* Start Hero Dynamic Media and Titles (Right Side) */}
           <Container  md={5}>
             <Container className={classes.heroDynamic}>
-                <img  src={animatedHeroLink}
-                          alt =" Advanced Foam main logo"
-                          className={classes.gif}>
-
-                </img>
-                <div >
-                <Typography variant='h6'  className={classes.heroDynamicText}>
-                 {word}
-                </Typography>
-                </div>
+                <Fade in={true} timeout={600}>
+                    <ReactPlayer url={videoURL} playing loop muted controls="true" className={classes.gif} />
+                </Fade>
             </Container>
           </Container>
         
