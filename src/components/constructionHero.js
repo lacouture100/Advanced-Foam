@@ -181,7 +181,7 @@ export default function Hero( domain ) {
           <Container  md={5}>
             <Container className={classes.heroDynamic}>
                 <Fade in={true} timeout={600}>
-                    <ReactPlayer url={videoURL} playing loop muted controls="true" className={classes.gif} />
+                    <ReactPlayer url={videoURL} playing loop muted controls className={classes.gif} />
                 </Fade>
             </Container>
           </Container>
