@@ -85,8 +85,11 @@ const useStyles = makeStyles((theme) => ({
   },
   gif :{
     width : '50%',
-    height: 'auto'
-      
+    height: 'auto' ,
+    [theme.breakpoints.down('sm')]: {
+      maxWidth: '90%',
+      height: 'auto'
+    }
   }
 }));
 

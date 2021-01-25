@@ -124,14 +124,14 @@ export default function Hero( props ) {
         
           <Container  md={7} className={classes.heroTitles}>
             <Fade in={true} timeout={500}>
-              <Typography variant="h5" component="h3"align="center" color="textPrimary" paragraph >
+              <Typography variant="h5" component="h3" align="center" color="textPrimary" paragraph >
               We have over 35 years of experience in foam fabrication.
               </Typography>
             </Fade>
 
             <Fade in={true} timeout={1000}>
-              <Typography variant="h5" component="h3"align="center" color="textSecondary" paragraph>
-              We bring precision, innovation, creativity, and economy to your project.
+              <Typography variant="h5" component="h3" align="center" color="textSecondary" paragraph>
+              We bring precision, innovation, creativity, and economy to your projects.
               </Typography>
             </Fade>
             <div className={classes.heroButtons}>
